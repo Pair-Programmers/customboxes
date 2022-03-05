@@ -13,17 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('industries', function (Blueprint $table) {
             $table->id()->unsigned();
             $table->string('name');
-            $table->string('email')->unique();
-            $table->string('phone')->nullable();
-            $table->string('address')->nullable();
-            $table->string('profile_image')->default('profile_image_icon.png');
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('slug')->unique();
+            $table->string('summary')->nullable();
+            $table->string('image')->default('banner.png');
+            $table->longText('description')->nullable();
 
+            $table->bigInteger('created_by')->unsigned();
+            $table->foreign('created_by')->references('id')->on('admins');
+            
             $table->softDeletes();
             $table->timestamps();
         });
@@ -34,9 +34,8 @@ return new class extends Migration
      *
      * @return void
      */
-    
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('industries');
     }
 };
