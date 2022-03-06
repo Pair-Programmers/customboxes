@@ -23,6 +23,6 @@ class Order extends Model
 
         'product_id',
         'user_id',
-        'created_by',
+        'admin_id',
     ];
 }

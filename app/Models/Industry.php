@@ -16,6 +16,6 @@ class Industry extends Model
         'summary',
         'image',
         'description',
-        'created_by',
+        'admin_id',
     ];
 }

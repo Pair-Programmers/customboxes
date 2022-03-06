@@ -22,8 +22,28 @@ class Product extends Model
         'image5',
         'meta_tags',
         'meta_description',
+        'image_alt_1',
+        'image_alt_2',
+        'image_alt_3',
+        'image_alt_4',
+        'image_alt_5',
         'is_active',
         'industry_id',
-        'created_by',
+        'admin_id',
     ];
+
+    public function industry()
+    {
+        return $this->hasOne(Industry::class, 'id', 'industry_id');
+    }
+
+    public function creator()
+    {
+        return $this->hasOne(Admin::class, 'id', 'admin_id');
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

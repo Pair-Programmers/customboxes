@@ -33,7 +33,7 @@ class OrderFactory extends Factory
 
             'product_id' => Product::pluck('id')->random(),
             'user_id' => User::pluck('id')->random(),
-            'created_by'=> Admin::pluck('id')->random(),
+            'admin_id'=> Admin::pluck('id')->random(),
         ];
     }
 }

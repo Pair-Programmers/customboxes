@@ -21,9 +21,9 @@ return new class extends Migration
             $table->string('image')->default('banner.png');
             $table->longText('description')->nullable();
 
-            $table->bigInteger('created_by')->unsigned();
-            $table->foreign('created_by')->references('id')->on('admins');
-            
+            $table->bigInteger('admin_id')->unsigned();
+            $table->foreign('admin_id')->references('id')->on('admins');
+
             $table->softDeletes();
             $table->timestamps();
         });

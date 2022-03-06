@@ -34,7 +34,7 @@ class ProductFactory extends Factory
             'image5' => $this->faker->image('public/storage/images/products', 500, 500, null, false),
 
             'industry_id' => Industry::pluck('id')->random(),
-            'created_by' => Admin::pluck('id')->random(),
+            'admin_id' => Admin::pluck('id')->random(),
         ];
     }
 }

@@ -23,7 +23,7 @@ class IndustryFactory extends Factory
             'summary' => $this->faker->sentence(),
             'description' => $this->faker->paragraph(),
 
-            'created_by'=> Admin::pluck('id')->random(),
+            'admin_id'=> Admin::pluck('id')->random(),
         ];
     }
 }

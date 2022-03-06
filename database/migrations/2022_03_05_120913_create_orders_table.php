@@ -30,8 +30,8 @@ return new class extends Migration
             $table->foreign('product_id')->references('id')->on('products');
             $table->bigInteger('user_id')->unsigned()->nullable();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->bigInteger('created_by')->unsigned();
-            $table->foreign('created_by')->references('id')->on('admins');
+            $table->bigInteger('admin_id')->unsigned();
+            $table->foreign('admin_id')->references('id')->on('admins');
 
             $table->softDeletes();
             $table->timestamps();

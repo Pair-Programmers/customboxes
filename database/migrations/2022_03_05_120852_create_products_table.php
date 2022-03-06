@@ -26,12 +26,18 @@ return new class extends Migration
             $table->string('image5')->nullable();
             $table->longText('meta_tags')->nullable();
             $table->longText('meta_description')->nullable();
+            $table->string('image_alt_1')->nullable();
+            $table->string('image_alt_2')->nullable();
+            $table->string('image_alt_3')->nullable();
+            $table->string('image_alt_4')->nullable();
+            $table->string('image_alt_5')->nullable();
+
             $table->boolean('is_active')->default(true);
 
             $table->bigInteger('industry_id')->unsigned();
             $table->foreign('industry_id')->references('id')->on('industries');
-            $table->bigInteger('created_by')->unsigned();
-            $table->foreign('created_by')->references('id')->on('admins');
+            $table->bigInteger('admin_id')->unsigned();
+            $table->foreign('admin_id')->references('id')->on('admins');
 
             $table->softDeletes();
             $table->timestamps();
