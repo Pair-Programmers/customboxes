@@ -15,7 +15,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::orderby('id', 'desc')->get();
+        return view('adminpanel.pages.user.index', compact('users'));
     }
 
     /**
@@ -47,7 +48,8 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        //
+        $user = User::findOrFail($user->id);
+        return view('adminpanel.pages.user.show', compact('user'));
     }
 
     /**

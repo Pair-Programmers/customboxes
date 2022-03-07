@@ -29,4 +29,17 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::put('/{product}', 'update')->name('update');
         Route::delete('/{product:id}', 'destroy')->name('destroy');
     });
+
+    // Route::resource('users', App\Http\Controllers\Adminpanel\ProductController::class);
+    Route::controller(App\Http\Controllers\Adminpanel\UserController::class)->prefix('users')->name('user.')->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{user}', 'show')->name('show');
+        Route::get('/{user}/edit', 'edit')->name('edit');
+        Route::put('/{user}', 'update')->name('update');
+        Route::delete('/{user:id}', 'destroy')->name('destroy');
+    });
 });
+
+

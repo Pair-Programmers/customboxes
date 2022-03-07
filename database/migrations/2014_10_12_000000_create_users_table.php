@@ -16,12 +16,14 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id()->unsigned();
             $table->string('name');
+            $table->string('slug')->unique();
             $table->string('email')->unique();
             $table->string('phone')->nullable();
             $table->string('address')->nullable();
             $table->string('profile_image')->default('profile_image_icon.png');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->boolean('is_active')->default(true);
             $table->rememberToken();
 
             $table->softDeletes();
@@ -34,7 +36,7 @@ return new class extends Migration
      *
      * @return void
      */
-    
+
     public function down()
     {
         Schema::dropIfExists('users');
