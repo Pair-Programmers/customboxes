@@ -46,6 +46,18 @@
                 </ul>
             </li>
 
+            <li class="active">
+                <a href="#">
+                    <i class="fa fa-bar-chart-o"></i>
+                    <span class="nav-label">Orders</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="{{ route('admin.order.index') }}">Catalog</a></li>
+                    <li><a href="graph_morris.html">Summary</a></li>
+                </ul>
+            </li>
+
             <li>
                 <a href="#">
                     <i class="fa fa-bar-chart-o"></i>

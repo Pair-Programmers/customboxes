@@ -30,7 +30,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::delete('/{product:id}', 'destroy')->name('destroy');
     });
 
-    // Route::resource('users', App\Http\Controllers\Adminpanel\ProductController::class);
+    // Route::resource('users', App\Http\Controllers\Adminpanel\UserController::class);
     Route::controller(App\Http\Controllers\Adminpanel\UserController::class)->prefix('users')->name('user.')->group(function () {
         Route::get('/', 'index')->name('index');
         Route::get('/create', 'create')->name('create');
@@ -39,6 +39,17 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/{user}/edit', 'edit')->name('edit');
         Route::put('/{user}', 'update')->name('update');
         Route::delete('/{user:id}', 'destroy')->name('destroy');
+    });
+
+    // Route::resource('orders', App\Http\Controllers\Adminpanel\rderController::class);
+    Route::controller(App\Http\Controllers\Adminpanel\OrderController::class)->prefix('orders')->name('order.')->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{order}', 'show')->name('show');
+        Route::get('/{order}/edit', 'edit')->name('edit');
+        Route::put('/{order}', 'update')->name('update');
+        Route::delete('/{order:id}', 'destroy')->name('destroy');
     });
 });
 

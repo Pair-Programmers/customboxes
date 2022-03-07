@@ -25,4 +25,15 @@ class Order extends Model
         'user_id',
         'admin_id',
     ];
+
+    public function product()
+    {
+        return $this->hasOne(Product::class, 'id', 'product_id');
+    }
+
+    public function customer()
+    {
+        return $this->hasOne(User::class, 'id', 'user_id');
+    }
+
 }
