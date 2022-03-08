@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Adminpanel\OrderController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,10 +16,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('adminpanel.pages.blog.create');
+    return view('welcome');
 });
 
+
+Auth::routes(['verify'=>true]);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
 Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('/', function () {
+        return view('adminpanel.pages.blog.create');
+    });
+
     // Route::resource('products', App\Http\Controllers\Adminpanel\ProductController::class);
     Route::controller(App\Http\Controllers\Adminpanel\ProductController::class)->prefix('products')->name('product.')->group(function () {
         Route::get('/', 'index')->name('index');
