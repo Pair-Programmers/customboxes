@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Adminpanel\OrderController;
+use App\Models\Industry;
+use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -15,19 +17,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 
 Auth::routes(['verify'=>true]);
+
+Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
+Route::get('/industry/{industry}', [App\Http\Controllers\IndustryController::class, 'show'])->name('industry.show');
+Route::get('/industry/{industry:slug}/product/{product:slug}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
 
 Route::prefix('admin')->name('admin.')->group(function () {
-    Route::get('/', function () {
-        return view('adminpanel.pages.blog.create');
+
+    //dashboard
+    Route::controller(App\Http\Controllers\Adminpanel\DashboardController::class)->name('dashboard')->group(function () {
+        Route::get('/', 'index');
     });
 
     // Route::resource('products', App\Http\Controllers\Adminpanel\ProductController::class);

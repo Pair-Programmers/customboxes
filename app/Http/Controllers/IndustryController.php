@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Industry;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class IndustryController extends Controller
@@ -14,7 +15,7 @@ class IndustryController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -46,7 +47,9 @@ class IndustryController extends Controller
      */
     public function show(Industry $industry)
     {
-        //
+        $industry = Industry::findOrFail($industry->id);
+        $products = Product::where('industry_id', $industry->id)->get();
+        return view('pages.industry', compact('industry', 'products'));
     }
 
     /**

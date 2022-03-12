@@ -25,7 +25,7 @@
                 </div>
             </li>
             <li>
-                <a href="index.html">
+                <a href="{{ route('admin.dashboard') }}">
                     <i class="fa fa-th-large"></i>
                     <span class="nav-label">Dashboard</span>
                     {{-- <span class="fa arrow"></span> --}}
@@ -34,7 +34,7 @@
                 </a>
 
             </li>
-            <li class="active">
+            <li class="">
                 <a href="#">
                     <i class="fa fa-bar-chart-o"></i>
                     <span class="nav-label">Products</span>
@@ -46,7 +46,7 @@
                 </ul>
             </li>
 
-            <li class="active">
+            <li class="">
                 <a href="#">
                     <i class="fa fa-bar-chart-o"></i>
                     <span class="nav-label">Orders</span>
