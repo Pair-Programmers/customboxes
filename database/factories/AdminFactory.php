@@ -23,7 +23,7 @@ class AdminFactory extends Factory
             'phone' => $this->faker->e164PhoneNumber(),
             'role' => $this->faker->randomElement(['Editor', 'Admin', 'Moderator']),
             'status' => $this->faker->randomElement(['Active', 'Inactive']),
-            'profile_image' => $this->faker->image('public/storage/images/admins',200,200, null, false),
+            'profile_image' => $this->faker->image('public/storage/images/admins', 50, 50, null, false),
             'password' => Hash::make('admin@123'), // password
         ];
     }

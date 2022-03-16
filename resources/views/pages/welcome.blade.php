@@ -648,7 +648,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="banner-wrap">
                                 <div class="banner-img banner-img-zoom">
-                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/banner/banner-29.jpg" alt=""></a>
+                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/industry-banners/industry-1-products-theme.jpg" alt=""></a>
                                 </div>
                                 <div class="banner-content-23 text-center">
                                     <!-- <div class="banner-content-23-top">

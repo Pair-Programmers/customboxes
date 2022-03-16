@@ -8,24 +8,24 @@
 
     <title>Inventory | Admin Login</title>
 
-    <link href="{{asset('adminpanel')}}/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{asset('adminpanel')}}/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="{{ asset('assets/adminpanel') }}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('assets/adminpanel') }}/font-awesome/css/font-awesome.css" rel="stylesheet">
 
-    <link href="{{asset('adminpanel')}}/css/animate.css" rel="stylesheet">
-    <link href="{{asset('adminpanel')}}/css/style.css" rel="stylesheet">
+    <link href="{{ asset('assets/adminpanel') }}/css/animate.css" rel="stylesheet">
+    <link href="{{ asset('assets/adminpanel') }}/css/style.css" rel="stylesheet">
 
 
 </head>
 
 <body class="gray-bg">
     <div style="text-align: center">
-        <h1 class="logo-name" >Inventory</h1>
+        <h1 class="logo-name" >CustomBoxUs</h1>
     </div>
     <div class="middle-box text-center loginscreen animated fadeInDown">
         <div>
 
 
-            <h3>Welcome to Inventory Management</h3>
+            <h3>Welcome to CustomBoxUs Management</h3>
             {{-- <p>Perfectly designed and precisely prepared admin theme with over 50 pages with extra new web app views. --}}
                 <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
             </p>
@@ -56,8 +56,8 @@
     </div>
 
     <!-- Mainly scripts -->
-    <script src="{{asset('adminpanel')}}/js/jquery-2.1.1.js"></script>
-    <script src="{{asset('adminpanel')}}/js/bootstrap.min.js"></script>
+    <script src="{{ asset('assets/adminpanel') }}/js/jquery-2.1.1.js"></script>
+    <script src="{{ asset('assets/adminpanel') }}/js/bootstrap.min.js"></script>
 
 </body>
 

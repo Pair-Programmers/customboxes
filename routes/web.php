@@ -25,7 +25,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/industry/{industry}', [App\Http\Controllers\IndustryController::class, 'show'])->name('industry.show');
 Route::get('/industry/{industry:slug}/product/{product:slug}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
 
-Route::prefix('admin')->name('admin.')->group(function () {
+
+
+Route::get('admin/login', [App\Http\Controllers\Adminpanel\AuthController::class, 'show'])->name('admin.login');
+Route::post('admin/login', [App\Http\Controllers\Adminpanel\AuthController::class, 'login'])->name('admin.login');
+Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function () {
+
+    Route::post('admin/logout', [App\Http\Controllers\Adminpanel\AuthController::class, 'logout'])->name('logout');
 
     //dashboard
     Route::controller(App\Http\Controllers\Adminpanel\DashboardController::class)->name('dashboard')->group(function () {

@@ -2,9 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\Admin;
 use App\Models\Industry;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
 class DatabaseSeeder extends Seeder
@@ -18,6 +20,7 @@ class DatabaseSeeder extends Seeder
     {
         $no_of_records = 10;
 
+        Admin::create(['name'=>'Hamza Saqib','email'=>'admin@gmail.com', 'role'=>'Super Admin', 'password'=>Hash::make('admin@123')]);
         \App\Models\User::factory($no_of_records)->create();
         \App\Models\Admin::factory($no_of_records)->create();
         //\App\Models\Industry::factory($no_of_records)->create();

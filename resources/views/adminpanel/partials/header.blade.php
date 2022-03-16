@@ -11,9 +11,9 @@
     </div>
     <ul class="nav navbar-top-links navbar-right">
         <li>
-            <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+            <span class="m-r-sm text-muted welcome-message">Welcome to CustomBoxUs Management</span>
         </li>
-        <li class="dropdown">
+        {{-- <li class="dropdown">
             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
                 <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
             </a>
@@ -67,8 +67,8 @@
                     </div>
                 </li>
             </ul>
-        </li>
-        <li class="dropdown">
+        </li> --}}
+        {{-- <li class="dropdown">
             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
                 <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
             </a>
@@ -109,13 +109,17 @@
                     </div>
                 </li>
             </ul>
-        </li>
+        </li> --}}
 
 
         <li>
-            <a href="login.html">
+            <a href="#" onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
                 <i class="fa fa-sign-out"></i> Log out
             </a>
+            <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
         </li>
         <li>
             <a class="right-sidebar-toggle">

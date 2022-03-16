@@ -3,12 +3,12 @@
         <ul class="nav metismenu" id="side-menu">
             <li class="nav-header">
                 <div class="dropdown profile-element"> <span>
-                        <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                        <img alt="image" class="img-circle" src="{{asset('storage')}}/images/admins/{{Auth::guard('admin')->user()->profile_image}}" style="width: 70px; height: 70px"/>
                     </span>
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear"> <span class="block m-t-xs">
-                                <strong class="font-bold">David Williams</strong>
-                            </span> <span class="text-muted text-xs block">Art Director <b
+                                <strong class="font-bold">{{Auth::guard('admin')->user()->name}}</strong>
+                            </span> <span class="text-muted text-xs block">{{Auth::guard('admin')->user()->role}} <b
                                     class="caret"></b></span>
                         </span>
                     </a>
