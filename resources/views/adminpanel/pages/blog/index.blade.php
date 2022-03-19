@@ -30,7 +30,7 @@
             </div>
             <div class="col-sm-8">
                 <div class="title-action">
-                    <a href="{{ route('admin.product.create') }}" class="btn btn-primary">+ Create New</a>
+                    <a href="{{ route('admin.blog.create') }}" class="btn btn-primary">+ Create New</a>
                 </div>
             </div>
         </div>
@@ -66,48 +66,35 @@
                                     <thead>
                                         <tr>
                                             <th>No.</th>
-                                            <th>Code/ID</th>
-                                            <th>Date</th>
-                                            <th>Product</th>
-                                            <th>Customer</th>
-                                            <th>Email</th>
-                                            <th>Phone</th>
-                                            <th>Dimesnsions</th>
+                                            <th>Title</th>
+                                            <th>Author</th>
+                                            <th>Created At</th>
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($orders as $order)
-                                            <tr class="gradeX" id="row-{{ $order->id }}">
+                                        @foreach ($blogs as $blog)
+                                            <tr class="gradeX" id="row-{{ $blog->id }}">
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{sprintf("%05d", $order->id)}}</td>
-                                                <td>{{ date('d-M-Y', strtotime($order->created_at)) }}</td>
-                                                <td>{{ $order->product->name }}</td>
-                                                <td>{{ $order->customer->name }}</td>
-                                                <td>{{ $order->email }}</td>
-                                                <td>{{ $order->phone }}</td>
-                                                <td>{{ $order->dimensions }}</td>
+                                                <td>{{ $blog->title }}</td>
+                                                <td>{{ $blog->author_name }}</td>
+                                                <td>{{ date('d-M-Y', strtotime($blog->created_at)) }}</td>
+
                                                 <td>
-                                                    @if ($order->status == 'pending')
-                                                        <span class="label label-primary">pending</span>
-                                                    @elseif($order->status == 'inprocess')
-                                                        <span class="label label-danger">inprocess</span>
-                                                    @elseif($order->status == 'canceled')
-                                                        <span class="label label-danger">canceled</span>
-                                                    @elseif($order->status == 'shipped')
-                                                        <span class="label label-danger">shipped</span>
-                                                    @elseif($order->status == 'delivered')
-                                                        <span class="label label-danger">delivered</span>
+                                                    @if ($blog->is_active)
+                                                        <span class="label label-primary">Active</span>
+                                                    @else
+                                                        <span class="label label-danger">InActive</span>
                                                     @endif
                                                 </td>
                                                 <td class="text-center">
                                                     <div class="btn-group">
-                                                        <a href="{{ route('admin.order.show', $order) }}"
+                                                        <a href="{{ route('admin.blog.show', $blog) }}"
                                                             class="btn-white btn btn-xs">View</a>
-                                                        {{-- <a href="{{ route('admin.order.edit', $order) }}"
-                                                            class="btn-white btn btn-xs">Edit</a> --}}
-                                                        <button onclick="deleteRecord({{ $order->id }})"
+                                                        <a href="{{ route('admin.blog.edit', $blog) }}"
+                                                            class="btn-white btn btn-xs">Edit</a>
+                                                        <button onclick="deleteRecord({{ $blog->id }})"
                                                             class="btn-white btn btn-xs">Delete</button>
                                                     </div>
                                                 </td>
@@ -118,13 +105,9 @@
                                     <tfoot>
                                         <tr>
                                             <th>No.</th>
-                                            <th>Code/ID</th>
-                                            <th>Date</th>
-                                            <th>Product</th>
-                                            <th>Customer</th>
-                                            <th>Email</th>
-                                            <th>Phone</th>
-                                            <th>Dimesnsion</th>
+                                            <th>Title</th>
+                                            <th>Author</th>
+                                            <th>Created At</th>
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>

@@ -25,6 +25,7 @@
 
     <link href="{{ asset('assets/adminpanel') }}/css/plugins/summernote/summernote.css" rel="stylesheet">
     <link href="{{ asset('assets/adminpanel') }}/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+    <link href="{{ asset('assets/adminpanel') }}/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
 
     <!-- Sweet Alert -->
     <link href="{{ asset('assets/adminpanel') }}/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
@@ -33,6 +34,7 @@
     <link href="{{ asset('assets/adminpanel') }}/css/plugins/dataTables/datatables.min.css" rel="stylesheet">
 
     <link href="{{ asset('assets/adminpanel') }}/css/style.css" rel="stylesheet">
+
     @yield('other-css')
 
 </head>

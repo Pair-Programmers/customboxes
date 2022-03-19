@@ -3,7 +3,11 @@
 namespace App\Http\Controllers\Adminpanel;
 
 use App\Http\Controllers\Controller;
+use App\Models\Blog;
+use App\Models\BlogCategory;
+use Database\Seeders\BlogCategorySeeder;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class BlogController extends Controller
 {
@@ -14,7 +18,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        $blogs = Blog::orderby('id', 'desc')->get();
+        return view('adminpanel.pages.blog.index', compact('blogs'));
     }
 
     /**
@@ -24,7 +29,8 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        $blogCategories = BlogCategory::all();
+        return view('adminpanel.pages.blog.create', compact('blogCategories'));
     }
 
     /**
@@ -35,7 +41,11 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $inputs = $request->all();
+        $inputs['slug'] = Str::slug($request->title);
+        $inputs['admin_id'] = 1;
+        Blog::create($inputs);
+        return redirect()->route('admin.blog.index');
     }
 
     /**
@@ -55,9 +65,11 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Blog $blog)
     {
-        //
+        $blogCategories = BlogCategory::all();
+        $blog = Blog::findOrFail($blog->id);
+        return view('adminpanel.pages.blog.edit', compact('blogCategories', 'blog'));
     }
 
     /**

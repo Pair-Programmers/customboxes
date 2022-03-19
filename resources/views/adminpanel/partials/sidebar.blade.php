@@ -70,6 +70,18 @@
                 </ul>
             </li>
 
+            <li>
+                <a href="#">
+                    <i class="fa fa-bar-chart-o"></i>
+                    <span class="nav-label">Blogs</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="{{ route('admin.blog.index') }}">Catalog</a></li>
+                    <li><a href="{{ route('admin.blog.create') }}">Create</a></li>
+                </ul>
+            </li>
+
 
         </ul>
 
