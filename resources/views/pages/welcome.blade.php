@@ -146,65 +146,8 @@
                 </div>
             </div>
         </div>
-        <div class="banner-area pb-70">
-            <div class="container">
-                <div class="section-wrap-2">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="banner-wrap mb-30">
-                                <div class="banner-img banner-img-zoom">
-                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/banner/banner-18.jpg" alt=""></a>
-                                </div>
-                                <div class="banner-content-17">
-                                    <h2>Microsoft Surface Pro 7 - 12.3”</h2>
-                                    <p>Start</p>
-                                    <div class="banner-price">
-                                        <span>$425.60</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="banner-wrap mb-30">
-                                <div class="banner-img banner-img-zoom">
-                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/banner/banner-19.jpg" alt=""></a>
-                                </div>
-                                <div class="banner-content-13">
-                                    <span>20x absorbs</span>
-                                    <h2>Triple <br>guards</h2>
-                                    <div class="product-available-wrap">
-                                        <div class="single-product-available">
-                                            <h3>6</h3>
-                                            <span>pack</span>
-                                        </div>
-                                        <div class="single-product-available">
-                                            <h3>124</h3>
-                                            <span>diapers</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="banner-wrap mb-30">
-                                <div class="banner-img banner-img-zoom">
-                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/banner/banner-20.jpg" alt=""></a>
-                                </div>
-                                <div class="banner-content-5">
-                                    <span>Hello kids</span>
-                                    <h2>Activities Boys <br>with HelloKid</h2>
-                                    <p>Discover collection from Hello Kid brand</p>
-                                    <div class="btn-style-4">
-                                        <a href="product-details.html">explore <i class="icon-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="product-area pb-70">
+       x
+        <!-- <div class="product-area pb-70">
             <div class="container">
                 <div class="section-wrap-1">
                     <div class="section-title-deal-wrap mb-30">
@@ -639,7 +582,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="banner-product-wrap pb-70">
             <div class="container">
@@ -648,7 +591,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="banner-wrap">
                                 <div class="banner-img banner-img-zoom">
-                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/industry-banners/industry-1-products-theme.jpg" alt=""></a>
+                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/industry-banners/small/industry-1-products-theme.jpg" alt=""></a>
                                 </div>
                                 <div class="banner-content-23 text-center">
                                     <!-- <div class="banner-content-23-top">
@@ -662,126 +605,89 @@
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-6">
-                            <div class="product-area product-area-padding">
+                            <div class="product-area product-area-padding ">
                                 <div class="section-title-btn-wrap mb-25">
                                     <div class="section-title-8">
                                         <h2>Industory 1</h2>
                                     </div>
-                                    <!-- <div class="tab-style-10 nav">
-                                        <a class="active" href="#product-9" data-bs-toggle="tab">Popular </a>
-                                        <a href="#product-10" data-bs-toggle="tab"> Best Seller </a>
-                                        <a href="#product-11" data-bs-toggle="tab">Sale </a>
-                                    </div> -->
                                 </div>
-                                <div class="tab-content jump">
-                                    <div id="product-9" class="tab-pane active">
-                                        <div class="product-slider-active-9 dot-style-2 dot-style-2-position-static dot-style-2-mrg-4">
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-62.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Mini Protector</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Mini Protector</a></h3>
+                                <div class="tab-content jump ">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
                                                 </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-63.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Camera</a></h3>
+                                                <div class="product-content-wrap-2 text-center">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Camera</a></h3>
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-64.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone 6S</a></h3>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone 6S</a></h3>
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-65.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone A38</a></h3>
-
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone A38</a></h3>
-
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrap-2 text-center">
+
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
+
+                                                </div>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
+
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
+
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrap-2 text-center">
+
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
+
+                                                </div>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
+
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
+
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p style="text-align:center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ea mollitia consequatur nostrum porro eos iste molestias, eum perferendis velit, nisi nulla? Debitis quia optio recusandae atque porro sequi distinctio.</p>
                                     </div>
+
+
 
                                 </div>
                             </div>
@@ -790,7 +696,6 @@
                 </div>
             </div>
         </div>
-
         <div class="banner-product-wrap pb-70">
             <div class="container">
                 <div class="section-wrap-3">
@@ -798,7 +703,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="banner-wrap">
                                 <div class="banner-img banner-img-zoom">
-                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/banner/banner-29.jpg" alt=""></a>
+                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/industry-banners/small/food-and-beverage-banner-3.jpg" alt=""></a>
                                 </div>
                                 <div class="banner-content-23 text-center">
                                     <!-- <div class="banner-content-23-top">
@@ -812,126 +717,89 @@
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-6">
-                            <div class="product-area product-area-padding">
+                            <div class="product-area product-area-padding ">
                                 <div class="section-title-btn-wrap mb-25">
                                     <div class="section-title-8">
                                         <h2>Industory 1</h2>
                                     </div>
-                                    <!-- <div class="tab-style-10 nav">
-                                        <a class="active" href="#product-9" data-bs-toggle="tab">Popular </a>
-                                        <a href="#product-10" data-bs-toggle="tab"> Best Seller </a>
-                                        <a href="#product-11" data-bs-toggle="tab">Sale </a>
-                                    </div> -->
                                 </div>
-                                <div class="tab-content jump">
-                                    <div id="product-9" class="tab-pane active">
-                                        <div class="product-slider-active-9 dot-style-2 dot-style-2-position-static dot-style-2-mrg-4">
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-62.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Mini Protector</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Mini Protector</a></h3>
+                                <div class="tab-content jump ">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
                                                 </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-63.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Camera</a></h3>
+                                                <div class="product-content-wrap-2 text-center">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Camera</a></h3>
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-64.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone 6S</a></h3>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone 6S</a></h3>
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-65.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone A38</a></h3>
-
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone A38</a></h3>
-
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrap-2 text-center">
+
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
+
+                                                </div>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
+
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
+
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrap-2 text-center">
+
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
+
+                                                </div>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
+
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
+
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p style="text-align:center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ea mollitia consequatur nostrum porro eos iste molestias, eum perferendis velit, nisi nulla? Debitis quia optio recusandae atque porro sequi distinctio.</p>
                                     </div>
+
+
 
                                 </div>
                             </div>
@@ -940,7 +808,6 @@
                 </div>
             </div>
         </div>
-
         <div class="banner-product-wrap pb-70">
             <div class="container">
                 <div class="section-wrap-3">
@@ -948,7 +815,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="banner-wrap">
                                 <div class="banner-img banner-img-zoom">
-                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/banner/banner-29.jpg" alt=""></a>
+                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/industry-banners/small/cbd-boxes-banner-1.jpg" alt=""></a>
                                 </div>
                                 <div class="banner-content-23 text-center">
                                     <!-- <div class="banner-content-23-top">
@@ -962,126 +829,89 @@
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-6">
-                            <div class="product-area product-area-padding">
+                            <div class="product-area product-area-padding ">
                                 <div class="section-title-btn-wrap mb-25">
                                     <div class="section-title-8">
                                         <h2>Industory 1</h2>
                                     </div>
-                                    <!-- <div class="tab-style-10 nav">
-                                        <a class="active" href="#product-9" data-bs-toggle="tab">Popular </a>
-                                        <a href="#product-10" data-bs-toggle="tab"> Best Seller </a>
-                                        <a href="#product-11" data-bs-toggle="tab">Sale </a>
-                                    </div> -->
                                 </div>
-                                <div class="tab-content jump">
-                                    <div id="product-9" class="tab-pane active">
-                                        <div class="product-slider-active-9 dot-style-2 dot-style-2-position-static dot-style-2-mrg-4">
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-62.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Mini Protector</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Mini Protector</a></h3>
+                                <div class="tab-content jump ">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
                                                 </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-63.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Camera</a></h3>
+                                                <div class="product-content-wrap-2 text-center">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Camera</a></h3>
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-64.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone 6S</a></h3>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone 6S</a></h3>
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-65.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone A38</a></h3>
-
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone A38</a></h3>
-
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrap-2 text-center">
+
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
+
+                                                </div>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
+
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
+
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrap-2 text-center">
+
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
+
+                                                </div>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
+
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
+
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p style="text-align:center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ea mollitia consequatur nostrum porro eos iste molestias, eum perferendis velit, nisi nulla? Debitis quia optio recusandae atque porro sequi distinctio.</p>
                                     </div>
+
+
 
                                 </div>
                             </div>
@@ -1090,7 +920,6 @@
                 </div>
             </div>
         </div>
-
         <div class="banner-product-wrap pb-70">
             <div class="container">
                 <div class="section-wrap-3">
@@ -1098,7 +927,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="banner-wrap">
                                 <div class="banner-img banner-img-zoom">
-                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/banner/banner-29.jpg" alt=""></a>
+                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/industry-banners/small/riged-boxes-banner-5.jpg" alt=""></a>
                                 </div>
                                 <div class="banner-content-23 text-center">
                                     <!-- <div class="banner-content-23-top">
@@ -1112,126 +941,89 @@
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-6">
-                            <div class="product-area product-area-padding">
+                            <div class="product-area product-area-padding ">
                                 <div class="section-title-btn-wrap mb-25">
                                     <div class="section-title-8">
                                         <h2>Industory 1</h2>
                                     </div>
-                                    <!-- <div class="tab-style-10 nav">
-                                        <a class="active" href="#product-9" data-bs-toggle="tab">Popular </a>
-                                        <a href="#product-10" data-bs-toggle="tab"> Best Seller </a>
-                                        <a href="#product-11" data-bs-toggle="tab">Sale </a>
-                                    </div> -->
                                 </div>
-                                <div class="tab-content jump">
-                                    <div id="product-9" class="tab-pane active">
-                                        <div class="product-slider-active-9 dot-style-2 dot-style-2-position-static dot-style-2-mrg-4">
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-62.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Mini Protector</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Mini Protector</a></h3>
+                                <div class="tab-content jump ">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
                                                 </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-63.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Camera</a></h3>
+                                                <div class="product-content-wrap-2 text-center">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Camera</a></h3>
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-64.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone 6S</a></h3>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone 6S</a></h3>
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-65.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone A38</a></h3>
-
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone A38</a></h3>
-
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrap-2 text-center">
+
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
+
+                                                </div>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
+
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
+
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrap-2 text-center">
+
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
+
+                                                </div>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
+
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
+
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p style="text-align:center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ea mollitia consequatur nostrum porro eos iste molestias, eum perferendis velit, nisi nulla? Debitis quia optio recusandae atque porro sequi distinctio.</p>
                                     </div>
+
+
 
                                 </div>
                             </div>
@@ -1240,7 +1032,6 @@
                 </div>
             </div>
         </div>
-
         <div class="banner-product-wrap pb-70">
             <div class="container">
                 <div class="section-wrap-3">
@@ -1248,13 +1039,10 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="banner-wrap">
                                 <div class="banner-img banner-img-zoom">
-                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/banner/banner-29.jpg" alt=""></a>
+                                    <a href="product-details.html"><img src="{{asset('assets/website')}}/images/industry-banners/small/vape-cartridge-banner-4.jpg" alt=""></a>
                                 </div>
                                 <div class="banner-content-23 text-center">
-                                    <!-- <div class="banner-content-23-top">
-                                        <p>cyber<br>monday<br>sale</p>
-                                        <h2><span>50%</span> OFF <br>HasTech TV</h2>
-                                    </div> -->
+
                                     <div class="banner-btn-3">
                                         <a href="product-details.html">View Product Industry</a>
                                     </div>
@@ -1262,126 +1050,89 @@
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-6">
-                            <div class="product-area product-area-padding">
+                            <div class="product-area product-area-padding ">
                                 <div class="section-title-btn-wrap mb-25">
                                     <div class="section-title-8">
                                         <h2>Industory 1</h2>
                                     </div>
-                                    <!-- <div class="tab-style-10 nav">
-                                        <a class="active" href="#product-9" data-bs-toggle="tab">Popular </a>
-                                        <a href="#product-10" data-bs-toggle="tab"> Best Seller </a>
-                                        <a href="#product-11" data-bs-toggle="tab">Sale </a>
-                                    </div> -->
                                 </div>
-                                <div class="tab-content jump">
-                                    <div id="product-9" class="tab-pane active">
-                                        <div class="product-slider-active-9 dot-style-2 dot-style-2-position-static dot-style-2-mrg-4">
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-62.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Mini Protector</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Mini Protector</a></h3>
+                                <div class="tab-content jump ">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
                                                 </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-63.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Camera</a></h3>
+                                                <div class="product-content-wrap-2 text-center">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Camera</a></h3>
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-64.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone 6S</a></h3>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone 6S</a></h3>
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
 
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">Electrone</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="product-plr-1">
-                                                <div class="single-product-wrap">
-                                                    <div class="product-img product-img-zoom mb-15">
-                                                        <a href="product-details.html">
-                                                            <img src="{{asset('assets/website')}}/images/product/product-65.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-content-wrap-3">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone A38</a></h3>
-
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                                        <h3 class="mrg-none bold"><a class="orange" href="product-details.html">Norda Phone A38</a></h3>
-
-                                                        <div class="product-author">
-                                                            <span>Category: <a class="orange" href="#">USoffice</a></span>
-                                                        </div>
-                                                        <div class="pro-add-to-cart-2">
-                                                            <button title="Add to Cart">Get Qoute</button>
-                                                        </div>
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrap-2 text-center">
+
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
+
+                                                </div>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
+
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
+
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="single-product-wrap mb-35">
+                                                <div class="product-img product-img-zoom mb-15">
+                                                    <a href="">
+                                                        <img src="{{ asset('storage') }}/images/products/0a9892b32d3a99e4b41b13cc201642a2.png"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-content-wrap-2 text-center">
+
+                                                    <h3><a href="product-details.html">gfhgfh namw</a></h3>
+
+                                                </div>
+                                                <div class="product-content-wrap-2 product-content-position text-center">
+
+                                                    <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
+
+                                                    <div class="pro-add-to-cart">
+                                                        <button title="Get Qoute">Get Qoute</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p style="text-align:center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ea mollitia consequatur nostrum porro eos iste molestias, eum perferendis velit, nisi nulla? Debitis quia optio recusandae atque porro sequi distinctio.</p>
                                     </div>
+
+
 
                                 </div>
                             </div>
@@ -1390,6 +1141,12 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+
 
 
         <div class="blog-area pb-70">
