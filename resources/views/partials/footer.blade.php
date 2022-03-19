@@ -31,26 +31,13 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                     <div class="footer-widget mb-40">
-                        <h3 class="footer-title">Quick Shop</h3>
+                        <h3 class="footer-title">Industries</h3>
                         <div class="footer-info-list info-list-50-parcent">
                             <ul>
-                                <li><a href="shop.html">New In</a></li>
-                                <li><a href="shop.html">T-Shirts</a></li>
-                                <li><a href="shop.html">Best Seller</a></li>
-                                <li><a href="shop.html">Shirts</a></li>
-                                <li><a href="shop.html">Clothing</a></li>
-                                <li><a href="shop.html">Bags</a></li>
-                                <li><a href="shop.html">Men</a></li>
-                                <li><a href="shop.html">Dresses</a></li>
-                                <li><a href="shop.html">Women</a></li>
-                                <li><a href="shop.html">Jeans</a></li>
-                                <li><a href="shop.html">Baby Girl</a></li>
-                                <li><a href="shop.html">Shorts</a></li>
-                                <li><a href="shop.html">Baby Boys</a></li>
-                                <li><a href="shop.html">Blouses & Shirts</a></li>
-                                <li><a href="shop.html">Accessories</a></li>
-                                <li><a href="shop.html">Blazers</a></li>
-                                <li><a href="shop.html">Shoes</a></li>
+                                @foreach(App\Models\Industry::all() as $industry)
+                                    <li><a href="shop.html">{{$industry->name}}</a></li>
+                                @endforeach
+                                
                             </ul>
                         </div>
                     </div>
@@ -61,7 +48,7 @@
                         <div class="footer-info-list">
                             <ul>
                                 <li><a href="my-account.html">My Account</a></li>
-                                <li><a href="wishlist.html">My Wishlish</a></li>
+                                <!-- <li><a href="wishlist.html">My Wishlish</a></li> -->
                                 <li><a href="#">Term & Conditions</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                                 <li><a href="#">Track Order</a></li>
