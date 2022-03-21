@@ -14,6 +14,6 @@ class BlogCategorySeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\BlogCategory::factory(10)->create();
+        \App\Models\BlogCategory::factory(5)->create();
     }
 }

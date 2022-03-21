@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $no_of_records = 10;
-
+        $this->call(BlogCategorySeeder::class);
+        $this->call(BlogSeeder::class);
         Admin::create(['name'=>'Hamza Saqib','email'=>'admin@gmail.com', 'role'=>'Super Admin', 'password'=>Hash::make('admin@123')]);
         \App\Models\User::factory($no_of_records)->create();
         \App\Models\Admin::factory($no_of_records)->create();
