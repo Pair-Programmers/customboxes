@@ -13,7 +13,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4">
                         <div class="header-offer-wrap-3 text-center">
-                            <p>Free shipping worldwide for orders over $99 </p>
+                            <p>Willow Pass Rd, Concord, CA 94520, United States.</p>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-5">
@@ -30,28 +30,7 @@
 
                                 </div>
                             </div>
-                            <!-- <div class="hm4-currency-language-wrap same-style-wrap">
-                                <div class="same-style same-style-mrg-3 language-wrap">
-                                    <a class="language-dropdown-active" href="#">ENG <i class="icon-arrow-down"></i></a>
-                                    <div class="language-dropdown">
-                                        <ul>
-                                            <li><a href="#">English</a></li>
-                                            <li><a href="#">German</a></li>
-                                            <li><a href="#">Spanish</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="same-style same-style-mrg-3 currency-wrap">
-                                    <a class="currency-dropdown-active" href="#"> USD <i class="icon-arrow-down"></i></a>
-                                    <div class="currency-dropdown">
-                                        <ul>
-                                            <li><a href="#">USD</a></li>
-                                            <li><a href="#">EUR</a></li>
-                                            <li><a href="#">BDT</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> -->
+
                         </div>
                     </div>
                 </div>
@@ -62,7 +41,7 @@
                 <div class="row align-items-center">
                     <div class="col-xl-2 col-lg-2">
                         <div class="logo">
-                            <a href="index.html"><img src="{{asset('assets/website')}}/images/logo/logo.png" alt="logo"></a>
+                            <a href="{{route('welcome')}}"><img src="{{asset('assets/website')}}/images/logo/logo.png" alt="logo"></a>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-5">
@@ -123,7 +102,7 @@
                                     <li><a href="{{route('welcome')}}">Home</a></li>
                                     <li><a href="shop-no-sidebar.html">Custom Printed Boxes</a></li>
                                     <li><a href="shop-no-sidebar.html">Boxes Styles</a></li>
-                                    <li><a href="blog-right-sidebar.html">Blog</a></li>
+                                    <li><a href="{{route('blog.index')}}">Blog</a></li>
                                     <li><a href="portfolio.html">Portfolio</a></li>
                                     <li><a href="portfolio.html">Rush Order</a></li>
                                 </ul>
@@ -135,10 +114,10 @@
                             <div class="same-style-2 same-style-2-white same-style-2-font-dec">
                                 <a href="login-register.html"><i class="icon-user"></i></a>
                             </div>
-                            <div class="same-style-2 same-style-2-white same-style-2-font-dec">
+                            {{-- <div class="same-style-2 same-style-2-white same-style-2-font-dec">
                                 <a href="wishlist.html"><i class="icon-heart"></i><span
                                         class="pro-count red">03</span></a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -160,7 +139,7 @@
                         <div class="same-style-2 same-style-2-font-inc">
                             <a href="login-register.html"><i class="icon-user"></i></a>
                         </div>
-                        <div class="same-style-2 same-style-2-font-inc">
+                        {{-- <div class="same-style-2 same-style-2-font-inc">
                             <a href="wishlist.html"><i class="icon-heart"></i><span
                                     class="pro-count red">03</span></a>
                         </div>
@@ -168,7 +147,7 @@
                             <a class="cart-active" href="#">
                                 <i class="icon-basket-loaded"></i><span class="pro-count red">02</span>
                             </a>
-                        </div>
+                        </div> --}}
                         <div class="same-style-2 main-menu-icon">
                             <a class="mobile-header-button-active" href="#"><i class="icon-menu"></i> </a>
                         </div>

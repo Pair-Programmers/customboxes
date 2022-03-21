@@ -22,7 +22,6 @@ class IndustryFactory extends Factory
             'slug' => $this->faker->slug(),
             'summary' => $this->faker->sentence(),
             'description' => $this->faker->paragraph(),
-
             'admin_id'=> Admin::pluck('id')->random(),
         ];
     }

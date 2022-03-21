@@ -144,14 +144,17 @@
                                             <div class="billing-info mb-20">
                                                 <div class="billing-select mb-20">
                                                     <select>
-                                                        <option>Material</option>
+                                                        <option selected disabled value="">Material</option>
                                                         <option>14pt. Cardstock</option>
                                                         <option>16pt. Cardstock</option>
-                                                        <option>16pt. Cardstock</option>
-                                                        <option>16pt. Cardstock</option>
-                                                        <option>16pt. Cardstock</option>
-                                                        <option>16pt. Cardstock</option>
-                                                        <option>D</option>
+                                                        <option>18pt. Cardstock</option>
+                                                        <option>20pt. Cardstock</option>
+                                                        <option>22pt. Cardstock</option>
+                                                        <option>24pt. Cardstock</option>
+                                                        <option>Corrugated Cardboard</option>
+                                                        <option>Brown Kraft CardStock</option>
+                                                        <option>Recycled Bux Board</option>
+                                                        <option>Rigid Material</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -161,13 +164,18 @@
                                             <div class="billing-info mb-20">
                                                 <div class="billing-select mb-20">
                                                     <select>
-                                                        <option>Color</option>
+                                                        <option selected disabled value="">Color</option>
                                                         <option>1 Color</option>
                                                         <option>2 Color</option>
-                                                        <option>1 Color</option>
-                                                        <option>1 Color</option>
-                                                        <option>W</option>
-                                                        <option>D</option>
+                                                        <option>3 Color</option>
+                                                        <option>4 Color</option>
+                                                        <option>4/1 Color</option>
+                                                        <option>4/2 Color</option>
+                                                        <option>4/3 Color</option>
+                                                        <option>4/4 Color</option>
+                                                        <option>Pantone (PMS)</option>
+                                                        <option>Full Color Printing</option>
+                                                        <option>Both Side Printing</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -192,15 +200,15 @@
                                                 </div>
                                                 <div class="checkout-account ">
                                                     <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
+                                                    <span>Matte Lamination</span>
                                                 </div>
                                                 <div class="checkout-account ">
                                                     <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
+                                                    <span>Window Patching</span>
                                                 </div>
                                                 <div class="checkout-account ">
                                                     <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
+                                                    <span>Embossing</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -209,19 +217,19 @@
                                                 <label> Addons </label>
                                                 <div class="checkout-account ">
                                                     <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
+                                                    <span>Spot UV Coating</span>
                                                 </div>
                                                 <div class="checkout-account ">
                                                     <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
+                                                    <span>Full UV Coating</span>
                                                 </div>
                                                 <div class="checkout-account ">
                                                     <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
+                                                    <span>Silver Foiling</span>
                                                 </div>
                                                 <div class="checkout-account ">
                                                     <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
+                                                    <span>Gold Foiling</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -284,8 +292,8 @@
                     <div class="dec-review-topbar nav mb-45">
                         <a class="active" data-bs-toggle="tab" href="#des-details1">Description</a>
                         <a data-bs-toggle="tab" href="#des-details2">Specification</a>
-                        <a data-bs-toggle="tab" href="#des-details3">Artwork Guidelines </a>
-                        <a data-bs-toggle="tab" href="#des-details4">Order Process </a>
+                        {{-- <a data-bs-toggle="tab" href="#des-details3">Artwork Guidelines </a>
+                        <a data-bs-toggle="tab" href="#des-details4">Order Process </a> --}}
                     </div>
                     <div class="tab-content dec-review-bottom">
                         <div id="des-details1" class="tab-pane active">
@@ -310,11 +318,11 @@
                                     <tbody>
                                         <tr>
                                             <td class="title width1">Name</td>
-                                            <td>Salwar Kameez</td>
+                                            <td>{{ $product->name }}</td>
                                         </tr>
                                         <tr>
                                             <td class="title width1">SKU</td>
-                                            <td>0x48e2c</td>
+                                            <td>{{ $product->name }}</td>
                                         </tr>
                                         <tr>
                                             <td class="title width1">Models</td>
@@ -340,7 +348,7 @@
                                 </table>
                             </div>
                         </div>
-                        <div id="des-details3" class="tab-pane">
+                        {{-- <div id="des-details3" class="tab-pane">
                             <div class="specification-wrap table-responsive">
                                 <table>
                                     <tbody>
@@ -366,45 +374,45 @@
 
                             </div>
 
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="related-product pb-115" style="background-color: rgb(235, 240, 243);">
+    <div class="related-product pb-115 pt-50" style="background-color: rgb(235, 240, 243);">
         <div class="container">
             <div class="section-title mb-45 text-center">
                 <h2>Related Product</h2>
             </div>
             <div class="related-product-active">
 
-                <div class="product-plr-1">
-                    <div class="single-product-wrap">
-                        <div class="product-img product-img-zoom mb-15">
-                            <a href="product-details.html">
-                                <img src="{{ asset('assets/website') }}/images/product/product-13.jpg" alt="">
-                            </a>
-                            <div class="product-action-2 tooltip-style-2">
-                                <button title="Wishlist"><i class="icon-heart"></i></button>
+                @foreach ($relatedProducts as $product)
+                    <div class="product-plr-1">
+                        <div class="single-product-wrap">
+                            <div class="product-img product-img-zoom mb-15">
+                                <a href="{{ route('product.show', [$industry, $product]) }}">
+                                    <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}" alt="">
+                                </a>
 
                             </div>
-                        </div>
-                        <div class="product-content-wrap-2 text-center">
+                            <div class="product-content-wrap-2 text-center">
 
-                            <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
+                                <h3><a href="product-details.html">{{ $product->name }}</a></h3>
 
-                        </div>
-                        <div class="product-content-wrap-2 product-content-position text-center">
+                            </div>
+                            <div class="product-content-wrap-2 product-content-position text-center">
 
-                            <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
+                                <h3><a href="product-details.html">{{ $product->name }}</a></h3>
 
-                            <div class="pro-add-to-cart">
-                                <button title="Get Qoute">Get Qoute</button>
+                                <div class="pro-add-to-cart">
+                                    <button title="Get Qoute">Get Qoute</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
+
 
             </div>
         </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Industry;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,8 @@ class WelcomeController extends Controller
     public function index()
     {
         $industries = Industry::all();
-        return view('pages.welcome', compact('industries'));
+        $blogs = Blog::all()->take(3);
+        return view('pages.welcome', compact('industries', 'blogs'));
     }
 
     /**

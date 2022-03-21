@@ -28,4 +28,9 @@ class Industry extends Model
     {
         return $this->hasMany(Product::class, 'industry_id', 'id');
     }
+
+    public function products3()
+    {
+        return $this->hasMany(Product::class, 'industry_id', 'id')->orderBy('id', 'desc')->take(3);
+    }
 }

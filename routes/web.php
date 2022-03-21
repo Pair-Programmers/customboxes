@@ -24,7 +24,10 @@ Auth::routes(['verify'=>true]);
 Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/industry/{industry}', [App\Http\Controllers\IndustryController::class, 'show'])->name('industry.show');
-Route::get('/industry/{industry:slug}/product/{product:slug}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
+Route::get('/industry/{industry:slug}/{product:slug}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
+Route::get('/blogs/{blogcategory?}', [App\Http\Controllers\BlogController::class, 'index'])->name('blog.index');
+//Route::get('/blogs/{blogcatgeory}', [App\Http\Controllers\BlogController::class, 'index'])->name('blog.index.by-category');
+Route::get('/blogs/{blog}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
 
 
 

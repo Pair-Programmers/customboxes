@@ -19,19 +19,12 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $no_of_records = 10;
+        $this->call(AdminSeeder::class);
         $this->call(BlogCategorySeeder::class);
         $this->call(BlogSeeder::class);
-        Admin::create(['name'=>'Hamza Saqib','email'=>'admin@gmail.com', 'role'=>'Super Admin', 'password'=>Hash::make('admin@123')]);
-        \App\Models\User::factory($no_of_records)->create();
-        \App\Models\Admin::factory($no_of_records)->create();
-        //\App\Models\Industry::factory($no_of_records)->create();
-        $industry_names = ['CBD Boxes', 'Cosmetics Boxes', 'Gift & Festivities', 'Food & Beverage', 'Vape Cartridge',
-         'Jewelry Boxes', 'Riged Boxes', 'Apparel', 'Sports'];
-        foreach ($industry_names as $key => $value) {
-            # code...
-            Industry::create(['name'=>$value, 'slug'=>Str::slug($value), 'image'=>Str::slug($value).'.png', 'admin_id'=>1]);
-        }
-        \App\Models\Product::factory($no_of_records+20)->create();
-        \App\Models\Order::factory($no_of_records)->create();
+        $this->call(UserSeeder::class);
+        $this->call(IndustrySeeder::class);
+        $this->call(ProductSeeder::class);
+        $this->call(ProductSeeder::class);
     }
 }

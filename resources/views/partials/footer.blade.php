@@ -35,9 +35,9 @@
                         <div class="footer-info-list info-list-50-parcent">
                             <ul>
                                 @foreach(App\Models\Industry::all() as $industry)
-                                    <li><a href="shop.html">{{$industry->name}}</a></li>
+                                    <li><a href="{{route('industry.show', $industry)}}">{{$industry->name}}</a></li>
                                 @endforeach
-                                
+
                             </ul>
                         </div>
                     </div>

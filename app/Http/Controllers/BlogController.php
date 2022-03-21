@@ -2,21 +2,35 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product;
-use App\Models\Industry;
+use App\Models\Blog;
+use App\Models\BlogCategory;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class BlogController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(BlogCategory $category=null)
     {
-        //
+        $blogs = Blog::orderBy('id', 'desc')->when($category, function ($query, $category) {
+            $query->where('blog_category_id', $category->id);
+            // dd($category);
+        })
+        ->paginate(5);
+        $categories = BlogCategory::all();
+        return view('pages.blog.index', compact('blogs', 'categories'));
     }
+
+    // public function indexByCategory(BlogCategory $category)
+    // {
+    //     $blogs = Blog::orderBy('id', 'desc')->where('blog_category_id', $category->id)
+    //     ->paginate(5);
+    //     $categories = BlogCategory::all();
+    //     return view('pages.blog.index', compact('blogs'));
+    // }
 
     /**
      * Show the form for creating a new resource.
@@ -42,27 +56,21 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Product  $product
+     * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function show(Industry $industry, Product $product)
+    public function show(Blog $blog)
     {
-
-        $product = Product::findOrFail($product->id);
-        $relatedProducts = Product::where('industry_id', $product->industry_id)
-        ->where('id', '!=', $product->id)
-        ->get()->take(5);
-        $industry = Industry::findOrFail($product->industry_id);
-        return view('pages.product.show', compact('product', 'relatedProducts', 'industry'));
+        return $blog;
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Product  $product
+     * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function edit(Product $product)
+    public function edit(Blog $blog)
     {
         //
     }
@@ -71,10 +79,10 @@ class ProductController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Product  $product
+     * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request, Blog $blog)
     {
         //
     }
@@ -82,10 +90,10 @@ class ProductController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Product  $product
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
+    public function destroy($id)
     {
         //
     }
