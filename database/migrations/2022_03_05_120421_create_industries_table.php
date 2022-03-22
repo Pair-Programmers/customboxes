@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('industries', function (Blueprint $table) {
             $table->id()->unsigned();
             $table->string('name');
-            $table->longText('slug')->unique();
+            $table->longText('slug', 750)->unique();
             $table->string('summary')->nullable();
             $table->string('image')->default('banner.png');
             $table->longText('description')->nullable();

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('style');
             $table->longText('description')->nullable();
-            $table->longText('slug')->unique();
+            $table->longText('slug', 750)->unique();
             $table->string('image1');
             $table->string('image2')->nullable();
             $table->string('image3')->nullable();
