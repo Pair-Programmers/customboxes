@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id()->unsigned();
             $table->string('name');
-            $table->string('slug', 100)->unique();
-            $table->string('email')->unique();
+            $table->string('slug', 1000)->unique();
+            $table->string('email', 255)->unique();
             $table->string('phone')->nullable();
             $table->string('address')->nullable();
             $table->string('profile_image')->default('profile_image_icon.png');
