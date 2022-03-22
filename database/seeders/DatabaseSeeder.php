@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
         Storage::makeDirectory('images/products');
         Storage::makeDirectory('images/users');
         Storage::makeDirectory('images/blogs');
-        Storage::makeDirectory('images/blogs.thumbnail');
+        Storage::makeDirectory('images/blogs/thumbnail');
         Storage::makeDirectory('images/industries');
         Storage::makeDirectory('images/admins');
 
