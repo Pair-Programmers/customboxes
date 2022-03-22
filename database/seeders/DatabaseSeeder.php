@@ -19,12 +19,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Storage::makeDirectory('images/products');
-        Storage::makeDirectory('images/users');
-        Storage::makeDirectory('images/blogs');
-        Storage::makeDirectory('images/blogs/thumbnail');
-        Storage::makeDirectory('images/industries');
-        Storage::makeDirectory('images/admins');
+        Storage::makeDirectory('public/images/products');
+        Storage::makeDirectory('public/images/users');
+        Storage::makeDirectory('public/images/blogs');
+        Storage::makeDirectory('public/images/blogs/thumbnail');
+        Storage::makeDirectory('public/images/industries');
+        Storage::makeDirectory('public/images/admins');
 
         $no_of_records = 10;
         $this->call(AdminSeeder::class);

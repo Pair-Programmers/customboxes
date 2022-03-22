@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('author_name')->nullable();
             $table->longText('summary')->nullable();
             $table->longText('description')->nullable();
-            $table->longText('slug', 750)->unique();
+            $table->string('slug')->unique();
             $table->string('image')->nullable();
             $table->string('thumbnail')->nullable();
             $table->longText('meta_tag_title')->nullable();

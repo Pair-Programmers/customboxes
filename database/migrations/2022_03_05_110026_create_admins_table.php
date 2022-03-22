@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id()->unsigned();
 
             $table->string('name');
-            $table->string('email', 255)->unique();
+            $table->string('email')->unique();
             $table->string('phone')->nullable();
             $table->string('role');
             $table->string('status')->default('Active');
