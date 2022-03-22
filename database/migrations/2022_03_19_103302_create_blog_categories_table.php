@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('blog_categories', function (Blueprint $table) {
             $table->id()->unsigned();
             $table->string('name');
-            $table->string('slug', 255)->unique();
+            $table->longText('slug')->unique();
             $table->softDeletes();
             $table->timestamps();
         });
