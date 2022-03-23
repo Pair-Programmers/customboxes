@@ -122,10 +122,10 @@
                                         <input id="" name="image3" type="file" required class="form-control">
                                     </div>
                                     <div class="col-sm-2">
-                                        <input id="" name="image4" type="file" required class="form-control">
+                                        <input id="" name="image4" type="file"  class="form-control">
                                     </div>
                                     <div class="col-sm-2">
-                                        <input id="" name="image5" type="file" required class="form-control">
+                                        <input id="" name="image5" type="file"  class="form-control">
                                     </div>
 
                                 </div>

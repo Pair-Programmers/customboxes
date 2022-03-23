@@ -48,8 +48,8 @@ class ProductController extends Controller
             'image1' => 'file|required',
             'image2' => 'file|required',
             'image3' => 'file|required',
-            'image4' => 'file|required',
-            'image5' => 'file|required',
+            'image4' => 'file',
+            'image5' => 'file',
             'industry_id' => 'exists:industries,id',
 
         ]);
@@ -58,27 +58,27 @@ class ProductController extends Controller
 
         if ($request->hasFile('image1')) {
             $path = $request->file('image1')->store('public/images/products');
-            $input['image1'] = $path;
+            $input['image1'] = substr($path, 22);
         }
 
         if ($request->hasFile('image2')) {
             $path = $request->file('image2')->store('public/images/products');
-            $input['image2'] = $path;
+            $input['image2'] = substr($path, 22);
         }
 
         if ($request->hasFile('image3')) {
             $path = $request->file('image3')->store('public/images/products');
-            $input['image3'] = $path;
+            $input['image3'] = substr($path, 22);
         }
 
         if ($request->hasFile('image4')) {
             $path = $request->file('image4')->store('public/images/products');
-            $input['image4'] = $path;
+            $input['image4'] = substr($path, 22);
         }
 
         if ($request->hasFile('image5')) {
             $path = $request->file('image5')->store('public/images/products');
-            $input['image5'] = $path;
+            $input['image5'] = substr($path, 22);
         }
 
         $input['admin_id'] = 1;
@@ -140,27 +140,27 @@ class ProductController extends Controller
 
         if ($request->hasFile('image1')) {
             $path = $request->file('image1')->store('public/images/products');
-            $input['image1'] = $path;
+            $input['image1'] = substr($path, 22);
         }
 
         if ($request->hasFile('image2')) {
             $path = $request->file('image2')->store('public/images/products');
-            $input['image2'] = $path;
+            $input['image2'] = substr($path, 22);
         }
 
         if ($request->hasFile('image3')) {
             $path = $request->file('image3')->store('public/images/products');
-            $input['image3'] = $path;
+            $input['image3'] = substr($path, 22);
         }
 
         if ($request->hasFile('image4')) {
             $path = $request->file('image4')->store('public/images/products');
-            $input['image4'] = $path;
+            $input['image4'] = substr($path, 22);
         }
 
         if ($request->hasFile('image5')) {
             $path = $request->file('image5')->store('public/images/products');
-            $input['image5'] = $path;
+            $input['image5'] = substr($path, 22);
         }
 
         $input['slug'] = Str::slug($request->name);

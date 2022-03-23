@@ -31,7 +31,7 @@ Route::get('/blogs/{blog}', [App\Http\Controllers\BlogController::class, 'show']
 
 
 
-Route::get('admin/login', [App\Http\Controllers\Adminpanel\AuthController::class, 'show'])->name('admin.login');
+Route::get('admin/login', [App\Http\Controllers\Adminpanel\AuthController::class, 'show'])->name('admin.login.show');
 Route::post('admin/login', [App\Http\Controllers\Adminpanel\AuthController::class, 'login'])->name('admin.login');
 Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function () {
 
