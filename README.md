@@ -10,6 +10,7 @@ run following commands to add missing files.
 - php artisan config:cache
 - make sure you have Database created and configured in .env file.
 - php artisan migrate or php artisan migrate:fresh
+- php artisan storage:link
 - php artisan db:seed
 - php artisan serve
 
