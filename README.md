@@ -4,10 +4,9 @@ Web based Laravel project
 # Launch
 run following commands to add missing files.
 - composer install
-- create env file from env.example by copy pasting 
-- add your credentials that require in .env file (ask from senior)
+- create env file from env.example by copy pasting
 - php artisan key:generate
-- php artisan config:cache
+- php artisan config:cache (not neccessory)
 - make sure you have Database created and configured in .env file.
 - php artisan migrate or php artisan migrate:fresh
 - php artisan storage:link
