@@ -238,14 +238,14 @@
                                                 <div class="product-content-wrap-2 text-center">
 
                                                     <h3><a
-                                                            href="{{ route('product.show', [$industry[0], $product]) }}">{{ $product->name }}</a>
+                                                            href="{{ route('product.show', [$industries[0], $product]) }}">{{ $product->name }}</a>
                                                     </h3>
 
                                                 </div>
                                                 <div class="product-content-wrap-2 product-content-position text-center">
 
                                                     <h3><a
-                                                            href="{{ route('product.show', [$industry[0], $product]) }}">{{ $product->name }}</a>
+                                                            href="{{ route('product.show', [$industries[0], $product]) }}">{{ $product->name }}</a>
                                                     </h3>
 
                                                     <div class="pro-add-to-cart">
@@ -308,14 +308,14 @@
                                                 <div class="product-content-wrap-2 text-center">
 
                                                     <h3><a
-                                                            href="{{ route('product.show', [$industry[1], $product]) }}">{{ $product->name }}</a>
+                                                            href="{{ route('product.show', [$industries[1], $product]) }}">{{ $product->name }}</a>
                                                     </h3>
 
                                                 </div>
                                                 <div class="product-content-wrap-2 product-content-position text-center">
 
                                                     <h3><a
-                                                            href="{{ route('product.show', [$industry[1], $product]) }}">{{ $product->name }}</a>
+                                                            href="{{ route('product.show', [$industries[1], $product]) }}">{{ $product->name }}</a>
                                                     </h3>
 
                                                     <div class="pro-add-to-cart">
@@ -378,14 +378,14 @@
                                                 <div class="product-content-wrap-2 text-center">
 
                                                     <h3><a
-                                                            href="{{ route('product.show', [$industry[3], $product]) }}">{{ $product->name }}</a>
+                                                            href="{{ route('product.show', [$industries[3], $product]) }}">{{ $product->name }}</a>
                                                     </h3>
 
                                                 </div>
                                                 <div class="product-content-wrap-2 product-content-position text-center">
 
                                                     <h3><a
-                                                            href="{{ route('product.show', [$industry[3], $product]) }}">{{ $product->name }}</a>
+                                                            href="{{ route('product.show', [$industries[3], $product]) }}">{{ $product->name }}</a>
                                                     </h3>
 
                                                     <div class="pro-add-to-cart">
@@ -448,14 +448,14 @@
                                                 <div class="product-content-wrap-2 text-center">
 
                                                     <h3><a
-                                                            href="{{ route('product.show', [$industry[4], $product]) }}">{{ $product->name }}</a>
+                                                            href="{{ route('product.show', [$industries[4], $product]) }}">{{ $product->name }}</a>
                                                     </h3>
 
                                                 </div>
                                                 <div class="product-content-wrap-2 product-content-position text-center">
 
                                                     <h3><a
-                                                            href="{{ route('product.show', [$industry[4], $product]) }}">{{ $product->name }}</a>
+                                                            href="{{ route('product.show', [$industries[4], $product]) }}">{{ $product->name }}</a>
                                                     </h3>
 
                                                     <div class="pro-add-to-cart">
@@ -519,14 +519,14 @@
                                                 <div class="product-content-wrap-2 text-center">
 
                                                     <h3><a
-                                                            href="{{ route('product.show', [$industry[6], $product]) }}">{{ $product->name }}</a>
+                                                            href="{{ route('product.show', [$industries[6], $product]) }}">{{ $product->name }}</a>
                                                     </h3>
 
                                                 </div>
                                                 <div class="product-content-wrap-2 product-content-position text-center">
 
                                                     <h3><a
-                                                            href="{{ route('product.show', [$industry[6], $product]) }}">{{ $product->name }}</a>
+                                                            href="{{ route('product.show', [$industries[6], $product]) }}">{{ $product->name }}</a>
                                                     </h3>
 
                                                     <div class="pro-add-to-cart">
