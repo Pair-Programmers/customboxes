@@ -11,13 +11,20 @@ class Order extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'colors',
-        'dimensions',
+        'height',
+        'width',
+        'depth',
         'unit',
-        'name',
-        'email',
-        'phone',
-        'note',
+        'material',
+        'color',
+        'qty_1',
+        'qty_2',
+        'addons',
+        'box_design_file',
+        'customer_name',
+        'customer_email',
+        'customer_phone',
+        'customer_note',
         'page_url',
         'status',
 

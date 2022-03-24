@@ -65,7 +65,7 @@
                                 <table class="table table-striped table-bordered table-hover dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>No.</th>
+                                            {{-- <th>No.</th> --}}
                                             <th>Code/ID</th>
                                             <th>Date</th>
                                             <th>Product</th>
@@ -80,25 +80,25 @@
                                     <tbody>
                                         @foreach ($orders as $order)
                                             <tr class="gradeX" id="row-{{ $order->id }}">
-                                                <td>{{ $loop->iteration }}</td>
+                                                {{-- <td>{{ $loop->iteration }}</td> --}}
                                                 <td>{{sprintf("%05d", $order->id)}}</td>
                                                 <td>{{ date('d-M-Y', strtotime($order->created_at)) }}</td>
                                                 <td>{{ $order->product->name }}</td>
-                                                <td>{{ $order->customer->name }}</td>
-                                                <td>{{ $order->email }}</td>
-                                                <td>{{ $order->phone }}</td>
-                                                <td>{{ $order->dimensions }}</td>
+                                                <td>{{ $order->customer_name }}</td>
+                                                <td>{{ $order->customer_email }}</td>
+                                                <td>{{ $order->customer_phone }}</td>
+                                                <td>{{ $order->height }} x {{ $order->width }} x {{ $order->depth }} ({{ $order->unit }}) </td>
                                                 <td>
-                                                    @if ($order->status == 'pending')
-                                                        <span class="label label-primary">pending</span>
-                                                    @elseif($order->status == 'inprocess')
-                                                        <span class="label label-danger">inprocess</span>
-                                                    @elseif($order->status == 'canceled')
-                                                        <span class="label label-danger">canceled</span>
-                                                    @elseif($order->status == 'shipped')
-                                                        <span class="label label-danger">shipped</span>
-                                                    @elseif($order->status == 'delivered')
-                                                        <span class="label label-danger">delivered</span>
+                                                    @if ($order->status == 'Pending')
+                                                        <span class="label label-primary">{{$order->status}}</span>
+                                                    @elseif($order->status == 'Inprocess')
+                                                        <span class="label label-danger">{{$order->status}}</span>
+                                                    @elseif($order->status == 'Canceled')
+                                                        <span class="label label-danger">{{$order->status}}</span>
+                                                    @elseif($order->status == 'Shipped')
+                                                        <span class="label label-danger">{{$order->status}}</span>
+                                                    @elseif($order->status == 'Delivered')
+                                                        <span class="label label-danger">{{$order->status}}</span>
                                                     @endif
                                                 </td>
                                                 <td class="text-center">
@@ -117,7 +117,7 @@
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                            <th>No.</th>
+                                            {{-- <th>No.</th> --}}
                                             <th>Code/ID</th>
                                             <th>Date</th>
                                             <th>Product</th>

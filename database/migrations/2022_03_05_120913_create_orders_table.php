@@ -16,21 +16,28 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id()->unsigned();
 
-            $table->string('colors');
-            $table->string('dimensions');
+            $table->integer('height');
+            $table->integer('width');
+            $table->integer('depth');
             $table->string('unit');
-            $table->string('name');
-            $table->string('email');
-            $table->string('phone');
-            $table->longText('note')->nullable();
+            $table->string('material');
+            $table->string('color');
+            $table->integer('qty_1');
+            $table->integer('qty_2')->nullable();
+            $table->json('addons')->nullable();
+            $table->string('box_design_file')->nullable();
+            $table->string('customer_name');
+            $table->string('customer_email');
+            $table->string('customer_phone')->nullable();
+            $table->longText('customer_note')->nullable();
             $table->string('page_url')->nullable();
-            $table->string('status')->default('pending');
+            $table->string('status')->default('Pending');
 
             $table->bigInteger('product_id')->unsigned();
             $table->foreign('product_id')->references('id')->on('products');
             $table->bigInteger('user_id')->unsigned()->nullable();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->bigInteger('admin_id')->unsigned();
+            $table->bigInteger('admin_id')->unsigned()->nullable();
             $table->foreign('admin_id')->references('id')->on('admins');
 
             $table->softDeletes();

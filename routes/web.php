@@ -29,7 +29,9 @@ Route::get('/blogs/{blogcategory?}', [App\Http\Controllers\BlogController::class
 //Route::get('/blogs/{blogcatgeory}', [App\Http\Controllers\BlogController::class, 'index'])->name('blog.index.by-category');
 Route::get('/blogs/{blog}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
 
-
+Route::controller(App\Http\Controllers\OrderController::class)->prefix('order')->name('order.')->group(function () {
+    Route::post('/', 'store')->name('store');
+});
 
 Route::get('admin/login', [App\Http\Controllers\Adminpanel\AuthController::class, 'show'])->name('admin.login.show');
 Route::post('admin/login', [App\Http\Controllers\Adminpanel\AuthController::class, 'login'])->name('admin.login');

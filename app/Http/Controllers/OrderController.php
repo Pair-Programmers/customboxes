@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\OrderPlaced;
 use App\Models\Order;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class OrderController extends Controller
 {
@@ -35,7 +38,38 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //return $request->all();
+        $this->validate($request, [
+            'height' => 'integer|required',
+            'width' => 'integer|required',
+            'depth' => 'integer|required',
+            'unit' => 'string|required',
+            'material' => 'string|required',
+            'color' => 'string|required',
+            'qty_1' => 'integer|required',
+            'qty_2' => 'integer|nullable',
+            'addons' => 'nullable',
+            'box_design_file' => 'file|nullable',
+            'customer_name' => 'string|required',
+            'customer_email' => 'string|required',
+            'customer_phone' => 'string|required',
+            'customer_note' => 'string|required',
+            'product_id' => 'required|exists:products,id',
+        ]);
+
+         $inputs = $request->all();
+        if(Auth::check()){
+            $inputs['user_id'] = Auth::id();
+        }
+        if ($request->hasFile('box_design_file')) {
+            $path = $request->file('box_design_file')->store('files');
+            $inputs['box_design_file'] = $path;
+        }
+        $inputs['page_url'] = url()->previous();
+        $inputs['addons'] = json_encode($request->addons);
+        Order::create($inputs);
+        Mail::to('mianhamza7262@gmail.com')->cc('mianhaaamza7262@gmail.com')->queue(new OrderPlaced());
+        return redirect()->back();
     }
 
     /**

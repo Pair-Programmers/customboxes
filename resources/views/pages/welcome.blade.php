@@ -118,9 +118,9 @@
     <div class="product-categories-area pt-70 pb-70">
         <div class="container">
             <div class="section-title-btn-wrap mb-25">
-                <div class="section-title-8">
+                {{-- <div class="section-title-8">
                     <h2>Quality Terms</h2>
-                </div>
+                </div> --}}
                 {{-- <div class="btn-style-9">
                     <a href="shop.html">All Industories</a>
                 </div> --}}
@@ -196,442 +196,6 @@
         </div>
     </div>
 
-    <!-- <div class="product-area pb-70">
-                    <div class="container">
-                        <div class="section-wrap-1">
-                            <div class="section-title-deal-wrap mb-30">
-                                <div class="section-title-8">
-                                    <h2>Recent orders</h2>
-                                </div>
-                                <div class="timer-wrap-2 timer-wrap-2-hm10">
-                                    <h4><i class="icon-speedometer"></i> Inprocess</h4>
-                                </div>
-                            </div>
-                            <div class="product-slider-active-8 dot-style-2 dot-style-2-position-static dot-style-2-mrg-3 nav-style-5 nav-style-5-modify">
-                                <div class="product-plr-1">
-                                    <div class="single-product-wrap">
-                                        <div class="product-img product-img-zoom mb-20">
-                                            <a href="product-details.html">
-                                                <img src="{{ asset('assets/website') }}/images/icons/product-41.jpg" alt="">
-                                            </a>
-                                            <span class="pro-badge left bg-red">-40%</span>
-                                            <div class="product-action-2">
-                                                <button title="Wishlist"><i class="icon-heart"></i></button>
-                                                <button title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
-                                                <button title="Compare"><i class="icon-refresh"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap-3">
-                                            <h3 class="mrg-none"><a class="orange" href="product-details.html">Advantage Baby Milk</a></h3>
-                                            <div class="product-rating-wrap-2">
-                                                <div class="product-rating-4">
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                </div>
-                                                <span>(4)</span>
-                                            </div>
-
-                                            <div class="product-author">
-                                                <span>Category: <a class="orange" href="#">olabear.com</a></span>
-                                            </div>
-                                            <div class="product-sold">
-                                                <div class="single-product-sold">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-width70 wow fadeInLeft" data-progress="90%" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                        </div>
-                                                    </div>
-                                                    <span>Orders: 30 </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                            <h3 class="mrg-none"><a class="orange" href="product-details.html">Advantage Baby Milk</a></h3>
-                                            <div class="product-rating-wrap-2">
-                                                <div class="product-rating-4">
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                </div>
-                                                <span>(4)</span>
-                                            </div>
-
-                                            <div class="product-author">
-                                                <span>Category: <a class="orange" href="#">olabear.com</a></span>
-                                            </div>
-                                            <div class="product-sold">
-                                                <div class="single-product-sold">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-width70 wow fadeInLeft" data-progress="90%" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                        </div>
-                                                    </div>
-                                                    <span>Orders: 30 </span>
-                                                </div>
-                                            </div>
-                                            <div class="pro-add-to-cart-2">
-                                                <button title="Add to Cart">Get Qoute</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-plr-1">
-                                    <div class="single-product-wrap">
-                                        <div class="product-img product-img-zoom mb-20">
-                                            <a href="product-details.html">
-                                                <img src="{{ asset('assets/website') }}/images/product/product-42.jpg" alt="">
-                                            </a>
-                                            <span class="pro-badge left bg-red">-20%</span>
-                                            <div class="product-action-2">
-                                                <button title="Wishlist"><i class="icon-heart"></i></button>
-                                                <button title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
-                                                <button title="Compare"><i class="icon-refresh"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap-3">
-                                            <h3 class="mrg-none"><a class="orange" href="product-details.html">Herchoe Backpack</a></h3>
-                                            <div class="product-rating-wrap-2">
-                                                <div class="product-rating-4">
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star gray"></i>
-                                                </div>
-                                                <span>(2)</span>
-                                            </div>
-
-                                            <div class="product-author">
-                                                <span>Category: <a class="orange" href="#">olabear.com</a></span>
-                                            </div>
-                                            <div class="product-sold">
-                                                <div class="single-product-sold">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-width50 wow fadeInLeft" data-progress="90%" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                        </div>
-                                                    </div>
-                                                    <span>Orders: 30 </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                            <h3 class="mrg-none"><a class="orange" href="product-details.html">Herchoe Backpack</a></h3>
-                                            <div class="product-rating-wrap-2">
-                                                <div class="product-rating-4">
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star gray"></i>
-                                                </div>
-                                                <span>(2)</span>
-                                            </div>
-
-                                            <div class="product-author">
-                                                <span>Category: <a class="orange" href="#">olabear.com</a></span>
-                                            </div>
-                                            <div class="product-sold">
-                                                <div class="single-product-sold">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-width50 wow fadeInLeft" data-progress="90%" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                        </div>
-                                                    </div>
-                                                    <span>Orders: 30 </span>
-                                                </div>
-                                            </div>
-                                            <div class="pro-add-to-cart-2">
-                                                <button title="Add to Cart">Get Qoute</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-plr-1">
-                                    <div class="single-product-wrap">
-                                        <div class="product-img product-img-zoom mb-20">
-                                            <a href="product-details.html">
-                                                <img src="{{ asset('assets/website') }}/images/product/product-43.jpg" alt="">
-                                            </a>
-                                            <span class="pro-badge left bg-red">-15%</span>
-                                            <div class="product-action-2">
-                                                <button title="Wishlist"><i class="icon-heart"></i></button>
-                                                <button title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
-                                                <button title="Compare"><i class="icon-refresh"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap-3">
-                                            <h3 class="mrg-none"><a class="orange" href="product-details.html">Pampers baby-dry diapers</a></h3>
-                                            <div class="product-rating-wrap-2">
-                                                <div class="product-rating-4">
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star gray"></i>
-                                                    <i class="icon_star gray"></i>
-                                                </div>
-                                                <span>(6)</span>
-                                            </div>
-
-                                            <div class="product-author">
-                                                <span>Category: <a class="orange" href="#">olabear.com</a></span>
-                                            </div>
-                                            <div class="product-sold">
-                                                <div class="single-product-sold">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-width30 wow fadeInLeft" data-progress="90%" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                        </div>
-                                                    </div>
-                                                    <span>Orders: 30 </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                            <h3 class="mrg-none"><a class="orange" href="product-details.html">Pampers baby-dry diapers</a></h3>
-                                            <div class="product-rating-wrap-2">
-                                                <div class="product-rating-4">
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star gray"></i>
-                                                    <i class="icon_star gray"></i>
-                                                </div>
-                                                <span>(6)</span>
-                                            </div>
-
-                                            <div class="product-author">
-                                                <span>Category: <a class="orange" href="#">olabear.com</a></span>
-                                            </div>
-                                            <div class="product-sold">
-                                                <div class="single-product-sold">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-width30 wow fadeInLeft" data-progress="90%" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                        </div>
-                                                    </div>
-                                                    <span>Orders: 30 </span>
-                                                </div>
-                                            </div>
-                                            <div class="pro-add-to-cart-2">
-                                                <button title="Add to Cart">Get Qoute</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-plr-1">
-                                    <div class="single-product-wrap">
-                                        <div class="product-img product-img-zoom mb-20">
-                                            <a href="product-details.html">
-                                                <img src="{{ asset('assets/website') }}/images/product/product-44.jpg" alt="">
-                                            </a>
-                                            <span class="pro-badge left bg-red">-10%</span>
-                                            <div class="product-action-2">
-                                                <button title="Wishlist"><i class="icon-heart"></i></button>
-                                                <button title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
-                                                <button title="Compare"><i class="icon-refresh"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap-3">
-                                            <h3 class="mrg-none"><a class="orange" href="product-details.html">White Plastic Chair</a></h3>
-                                            <div class="product-rating-wrap-2">
-                                                <div class="product-rating-4">
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star gray"></i>
-                                                    <i class="icon_star gray"></i>
-                                                </div>
-                                                <span>(3)</span>
-                                            </div>
-
-                                            <div class="product-author">
-                                                <span>Category: <a class="orange" href="#">olabear.com</a></span>
-                                            </div>
-                                            <div class="product-sold">
-                                                <div class="single-product-sold">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-width90 wow fadeInLeft" data-progress="90%" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                        </div>
-                                                    </div>
-                                                    <span>Orders: 30 </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                            <h3 class="mrg-none"><a class="orange" href="product-details.html">White Plastic Chair</a></h3>
-                                            <div class="product-rating-wrap-2">
-                                                <div class="product-rating-4">
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star gray"></i>
-                                                    <i class="icon_star gray"></i>
-                                                </div>
-                                                <span>(3)</span>
-                                            </div>
-
-                                            <div class="product-author">
-                                                <span>Category: <a class="orange" href="#">olabear.com</a></span>
-                                            </div>
-                                            <div class="product-sold">
-                                                <div class="single-product-sold">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-width90 wow fadeInLeft" data-progress="90%" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                        </div>
-                                                    </div>
-                                                    <span>Orders: 30 </span>
-                                                </div>
-                                            </div>
-                                            <div class="pro-add-to-cart-2">
-                                                <button title="Add to Cart">Get Qoute</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-plr-1">
-                                    <div class="single-product-wrap">
-                                        <div class="product-img product-img-zoom mb-20">
-                                            <a href="product-details.html">
-                                                <img src="{{ asset('assets/website') }}/images/product/product-45.jpg" alt="">
-                                            </a>
-                                            <span class="pro-badge left bg-red">-35%</span>
-                                            <div class="product-action-2">
-                                                <button title="Wishlist"><i class="icon-heart"></i></button>
-                                                <button title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
-                                                <button title="Compare"><i class="icon-refresh"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap-3">
-                                            <h3 class="mrg-none"><a class="orange" href="product-details.html">Ciate London Makeup</a></h3>
-                                            <div class="product-rating-wrap-2">
-                                                <div class="product-rating-4">
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star "></i>
-                                                </div>
-                                                <span>(1)</span>
-                                            </div>
-
-                                            <div class="product-author">
-                                                <span>Category: <a class="orange" href="#">olabear.com</a></span>
-                                            </div>
-                                            <div class="product-sold">
-                                                <div class="single-product-sold">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-width60 wow fadeInLeft" data-progress="90%" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                        </div>
-                                                    </div>
-                                                    <span>Orders: 30 </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                            <h3 class="mrg-none"><a class="orange" href="product-details.html">Ciate London Makeup</a></h3>
-                                            <div class="product-rating-wrap-2">
-                                                <div class="product-rating-4">
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star "></i>
-                                                </div>
-                                                <span>(1)</span>
-                                            </div>
-
-                                            <div class="product-author">
-                                                <span>Category: <a class="orange" href="#">olabear.com</a></span>
-                                            </div>
-                                            <div class="product-sold">
-                                                <div class="single-product-sold">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-width60 wow fadeInLeft" data-progress="90%" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                        </div>
-                                                    </div>
-                                                    <span>Orders: 30 </span>
-                                                </div>
-                                            </div>
-                                            <div class="pro-add-to-cart-2">
-                                                <button title="Add to Cart">Get Qoute</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-plr-1">
-                                    <div class="single-product-wrap">
-                                        <div class="product-img product-img-zoom mb-20">
-                                            <a href="product-details.html">
-                                                <img src="{{ asset('assets/website') }}/images/product/product-42.jpg" alt="">
-                                            </a>
-                                            <span class="pro-badge left bg-red">-20%</span>
-                                            <div class="product-action-2">
-                                                <button title="Wishlist"><i class="icon-heart"></i></button>
-                                                <button title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="icon-size-fullscreen icons"></i></button>
-                                                <button title="Compare"><i class="icon-refresh"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap-3">
-                                            <h3 class="mrg-none"><a class="orange" href="product-details.html">Herchoe Backpack</a></h3>
-                                            <div class="product-rating-wrap-2">
-                                                <div class="product-rating-4">
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star gray"></i>
-                                                </div>
-                                                <span>(2)</span>
-                                            </div>
-
-                                            <div class="product-author">
-                                                <span>Category: <a class="orange" href="#">olabear.com</a></span>
-                                            </div>
-                                            <div class="product-sold">
-                                                <div class="single-product-sold">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-width50 wow fadeInLeft" data-progress="90%" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                        </div>
-                                                    </div>
-                                                    <span>Orders: 30 </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap-3 product-content-position-2 pro-position-2-padding-dec">
-                                            <h3 class="mrg-none"><a class="orange" href="product-details.html">Herchoe Backpack</a></h3>
-                                            <div class="product-rating-wrap-2">
-                                                <div class="product-rating-4">
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star"></i>
-                                                    <i class="icon_star gray"></i>
-                                                </div>
-                                                <span>(2)</span>
-                                            </div>
-
-                                            <div class="product-author">
-                                                <span>Category: <a  class="orange" href="#">olabear.com</a></span>
-                                            </div>
-                                            <div class="product-sold">
-                                                <div class="single-product-sold">
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-width50 wow fadeInLeft" data-progress="90%" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                        </div>
-                                                    </div>
-                                                    <span>Orders: 30 </span>
-                                                </div>
-                                            </div>
-                                            <div class="pro-add-to-cart-2">
-                                                <button title="Add to Cart">Get Qoute</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
 
     <div class="banner-product-wrap pb-70">
         <div class="container">
@@ -645,10 +209,6 @@
                                         alt=""></a>
                             </div>
                             <div class="banner-content-23 text-center">
-                                <!-- <div class="banner-content-23-top">
-                                                <p>cyber<br>monday<br>sale</p>
-                                                <h2><span>50%</span> OFF <br>HasTech TV</h2>
-                                            </div> -->
                                 <div class="banner-btn-3">
                                     <a href="{{ route('industry.show', $industries[0]) }}">View Product Industry</a>
                                 </div>
@@ -677,12 +237,16 @@
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
 
-                                                    <h3><a href="product-details.html">{{ $product->name }}</a></h3>
+                                                    <h3><a
+                                                            href="{{ route('product.show', [$industry[0], $product]) }}">{{ $product->name }}</a>
+                                                    </h3>
 
                                                 </div>
                                                 <div class="product-content-wrap-2 product-content-position text-center">
 
-                                                    <h3><a href="product-details.html">{{ $product->name }}</a></h3>
+                                                    <h3><a
+                                                            href="{{ route('product.show', [$industry[0], $product]) }}">{{ $product->name }}</a>
+                                                    </h3>
 
                                                     <div class="pro-add-to-cart">
                                                         <button title="Get Qoute">Get Qoute</button>
@@ -715,10 +279,6 @@
                                         alt=""></a>
                             </div>
                             <div class="banner-content-23 text-center">
-                                <!-- <div class="banner-content-23-top">
-                                                <p>cyber<br>monday<br>sale</p>
-                                                <h2><span>50%</span> OFF <br>HasTech TV</h2>
-                                            </div> -->
                                 <div class="banner-btn-3">
                                     <a href="{{ route('industry.show', $industries[1]) }}">View Product Industry</a>
                                 </div>
@@ -736,7 +296,7 @@
                             <div class="tab-content jump ">
 
                                 <div class="row">
-                                    @foreach ($industries[0]->products3 as $product)
+                                    @foreach ($industries[1]->products3 as $product)
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
                                             <div class="single-product-wrap mb-35">
                                                 <div class="product-img product-img-zoom mb-15">
@@ -747,12 +307,16 @@
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
 
-                                                    <h3><a href="product-details.html">{{ $product->name }}</a></h3>
+                                                    <h3><a
+                                                            href="{{ route('product.show', [$industry[1], $product]) }}">{{ $product->name }}</a>
+                                                    </h3>
 
                                                 </div>
                                                 <div class="product-content-wrap-2 product-content-position text-center">
 
-                                                    <h3><a href="product-details.html">{{ $product->name }}</a></h3>
+                                                    <h3><a
+                                                            href="{{ route('product.show', [$industry[1], $product]) }}">{{ $product->name }}</a>
+                                                    </h3>
 
                                                     <div class="pro-add-to-cart">
                                                         <button title="Get Qoute">Get Qoute</button>
@@ -785,10 +349,6 @@
                                         alt=""></a>
                             </div>
                             <div class="banner-content-23 text-center">
-                                <!-- <div class="banner-content-23-top">
-                                                <p>cyber<br>monday<br>sale</p>
-                                                <h2><span>50%</span> OFF <br>HasTech TV</h2>
-                                            </div> -->
                                 <div class="banner-btn-3">
                                     <a href="{{ route('industry.show', $industries[3]) }}">View Product Industry</a>
                                 </div>
@@ -806,7 +366,7 @@
                             <div class="tab-content jump ">
 
                                 <div class="row">
-                                    @foreach ($industries[0]->products3 as $product)
+                                    @foreach ($industries[3]->products3 as $product)
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
                                             <div class="single-product-wrap mb-35">
                                                 <div class="product-img product-img-zoom mb-15">
@@ -817,12 +377,16 @@
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
 
-                                                    <h3><a href="product-details.html">{{ $product->name }}</a></h3>
+                                                    <h3><a
+                                                            href="{{ route('product.show', [$industry[3], $product]) }}">{{ $product->name }}</a>
+                                                    </h3>
 
                                                 </div>
                                                 <div class="product-content-wrap-2 product-content-position text-center">
 
-                                                    <h3><a href="product-details.html">{{ $product->name }}</a></h3>
+                                                    <h3><a
+                                                            href="{{ route('product.show', [$industry[3], $product]) }}">{{ $product->name }}</a>
+                                                    </h3>
 
                                                     <div class="pro-add-to-cart">
                                                         <button title="Get Qoute">Get Qoute</button>
@@ -855,10 +419,6 @@
                                         alt=""></a>
                             </div>
                             <div class="banner-content-23 text-center">
-                                <!-- <div class="banner-content-23-top">
-                                                <p>cyber<br>monday<br>sale</p>
-                                                <h2><span>50%</span> OFF <br>HasTech TV</h2>
-                                            </div> -->
                                 <div class="banner-btn-3">
                                     <a href="{{ route('industry.show', $industries[4]) }}">View Product Industry</a>
                                 </div>
@@ -876,7 +436,7 @@
                             <div class="tab-content jump ">
 
                                 <div class="row">
-                                    @foreach ($industries[0]->products3 as $product)
+                                    @foreach ($industries[4]->products3 as $product)
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
                                             <div class="single-product-wrap mb-35">
                                                 <div class="product-img product-img-zoom mb-15">
@@ -887,12 +447,16 @@
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
 
-                                                    <h3><a href="product-details.html">{{ $product->name }}</a></h3>
+                                                    <h3><a
+                                                            href="{{ route('product.show', [$industry[4], $product]) }}">{{ $product->name }}</a>
+                                                    </h3>
 
                                                 </div>
                                                 <div class="product-content-wrap-2 product-content-position text-center">
 
-                                                    <h3><a href="product-details.html">{{ $product->name }}</a></h3>
+                                                    <h3><a
+                                                            href="{{ route('product.show', [$industry[4], $product]) }}">{{ $product->name }}</a>
+                                                    </h3>
 
                                                     <div class="pro-add-to-cart">
                                                         <button title="Get Qoute">Get Qoute</button>
@@ -943,7 +507,7 @@
                             <div class="tab-content jump ">
 
                                 <div class="row">
-                                    @foreach ($industries[0]->products3 as $product)
+                                    @foreach ($industries[6]->products3 as $product)
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
                                             <div class="single-product-wrap mb-35">
                                                 <div class="product-img product-img-zoom mb-15">
@@ -954,12 +518,16 @@
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
 
-                                                    <h3><a href="product-details.html">{{ $product->name }}</a></h3>
+                                                    <h3><a
+                                                            href="{{ route('product.show', [$industry[6], $product]) }}">{{ $product->name }}</a>
+                                                    </h3>
 
                                                 </div>
                                                 <div class="product-content-wrap-2 product-content-position text-center">
 
-                                                    <h3><a href="product-details.html">{{ $product->name }}</a></h3>
+                                                    <h3><a
+                                                            href="{{ route('product.show', [$industry[6], $product]) }}">{{ $product->name }}</a>
+                                                    </h3>
 
                                                     <div class="pro-add-to-cart">
                                                         <button title="Get Qoute">Get Qoute</button>
@@ -982,12 +550,6 @@
     </div>
 
 
-
-
-
-
-
-
     <div class="blog-area pb-70">
         <div class="container">
             <div class="section-title-btn-wrap mb-25">
@@ -995,7 +557,7 @@
                     <h2>latest from our blog</h2>
                 </div>
                 <div class="btn-style-9">
-                    <a href="blog.html">all articles</a>
+                    <a href="{{ route('blog.index') }}">all articles</a>
                 </div>
             </div>
             <div class="section-wrap-2">
