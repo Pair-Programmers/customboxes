@@ -14,7 +14,19 @@ return new class extends Migration
     public function up()
     {
         Schema::create('contact_us', function (Blueprint $table) {
-            $table->id();
+            $table->id()->unsigned();
+            $table->string('name');
+            $table->string('email');
+            $table->string('phone');
+            $table->longText('subject');
+            $table->longText('message');
+            $table->longText('our_comment')->nullable();
+            $table->string('status')->default('Not Reviewed');
+
+            $table->bigInteger('admin_id')->unsigned()->nullable();// query handled by
+            $table->foreign('admin_id')->references('id')->on('admins');
+            
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id()->unsigned();
             $table->string('name');
             $table->string('slug')->unique();
-            $table->string('summary')->nullable();
+            $table->longText('summary')->nullable();
             $table->string('image')->default('banner.png');
             $table->longText('description')->nullable();
 
