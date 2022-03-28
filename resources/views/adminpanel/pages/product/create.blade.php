@@ -82,11 +82,11 @@
 
                                 <div class="form-group">
 
-                                    <label class="col-sm-2 control-label">Style</label>
+                                    <label class="col-sm-2 control-label">Summary</label>
                                     <div class="col-sm-10">
-                                        <input id="" name="style" type="text" required class="form-control"
-                                            value="{{ old('name') }}">
-                                        @error('style')
+                                        <input id="" name="summary" type="text"  class="form-control"
+                                            value="{{ old('summary') }}">
+                                        @error('summary')
                                             <span class="help-block m-b-none">Name is Required</span>
                                         @enderror
                                     </div>

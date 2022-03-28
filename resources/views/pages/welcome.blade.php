@@ -255,7 +255,7 @@
                                             </div>
                                         </div>
                                     @endforeach
-                                    <p style="text-align:center;">{{ $product->summary }}</p>
+                                    <p style="text-align:center;">{{ $industries[0]->summary }}</p>
                                 </div>
 
 
@@ -325,7 +325,7 @@
                                             </div>
                                         </div>
                                     @endforeach
-                                    <p style="text-align:center;">{{ $product->summary }}</p>
+                                    <p style="text-align:center;">{{ $industries[1]->summary }}</p>
                                 </div>
 
 
@@ -395,7 +395,7 @@
                                             </div>
                                         </div>
                                     @endforeach
-                                    <p style="text-align:center;">{{ $product->summary }}</p>
+                                    <p style="text-align:center;">{{ $industries[3]->summary }}</p>
                                 </div>
 
 
@@ -465,7 +465,7 @@
                                             </div>
                                         </div>
                                     @endforeach
-                                    <p style="text-align:center;">{{ $product->summary }}</p>
+                                    <p style="text-align:center;">{{ $industries[4]->summary }}</p>
                                 </div>
 
 
@@ -536,7 +536,7 @@
                                             </div>
                                         </div>
                                     @endforeach
-                                    <p style="text-align:center;">{{ $product->summary }}</p>
+                                    <p style="text-align:center;">{{ $industries[6]->summary }}</p>
                                 </div>
 
 

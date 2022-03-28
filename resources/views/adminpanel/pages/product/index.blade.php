@@ -68,8 +68,7 @@
                                             <th>No.</th>
                                             <th>ID</th>
                                             <th>Name</th>
-                                            <th>Slug</th>
-                                            <th>Style</th>
+                                            <th>Summary</th>
                                             <th>Industry</th>
                                             <th>Date</th>
                                             <th>Status</th>
@@ -82,8 +81,7 @@
                                                 <td>{{ $loop->iteration }}</td>
                                                 <td> {{ $product->id }} </td>
                                                 <td>{{ $product->name }}</td>
-                                                <td>{{ $product->slug }}</td>
-                                                <td>{{ $product->style }}</td>
+                                                <td>{{ $product->summary }}</td>
                                                 <td>{{ $product->industry->name }}</td>
                                                 <td>{{ date('d-M-Y', strtotime($product->created_at)) }}</td>
                                                 <td>
@@ -112,8 +110,7 @@
                                             <th>No.</th>
                                             <th>ID</th>
                                             <th>Name</th>
-                                            <th>Slug</th>
-                                            <th>Style</th>
+                                            <th>Summary</th>
                                             <th>Industry</th>
                                             <th>Date</th>
                                             <th>Status</th>

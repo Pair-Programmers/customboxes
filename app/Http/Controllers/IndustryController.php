@@ -48,7 +48,7 @@ class IndustryController extends Controller
     public function show(Industry $industry)
     {
         $industry = Industry::findOrFail($industry->id);
-        $products = Product::where('industry_id', $industry->id)->get();
+        $products = Product::where('industry_id', $industry->id)->where('is_active', true)->get();
         return view('pages.industry', compact('industry', 'products'));
     }
 

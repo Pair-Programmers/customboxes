@@ -83,11 +83,11 @@
 
                                 <div class="form-group">
 
-                                    <label class="col-sm-2 control-label">Style</label>
+                                    <label class="col-sm-2 control-label">Summary</label>
                                     <div class="col-sm-10">
-                                        <input id="" name="style" type="text" required class="form-control"
-                                            value="{{ $product->style }}">
-                                        @error('style')
+                                        <input id="" name="summary" type="text"  class="form-control"
+                                            value="{{ $product->summary }}">
+                                        @error('summary')
                                             <span class="help-block m-b-none">Name is Required</span>
                                         @enderror
                                     </div>
@@ -148,6 +148,24 @@
                                                 </textarea>
                                     </div>
                                 </div>
+
+                                <div class="hr-line-dashed"></div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Visible</label>
+
+                                    <div class="col-sm-10 @error('is_active') has-error @enderror ">
+                                        <select id="" name="is_active" class="form-control m-b" required>
+                                            <option  disabled value="">Select</option>
+                                            <option @if ($product->is_active == 1) selected @endif value="1">Public</option>
+                                            <option @if ($product->is_active == 0) selected @endif  value="0">Private</option>
+                                        </select>
+                                        @error('is_active')
+                                            <span class="help-block m-b-none">Select Visiblelity</span>
+                                        @enderror
+                                    </div>
+                                </div>
+
                                 <div class="hr-line-dashed"></div>
 
                                 <div class="form-group">

@@ -111,9 +111,9 @@
                     </div>
                     <div class="col-lg-1">
                         <div class="header-action header-action-flex pr-20">
-                            <div class="same-style-2 same-style-2-white same-style-2-font-dec">
+                            {{-- <div class="same-style-2 same-style-2-white same-style-2-font-dec">
                                 <a href="login-register.html"><i class="icon-user"></i></a>
-                            </div>
+                            </div> --}}
                             {{-- <div class="same-style-2 same-style-2-white same-style-2-font-dec">
                                 <a href="wishlist.html"><i class="icon-heart"></i><span
                                         class="pro-count red">03</span></a>

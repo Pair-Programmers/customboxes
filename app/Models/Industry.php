@@ -26,11 +26,11 @@ class Industry extends Model
 
     public function products()
     {
-        return $this->hasMany(Product::class, 'industry_id', 'id');
+        return $this->hasMany(Product::class, 'industry_id', 'id')->where('is_active', true);
     }
 
     public function products3()
     {
-        return $this->hasMany(Product::class, 'industry_id', 'id')->orderBy('id', 'desc')->take(3);
+        return $this->hasMany(Product::class, 'industry_id', 'id')->where('is_active', true)->orderBy('id', 'desc')->take(3);
     }
 }

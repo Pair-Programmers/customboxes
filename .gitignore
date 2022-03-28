@@ -1,10 +1,5 @@
 /node_modules
 /public/hot
-/public/storage/images/users
-/public/storage/images/admins
-/public/storage/images/blogs
-/public/storage/images/products
-/public/storage/images/industries
 /storage/*.key
 /vendor
 .env
