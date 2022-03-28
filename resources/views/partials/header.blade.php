@@ -13,7 +13,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4">
                         <div class="header-offer-wrap-3 text-center">
-                            <p>Willow Pass Rd, Concord, CA 94520, United States.</p>
+                            <p>Free Shipping in all over United States.</p>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-5">
@@ -100,7 +100,7 @@
                             <nav>
                                 <ul>
                                     <li><a href="{{route('welcome')}}">Home</a></li>
-                                    <li><a href="shop-no-sidebar.html">Custom Printed Boxes</a></li>
+                                    <li><a href="{{route('industry.custom-printed-boxes.show')}}">Custom Printed Boxes</a></li>
                                     <li><a href="shop-no-sidebar.html">Boxes Styles</a></li>
                                     <li><a href="{{route('blog.index')}}">Blog</a></li>
                                     <li><a href="portfolio.html">Portfolio</a></li>

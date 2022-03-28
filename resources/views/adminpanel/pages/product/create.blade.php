@@ -94,7 +94,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Industry</label>
+                                    <label class="col-sm-2 control-label">Industry / Page</label>
 
                                     <div class="col-sm-10 @error('industry_id') has-error @enderror ">
                                         <select id="" name="industry_id" class="form-control m-b" required>

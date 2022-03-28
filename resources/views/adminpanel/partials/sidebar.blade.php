@@ -41,8 +41,8 @@
                     <span class="fa arrow"></span>
                 </a>
                 <ul class="nav nav-second-level collapse">
-                    <li><a href="{{ route('admin.product.index') }}">Catalog</a></li>
-                    <li><a href="graph_morris.html">Summary</a></li>
+                    <li><a href="{{ route('admin.product.create') }}">Create</a></li>
+                    <li><a href="{{ route('admin.product.index') }}">List</a></li>
                 </ul>
             </li>
 
@@ -53,8 +53,7 @@
                     <span class="fa arrow"></span>
                 </a>
                 <ul class="nav nav-second-level collapse">
-                    <li><a href="{{ route('admin.order.index') }}">Catalog</a></li>
-                    <li><a href="graph_morris.html">Summary</a></li>
+                    <li><a href="{{ route('admin.order.index') }}">List</a></li>
                 </ul>
             </li>
 
@@ -65,8 +64,7 @@
                     <span class="fa arrow"></span>
                 </a>
                 <ul class="nav nav-second-level collapse">
-                    <li><a href="{{ route('admin.user.index') }}">Catalog</a></li>
-                    <li><a href="graph_morris.html">Summary</a></li>
+                    <li><a href="{{ route('admin.user.index') }}">List</a></li>
                 </ul>
             </li>
 
@@ -77,8 +75,8 @@
                     <span class="fa arrow"></span>
                 </a>
                 <ul class="nav nav-second-level collapse">
-                    <li><a href="{{ route('admin.blog.index') }}">Catalog</a></li>
                     <li><a href="{{ route('admin.blog.create') }}">Create</a></li>
+                    <li><a href="{{ route('admin.blog.index') }}">List</a></li>
                 </ul>
             </li>
 

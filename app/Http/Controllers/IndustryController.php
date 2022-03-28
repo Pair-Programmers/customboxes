@@ -52,6 +52,13 @@ class IndustryController extends Controller
         return view('pages.industry', compact('industry', 'products'));
     }
 
+    public function showCustomPrintedBoxes()
+    {
+        $industry = Industry::findOrFail(9);
+        $products = Product::where('industry_id', $industry->id)->where('is_active', true)->get();
+        return view('pages.custoom-printed-boxes', compact('industry', 'products'));
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

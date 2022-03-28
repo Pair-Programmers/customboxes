@@ -69,7 +69,7 @@
                                             <th>ID</th>
                                             <th>Name</th>
                                             <th>Summary</th>
-                                            <th>Industry</th>
+                                            <th>Industry / Page</th>
                                             <th>Date</th>
                                             <th>Status</th>
                                             <th>Action</th>
@@ -93,7 +93,7 @@
                                                 </td>
                                                 <td class="text-center">
                                                     <div class="btn-group">
-                                                        <a href="{{ route('admin.product.show', $product) }}"
+                                                        <a target="_blank" href="{{ route('product.show', [$product->industry, $product]) }}"
                                                             class="btn-white btn btn-xs">View</a>
                                                         <a href="{{ route('admin.product.edit', $product) }}"
                                                             class="btn-white btn btn-xs">Edit</a>
@@ -111,7 +111,7 @@
                                             <th>ID</th>
                                             <th>Name</th>
                                             <th>Summary</th>
-                                            <th>Industry</th>
+                                            <th>Industry / Page</th>
                                             <th>Date</th>
                                             <th>Status</th>
                                             <th>Action</th>
