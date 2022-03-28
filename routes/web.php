@@ -32,6 +32,7 @@ Route::get('/blogs/{blog}', [App\Http\Controllers\BlogController::class, 'show']
 Route::controller(App\Http\Controllers\OrderController::class)->prefix('order')->name('order.')->group(function () {
     Route::post('/', 'store')->name('store');
 });
+Route::get('/contact-us', [App\Http\Controllers\ContactUsController::class, 'create'])->name('contact-us');
 
 Route::get('admin/login', [App\Http\Controllers\Adminpanel\AuthController::class, 'show'])->name('admin.login.show');
 Route::post('admin/login', [App\Http\Controllers\Adminpanel\AuthController::class, 'login'])->name('admin.login');
