@@ -230,7 +230,7 @@
                                             <div class="single-product-wrap mb-35">
                                                 <div class="product-img product-img-zoom mb-15">
                                                     <a href="{{ route('product.show', [$industry, $product]) }}">
-                                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
+                                                        <img src="{{ orage }}/images/products/{{ $product->image1 }}"
                                                             alt="">
                                                     </a>
                                                 </div>

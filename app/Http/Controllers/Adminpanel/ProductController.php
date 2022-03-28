@@ -57,28 +57,41 @@ class ProductController extends Controller
         $input = $request->input();
 
         if ($request->hasFile('image1')) {
-            $path = $request->file('image1')->store('public/images/products');
-            $input['image1'] = substr($path, 23);
+            $image = $request->file('image1');
+            $name=time().'_'.$image->getClientOriginalName();
+            $image->move(public_path().'/storage/images/products', $name);
+            $input['image1'] = $name;
+
+            // $path = $request->file('image1')->store('public/images/products');
+            // $input['image1'] = substr($path, 23);
         }
 
         if ($request->hasFile('image2')) {
-            $path = $request->file('image2')->store('public/images/products');
-            $input['image2'] = substr($path, 23);
+            $image = $request->file('image2');
+            $name=time().'_'.$image->getClientOriginalName();
+            $image->move(public_path().'/storage/images/products', $name);
+            $input['image2'] = $name;
         }
 
         if ($request->hasFile('image3')) {
-            $path = $request->file('image3')->store('public/images/products');
-            $input['image3'] = substr($path, 23);
+            $image = $request->file('image3');
+            $name=time().'_'.$image->getClientOriginalName();
+            $image->move(public_path().'/storage/images/products', $name);
+            $input['image3'] = $name;
         }
 
         if ($request->hasFile('image4')) {
-            $path = $request->file('image4')->store('public/images/products');
-            $input['image4'] = substr($path, 23);
+            $image = $request->file('image4');
+            $name=time().'_'.$image->getClientOriginalName();
+            $image->move(public_path().'/storage/images/products', $name);
+            $input['image4'] = $name;
         }
 
         if ($request->hasFile('image5')) {
-            $path = $request->file('image5')->store('public/images/products');
-            $input['image5'] = substr($path, 23);
+            $image = $request->file('image5');
+            $name=time().'_'.$image->getClientOriginalName();
+            $image->move(public_path().'/storage/images/products', $name);
+            $input['image5'] = $name;
         }
 
         $input['admin_id'] = 1;
