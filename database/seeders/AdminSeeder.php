@@ -16,7 +16,9 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        Admin::create(['name'=>'Hamza Saqib','email'=>'admin@gmail.com', 'role'=>'Super Admin', 'password'=>Hash::make('admin@123')]);
-        \App\Models\Admin::factory(10)->create();
+        Admin::create(['name'=>'Hamza Saqib','email'=>'mianhamza7262@gmail.com', 'role'=>'Super Admin', 'password'=>Hash::make('hamza7262')]);
+        Admin::create(['name'=>'Asim','email'=>'m.asim998@gmail.com', 'role'=>'Admin', 'password'=>Hash::make('admin@123')]);
+        Admin::create(['name'=>'Asim','email'=>'mindfullcrypto@gmail.com', 'role'=>'Admin', 'password'=>Hash::make('admin@123')]);
+        //\App\Models\Admin::factory(10)->create();
     }
 }
