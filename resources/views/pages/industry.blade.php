@@ -15,10 +15,7 @@
     </div> <br>
 
     <div class="container pt-15" style="text-align: center;">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus qui saepe quo, consequatur pariatur
-            iure sit officia delectus dolore, iste magni quod hic distinctio voluptas deleniti odit culpa corrupti.</p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum non officiis quo, maiores quod molestias
-        architecto nisi optio eaque eligendi explicabo modi tempora consequatur in, animi debitis ad culpa!
+        {{$industry->summary}}
 
     </div>
     <div class="shop-area pt-40 pb-40">
