@@ -54,7 +54,7 @@ class IndustryController extends Controller
 
     public function showCustomPrintedBoxes()
     {
-        $industry = Industry::findOrFail(9);
+        $industry = Industry::findOrFail(10);
         $products = Product::where('industry_id', $industry->id)->where('is_active', true)->get();
         return view('pages.custoom-printed-boxes', compact('industry', 'products'));
     }

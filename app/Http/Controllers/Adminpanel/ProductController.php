@@ -58,27 +58,27 @@ class ProductController extends Controller
 
         if ($request->hasFile('image1')) {
             $path = $request->file('image1')->store('public/images/products');
-            $input['image1'] = substr($path, 22);
+            $input['image1'] = substr($path, 23);
         }
 
         if ($request->hasFile('image2')) {
             $path = $request->file('image2')->store('public/images/products');
-            $input['image2'] = substr($path, 22);
+            $input['image2'] = substr($path, 23);
         }
 
         if ($request->hasFile('image3')) {
             $path = $request->file('image3')->store('public/images/products');
-            $input['image3'] = substr($path, 22);
+            $input['image3'] = substr($path, 23);
         }
 
         if ($request->hasFile('image4')) {
             $path = $request->file('image4')->store('public/images/products');
-            $input['image4'] = substr($path, 22);
+            $input['image4'] = substr($path, 23);
         }
 
         if ($request->hasFile('image5')) {
             $path = $request->file('image5')->store('public/images/products');
-            $input['image5'] = substr($path, 22);
+            $input['image5'] = substr($path, 23);
         }
 
         $input['admin_id'] = 1;
