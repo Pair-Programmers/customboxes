@@ -298,7 +298,7 @@
                     <div class="tab-content dec-review-bottom">
                         <div id="des-details1" class="tab-pane active">
                             <div class="description-wrap">
-                                {{$product->description}}
+                                {!!$product->description!!}
                             </div>
                         </div>
                         <div id="des-details2" class="tab-pane">
