@@ -52,8 +52,8 @@ class OrderController extends Controller
             'box_design_file' => 'file|nullable',
             'customer_name' => 'string|required',
             'customer_email' => 'string|required',
-            'customer_phone' => 'string|required',
-            'customer_note' => 'string|required',
+            'customer_phone' => 'string|nullable',
+            'customer_note' => 'string|nullable',
             'product_id' => 'required|exists:products,id',
         ]);
 
