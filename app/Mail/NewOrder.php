@@ -29,7 +29,7 @@ class NewOrder extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.new_order')->with([
+        return $this->markdown('emails.new_order')->subject('New Order [00'.$this->order->id.']')->with([
             'qoute_form' => $this->order->qoute_form,
             'page_url' => $this->order->page_url,
             'product' => $this->order->product->name,
