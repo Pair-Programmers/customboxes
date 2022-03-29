@@ -39,6 +39,11 @@ class Order extends Model
         return $this->hasOne(Product::class, 'id', 'product_id');
     }
 
+    public function industry()
+    {
+        return $this->hasOne(Industry::class, 'id', 'industry_id');
+    }
+
     public function customer()
     {
         return $this->hasOne(User::class, 'id', 'user_id');

@@ -37,6 +37,7 @@
                                 enctype="multipart/form-data">
                                 {{-- <h3>Qoute Area</h3> --}}
                                 @csrf
+                                <input type="hidden" name="qoute_form" value="Industry Qoute Form">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
                                         <div class="billing-info mb-20">
@@ -137,15 +138,15 @@
                                                 <span>Gloss Lamination</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Matte Lamination" name="addons[]" type="checkbox">
                                                 <span>Matte Lamination</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Window Patching" name="addons[]" type="checkbox">
                                                 <span>Window Patching</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Embossing" name="addons[]" type="checkbox">
                                                 <span>Embossing</span>
                                             </div>
                                         </div>
@@ -154,19 +155,19 @@
                                         <div class="billing-info mb-20">
                                             <label> Addons </label>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Spot UV Coating" name="addons[]" type="checkbox">
                                                 <span>Spot UV Coating</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Full UV Coating" name="addons[]" type="checkbox">
                                                 <span>Full UV Coating</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Silver Foiling" name="addons[]" type="checkbox">
                                                 <span>Silver Foiling</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Gold Foiling" name="addons[]" type="checkbox">
                                                 <span>Gold Foiling</span>
                                             </div>
                                         </div>
