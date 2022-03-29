@@ -26,6 +26,7 @@ class Order extends Model
         'customer_phone',
         'customer_note',
         'page_url',
+        'qoute_form',
         'status',
 
         'product_id',

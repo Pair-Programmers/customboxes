@@ -1,11 +1,8 @@
 @component('mail::message')
-# Introduction
+# Thank You
 
-The body of your message.
+We have recieved your order/qoute, we will contact you soon on your provided email/phone.
 
-@component('mail::button', ['url' => ''])
-Button Text
-@endcomponent
 
 Thanks,<br>
 {{ config('app.name') }}

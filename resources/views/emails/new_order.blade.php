@@ -1,11 +1,26 @@
 @component('mail::message')
-# Introduction
+# New Order/Qoute
 
-The body of your message.
+your have recieved new qoute. <br>
 
-@component('mail::button', ['url' => ''])
+<br> Form : {{$form}}
+<br> Page_url : {{$page_url}}
+<br> Product : {{$product}}
+<br> Industry : {{$industry}}
+<br> Dimensions : {{$dimensions}}
+<br> Unit : {{$unit}}
+<br> Material : {{$material}}
+<br> Color : {{$color}}
+<br> Qty1 : {{$qty1}}
+<br> Qty2 : {{$qty2}}
+<br> Addons : {{$addons}}
+<br> Customer Name : {{$customer_name}}
+<br> Customer Email : {{$customer_email}}
+<br> Customer Phone : {{$customer_phone}}
+<br> Customer Note : {{$customer_note}}
+{{-- @component('mail::button', ['url' => ''])
 Button Text
-@endcomponent
+@endcomponent --}}
 
 Thanks,<br>
 {{ config('app.name') }}
