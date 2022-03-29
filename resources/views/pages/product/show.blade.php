@@ -105,7 +105,7 @@
                     <div class="product-details-content pro-details-content-mrg">
                         <h2>{{ $product->name }}</h2>
 
-                        <p>{{ $product->description }}</p>
+                        <p>{{ $product->summary }}</p>
                         <br>
                         <div class="row">
                             <div class="col-lg-12">
@@ -298,18 +298,7 @@
                     <div class="tab-content dec-review-bottom">
                         <div id="des-details1" class="tab-pane active">
                             <div class="description-wrap">
-                                <p>Crafted in premium watch quality, fenix Chronos is the first Garmin timepiece
-                                    to combine a durable metal case with integrated performance GPS to support
-                                    navigation and sport. In the tradition of classic tool watches it features a
-                                    tough design and a set of modern meaningful tools.</p>
-                                <p> advanced performance metrics for endurance sports, Garmin quality navigation
-                                    features and smart notifications. In fenix Chronos top-tier performance
-                                    meets sophisticated design in a highly evolved timepiece that fits your
-                                    style anywhere, anytime. Solid brushed 316L stainless steel case with
-                                    brushed stainless steel bezel and integrated EXOTM antenna for GPS + GLONASS
-                                    support. High-strength scratch resistant sapphire crystal. Brown vintage
-                                    leather strap with hand-sewn contrast stitching and nubuck inner lining and
-                                    quick release mechanism.</p>
+                                {{$product->description}}
                             </div>
                         </div>
                         <div id="des-details2" class="tab-pane">

@@ -21,7 +21,7 @@ class ProductFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'style' => Str::random(10),
+            'summary' => $this->faker->paragraph(),
             'description' => $this->faker->name(),
             'slug' => $this->faker->slug(),
             'meta_tags' => $this->faker->name(),
