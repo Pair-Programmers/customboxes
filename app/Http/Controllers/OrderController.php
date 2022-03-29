@@ -70,7 +70,7 @@ class OrderController extends Controller
         $inputs['addons'] = json_encode($request->addons);
         $order = Order::create($inputs);
         Mail::to('mianhamza7262@gmail.com')->queue(new OrderPlaced());
-        Mail::to('mianhamza7262@gmail.com')->cc('info@customboxesus.com')->queue(new NewOrder($order));
+        Mail::subject('New Order [00'.$order->id.']')->to('mianhamza7262@gmail.com')->cc('info@customboxesus.com')->queue(new NewOrder($order));
         return redirect()->back();
     }
 

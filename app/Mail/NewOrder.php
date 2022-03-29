@@ -33,7 +33,7 @@ class NewOrder extends Mailable
             'qoute_form' => $this->order->qoute_form,
             'page_url' => $this->order->page_url,
             'product' => $this->order->product->name,
-            'industry' => $this->order->industry,
+            'industry' => $this->order->product->industry->name,
             'dimensions' => $this->order->height . ' x ' . $this->order->width . ' x ' . $this->order->depth,
             'unit' => $this->order->unit,
             'material' => $this->order->material,
