@@ -68,9 +68,9 @@ class OrderController extends Controller
         }
         $inputs['page_url'] = url()->previous();
         $inputs['addons'] = json_encode($request->addons);
-        Order::create($inputs);
+        $order = Order::create($inputs);
         Mail::to('mianhamza7262@gmail.com')->queue(new OrderPlaced());
-        Mail::to('mianhamza7262@gmail.com')->cc('info@customboxesus.com')->queue(new NewOrder($inputs));
+        Mail::to('mianhamza7262@gmail.com')->cc('info@customboxesus.com')->queue(new NewOrder($order));
         return redirect()->back();
     }
 
