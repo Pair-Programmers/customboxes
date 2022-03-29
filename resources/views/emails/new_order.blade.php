@@ -3,7 +3,7 @@
 
 your have recieved new qoute. <br>
 
-<br> Form : {{$form}}
+<br> Qoute Form : {{$qoute_form}}
 <br> Page_url : {{$page_url}}
 <br> Product : {{$product}}
 <br> Industry : {{$industry}}
