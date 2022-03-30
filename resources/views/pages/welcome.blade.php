@@ -241,8 +241,7 @@
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
 
-                                                    <h3><a
-                                                            href="{{ route('product.show', [$industries[0], $product]) }}">{{ $product->name }}</a>
+                                                    <h3><a href="{{ route('product.show', [$industries[0], $product]) }}">{{ $product->name }}</a>
                                                     </h3>
 
                                                 </div>

@@ -14,8 +14,10 @@ class Industry extends Model
         'name',
         'slug',
         'summary',
+        'summary2',
         'image',
         'description',
+        'is_industry',
         'admin_id',
     ];
 
