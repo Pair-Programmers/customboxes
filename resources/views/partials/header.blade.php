@@ -48,9 +48,10 @@
                         <div class="categori-search-wrap categori-search-wrap-modify-3">
 
                             <div class="search-wrap-3">
-                                <form action="#">
-                                    <input placeholder="Search Products..." type="text">
-                                    <button class="blue"><i class="lnr lnr-magnifier"></i></button>
+                                <form action="{{route('product.search')}}" method="POST">
+                                    @csrf
+                                    <input name="keyword" value="{{old('keyword')}}" required placeholder="Search Products..." type="text">
+                                    <button type="submit" class="blue"><i class="lnr lnr-magnifier"></i></button>
                                 </form>
                             </div>
                         </div>

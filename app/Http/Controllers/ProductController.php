@@ -89,4 +89,11 @@ class ProductController extends Controller
     {
         //
     }
+
+    public function search(Request $request)
+    {
+        session()->flashInput($request->input());
+        $products = Product::where('name', 'like', '%'. $request->keyword . '%')->get();
+        return view('pages.product.search-results', compact('products'));
+    }
 }

@@ -25,7 +25,11 @@ Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name(
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/industry/{industry}', [App\Http\Controllers\IndustryController::class, 'show'])->name('industry.show');
 Route::get('/custom-printed-boxes', [App\Http\Controllers\IndustryController::class, 'showCustomPrintedBoxes'])->name('industry.custom-printed-boxes.show');
+
+//product
 Route::get('/industry/{industry:slug}/{product:slug}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
+Route::post('/products-results', [App\Http\Controllers\ProductController::class, 'search'])->name('product.search');
+
 Route::get('/blogs/{blogcategory?}', [App\Http\Controllers\BlogController::class, 'index'])->name('blog.index');
 //Route::get('/blogs/{blogcatgeory}', [App\Http\Controllers\BlogController::class, 'index'])->name('blog.index.by-category');
 Route::get('/blogs/{blog}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');

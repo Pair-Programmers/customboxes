@@ -193,6 +193,10 @@
                     </div>
                 </div>
             </div>
+
+            <div class="ml-50 mr-50" style="align-content: center">
+                <p>Customboxesus provides your custom packaging boxes with a logo, the way you desire. We believe in quality and deliver what we promise to our customers. Feel free to contact us any time of the day and get your work done within the minimum time frame. Contact us!</p>
+            </div>
         </div>
     </div>
 
@@ -515,7 +519,7 @@
                                                 </div>
                                                 <div class="product-content-wrap-2 product-content-position text-center">
 
-                                                    
+
 
                                                     <div class="pro-add-to-cart">
                                                         <button title="Get Qoute">Get Qoute</button>

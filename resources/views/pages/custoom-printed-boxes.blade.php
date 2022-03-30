@@ -230,7 +230,7 @@
                                             <div class="single-product-wrap mb-35">
                                                 <div class="product-img product-img-zoom mb-15">
                                                     <a href="{{ route('product.show', [$industry, $product]) }}">
-                                                        <img src="{{ orage }}/images/products/{{ $product->image1 }}"
+                                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
                                                             alt="">
                                                     </a>
                                                 </div>
@@ -241,7 +241,7 @@
                                                 </div>
                                                 <div class="product-content-wrap-2 product-content-position text-center">
 
-                                                    
+
                                                     <div class="pro-add-to-cart">
                                                         <button title="Get Qoute">Get Qoute</button>
                                                     </div>
