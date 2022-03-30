@@ -15,7 +15,7 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        $industries = Industry::all();
+        $industries = Industry::get();
         $blogs = Blog::all()->take(3);
         return view('pages.welcome', compact('industries', 'blogs'));
     }

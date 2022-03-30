@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-    
+
 
     <div class="container pt-15" style="text-align: center;">
 
@@ -35,7 +35,7 @@
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
 
-                                                    <h3><a href="product-details.html">{{ $product->name }}</a></h3>
+                                                    <h3>{{ $product->name }}</h3>
 
                                                 </div>
                                                 <div class="product-content-wrap-2 product-content-position text-center">

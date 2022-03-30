@@ -80,6 +80,16 @@
         <div class="header-bottom bg-blue">
             <div class="container">
                 <div class="row align-items-center">
+                    <div class="col-lg-1">
+                        <div
+                            class="main-menu main-menu-white main-menu-padding-1 main-menu-font-size-14 main-menu-lh-5">
+                            <nav>
+                                <ul>
+                                    <li><a href="{{route('welcome')}}">Home</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                     <div class="col-lg-3">
                         <div class="main-categori-wrap main-categori-wrap-modify-2">
                             <a class="categori-show categori-blue" href="#">Boxes By Industry <i
@@ -95,12 +105,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-7">
                         <div
                             class="main-menu main-menu-white main-menu-padding-1 main-menu-font-size-14 main-menu-lh-5">
                             <nav>
                                 <ul>
-                                    <li><a href="{{route('welcome')}}">Home</a></li>
                                     <li><a href="{{route('industry.custom-printed-boxes.show')}}">Custom Printed Boxes</a></li>
                                     <li><a href="shop-no-sidebar.html">Boxes Styles</a></li>
                                     <li><a href="{{route('blog.index')}}">Blog</a></li>
