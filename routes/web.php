@@ -30,6 +30,9 @@ Route::get('/custom-printed-boxes', [App\Http\Controllers\IndustryController::cl
 Route::get('/industry/{industry:slug}/{product:slug}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
 Route::post('/products-results', [App\Http\Controllers\ProductController::class, 'search'])->name('product.search');
 
+//newsletter
+Route::post('/news-subscriber/store', [App\Http\Controllers\NewsSubscriberController::class, 'store'])->name('news-subsciber.store');
+
 Route::get('/blogs/{blogcategory?}', [App\Http\Controllers\BlogController::class, 'index'])->name('blog.index');
 //Route::get('/blogs/{blogcatgeory}', [App\Http\Controllers\BlogController::class, 'index'])->name('blog.index.by-category');
 Route::get('/blogs/{blog}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
@@ -39,6 +42,7 @@ Route::controller(App\Http\Controllers\OrderController::class)->prefix('order')-
 });
 Route::get('/contact-us', [App\Http\Controllers\ContactUsController::class, 'create'])->name('contact-us');
 
+//adminpanel
 Route::get('admin/login', [App\Http\Controllers\Adminpanel\AuthController::class, 'show'])->name('admin.login.show');
 Route::post('admin/login', [App\Http\Controllers\Adminpanel\AuthController::class, 'login'])->name('admin.login');
 Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function () {
