@@ -1,7 +1,7 @@
 @component('mail::message')
-# Thank Yoy
+# Thank You
 
-You have been subscibed to our monthly news channel, feel free to contact us for unsubscibe our chanel.
+You have been subscibed to our monthly news channel, feel free to contact us for unsubscibe.
 
 <br>
 Thanks,<br>

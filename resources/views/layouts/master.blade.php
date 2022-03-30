@@ -24,8 +24,7 @@
                     dataType : "json",
                     contentType: "application/x-www-form-urlencoded; charset=UTF-8",
                     beforeSend: function() {
-                        console.log('ajax start');
-
+                        $('#news-subscriber-message').html(`<span style="color: green">Processing ..</span>`);
                     },
                     success: function(responseData, textStatus, jqXHR) {
                         if(responseData.error){
