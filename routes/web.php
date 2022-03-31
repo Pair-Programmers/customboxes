@@ -30,7 +30,10 @@ Route::get('/boxes-styles', [App\Http\Controllers\IndustryController::class, 'sh
 //product
 Route::get('/industry/{industry:slug}/{product:slug}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
 Route::post('/products-results', [App\Http\Controllers\ProductController::class, 'search'])->name('product.search');
-Route::get('/index', [App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
+Route::get('/custom-qoute', [App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
+Route::get('/rush-order', [App\Http\Controllers\ProductController::class, 'showRushOrderPage'])->name('product.rush-order');
+
+//order
 
 //newsletter
 Route::post('/news-subscriber/store', [App\Http\Controllers\NewsSubscriberController::class, 'store'])->name('news-subsciber.store');

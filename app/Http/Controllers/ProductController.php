@@ -98,4 +98,10 @@ class ProductController extends Controller
         $products = Product::where('name', 'like', '%'. $request->keyword . '%')->get();
         return view('pages.product.search-results', compact('products'));
     }
+
+    public function showRushOrderPage()
+    {
+        $products = Product::where('industry_id', '!=', 11)->where('is_active', true)->get();
+        return view('pages.rush-order', compact('products'));
+    }
 }
