@@ -140,66 +140,81 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-3">
+                                    <div class="col-lg-12">
+                                        <label for=""> <strong> Aditional Addons</strong></label>
+
+                                    </div>
+
+                                    <div class="col-lg-2">
                                         <div class="billing-info mb-20">
-                                            <label>Addons </label>
                                             <div class="checkout-account ">
                                                 <input class="checkout-toggle2" value="Gloss Lamination" name="addons[]" type="checkbox">
                                                 <span>Gloss Lamination</span>
                                             </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
-                                                <span>Matte Lamination</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
-                                                <span>Window Patching</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
-                                                <span>Embossing</span>
-                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-lg-2">
+                                        <div class="checkout-account ">
+                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <span>Matte Lamination</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="checkout-account ">
+                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <span>Window Patching</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="checkout-account ">
+                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <span>Embossing</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
                                         <div class="billing-info mb-20">
-                                            <label> Addons </label>
                                             <div class="checkout-account ">
                                                 <input class="checkout-toggle2" name="addons[]" type="checkbox">
                                                 <span>Spot UV Coating</span>
                                             </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
-                                                <span>Full UV Coating</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
-                                                <span>Silver Foiling</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
-                                                <span>Gold Foiling</span>
-                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="checkout-account ">
+                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <span>Full UV Coating</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="checkout-account  mb-20">
+                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <span>Silver Foiling</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="checkout-account  mb-20">
+                                            <input class="checkout-toggle2 " name="addons[]" type="checkbox">
+                                            <span>Gold Foiling</span>
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 ">
                                     </div>
 
-
+<br>
                                     <div class="col-lg-6 col-md-6">
-                                        <div class="billing-info mb-20">
+                                        <div class="billing-info mb-20 ">
                                             <input type="text" name="customer_name" required placeholder="Your Name *">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-3 col-md-3">
-                                        <div class="billing-info mb-20">
+                                        <div class="billing-info mb-20 mt-22">
                                             <input type="text" name="customer_email" required placeholder="Email *">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
-                                        <div class="billing-info mb-20">
+                                        <div class="billing-info mb-20 mt-22">
                                             <input type="text" name="customer_phone" placeholder="Phone (Optional)">
                                         </div>
                                     </div>
