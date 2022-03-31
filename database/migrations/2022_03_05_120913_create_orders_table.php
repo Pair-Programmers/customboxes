@@ -31,6 +31,9 @@ return new class extends Migration
             $table->string('customer_phone')->nullable();
             $table->longText('customer_note')->nullable();
             $table->string('page_url')->nullable();
+            $table->string('page_url')->nullable();
+            $table->longText('company_name')->nullable();
+            $table->longText('company_web_link')->nullable();
             $table->string('qoute_form')->nullable();
             $table->string('status')->default('Pending');
 
