@@ -140,7 +140,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-3">
                                         <div class="billing-info mb-20">
                                             <label>Addons </label>
                                             <div class="checkout-account ">
@@ -161,7 +161,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-3">
                                         <div class="billing-info mb-20">
                                             <label> Addons </label>
                                             <div class="checkout-account ">
@@ -183,22 +183,22 @@
                                         </div>
                                     </div>
 
+                                    <div class="col-lg-6">
+                                    </div>
 
 
-
-
-                                    <div class="col-lg-12 col-md-12">
+                                    <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
                                             <input type="text" name="customer_name" required placeholder="Your Name *">
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-6 col-md-6">
+                                    <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20">
                                             <input type="text" name="customer_email" required placeholder="Email *">
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6">
+                                    <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20">
                                             <input type="text" name="customer_phone" placeholder="Phone (Optional)">
                                         </div>
@@ -218,11 +218,12 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
                                             <input type="file" name="box_design_file">
+                                            <label for="box_design_file">File Size less than 3MB / formats (pdf, jpg, png, jpeg)</label>
+
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6 col-md-6">
-                                        <label for="box_design_file">*File Size less than 3MB / formats (pdf, jpg, png, jpeg)</label>
                                     </div>
 
                                 </div>
