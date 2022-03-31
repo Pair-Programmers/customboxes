@@ -25,10 +25,12 @@ Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name(
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/industry/{industry}', [App\Http\Controllers\IndustryController::class, 'show'])->name('industry.show');
 Route::get('/custom-printed-boxes', [App\Http\Controllers\IndustryController::class, 'showCustomPrintedBoxes'])->name('industry.custom-printed-boxes.show');
+Route::get('/boxes-styles', [App\Http\Controllers\IndustryController::class, 'showBoxesStyles'])->name('industry.boxes-styles');
 
 //product
 Route::get('/industry/{industry:slug}/{product:slug}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
 Route::post('/products-results', [App\Http\Controllers\ProductController::class, 'search'])->name('product.search');
+Route::get('/index', [App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
 
 //newsletter
 Route::post('/news-subscriber/store', [App\Http\Controllers\NewsSubscriberController::class, 'store'])->name('news-subsciber.store');

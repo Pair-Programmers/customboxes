@@ -15,7 +15,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $industry = Industry::findOrFail(10);
+        $products = Product::where('industry_id', '!=', 11)->where('is_active', true)->get();
+        return view('pages.product.index', compact('industry', 'products'));
     }
 
     /**

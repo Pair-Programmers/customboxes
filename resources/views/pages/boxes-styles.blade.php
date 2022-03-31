@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-    {{-- <div class="breadcrumb-area bg-gray"
+    <div class="breadcrumb-area bg-gray"
         style="height:200px; background-image:url('{{ asset('assets/website') }}/images/industry/Capture.PNG');">
 
     </div> <br>
@@ -20,7 +20,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum non officiis quo, maiores quod molestias
         architecto nisi optio eaque eligendi explicabo modi tempora consequatur in, animi debitis ad culpa!
 
-    </div> --}}
+    </div>
     <div class="shop-area pt-40 pb-40">
         <div class="container">
             <div class="row flex-row-reverse">

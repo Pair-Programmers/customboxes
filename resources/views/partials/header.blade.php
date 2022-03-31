@@ -70,7 +70,7 @@
 
                     <div class="col-xl-2 col-lg-2">
                         <div class="btn-style-1">
-                            <a class="animated btn-1-padding-4  btn-1-font-14" href="product-details.html">Custom
+                            <a class="animated btn-1-padding-4  btn-1-font-14" href="{{route('product.index')}}">Custom
                                 Quote</a>
                         </div>
                     </div>
@@ -111,10 +111,10 @@
                             <nav>
                                 <ul>
                                     <li><a href="{{route('industry.custom-printed-boxes.show')}}">Custom Printed Boxes</a></li>
-                                    <li><a href="shop-no-sidebar.html">Boxes Styles</a></li>
+                                    <li><a href="{{route('industry.boxes-styles')}}">Boxes Styles</a></li>
                                     <li><a href="{{route('blog.index')}}">Blog</a></li>
                                     <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="portfolio.html">Rush Order</a></li>
+                                    <li><a href="{{route('product.index')}}">Rush Order</a></li>
                                 </ul>
                             </nav>
                         </div>
