@@ -97,7 +97,7 @@
                             <div class="category-menu-2 category-menu-2-blue categori-hide categori-not-visible-2">
                                 <nav>
                                     <ul>
-                                        @foreach (App\Models\Industry::get()->take(9) as $industry)
+                                        @foreach (App\Models\Industry::where('is_industry', true)->get() as $industry)
                                             <li><a href="{{route('industry.show', $industry)}}">{{$industry->name}}</a></li>
                                         @endforeach
                                     </ul>
