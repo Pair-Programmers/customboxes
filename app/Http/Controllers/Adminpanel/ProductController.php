@@ -137,9 +137,9 @@ class ProductController extends Controller
             'name' => 'string|required',
             'style' => 'string',
             'description' => 'string',
-            'image1' => 'file|required',
-            'image2' => 'file|required',
-            'image3' => 'file|required',
+            'image1' => 'file',
+            'image2' => 'file',
+            'image3' => 'file',
             'image4' => 'file',
             'image5' => 'file',
             'industry_id' => 'exists:industries,id',
@@ -154,12 +154,18 @@ class ProductController extends Controller
             $image->move(public_path().'/storage/images/products', $name);
             $input['image1'] = $name;
         }
+        else{
+            unset($input['image1']);
+        }
 
         if ($request->hasFile('image2')) {
             $image = $request->file('image2');
             $name=time().'_'.$image->getClientOriginalName();
             $image->move(public_path().'/storage/images/products', $name);
             $input['image2'] = $name;
+        }
+        else{
+            unset($input['image2']);
         }
 
         if ($request->hasFile('image3')) {
@@ -168,6 +174,9 @@ class ProductController extends Controller
             $image->move(public_path().'/storage/images/products', $name);
             $input['image3'] = $name;
         }
+        else{
+            unset($input['image3']);
+        }
 
         if ($request->hasFile('image4')) {
             $image = $request->file('image4');
@@ -175,12 +184,18 @@ class ProductController extends Controller
             $image->move(public_path().'/storage/images/products', $name);
             $input['image4'] = $name;
         }
+        else{
+            unset($input['image4']);
+        }
 
         if ($request->hasFile('image5')) {
             $image = $request->file('image5');
             $name=time().'_'.$image->getClientOriginalName();
             $image->move(public_path().'/storage/images/products', $name);
             $input['image5'] = $name;
+        }
+        else{
+            unset($input['image5']);
         }
 
         $input['slug'] = Str::slug($request->name);
