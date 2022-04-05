@@ -584,9 +584,9 @@
             <div class="section-wrap-4">
                 <div class="bg-img"
                     style="background-image:url({{ asset('assets/website') }}/images/app-banner.jpg);">
-                    <div class="download-app-content">
-                        <h2>Download Norda <br>App Now!</h2>
-                        <p>Shopping faster with our app.</p>
+                    <div class="download-app-content" style="color: white">
+                        <h1 style="color: white">We Believe in <br>Quality packaging</h1>
+                        <p style="color: white">Order Now !</p>
                         {{-- <div class="app-img">
                             <a href="#"><img src="{{ asset('assets/website') }}/images/icon-img/app-1.png" alt=""></a>
                             <a href="#"><img src="{{ asset('assets/website') }}/images/icon-img/app-2.png" alt=""></a>
