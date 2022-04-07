@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row flex-row-reverse">
                 <div class="mb-30" style="text-align: center;">
-                    <h2 class="mb-10"><strong> Rush orders </strong> Possible Now with</h2>
+                    <h2 class="mb-10"><strong> Custom Qoute </strong> Possible Now with</h2>
                     <h3 style="color: rgb(25, 25, 233)"><strong>Custom BOXES US</strong></h3>
                     <p>We truly understand that everything is not standard so our expedite plan of <strong>4</strong> to
                         <strong>6</strong> business days is the solution to your expedite requirements.
