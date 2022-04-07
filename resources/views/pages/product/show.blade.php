@@ -4,7 +4,7 @@
     <title>{{$product->meta_tag_title}} | {{ env('APP_NAME') }}</title>
     <meta name="description" content="{{$product->meta_tag_description}}">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="keywords" content="{{$product->meta_tag_description}}">
+    <meta name="keywords" content="{{$product->meta_tag_keywords}}">
 @endsection
 
 @section('custom-css')
@@ -32,7 +32,7 @@
                             <div class="easyzoom-style">
                                 <div class="easyzoom easyzoom--overlay">
                                     <a href="{{ asset('storage') }}/images/products/{{ $product->image1 }}">
-                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}" alt="">
+                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}" alt="{{ $product->image1 }}">
                                     </a>
                                 </div>
                                 <a class="easyzoom-pop-up img-popup"
@@ -43,7 +43,7 @@
                                 <div class="easyzoom easyzoom--overlay">
                                     <a href="{{ asset('storage') }}/images/products/{{ $product->image2 }}">
                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image2 }}"
-                                            alt="">
+                                            alt="{{ $product->image2 }}">
                                     </a>
                                 </div>
                                 <a class="easyzoom-pop-up img-popup"
@@ -54,7 +54,7 @@
                                 <div class="easyzoom easyzoom--overlay">
                                     <a href="{{ asset('storage') }}/images/products/{{ $product->image3 }}">
                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image3 }}"
-                                            alt="">
+                                            alt="{{ $product->image3 }}">
                                     </a>
                                 </div>
                                 <a class="easyzoom-pop-up img-popup"
@@ -65,7 +65,7 @@
                                 <div class="easyzoom easyzoom--overlay">
                                     <a href="{{ asset('storage') }}/images/products/{{ $product->image4 }}">
                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image4 }}"
-                                            alt="">
+                                            alt="{{ $product->image4 }}">
                                     </a>
                                 </div>
                                 <a class="easyzoom-pop-up img-popup"
@@ -76,7 +76,7 @@
                                 <div class="easyzoom easyzoom--overlay">
                                     <a href="{{ asset('storage') }}/images/products/{{ $product->image5 }}">
                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image5 }}"
-                                            alt="">
+                                            alt="{{ $product->image5 }}">
                                     </a>
                                 </div>
                                 <a class="easyzoom-pop-up img-popup"
@@ -86,19 +86,19 @@
                         </div>
                         <div class="product-dec-slider-small product-dec-small-style1">
                             <div class="product-dec-small active">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}" alt="">
+                                <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}" alt="{{ $product->image1 }}">
                             </div>
                             <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image2 }}" alt="">
+                                <img src="{{ asset('storage') }}/images/products/{{ $product->image2 }}" alt="{{ $product->image2 }}">
                             </div>
                             <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image3 }}" alt="">
+                                <img src="{{ asset('storage') }}/images/products/{{ $product->image3 }}" alt="{{ $product->image3 }}">
                             </div>
                             <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image4 }}" alt="">
+                                <img src="{{ asset('storage') }}/images/products/{{ $product->image4 }}" alt="{{ $product->image4 }}">
                             </div>
                             <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image5 }}" alt="">
+                                <img src="{{ asset('storage') }}/images/products/{{ $product->image5 }}" alt="{{ $product->image5 }}">
                             </div>
                         </div>
                     </div>

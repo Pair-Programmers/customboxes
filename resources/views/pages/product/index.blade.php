@@ -231,7 +231,7 @@
                                                 <div class="product-img product-img-zoom mb-15">
                                                     <a href="{{ route('product.show', [$industry, $product]) }}">
                                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
-                                                            alt="">
+                                                            alt="{{ $product->image1 }}">
                                                     </a>
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
