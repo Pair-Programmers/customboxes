@@ -24,7 +24,16 @@
     <div class="shop-area pt-40 pb-40">
         <div class="container">
             <div class="row flex-row-reverse">
-                <div class="col-lg-4">
+                <div class="mb-30" style="text-align: center;">
+                    <h2 class="mb-10"><strong> Rush orders </strong> Possible Now with</h2>
+                    <h3 style="color: rgb(25, 25, 233)"><strong>Custom BOXES US</strong></h3>
+                    <p>We truly understand that everything is not standard so our expedite plan of <strong>4</strong> to
+                        <strong>6</strong> business days is the solution to your expedite requirements.
+                    </p>
+                    <p><strong>Fill below form and get instant response from one of our packaging expert.</strong>
+                    </p>
+                </div>
+                <div class="col-lg-12">
                     <div class="col-lg-12">
                         @if ($errors->any())
                             <div class="alert alert-danger">
@@ -45,9 +54,9 @@
                                         <div class="billing-info mb-20">
                                             <div class="billing-select mb-20">
                                                 <select name="product_id" required>
-                                                    <option selected disabled value="">Products</option>
+                                                    <option selected disabled value="">Products *</option>
                                                     @foreach ($products as $product)
-                                                        <option value="{{$product->id}}">{{$product->name}}</option>
+                                                        <option value="{{ $product->id }}">{{ $product->name }}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
@@ -55,24 +64,24 @@
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info">
-                                            <input type="number" required name="height" placeholder="Height">
+                                            <input type="number" required name="height" placeholder="Height *">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20">
-                                            <input type="number" required name="width" placeholder="Width">
+                                            <input type="number" required name="width" placeholder="Width *">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20">
-                                            <input type="number" required name="depth" placeholder="Depth">
+                                            <input type="number" required name="depth" placeholder="Depth *">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20">
                                             <div class="billing-select mb-20">
                                                 <select name="unit" required>
-                                                    <option selected disabled value="">Unit</option>
+                                                    <option selected disabled value="">Unit *</option>
                                                     <option value="Inches">Inches</option>
                                                     <option value="MM">MM</option>
                                                     <option value="CM">CM</option>
@@ -123,83 +132,118 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
-                                            <input type="number" name="qty_1" required placeholder="1st Qty">
+                                            <input type="number" name="qty_1" required placeholder="1st Qty *">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
-                                            <input type="number" name="qty_2" placeholder="2nd Qty">
+                                            <input type="number" name="qty_2" placeholder="2nd Qty (Optional)">
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-12">
+                                        <label for=""> <strong> Aditional Addons</strong></label>
+
+                                    </div>
+
+                                    <div class="col-lg-2">
                                         <div class="billing-info mb-20">
-                                            <label>Addons </label>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Gloss Lamination" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Gloss Lamination" name="addons[]"
+                                                    type="checkbox">
                                                 <span>Gloss Lamination</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
-                                                <span>Matte Lamination</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
-                                                <span>Window Patching</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
-                                                <span>Embossing</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-2">
+                                        <div class="checkout-account ">
+                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <span>Matte Lamination</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="checkout-account ">
+                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <span>Window Patching</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="checkout-account ">
+                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <span>Embossing</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
                                         <div class="billing-info mb-20">
-                                            <label> Addons </label>
                                             <div class="checkout-account ">
                                                 <input class="checkout-toggle2" name="addons[]" type="checkbox">
                                                 <span>Spot UV Coating</span>
                                             </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
-                                                <span>Full UV Coating</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
-                                                <span>Silver Foiling</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
-                                                <span>Gold Foiling</span>
-                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="checkout-account ">
+                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <span>Full UV Coating</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="checkout-account  mb-20">
+                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <span>Silver Foiling</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="checkout-account  mb-20">
+                                            <input class="checkout-toggle2 " name="addons[]" type="checkbox">
+                                            <span>Gold Foiling</span>
                                         </div>
                                     </div>
 
+                                    <div class="col-lg-6 ">
+                                    </div>
 
+                                    <br>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-20 ">
+                                            <input type="text" name="customer_name" required placeholder="Your Name *">
+                                        </div>
+                                    </div>
 
-                                    <div class="col-lg-12 col-md-12">
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="billing-info mb-20 mt-22">
+                                            <input type="text" name="customer_email" required placeholder="Email *">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="billing-info mb-20 mt-22">
+                                            <input type="text" name="customer_phone" placeholder="Phone (Optional)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-20">
+                                            <input type="text" name="company_name" placeholder="Company Name (Optional)">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-20">
+                                            <input type="text" name="company_web_link"
+                                                placeholder="Company Website (Optional)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
                                             <input type="file" name="box_design_file">
-                                        </div>
-                                    </div>
+                                            <label for="box_design_file">File Size less than 3MB / formats (pdf, jpg, png,
+                                                jpeg)</label>
 
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="billing-info mb-20">
-                                            <input type="text" name="customer_name" required placeholder="Your Name">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6 col-md-6">
-                                        <div class="billing-info mb-20">
-                                            <input type="text" name="customer_email" required placeholder="Email">
-                                        </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="billing-info mb-20">
-                                            <input type="text" name="customer_phone" placeholder="Phone">
-                                        </div>
-                                    </div>
-
 
                                 </div>
                                 <div class="col-lg-12 col-md-12">
@@ -219,51 +263,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
 
-                    <div class="shop-bottom-area">
-                        <div class="tab-content jump">
-                            <div id="shop-1" class="tab-pane active">
-                                <div class="row">
-                                    @foreach ($products as $product)
-                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                            <div class="single-product-wrap mb-35">
-                                                <div class="product-img product-img-zoom mb-15">
-                                                    <a href="{{ route('product.show', [$industry, $product]) }}">
-                                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
-                                                            alt="{{ $product->image1 }}">
-                                                    </a>
-                                                </div>
-                                                <div class="product-content-wrap-2 text-center">
-
-                                                    <h3>{{ $product->name }}</h3>
-
-                                                </div>
-                                                <div class="product-content-wrap-2 product-content-position text-center">
-
-
-                                                    <div class="pro-add-to-cart">
-                                                        <button title="Get Qoute">Get Qoute</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    @endforeach
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="pro-pagination-style text-center mt-10">
-                            <ul>
-                                <li><a class="prev" href="#"><i class="icon-arrow-left"></i></a></li>
-                                <li><a class="active" href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a class="next" href="#"><i class="icon-arrow-right"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>

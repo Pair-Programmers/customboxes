@@ -25,11 +25,12 @@
         <div class="container">
             <div class="row flex-row-reverse">
                 <div class="mb-30" style="text-align: center;">
-                <h2 class="mb-10" ><strong> Rush orders </strong> Possible Now with</h2>
-                <h3 style="color: rgb(25, 25, 233)"><strong>Custom BOXES US</strong></h3>
-                <p  >We truly understand that everything is not standard so our expedite plan of <strong>4</strong> to <strong>6</strong> business days is the solution to your expedite requirements.
-                </p>
-                <p ><strong>Fill below form and get instant response from one of our packaging expert.</strong>
+                    <h2 class="mb-10"><strong> Rush orders </strong> Possible Now with</h2>
+                    <h3 style="color: rgb(25, 25, 233)"><strong>Custom BOXES US</strong></h3>
+                    <p>We truly understand that everything is not standard so our expedite plan of <strong>4</strong> to
+                        <strong>6</strong> business days is the solution to your expedite requirements.
+                    </p>
+                    <p><strong>Fill below form and get instant response from one of our packaging expert.</strong>
                     </p>
                 </div>
                 <div class="col-lg-12">
@@ -55,7 +56,7 @@
                                                 <select name="product_id" required>
                                                     <option selected disabled value="">Products *</option>
                                                     @foreach ($products as $product)
-                                                        <option value="{{$product->id}}">{{$product->name}}</option>
+                                                        <option value="{{ $product->id }}">{{ $product->name }}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
@@ -148,7 +149,8 @@
                                     <div class="col-lg-2">
                                         <div class="billing-info mb-20">
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Gloss Lamination" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Gloss Lamination" name="addons[]"
+                                                    type="checkbox">
                                                 <span>Gloss Lamination</span>
                                             </div>
                                         </div>
@@ -201,7 +203,7 @@
                                     <div class="col-lg-6 ">
                                     </div>
 
-<br>
+                                    <br>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20 ">
                                             <input type="text" name="customer_name" required placeholder="Your Name *">
@@ -221,19 +223,21 @@
 
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
-                                            <input type="text" name="company_name"  placeholder="Company Name (Optional)">
+                                            <input type="text" name="company_name" placeholder="Company Name (Optional)">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
-                                            <input type="text" name="company_web_link" placeholder="Company Website (Optional)">
+                                            <input type="text" name="company_web_link"
+                                                placeholder="Company Website (Optional)">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
                                             <input type="file" name="box_design_file">
-                                            <label for="box_design_file">File Size less than 3MB / formats (pdf, jpg, png, jpeg)</label>
+                                            <label for="box_design_file">File Size less than 3MB / formats (pdf, jpg, png,
+                                                jpeg)</label>
 
                                         </div>
                                     </div>
