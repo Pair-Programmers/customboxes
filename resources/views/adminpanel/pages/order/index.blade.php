@@ -40,7 +40,7 @@
                 <div class="col-lg-12">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <h5>Basic Data Tables example with responsive plugin</h5>
+                            <h5>List of custom qoutes recieved.</h5>
                             <div class="ibox-tools">
                                 <a class="collapse-link">
                                     <i class="fa fa-chevron-up"></i>
@@ -69,6 +69,7 @@
                                             <th>Code/ID</th>
                                             <th>Date</th>
                                             <th>Product</th>
+                                            <th>QTY</th>
                                             <th>Customer</th>
                                             <th>Email</th>
                                             <th>Phone</th>
@@ -84,6 +85,7 @@
                                                 <td>{{sprintf("%05d", $order->id)}}</td>
                                                 <td>{{ date('d-M-Y', strtotime($order->created_at)) }}</td>
                                                 <td>{{ $order->product->name }}</td>
+                                                <td>{{ $order->product->qty_1 }}</td>
                                                 <td>{{ $order->customer_name }}</td>
                                                 <td>{{ $order->customer_email }}</td>
                                                 <td>{{ $order->customer_phone }}</td>
@@ -121,6 +123,7 @@
                                             <th>Code/ID</th>
                                             <th>Date</th>
                                             <th>Product</th>
+                                            <th>QTY</th>
                                             <th>Customer</th>
                                             <th>Email</th>
                                             <th>Phone</th>
@@ -150,20 +153,7 @@
         $(document).ready(function() {
             $('.dataTables-example').DataTable({
                 dom: '<"html5buttons"B>lTfgitp',
-                buttons: [{
-                        extend: 'copy'
-                    },
-                    {
-                        extend: 'csv'
-                    },
-                    {
-                        extend: 'excel',
-                        title: 'ExampleFile'
-                    },
-                    {
-                        extend: 'pdf',
-                        title: 'ExampleFile'
-                    },
+                buttons: [
 
                     {
                         extend: 'print',

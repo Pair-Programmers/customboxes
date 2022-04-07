@@ -21,7 +21,7 @@
                 <h2>Product Management</h2>
                 <ol class="breadcrumb">
                     <li>
-                        <a href="index.html">Products</a>
+                        <a href="index.html">Blog</a>
                     </li>
                     <li class="active">
                         <strong>Create</strong>

@@ -21,7 +21,7 @@
                 <h2>Product Management</h2>
                 <ol class="breadcrumb">
                     <li>
-                        <a href="index.html">Products</a>
+                        <a href="index.html">Product</a>
                     </li>
                     <li class="active">
                         <strong>Create</strong>
@@ -160,11 +160,24 @@
                                 </div>
                                 <div class="form-group  ">
 
-                                    <label class="col-sm-2 control-label">Meta Tags</label>
-                                    <div class="col-sm-10 @error('meta_tags') has-error @enderror ">
-                                        <input id="" name="meta_tags" type="text" placeholder="tag1, tag2, tag3 ..."
-                                            class="form-control" value="{{ old('meta_tags') }}">
-                                        @error('meta_tags')
+                                    <label class="col-sm-2 control-label">Meta Title</label>
+                                    <div class="col-sm-10 @error('meta_tag_title') has-error @enderror ">
+                                        <input id="" name="meta_tag_title" type="text" placeholder=""
+                                            class="form-control" value="{{ old('meta_tag_title') }}">
+                                        @error('meta_tag_title')
+                                            <span class="help-block m-b-none">Title is Required</span>
+                                        @enderror
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group  ">
+
+                                    <label class="col-sm-2 control-label">Meta Keywords</label>
+                                    <div class="col-sm-10 @error('meta_tag_keywords') has-error @enderror ">
+                                        <input id="" name="meta_tag_keywords" type="text" placeholder="tag1, tag2, tag3 ..."
+                                            class="form-control" value="{{ old('meta_tag_keywords') }}">
+                                        @error('meta_tag_keywords')
                                             <span class="help-block m-b-none">Name is Required</span>
                                         @enderror
                                     </div>
@@ -174,9 +187,9 @@
                                 <div class="form-group  ">
 
                                     <label class="col-sm-2 control-label">Meta Description</label>
-                                    <div class="col-sm-10 @error('meta_description') has-error @enderror ">
-                                        <textarea name="meta_description" id="" cols="136" rows="10"
-                                            placeholder="Optional"> {{ old('meta_description') }}</textarea>
+                                    <div class="col-sm-10 @error('meta_tag_description') has-error @enderror ">
+                                        <textarea name="meta_tag_description" id="" cols="136" rows="10"
+                                            placeholder="Optional"> {{ old('meta_tag_description') }}</textarea>
                                         {{-- <span class="help-block m-b-none">Optional</span> --}}
                                     </div>
 

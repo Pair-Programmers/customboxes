@@ -21,10 +21,10 @@
                 <h2>Product Management</h2>
                 <ol class="breadcrumb">
                     <li>
-                        <a href="index.html">Products</a>
+                        <a href="index.html">Odrer</a>
                     </li>
                     <li class="active">
-                        <strong>Create</strong>
+                        <strong>Edit</strong>
                     </li>
                 </ol>
             </div>

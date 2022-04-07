@@ -131,7 +131,7 @@
                         <div class="single-product-wrap">
                             <div class="product-img product-img-border-transparent mb-15">
                                 <a href="#">
-                                    <img src="{{ asset('assets/website') }}/images/icons/free-shipping-1.png" alt="">
+                                    <img src="{{ asset('assets/website') }}/images/icons/free-shipping-1.png" alt="free-shipping-1.png">
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
@@ -144,7 +144,7 @@
                             <div class="product-img product-img-border-transparent mb-15">
                                 <a href="#">
                                     <img src="{{ asset('assets/website') }}/images/icons/free-design-support-2.png"
-                                        alt="">
+                                        alt="free-design-support-2.png">
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
@@ -157,7 +157,7 @@
                             <div class="product-img product-img-border-transparent mb-15">
                                 <a href="#">
                                     <img src="{{ asset('assets/website') }}/images/icons/competitive-pricing-3.png"
-                                        alt="">
+                                        alt="competitive-pricing-3.png">
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
@@ -170,7 +170,7 @@
                             <div class="product-img product-img-border-transparent mb-15">
                                 <a href="#">
                                     <img src="{{ asset('assets/website') }}/images/icons/high-quality-boxes-4.png"
-                                        alt="">
+                                        alt="high-quality-boxes-4.png">
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
@@ -183,7 +183,7 @@
                             <div class="product-img product-img-border-transparent mb-15">
                                 <a href="#">
                                     <img src="{{ asset('assets/website') }}/images/icons/Quick-Turn-Arround-time-5.png"
-                                        alt="">
+                                        alt="Quick-Turn-Arround-time-5.png">
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
@@ -210,7 +210,7 @@
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[0]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/cbd-boxes-banner-1.jpg"
-                                        alt=""></a>
+                                        alt="cbd-boxes-banner-1.jpg"></a>
                             </div>
                             <div class="banner-content-23 text-center">
                                 <div class="banner-btn-3">
@@ -236,7 +236,7 @@
                                                 <div class="product-img product-img-zoom mb-15">
                                                     <a href="">
                                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
-                                                            alt="">
+                                                            alt="{{ $product->image_alt_1}}">
                                                     </a>
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
@@ -277,7 +277,7 @@
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[1]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/cosmetic-packaging-banner-2.jpg"
-                                        alt=""></a>
+                                        alt="cosmetic-packaging-banner-2.jpg"></a>
                             </div>
                             <div class="banner-content-23 text-center">
                                 <div class="banner-btn-3">
@@ -303,7 +303,7 @@
                                                 <div class="product-img product-img-zoom mb-15">
                                                     <a href="">
                                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
-                                                            alt="">
+                                                            alt="{{ $product->image_alt_1}}">
                                                     </a>
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
@@ -345,7 +345,7 @@
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[3]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/food-and-beverage-banner-3.jpg"
-                                        alt=""></a>
+                                        alt="food-and-beverage-banner-3.jpg"></a>
                             </div>
                             <div class="banner-content-23 text-center">
                                 <div class="banner-btn-3">
@@ -371,7 +371,7 @@
                                                 <div class="product-img product-img-zoom mb-15">
                                                     <a href="">
                                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
-                                                            alt="">
+                                                            alt="{{ $product->image_alt_1}}">
                                                     </a>
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
@@ -413,7 +413,7 @@
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[4]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/vape-cartridge-banner-4.jpg"
-                                        alt=""></a>
+                                        alt="vape-cartridge-banner-4.jpg"></a>
                             </div>
                             <div class="banner-content-23 text-center">
                                 <div class="banner-btn-3">
@@ -439,7 +439,7 @@
                                                 <div class="product-img product-img-zoom mb-15">
                                                     <a href="">
                                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
-                                                            alt="">
+                                                            alt="{{ $product->image_alt_1}}">
                                                     </a>
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
@@ -479,7 +479,7 @@
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[6]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/riged-boxes-banner-5.jpg"
-                                        alt=""></a>
+                                        alt="riged-boxes-banner-5.jpg"></a>
                             </div>
                             <div class="banner-content-23 text-center">
 
@@ -506,7 +506,7 @@
                                                 <div class="product-img product-img-zoom mb-15">
                                                     <a href="">
                                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
-                                                            alt="">
+                                                            alt="{{ $product->image_alt_1 }} Image">
                                                     </a>
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
@@ -557,9 +557,10 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="blog-wrap mb-30">
                                 <div class="blog-img mb-20">
-                                    <a href="blog-details.html"><img
+                                    <a href="{{ route('blog.show', $blog) }}">
+                                        <img
                                             src="{{ asset('storage') }}/images/blogs/thumbnail/{{ $blog->thumbnail }}"
-                                            alt="blog-img"></a>
+                                            alt="{{ $blog->title }} blog-img"></a>
                                 </div>
                                 <div class="blog-content">
                                     <div class="blog-meta">
@@ -568,7 +569,7 @@
                                             <li>{{ date('d-M-Y', strtotime($blog->created_at)) }}</li>
                                         </ul>
                                     </div>
-                                    <h3><a href="{{ route('blog.show', $blog) }}">{{ $blog->summary }}</a></h3>
+                                    <h3><a href="{{ route('blog.show', $blog) }}">{{ $blog->title }}</a></h3>
                                 </div>
                             </div>
                         </div>

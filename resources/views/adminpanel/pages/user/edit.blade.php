@@ -1,7 +1,7 @@
 @extends('adminpanel.layouts.master')
 
 @section('title-meta')
-    <title>{{ env('APP_NAME', 'Admin') }} | User Create</title>
+    <title>{{ env('APP_NAME', 'Admin') }} | User Edit</title>
 
     <meta name="description" content="this is description">
 @endsection
@@ -24,7 +24,7 @@
                         <a href="index.html">Users</a>
                     </li>
                     <li class="active">
-                        <strong>Create</strong>
+                        <strong>Edit</strong>
                     </li>
                 </ol>
             </div>

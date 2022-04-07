@@ -1,8 +1,10 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>{{ env('APP_NAME', 'Admin') }} | Industry</title>
-    <meta name="description" content="this is description">
+    <title>{{$product->meta_tag_title}} | {{ env('APP_NAME') }}</title>
+    <meta name="description" content="{{$product->meta_tag_description}}">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="keywords" content="{{$product->meta_tag_description}}">
 @endsection
 
 @section('custom-css')

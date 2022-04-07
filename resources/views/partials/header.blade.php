@@ -6,8 +6,8 @@
                     <div class="col-xl-4 col-lg-3">
                         <div class="header-quick-contect">
                             <ul>
-                                <li><i class="icon-phone "></i>(925) 695 9888</li>
-                                <li><i class="icon-envelope-open "></i>info@customboxesus.com</li>
+                                <li   > <a href="tel:9256959888" style="color: white !important"><i class="icon-phone "></i> (925) 695 9888</a></li>
+                                <li><a href="mailto:info@customboxesus.com" style="color: white !important"><i class="icon-envelope-open "></i>  info@customboxesus.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -59,11 +59,15 @@
                     <div class="col-xl-3 col-lg-3">
                         <div class="hotline-2-wrap">
                             <div class="hotline-2-icon">
+                                <a href="tel:9256959888">
                                 <i class="blue icon-call-end"></i>
+                            </a>
                             </div>
                             <div class="hotline-2-content">
+                                <a href="tel:9256959888">
                                 <span> Hotline 24/7</span>
                                 <h5>(925) 695 9888</h5>
+                            </a>
                             </div>
                         </div>
                     </div>

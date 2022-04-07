@@ -24,8 +24,9 @@ return new class extends Migration
             $table->string('image3');
             $table->string('image4')->nullable();
             $table->string('image5')->nullable();
-            $table->longText('meta_tags')->nullable();
-            $table->longText('meta_description')->nullable();
+            $table->longText('meta_tag_title')->nullable();
+            $table->longText('meta_tag_keywords')->nullable();
+            $table->longText('meta_tag_description')->nullable();
             $table->string('image_alt_1')->nullable();
             $table->string('image_alt_2')->nullable();
             $table->string('image_alt_3')->nullable();

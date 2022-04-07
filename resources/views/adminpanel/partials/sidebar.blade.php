@@ -34,9 +34,9 @@
                 </a>
 
             </li>
-            <li class="">
+            <li class="@if (request()->is('admin/product*'))  {{'active'}} @else {{''}} @endif">
                 <a href="#">
-                    <i class="fa fa-bar-chart-o"></i>
+                    <i class=" fa fa-cube"></i>
                     <span class="nav-label">Products</span>
                     <span class="fa arrow"></span>
                 </a>
@@ -46,7 +46,7 @@
                 </ul>
             </li>
 
-            <li class="">
+            <li class="@if (request()->is('admin/order*'))  {{'active'}} @else {{''}} @endif">
                 <a href="#">
                     <i class="fa fa-bar-chart-o"></i>
                     <span class="nav-label">Orders</span>
@@ -57,9 +57,9 @@
                 </ul>
             </li>
 
-            <li>
+            <li class="@if (request()->is('admin/user*'))  {{'active'}} @else {{''}} @endif">
                 <a href="#">
-                    <i class="fa fa-bar-chart-o"></i>
+                    <i class="fa fa-users"></i>
                     <span class="nav-label">Users</span>
                     <span class="fa arrow"></span>
                 </a>
@@ -68,9 +68,9 @@
                 </ul>
             </li>
 
-            <li>
+            <li class="@if (request()->is('admin/blog*'))  {{'active'}} @else {{''}} @endif">
                 <a href="#">
-                    <i class="fa fa-bar-chart-o"></i>
+                    <i class="fa fa-file-text"></i>
                     <span class="nav-label">Blogs</span>
                     <span class="fa arrow"></span>
                 </a>

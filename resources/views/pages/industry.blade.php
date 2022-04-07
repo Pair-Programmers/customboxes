@@ -16,7 +16,6 @@
 
     <div class="container pt-15" style="text-align: center;">
         {{$industry->summary}}
-
     </div>
     <div class="shop-area pt-40 pb-40">
         <div class="container">
@@ -229,7 +228,7 @@
                                                 <div class="product-img product-img-zoom mb-15">
                                                     <a href="{{ route('product.show', [$industry, $product]) }}">
                                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
-                                                            alt="">
+                                                            alt="{{ $product->image_alt_1 }}">
                                                     </a>
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">

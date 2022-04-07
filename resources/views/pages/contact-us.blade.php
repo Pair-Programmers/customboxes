@@ -24,8 +24,8 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="single-contact-info-3 extra-contact-info text-center mb-30">
                         <ul>
-                            <li><i class="icon-screen-smartphone"></i> 716-298-1822 </li>
-                            <li><i class="icon-envelope "></i> <a href="#"> info@example.com</a></li>
+                            <li><i class="icon-screen-smartphone"></i> <a href="tel:716-298-1822"> 716-298-1822 </a></li>
+                            <li><i class="icon-envelope "></i> <a href="mailto:info@example.com"> info@example.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -63,9 +63,9 @@
                 <p class="form-messege"></p>
             </div>
         </div>
-        <div class="contact-map pt-120">
+        {{-- <div class="contact-map pt-120">
             <div id="map"></div>
-        </div>
+        </div> --}}
     </div>
 </div>
 @endsection

@@ -15,8 +15,6 @@
     </div> <br>
 
     <div class="container pt-15" style="text-align: center;">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus qui saepe quo, consequatur pariatur
-            iure sit officia delectus dolore, iste magni quod hic distinctio voluptas deleniti odit culpa corrupti.</p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum non officiis quo, maiores quod molestias
         architecto nisi optio eaque eligendi explicabo modi tempora consequatur in, animi debitis ad culpa!
 
@@ -231,7 +229,7 @@
                                                 <div class="product-img product-img-zoom mb-15">
                                                     <a href="{{ route('product.show', [$industry, $product]) }}">
                                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
-                                                            alt="">
+                                                            alt="{{ $product->image_alt_1 }}">
                                                     </a>
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
