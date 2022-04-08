@@ -234,7 +234,7 @@
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
                                             <div class="single-product-wrap mb-35">
                                                 <div class="product-img product-img-zoom mb-15">
-                                                    <a href="">
+                                                    <a href="{{ route('product.show', [$industries[0], $product]) }}">
                                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
                                                             alt="{{ $product->image_alt_1}}">
                                                     </a>
@@ -250,7 +250,9 @@
 
 
                                                     <div class="pro-add-to-cart">
+                                                        <a href="{{ route('product.show', [$industries[0], $product]) }}">
                                                         <button title="Get Qoute">Get Qoute</button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -301,7 +303,7 @@
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
                                             <div class="single-product-wrap mb-35">
                                                 <div class="product-img product-img-zoom mb-15">
-                                                    <a href="">
+                                                    <a href="{{ route('product.show', [$industries[1], $product]) }}">
                                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
                                                             alt="{{ $product->image_alt_1}}">
                                                     </a>
@@ -318,7 +320,9 @@
 
 
                                                     <div class="pro-add-to-cart">
+                                                        <a href="{{ route('product.show', [$industries[1], $product]) }}">
                                                         <button title="Get Qoute">Get Qoute</button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -369,7 +373,7 @@
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
                                             <div class="single-product-wrap mb-35">
                                                 <div class="product-img product-img-zoom mb-15">
-                                                    <a href="">
+                                                    <a href="{{ route('product.show', [$industries[3], $product]) }}">
                                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
                                                             alt="{{ $product->image_alt_1}}">
                                                     </a>
@@ -386,7 +390,9 @@
 
 
                                                     <div class="pro-add-to-cart">
+                                                        <a href="{{ route('product.show', [$industries[3], $product]) }}">
                                                         <button title="Get Qoute">Get Qoute</button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -437,7 +443,7 @@
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
                                             <div class="single-product-wrap mb-35">
                                                 <div class="product-img product-img-zoom mb-15">
-                                                    <a href="">
+                                                    <a href="{{ route('product.show', [$industries[4], $product]) }}">
                                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
                                                             alt="{{ $product->image_alt_1}}">
                                                     </a>
@@ -452,7 +458,9 @@
                                                 <div class="product-content-wrap-2 product-content-position text-center">
 
                                                     <div class="pro-add-to-cart">
+                                                        <a href="{{ route('product.show', [$industries[4], $product]) }}">
                                                         <button title="Get Qoute">Get Qoute</button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -504,15 +512,14 @@
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
                                             <div class="single-product-wrap mb-35">
                                                 <div class="product-img product-img-zoom mb-15">
-                                                    <a href="">
+                                                    <a href="{{ route('product.show', [$industries[6], $product]) }}">
                                                         <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
                                                             alt="{{ $product->image_alt_1 }} Image">
                                                     </a>
                                                 </div>
                                                 <div class="product-content-wrap-2 text-center">
 
-                                                    <h3><a
-                                                            href="{{ route('product.show', [$industries[6], $product]) }}">{{ $product->name }}</a>
+                                                    <h3><a href="{{ route('product.show', [$industries[6], $product]) }}">{{ $product->name }}</a>
                                                     </h3>
 
                                                 </div>
@@ -521,7 +528,11 @@
 
 
                                                     <div class="pro-add-to-cart">
+
+                                                        <a href="{{ route('product.show', [$industries[6], $product]) }}">
                                                         <button title="Get Qoute">Get Qoute</button>
+                                                        </a>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -565,7 +576,7 @@
                                 <div class="blog-content">
                                     <div class="blog-meta">
                                         <ul>
-                                            <li><a href="#">{{ $blog->category->name }} </a></li>
+                                            <li><a href="{{ route('blog.index', $blog->category) }}">{{ $blog->category->name }} </a></li>
                                             <li>{{ date('d-M-Y', strtotime($blog->created_at)) }}</li>
                                         </ul>
                                     </div>

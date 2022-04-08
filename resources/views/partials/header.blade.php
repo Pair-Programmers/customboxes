@@ -116,8 +116,8 @@
                                 <ul>
                                     <li><a href="{{route('industry.custom-printed-boxes.show')}}">Custom Printed Boxes</a></li>
                                     <li><a href="{{route('industry.boxes-styles')}}">Boxes Styles</a></li>
-                                    <li><a href="{{route('blog.index')}}">Blog</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="{{route('blog.index')}}">Blogs</a></li>
+                                    {{-- <li><a href="portfolio.html">Portfolio</a></li> --}}
                                     <li><a href="{{route('product.rush-order')}}">Rush Order</a></li>
                                 </ul>
                             </nav>

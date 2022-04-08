@@ -38,9 +38,10 @@ Route::get('/rush-order', [App\Http\Controllers\ProductController::class, 'showR
 //newsletter
 Route::post('/news-subscriber/store', [App\Http\Controllers\NewsSubscriberController::class, 'store'])->name('news-subsciber.store');
 
-Route::get('/blogs/{blogcategory?}', [App\Http\Controllers\BlogController::class, 'index'])->name('blog.index');
+Route::get('/blogs/{category?}', [App\Http\Controllers\BlogController::class, 'index'])->name('blog.index');
+//Route::get('/blogs-by-category/{blogcategory:slug}', [App\Http\Controllers\BlogController::class, 'indexByIndustry'])->name('blog.index-by-category');
 //Route::get('/blogs/{blogcatgeory}', [App\Http\Controllers\BlogController::class, 'index'])->name('blog.index.by-category');
-Route::get('/blogs/{blog}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
+Route::get('/blog/{blog}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
 
 Route::controller(App\Http\Controllers\OrderController::class)->prefix('order')->name('order.')->group(function () {
     Route::post('/', 'store')->name('store');

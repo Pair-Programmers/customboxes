@@ -21,7 +21,8 @@ class BlogController extends Controller
         })
         ->paginate(5);
         $categories = BlogCategory::all();
-        return view('pages.blog.index', compact('blogs', 'categories'));
+        $recentBlogs = Blog::orderBy('id', 'desc')->get()->take(3);
+        return view('pages.blog.index', compact('blogs', 'categories', 'recentBlogs'));
     }
 
     // public function indexByCategory(BlogCategory $category)
@@ -61,7 +62,9 @@ class BlogController extends Controller
      */
     public function show(Blog $blog)
     {
-        return $blog;
+        $recentBlogs = Blog::orderBy('id', 'desc')->get()->take(3);
+        $categories = BlogCategory::all();
+        return view('pages.blog.show', compact('blog', 'categories', 'recentBlogs'));
     }
 
     /**

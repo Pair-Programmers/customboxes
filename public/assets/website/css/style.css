@@ -1,10 +1,10 @@
 /*-----------------------------------------------------------------------------------
-    
+
     Template Name: Norda - Minimal eCommerce HTML Template
     Version: 1.2
-    
+
 -----------------------------------------------------------------------------------
-    
+
     CSS INDEX
     ===================
     1. Template default CSS
@@ -34,7 +34,7 @@
     25. Contect us style
     26. Blog details style
     27. Order tracking style
-    
+
 -----------------------------------------------------------------------------------*/
 /*----------------------------------------*/
 /*  1. Template default CSS
@@ -47,7 +47,7 @@
     max-width: 1200px;
   }
 }
- /* .header-area 
+ /* .header-area
 {
   position: fixed;
   top: 0;
@@ -182,7 +182,7 @@ ul {
   padding: 0;
 }
 
-/*-- 
+/*--
     - Common Classes
 -----------------------------------------*/
 .fix {
@@ -1507,7 +1507,7 @@ ul {
 }
 
 /***************************
-    Page section padding 
+    Page section padding
 ****************************/
 .ptb-0 {
   padding: 0;
@@ -1622,7 +1622,7 @@ ul {
 }
 
 /***************************
-    Page section margin 
+    Page section margin
 ****************************/
 .mtb-0 {
   margin: 0;
@@ -1696,7 +1696,7 @@ ul {
   margin: 290px 0;
 }
 
-/*-- 
+/*--
     - Input Placeholder
 -----------------------------------------*/
 input:-moz-placeholder,
@@ -1875,8 +1875,8 @@ textarea:focus {
   }
 }
 
-/*-- 
-    Scroll Up 
+/*--
+    Scroll Up
 -----------------------------------------*/
 #scrollUp {
   width: 40px;
@@ -7063,6 +7063,7 @@ textarea:focus {
   letter-spacing: 1px;
   display: block;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .hero-slider-content-4 h1 {
@@ -7071,6 +7072,7 @@ textarea:focus {
   letter-spacing: -.25px;
   text-transform: uppercase;
   margin: 24px 0 30px;
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
@@ -7078,6 +7080,7 @@ textarea:focus {
     font-size: 50px;
     line-height: 60px;
     margin: 14px 0 10px;
+    color: #ffffff;
   }
 }
 
@@ -7086,6 +7089,7 @@ textarea:focus {
     font-size: 50px;
     line-height: 60px;
     margin: 14px 0 10px;
+    color: #ffffff;
   }
 }
 
@@ -7094,6 +7098,7 @@ textarea:focus {
     font-size: 50px;
     line-height: 60px;
     margin: 14px 0 10px;
+    color: #ffffff;
   }
 }
 
@@ -7102,6 +7107,7 @@ textarea:focus {
     font-size: 40px;
     line-height: 50px;
     margin: 14px 0 10px;
+    color: #ffffff;
   }
 }
 
@@ -7110,6 +7116,7 @@ textarea:focus {
     font-size: 25px;
     line-height: 32px;
     margin: 10px 0 10px;
+    color: #ffffff;
   }
 }
 
@@ -7118,12 +7125,14 @@ textarea:focus {
   line-height: 26px;
   margin: 0 0 43px;
   width: 29%;
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-slider-content-4 p {
     width: 46%;
     margin: 0 0 23px;
+    color: #ffffff;
   }
 }
 
@@ -7131,6 +7140,7 @@ textarea:focus {
   .hero-slider-content-4 p {
     width: 37%;
     margin: 0 0 23px;
+    color: #ffffff;
   }
 }
 
@@ -7139,7 +7149,7 @@ textarea:focus {
     width: 100%;
     font-size: 15px;
     margin: 0 0 20px;
-    color: #000000;
+    color: #ffffff;
   }
 }
 

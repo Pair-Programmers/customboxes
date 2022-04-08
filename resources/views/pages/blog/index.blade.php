@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-    <div class="breadcrumb-area bg-gray">
+    {{-- <div class="breadcrumb-area bg-gray">
         <div class="container">
             <div class="breadcrumb-content text-center">
                 <ul>
@@ -20,7 +20,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="blog-area pt-120 pb-120">
         <div class="container">
             <div class="row">
@@ -84,36 +84,20 @@
                         <div class="sidebar-widget shop-sidebar-border mb-40 pt-40">
                             <h4 class="sidebar-widget-title">Recent Posts </h4>
                             <div class="recent-post">
+                                @foreach ($recentBlogs as $recentBlog)
                                 <div class="single-sidebar-blog">
                                     <div class="sidebar-blog-img">
-                                        <a href="blog-details.html"><img src="assets/images/blog/blog-4.jpg" alt=""></a>
+                                        <a href="{{ route('blog.show', $recentBlog) }}"><img src="{{ asset('storage') }}/images/blogs/thumbnail/{{ $recentBlog->thumbnail }}" alt="{{ $recentBlog->thumbnail }}"></a>
                                     </div>
                                     <div class="sidebar-blog-content">
-                                        <h5><a href="blog-details.html">Basic colord mixed</a></h5>
-                                        <span>Sep 5th, 2020</span>
+                                        <h5><a href="{{ route('blog.show', $recentBlog) }}">{{$recentBlog->title}}</a></h5>
+                                        <span>{{ date('d-M-Y', strtotime($recentBlog->created_at)) }}</span>
                                     </div>
                                 </div>
-                                <div class="single-sidebar-blog">
-                                    <div class="sidebar-blog-img">
-                                        <a href="blog-details.html"><img src="assets/images/blog/blog-5.jpg" alt=""></a>
-                                    </div>
-                                    <div class="sidebar-blog-content">
-                                        <h5><a href="blog-details.html">Five things you only</a></h5>
-                                        <span>Sep 15th, 2020</span>
-                                    </div>
-                                </div>
-                                <div class="single-sidebar-blog">
-                                    <div class="sidebar-blog-img">
-                                        <a href="blog-details.html"><img src="assets/images/blog/blog-4.jpg" alt=""></a>
-                                    </div>
-                                    <div class="sidebar-blog-content">
-                                        <h5><a href="blog-details.html">Basic colord mixed</a></h5>
-                                        <span>Sep 5th, 2020</span>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
-                        <div class="sidebar-widget shop-sidebar-border mb-40 pt-40">
+                        {{-- <div class="sidebar-widget shop-sidebar-border mb-40 pt-40">
                             <h4 class="sidebar-widget-title">Archives </h4>
                             <div class="archives-wrap">
                                 <select>
@@ -123,8 +107,8 @@
                                     <option> November 2018 </option>
                                 </select>
                             </div>
-                        </div>
-                        <div class="sidebar-widget shop-sidebar-border pt-40">
+                        </div> --}}
+                        {{-- <div class="sidebar-widget shop-sidebar-border pt-40">
                             <h4 class="sidebar-widget-title">Popular Tags</h4>
                             <div class="tag-wrap sidebar-widget-tag">
                                 <a href="#">Clothing</a>
@@ -133,7 +117,7 @@
                                 <a href="#">Women</a>
                                 <a href="#">Fashion</a>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

@@ -21,395 +21,196 @@
             </div>
         </div>
     </div> --}}
-    <div class="product-details-area pt-120 pb-115">
+    <div class="blog-area pt-120 pb-120">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="product-details-tab">
-                        <div class="pro-dec-big-img-slider">
-                            <div class="easyzoom-style">
-                                <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{ asset('storage') }}/images/products/{{ $product->image1 }}">
-                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}" alt="">
-                                    </a>
-                                </div>
-                                <a class="easyzoom-pop-up img-popup"
-                                    href="{{ asset('storage') }}/images/products/{{ $product->image1 }}">
-                                    <i class="icon-size-fullscreen"></i></a>
-                            </div>
-                            <div class="easyzoom-style">
-                                <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{ asset('storage') }}/images/products/{{ $product->image2 }}">
-                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image2 }}"
-                                            alt="">
-                                    </a>
-                                </div>
-                                <a class="easyzoom-pop-up img-popup"
-                                    href="{{ asset('storage') }}/images/products/{{ $product->image2 }}">
-                                    <i class="icon-size-fullscreen"></i></a>
-                            </div>
-                            <div class="easyzoom-style">
-                                <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{ asset('storage') }}/images/products/{{ $product->image3 }}">
-                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image3 }}"
-                                            alt="">
-                                    </a>
-                                </div>
-                                <a class="easyzoom-pop-up img-popup"
-                                    href="{{ asset('storage') }}/images/products/{{ $product->image3 }}">
-                                    <i class="icon-size-fullscreen"></i></a>
-                            </div>
-                            <div class="easyzoom-style">
-                                <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{ asset('storage') }}/images/products/{{ $product->image4 }}">
-                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image4 }}"
-                                            alt="">
-                                    </a>
-                                </div>
-                                <a class="easyzoom-pop-up img-popup"
-                                    href="{{ asset('storage') }}/images/products/{{ $product->image4 }}">
-                                    <i class="icon-size-fullscreen"></i></a>
-                            </div>
-                            <div class="easyzoom-style">
-                                <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{ asset('storage') }}/images/products/{{ $product->image5 }}">
-                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image5 }}"
-                                            alt="">
-                                    </a>
-                                </div>
-                                <a class="easyzoom-pop-up img-popup"
-                                    href="{{ asset('storage') }}/images/products/{{ $product->image5 }}">
-                                    <i class="icon-size-fullscreen"></i></a>
+            <div class="row flex-row-reverse">
+                <div class="col-lg-3">
+                    <div class="sidebar-wrapper sidebar-wrapper-mrg-right">
+                        <div class="sidebar-widget mb-40">
+                            <h4 class="sidebar-widget-title">Search </h4>
+                            <div class="sidebar-search">
+                                <form class="sidebar-search-form" action="#">
+                                    <input type="text" placeholder="Search Post">
+                                    <button>
+                                        <i class="icon-magnifier"></i>
+                                    </button>
+                                </form>
                             </div>
                         </div>
-                        <div class="product-dec-slider-small product-dec-small-style1">
-                            <div class="product-dec-small active">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}" alt="">
-                            </div>
-                            <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image2 }}" alt="">
-                            </div>
-                            <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image3 }}" alt="">
-                            </div>
-                            <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image4 }}" alt="">
-                            </div>
-                            <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image5 }}" alt="">
+                        <div class="sidebar-widget shop-sidebar-border mb-35 pt-40">
+                            <h4 class="sidebar-widget-title">Categories </h4>
+                            <div class="shop-catigory">
+                                <ul>
+                                    @foreach ($categories as $category)
+                                    <li><a href="{{ route('blog.index', $category) }}">{{ $category->name }}</a></li>
+                                @endforeach
+                                </ul>
                             </div>
                         </div>
+                        <div class="sidebar-widget shop-sidebar-border mb-40 pt-40">
+                            <h4 class="sidebar-widget-title">Recent Posts </h4>
+                            <div class="recent-post">
+                                @foreach ($recentBlogs as $recentBlog)
+                                <div class="single-sidebar-blog">
+                                    <div class="sidebar-blog-img">
+                                        <a href="{{ route('blog.show', $recentBlog) }}"><img src="{{ asset('storage') }}/images/blogs/thumbnail/{{ $recentBlog->thumbnail }}" alt="{{ $recentBlog->thumbnail }}"></a>
+                                    </div>
+                                    <div class="sidebar-blog-content">
+                                        <h5><a href="{{ route('blog.show', $recentBlog) }}">{{$recentBlog->title}}</a></h5>
+                                        <span>{{ date('d-M-Y', strtotime($recentBlog->created_at)) }}</span>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <!-- <div class="sidebar-widget shop-sidebar-border mb-40 pt-40">
+                            <h4 class="sidebar-widget-title">Archives </h4>
+                            <div class="archives-wrap">
+                                <select>
+                                    <option>Select Month</option>
+                                    <option> January 2020 </option>
+                                    <option> December 2018 </option>
+                                    <option> November 2018 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget shop-sidebar-border pt-40">
+                            <h4 class="sidebar-widget-title">Popular Tags</h4>
+                            <div class="tag-wrap sidebar-widget-tag">
+                                <a href="#">Clothing</a>
+                                <a href="#">Accessories</a>
+                                <a href="#">For Men</a>
+                                <a href="#">Women</a>
+                                <a href="#">Fashion</a>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="product-details-content pro-details-content-mrg">
-                        <h2>{{ $product->name }}</h2>
-
-                        <p>{{ $product->description }}</p>
-                        <br>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="billing-info-wrap mr-50">
-                                    {{-- <h3>Qoute Area</h3> --}}
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-3">
-                                            <div class="billing-info mb-20">
-                                                <input type="number" placeholder="Height">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3">
-                                            <div class="billing-info mb-20">
-                                                <input type="number" placeholder="Width">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3">
-                                            <div class="billing-info mb-20">
-                                                <input type="number" placeholder="Depth">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3">
-                                            <div class="billing-info mb-20">
-                                                <div class="billing-select mb-20">
-                                                    <select>
-                                                        <option>Unit</option>
-                                                        <option>Inches</option>
-                                                        <option>MM</option>
-                                                        <option>CM</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="billing-info mb-20">
-                                                <div class="billing-select mb-20">
-                                                    <select>
-                                                        <option>Material</option>
-                                                        <option>14pt. Cardstock</option>
-                                                        <option>16pt. Cardstock</option>
-                                                        <option>16pt. Cardstock</option>
-                                                        <option>16pt. Cardstock</option>
-                                                        <option>16pt. Cardstock</option>
-                                                        <option>16pt. Cardstock</option>
-                                                        <option>D</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="billing-info mb-20">
-                                                <div class="billing-select mb-20">
-                                                    <select>
-                                                        <option>Color</option>
-                                                        <option>1 Color</option>
-                                                        <option>2 Color</option>
-                                                        <option>1 Color</option>
-                                                        <option>1 Color</option>
-                                                        <option>W</option>
-                                                        <option>D</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="billing-info mb-20">
-                                                <input type="number" placeholder="1st Qty">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="billing-info mb-20">
-                                                <input type="number" placeholder="2nd Qty">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6">
-                                            <div class="billing-info mb-20">
-                                                <label>Addons </label>
-                                                <div class="checkout-account ">
-                                                    <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
-                                                </div>
-                                                <div class="checkout-account ">
-                                                    <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
-                                                </div>
-                                                <div class="checkout-account ">
-                                                    <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
-                                                </div>
-                                                <div class="checkout-account ">
-                                                    <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="billing-info mb-20">
-                                                <label> Addons </label>
-                                                <div class="checkout-account ">
-                                                    <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
-                                                </div>
-                                                <div class="checkout-account ">
-                                                    <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
-                                                </div>
-                                                <div class="checkout-account ">
-                                                    <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
-                                                </div>
-                                                <div class="checkout-account ">
-                                                    <input class="checkout-toggle2" type="checkbox">
-                                                    <span>Gloss Lamination</span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-                                        <div class="col-lg-12 col-md-12">
-                                            <div class="billing-info mb-20">
-                                                <input type="file" placeholder="Depth">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-12 col-md-12">
-                                            <div class="billing-info mb-20">
-                                                <input type="text" placeholder="Your Name">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="billing-info mb-20">
-                                                <input type="text" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="billing-info mb-20">
-                                                <input type="text" placeholder="Phone">
-                                            </div>
-                                        </div>
-
-
+                <div class="col-lg-9">
+                    <div class="blog-details-wrapper">
+                        <div class="blog-details-top">
+                            <div class="blog-details-img">
+                                <img alt="{{ $blog->image }}" src="{{ asset('storage') }}/images/blogs/{{ $blog->image }}">
+                            </div>
+                            <div class="blog-details-content">
+                                <div class="blog-meta-2">
+                                    <ul>
+                                        <li>Category : {{ $blog->category->name }}</li>
+                                        <li>{{ $blog->author_name }}</li>
+                                        <li>{{ $blog->created_at }}</li>
+                                    </ul>
+                                </div>
+                                <h1>{{ $blog->title }}</h1>
+                                {{ $blog->description }}
+                            </div>
+                        </div>
+                        <!-- <d iv class="dec-img-wrapper">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="dec-img mb-50">
+                                        <img alt="" src="assets/images/blog/blog-details-2.jpg">
                                     </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="billing-info mb-20">
-                                            <textarea placeholder="Notes about your order, e.g. special notes for delivery. " name="message" rows="4"></textarea>
-
-                                        </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="dec-img mb-50">
+                                        <img alt="" src="assets/images/blog/blog-details-3.jpg">
                                     </div>
-
-                                    <div class="pro-details-action-wrap">
-                                        <div class="pro-details-add-to-cart">
-                                            <a title="Get Qoute" href="#">Get Qoute</a>
-                                        </div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehendrit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div> -->
+                        <!-- <div class="tag-share">
+                            <div class="dec-tag">
+                                <ul>
+                                    <li><a href="#">lifestyle ,</a></li>
+                                    <li><a href="#">interior ,</a></li>
+                                    <li><a href="#">outdoor</a></li>
+                                </ul>
+                            </div>
+                            <div class="blog-share">
+                                <span>share :</span>
+                                <div class="share-social">
+                                    <ul>
+                                        <li>
+                                            <a class="facebook" href="#">
+                                                <i class="icon-social-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="twitter" href="#">
+                                                <i class="icon-social-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="instagram" href="#">
+                                                <i class="icon-social-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="next-previous-post">
+                            <a href="#"> <i class="fa fa-angle-left"></i> prev post</a>
+                            <a href="#">next post <i class="fa fa-angle-right"></i></a>
+                        </div>
+                        <div class="blog-comment-wrapper mt-55">
+                            <h4 class="blog-dec-title">comments : 02</h4>
+                            <div class="single-comment-wrapper mt-35">
+                                <div class="blog-comment-img">
+                                    <img src="assets/images/blog/comment-1.jpg" alt="">
+                                </div>
+                                <div class="blog-comment-content">
+                                    <h4>Anthony Stephens</h4>
+                                    <span>October 14, 2020 </span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim veniam, </p>
+                                    <div class="blog-details-btn">
+                                        <a href="blog-details.html">read more</a>
                                     </div>
-
+                                </div>
+                            </div>
+                            <div class="single-comment-wrapper mt-50 ml-120">
+                                <div class="blog-comment-img">
+                                    <img src="assets/images/blog/comment-2.jpg" alt="">
+                                </div>
+                                <div class="blog-comment-content">
+                                    <h4>DX Joxova</h4>
+                                    <span>October 14, 2020 </span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim veniam, </p>
+                                    <div class="blog-details-btn">
+                                        <a href="blog-details.html">read more</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="description-review-wrapper pb-110 mt-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="dec-review-topbar nav mb-45">
-                        <a class="active" data-bs-toggle="tab" href="#des-details1">Description</a>
-                        <a data-bs-toggle="tab" href="#des-details2">Specification</a>
-                        <a data-bs-toggle="tab" href="#des-details3">Artwork Guidelines </a>
-                        <a data-bs-toggle="tab" href="#des-details4">Order Process </a>
-                    </div>
-                    <div class="tab-content dec-review-bottom">
-                        <div id="des-details1" class="tab-pane active">
-                            <div class="description-wrap">
-                                <p>Crafted in premium watch quality, fenix Chronos is the first Garmin timepiece
-                                    to combine a durable metal case with integrated performance GPS to support
-                                    navigation and sport. In the tradition of classic tool watches it features a
-                                    tough design and a set of modern meaningful tools.</p>
-                                <p> advanced performance metrics for endurance sports, Garmin quality navigation
-                                    features and smart notifications. In fenix Chronos top-tier performance
-                                    meets sophisticated design in a highly evolved timepiece that fits your
-                                    style anywhere, anytime. Solid brushed 316L stainless steel case with
-                                    brushed stainless steel bezel and integrated EXOTM antenna for GPS + GLONASS
-                                    support. High-strength scratch resistant sapphire crystal. Brown vintage
-                                    leather strap with hand-sewn contrast stitching and nubuck inner lining and
-                                    quick release mechanism.</p>
-                            </div>
-                        </div>
-                        <div id="des-details2" class="tab-pane">
-                            <div class="specification-wrap table-responsive">
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td class="title width1">Name</td>
-                                            <td>Salwar Kameez</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="title width1">SKU</td>
-                                            <td>0x48e2c</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="title width1">Models</td>
-                                            <td>FX 829 v1</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="title width1">Categories</td>
-                                            <td>Digital Print</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="title width1">Size</td>
-                                            <td>60’’ x 40’’</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="title width1">Brand </td>
-                                            <td>Individual Collections</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="title width1">Color</td>
-                                            <td>Black, White</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div id="des-details3" class="tab-pane">
-                            <div class="specification-wrap table-responsive">
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td class="title width1">Top</td>
-                                            <td>Cotton Digital Print Chain Stitch Embroidery Work</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="title width1">Bottom</td>
-                                            <td>Cotton Cambric</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="title width1">Dupatta</td>
-                                            <td>Digital Printed Cotton Malmal With Chain Stitch</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div id="des-details4" class="tab-pane">
-                            <div class="review-wrapper">
-                                <h2>1 review for Sleeve Button Cowl Neck</h2>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="related-product pb-115" style="background-color: rgb(235, 240, 243);">
-        <div class="container">
-            <div class="section-title mb-45 text-center">
-                <h2>Related Product</h2>
-            </div>
-            <div class="related-product-active">
-
-                <div class="product-plr-1">
-                    <div class="single-product-wrap">
-                        <div class="product-img product-img-zoom mb-15">
-                            <a href="product-details.html">
-                                <img src="{{ asset('assets/website') }}/images/product/product-13.jpg" alt="">
-                            </a>
-                            <div class="product-action-2 tooltip-style-2">
-                                <button title="Wishlist"><i class="icon-heart"></i></button>
-
-                            </div>
-                        </div>
-                        <div class="product-content-wrap-2 text-center">
-
-                            <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
-
-                        </div>
-                        <div class="product-content-wrap-2 product-content-position text-center">
-
-                            <h3><a href="product-details.html">Basic Joggin Shorts</a></h3>
-
-                            <div class="pro-add-to-cart">
-                                <button title="Get Qoute">Get Qoute</button>
-                            </div>
-                        </div>
+                        <div class="blog-reply-wrapper mt-50">
+                            <h4 class="blog-dec-title">post a comment</h4>
+                            <form class="blog-form" action="#">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="leave-form">
+                                            <input type="text" placeholder="Full Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="leave-form">
+                                            <input type="email" placeholder="Email Address ">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="text-leave">
+                                            <textarea placeholder="Message"></textarea>
+                                            <input type="submit" value="POST COMMENT">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> -->
                     </div>
                 </div>
 
             </div>
         </div>
-    </div>
-
     </div>
 @endsection
 

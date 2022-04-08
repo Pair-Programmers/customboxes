@@ -34,6 +34,9 @@
                     </p>
                 </div>
                 <div class="col-lg-12">
+                    <div style="background-color: rgb(175, 174, 174)" class="pl-10 pt-2 pb-1 mb-3">
+                        <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Qoute Now !</strong></h2>
+                    </div>
                     <div class="col-lg-12">
                         @if ($errors->any())
                             <div class="alert alert-danger">
@@ -256,7 +259,7 @@
 
                                 <div class="pro-details-action-wrap">
                                     <div class="pro-details-add-to-cart">
-                                        <button class="btn">Get Qoute</button>
+                                        <button class="btn" type="submit" style="background-color: #db1515">Get Qoute</button>
                                     </div>
                                 </div>
                             </form>
