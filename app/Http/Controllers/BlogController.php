@@ -15,7 +15,9 @@ class BlogController extends Controller
      */
     public function index(BlogCategory $category=null)
     {
-        $blogs = Blog::orderBy('id', 'desc')->when($category, function ($query, $category) {
+        $blogs = Blog::orderBy('id', 'desc')
+        ->where('is_active', true)
+        ->when($category, function ($query, $category) {
             $query->where('blog_category_id', $category->id);
             // dd($category);
         })

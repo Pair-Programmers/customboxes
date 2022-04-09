@@ -16,7 +16,7 @@ class WelcomeController extends Controller
     public function index()
     {
         $industries = Industry::all()->take(9);
-        $blogs = Blog::all()->take(3);
+        $blogs = Blog::orderBy('id', 'desc')->get()->take(3);
         return view('pages.welcome', compact('industries', 'blogs'));
     }
 

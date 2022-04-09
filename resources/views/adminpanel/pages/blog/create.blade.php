@@ -50,7 +50,7 @@
                                 <div id="tab-1" class="tab-pane active">
                                     <div class="panel-body">
 
-                                        <form id="blogForm" class="form-horizontal" method="POST" action="{{route('admin.blog.store')}}">
+                                        <form id="blogForm" class="form-horizontal" method="POST" action="{{route('admin.blog.store')}}" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group @error('title') has-error @enderror"><label class="col-sm-2 control-label">Title:</label>
                                                 <div class="col-sm-10"><input id="" value="{{old('title')}}" name="title" required type="text" placeholder="Unique" class="form-control" >
