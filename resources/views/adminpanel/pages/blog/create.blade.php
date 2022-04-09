@@ -41,26 +41,31 @@
                 <div class="col-lg-12">
                     <div class="tabs-container">
                             <ul class="nav nav-tabs">
-                                <li class="active"><a data-toggle="tab" href="#tab-1"> Blog info</a></li>
+                                <li class="active"><a data-toggle="tab" href="#tab-1"> Basic Info</a></li>
                                 <li class=""><a data-toggle="tab" href="#tab-2"> SEO</a></li>
-                                <li class=""><a data-toggle="tab" href="#tab-3"> Discount</a></li>
-                                <li class=""><a data-toggle="tab" href="#tab-4"> Images</a></li>
+                                <li class=""><a data-toggle="tab" href="#tab-3"> Images</a></li>
+                                {{-- <li class=""><a data-toggle="tab" href="#tab-4"> Images</a></li> --}}
                             </ul>
                             <div class="tab-content">
                                 <div id="tab-1" class="tab-pane active">
                                     <div class="panel-body">
 
-                                        <form class="form-horizontal" method="POST" action="{{route('admin.blog.store')}}">
+                                        <form id="blogForm" class="form-horizontal" method="POST" action="{{route('admin.blog.store')}}">
                                             @csrf
-                                            <div class="form-group"><label class="col-sm-2 control-label">Title:</label>
-                                                <div class="col-sm-10"><input id="" name="title" required type="text" class="form-control" ></div>
+                                            <div class="form-group @error('title') has-error @enderror"><label class="col-sm-2 control-label">Title:</label>
+                                                <div class="col-sm-10"><input id="" value="{{old('title')}}" name="title" required type="text" placeholder="Unique" class="form-control" >
+                                                    @error('title')
+                                                        <span class="help-block m-b-none">{{$message}}</span>
+                                                    @enderror
+                                                </div>
+
                                             </div>
                                             <div class="form-group"><label class="col-sm-2 control-label">Author:</label>
-                                                <div class="col-sm-10"><input id="" name="author_name" type="text" class="form-control" ></div>
+                                                <div class="col-sm-10"><input id="" value="{{old('author_name')}}" name="author_name" placeholder="Hamza Saqib" type="text" class="form-control" ></div>
                                             </div>
                                             <div class="form-group"><label class="col-sm-2 control-label">Category:</label>
                                                 <div class="col-sm-10">
-                                                    <select class="form-control" name="blog_category_id" required>
+                                                    <select class="form-control" value="{{old('blog_category_id')}}" name="blog_category_id" required>
                                                         <option value="" selected disabled>Select</option>
                                                         @foreach ($blogCategories as $blogCategorie)
                                                             <option value="{{$blogCategorie->id}}">{{$blogCategorie->name}}</option>
@@ -68,6 +73,7 @@
                                                     </select>
                                                 </div>
                                             </div>
+
                                             <div class="form-group"><label class="col-sm-2 control-label">Description:</label>
                                                 <div class="col-sm-10">
                                                     <textarea id="" name="description" type="text" required class="summernote">
@@ -75,310 +81,83 @@
                                                     </textarea>
                                                 </div>
                                             </div>
+
+                                            <div class="hr-line-dashed"></div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Visible</label>
+
+                                                <div class="col-sm-10 @error('is_active') has-error @enderror ">
+                                                    <select id="" name="is_active" class="form-control m-b" required>
+                                                        <option selected value="1">Public</option>
+                                                        <option value="0">Private</option>
+                                                    </select>
+                                                    @error('is_active')
+                                                        <span class="help-block m-b-none">Select Visiblelity</span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+
                                             <div class="hr-line-dashed"></div>
 
                                             <div class="form-group">
                                                 <div class="col-sm-4 col-sm-offset-2">
-                                                    {{-- <button class="btn btn-white" type="submit">Cancel</button> --}}
                                                     <button class="btn btn-primary" type="submit">Save Blog</button>
                                                 </div>
                                             </div>
 
-                                        </form>
+
 
                                     </div>
                                 </div>
                                 <div id="tab-2" class="tab-pane">
                                     <div class="panel-body">
 
-                                        <fieldset class="form-horizontal">
+                                        <fieldset form="blogForm" class="form-horizontal">
                                             <div class="form-group"><label class="col-sm-2 control-label">Meta Tag Title:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="..."></div>
-                                            </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Meta Tag Description:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="Sheets containing Lorem"></div>
+                                                <div class="col-sm-10"><input name="meta_tag_title" type="text" class="form-control" placeholder="..."></div>
                                             </div>
                                             <div class="form-group"><label class="col-sm-2 control-label">Meta Tag Keywords:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="Lorem, Ipsum, has, been"></div>
+                                                <div class="col-sm-10"><input name="meta_tag_keywords" type="text" class="form-control" placeholder="Lorem, Ipsum, has, been"></div>
                                             </div>
+                                            <div class="form-group"><label class="col-sm-2 control-label">Meta Tag Description:</label>
+                                                <div class="col-sm-10"><input name="meta_tag_description" type="text" class="form-control" placeholder="Sheets containing Lorem"></div>
+                                            </div>
+                                      </fieldset>
+                                      <div class="hr-line-dashed"></div>
 
-                                            <div class="form-group"><label class="col-sm-2 control-label">ID:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="543"></div>
-                                            </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Model:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="..."></div>
-                                            </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Location:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="location"></div>
-                                            </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Tax Class:</label>
-                                                <div class="col-sm-10">
-                                                    <select class="form-control" >
-                                                        <option>option 1</option>
-                                                        <option>option 2</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Quantity:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="Quantity"></div>
-                                            </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Minimum quantity:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="2"></div>
-                                            </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Sort order:</label>
-                                                <div class="col-sm-10"><input type="text" class="form-control" placeholder="0"></div>
-                                            </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Status:</label>
-                                                <div class="col-sm-10">
-                                                    <select class="form-control" >
-                                                        <option>option 1</option>
-                                                        <option>option 2</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-
+                                      <div class="form-group">
+                                          <div class="col-sm-4 col-sm-offset-2">
+                                              <button class="btn btn-primary" type="submit">Save Blog</button>
+                                          </div>
+                                      </div>
 
                                     </div>
                                 </div>
                                 <div id="tab-3" class="tab-pane">
                                     <div class="panel-body">
 
-                                        <div class="table-responsive">
-                                            <table class="table table-stripped table-bordered">
+                                        <fieldset form="blogForm" class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">jpeg, jpg, png</label>
 
-                                                <thead>
-                                                <tr>
-                                                    <th>
-                                                        Group
-                                                    </th>
-                                                    <th>
-                                                        Quantity
-                                                    </th>
-                                                    <th>
-                                                        Discount
-                                                    </th>
-                                                    <th style="width: 20%">
-                                                        Date start
-                                                    </th>
-                                                    <th style="width: 20%">
-                                                        Date end
-                                                    </th>
-                                                    <th>
-                                                        Actions
-                                                    </th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <select class="form-control" >
-                                                            <option selected>Group 1</option>
-                                                            <option>Group 2</option>
-                                                            <option>Group 3</option>
-                                                            <option>Group 4</option>
-                                                        </select>
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder="10">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder="$10.00">
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <select class="form-control" >
-                                                            <option selected>Group 1</option>
-                                                            <option>Group 2</option>
-                                                            <option>Group 3</option>
-                                                            <option>Group 4</option>
-                                                        </select>
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder="10">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder="$10.00">
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <select class="form-control" >
-                                                            <option selected>Group 1</option>
-                                                            <option>Group 2</option>
-                                                            <option>Group 3</option>
-                                                            <option>Group 4</option>
-                                                        </select>
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder="10">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder="$10.00">
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <select class="form-control" >
-                                                            <option selected>Group 1</option>
-                                                            <option>Group 2</option>
-                                                            <option>Group 3</option>
-                                                            <option>Group 4</option>
-                                                        </select>
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder="10">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder="$10.00">
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <select class="form-control" >
-                                                            <option selected>Group 1</option>
-                                                            <option>Group 2</option>
-                                                            <option>Group 3</option>
-                                                            <option>Group 4</option>
-                                                        </select>
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder="10">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder="$10.00">
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <select class="form-control" >
-                                                            <option selected>Group 1</option>
-                                                            <option>Group 2</option>
-                                                            <option>Group 3</option>
-                                                            <option>Group 4</option>
-                                                        </select>
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder="10">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder="$10.00">
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <select class="form-control" >
-                                                            <option selected>Group 1</option>
-                                                            <option>Group 2</option>
-                                                            <option>Group 3</option>
-                                                            <option>Group 4</option>
-                                                        </select>
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder="10">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control" placeholder="$10.00">
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                                    </td>
-                                                </tr>
+                                            </div>
+                                            <div class="form-group"><label class="col-sm-2 control-label">Thumbnail Image:</label>
+                                                <div class="col-sm-10"><input name="thumbnail" accept=".png, .jpg, jpeg." type="file" class="form-control" placeholder="jpeg, jpg, png ..."></div>
+                                            </div>
+                                            <div class="form-group"><label class="col-sm-2 control-label">Full Image:</label>
+                                                <div class="col-sm-10"><input name="image" accept=".png, .jpg, jpeg." type="file" class="form-control" placeholder="jpeg, jpg, png ..."></div>
+                                            </div>
+                                            <div class="hr-line-dashed"></div>
 
-                                                </tbody>
-
-                                            </table>
-                                        </div>
-
+                                            <div class="form-group">
+                                                <div class="col-sm-4 col-sm-offset-2">
+                                                    <button class="btn btn-primary" type="submit">Save Blog</button>
+                                                </div>
+                                            </div>
+                                      </fieldset>
+                                    </form>
                                     </div>
                                 </div>
                                 <div id="tab-4" class="tab-pane">

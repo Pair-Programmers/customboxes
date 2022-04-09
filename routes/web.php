@@ -71,7 +71,7 @@ Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function
         Route::delete('/{product:id}', 'destroy')->name('destroy');
     });
 
-    // Route::resource('users', App\Http\Controllers\Adminpanel\UserController::class);
+    // user
     Route::controller(App\Http\Controllers\Adminpanel\UserController::class)->prefix('users')->name('user.')->group(function () {
         Route::get('/', 'index')->name('index');
         Route::get('/create', 'create')->name('create');
@@ -82,7 +82,7 @@ Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function
         Route::delete('/{user:id}', 'destroy')->name('destroy');
     });
 
-    // Route::resource('orders', App\Http\Controllers\Adminpanel\orderController::class);
+    // order
     Route::controller(App\Http\Controllers\Adminpanel\OrderController::class)->prefix('orders')->name('order.')->group(function () {
         Route::get('/', 'index')->name('index');
         Route::get('/create', 'create')->name('create');
@@ -93,7 +93,7 @@ Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function
         Route::delete('/{order:id}', 'destroy')->name('destroy');
     });
 
-    // Route::resource('blogs', App\Http\Controllers\Adminpanel\BlogController::class);
+    //blog
     Route::controller(App\Http\Controllers\Adminpanel\BlogController::class)->prefix('blogs')->name('blog.')->group(function () {
         Route::get('/', 'index')->name('index');
         Route::get('/create', 'create')->name('create');
@@ -102,6 +102,17 @@ Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function
         Route::get('/{blog}/edit', 'edit')->name('edit');
         Route::put('/{blog}', 'update')->name('update');
         Route::delete('/{blog:id}', 'destroy')->name('destroy');
+    });
+
+    //blog-category
+    Route::controller(App\Http\Controllers\Adminpanel\BlogCategoryController::class)->prefix('blogs-category')->name('blog-category.')->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{blogCategory}', 'show')->name('show');
+        Route::get('/{blogCategory}/edit', 'edit')->name('edit');
+        Route::put('/{id}', 'update')->name('update');
+        Route::delete('/{blogCategory:id}', 'destroy')->name('destroy');
     });
 });
 

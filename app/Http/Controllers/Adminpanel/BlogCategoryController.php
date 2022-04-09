@@ -5,12 +5,11 @@ namespace App\Http\Controllers\Adminpanel;
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use App\Models\BlogCategory;
-use Database\Seeders\BlogCategorySeeder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
-class BlogController extends Controller
+class BlogCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,8 +18,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::orderby('id', 'desc')->get();
-        return view('adminpanel.pages.blog.index', compact('blogs'));
+        $blogCategories = BlogCategory::orderby('id', 'desc')->get();
+        return view('adminpanel.pages.blog-category.index', compact('blogCategories'));
     }
 
     /**
@@ -30,8 +29,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        $blogCategories = BlogCategory::all();
-        return view('adminpanel.pages.blog.create', compact('blogCategories'));
+        return view('adminpanel.pages.blog-category.create');
     }
 
     /**
@@ -43,27 +41,14 @@ class BlogController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'title' => 'required|string|unique:blogs,title',
+            'name' => 'required|string|unique:blog_categories,name',
         ]);
 
         $inputs = $request->all();
-        $inputs['slug'] = Str::slug($request->title);
-        $inputs['admin_id'] = Auth::guard('admin')->id();
-        if ($request->hasFile('thumbnail')) {
-            $image = $request->file('thumbnail');
-            $name=time().'_'.$image->getClientOriginalName();
-            $image->move(public_path().'/storage/images/blogs/thumbnail', $name);
-            $input['thumbnail'] = $name;
-        }
-
-        if ($request->hasFile('image')) {
-            $image = $request->file('image');
-            $name=time().'_'.$image->getClientOriginalName();
-            $image->move(public_path().'/storage/images/blogs', $name);
-            $input['image'] = $name;
-        }
-        Blog::create($inputs);
-        return redirect()->route('admin.blog.index')->with('success', 'Created Successfuly !');
+        $inputs['slug'] = Str::slug($request->name);
+        // $inputs['admin_id'] = Auth::guard('admin')->id();
+        BlogCategory::create($inputs);
+        return redirect()->route('admin.blog-category.index');
     }
 
     /**
@@ -83,11 +68,9 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Blog $blog)
+    public function edit(BlogCategory $blogCategory)
     {
-        $blogCategories = BlogCategory::all();
-        $blog = Blog::findOrFail($blog->id);
-        return view('adminpanel.pages.blog.edit', compact('blogCategories', 'blog'));
+        return view('adminpanel.pages.blog-category.edit', compact('blogCategory'));
     }
 
     /**
@@ -99,7 +82,15 @@ class BlogController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'name' => 'required|string|unique:blog_categories,name,'.$id,
+        ]);
+
+        $inputs = $request->except(['_token', '_method']);
+        $inputs['slug'] = Str::slug($request->name);
+
+        BlogCategory::where('id', $id)->update($inputs);
+        return redirect()->route('admin.blog-category.index');
     }
 
     /**
@@ -110,6 +101,18 @@ class BlogController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $blogCategory = BlogCategory::findOrFail($id);
+        if ($blogCategory) {
+            if(Blog::where('blog_category_id', $id)->first()){
+                $blogCategory->delete();
+                Blog::where('blog_category_id', $id)->delete();
+            }
+            else{
+                $blogCategory->forceDelete();
+            }
+            return response()->json(['success' => 'Deleted Successfully !']);
+        }
+
+        return response()->json(['error' => 'Error while deleting !']);
     }
 }
