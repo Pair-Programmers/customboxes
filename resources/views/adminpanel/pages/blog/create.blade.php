@@ -18,7 +18,7 @@
 
         <div class="row wrapper border-bottom white-bg page-heading">
             <div class="col-sm-4">
-                <h2>Product Management</h2>
+                <h2>Blog Management</h2>
                 <ol class="breadcrumb">
                     <li>
                         <a href="index.html">Blog</a>
@@ -41,9 +41,9 @@
                 <div class="col-lg-12">
                     <div class="tabs-container">
                             <ul class="nav nav-tabs">
-                                <li class="active"><a data-toggle="tab" href="#tab-1"> Basic Info</a></li>
-                                <li class=""><a data-toggle="tab" href="#tab-2"> SEO</a></li>
-                                <li class=""><a data-toggle="tab" href="#tab-3"> Images</a></li>
+                                <li class="active"><a data-toggle="tab" href="#tab-1">Basic Info</a></li>
+                                <li class=""><a data-toggle="tab" href="#tab-2">Images</a></li>
+                                <li class=""><a data-toggle="tab" href="#tab-3">SEO</a></li>
                                 {{-- <li class=""><a data-toggle="tab" href="#tab-4"> Images</a></li> --}}
                             </ul>
                             <div class="tab-content">
@@ -114,6 +114,33 @@
                                 <div id="tab-2" class="tab-pane">
                                     <div class="panel-body">
 
+
+                                        <fieldset form="blogForm" class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">jpeg, jpg, png</label>
+
+                                            </div>
+                                            <div class="form-group"><label class="col-sm-2 control-label">Thumbnail Image (350x236):</label>
+                                                <div class="col-sm-10"><input name="thumbnail" accept=".png, .jpg, jpeg." type="file" class="form-control" placeholder="jpeg, jpg, png ..."></div>
+                                            </div>
+                                            <div class="form-group"><label class="col-sm-2 control-label">Full Image (750x440):</label>
+                                                <div class="col-sm-10"><input name="image" accept=".png, .jpg, jpeg." type="file" class="form-control" placeholder="jpeg, jpg, png ..."></div>
+                                            </div>
+
+                                      </fieldset>
+                                      <div class="hr-line-dashed"></div>
+
+                                      <div class="form-group">
+                                          <div class="col-sm-4 col-sm-offset-2">
+                                              <button class="btn btn-primary" type="submit">Save Blog</button>
+                                          </div>
+                                      </div>
+
+                                    </div>
+                                </div>
+                                <div id="tab-3" class="tab-pane">
+                                    <div class="panel-body">
+
                                         <fieldset form="blogForm" class="form-horizontal">
                                             <div class="form-group"><label class="col-sm-2 control-label">Meta Tag Title:</label>
                                                 <div class="col-sm-10"><input name="meta_tag_title" type="text" class="form-control" placeholder="..."></div>
@@ -132,31 +159,6 @@
                                               <button class="btn btn-primary" type="submit">Save Blog</button>
                                           </div>
                                       </div>
-
-                                    </div>
-                                </div>
-                                <div id="tab-3" class="tab-pane">
-                                    <div class="panel-body">
-
-                                        <fieldset form="blogForm" class="form-horizontal">
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">jpeg, jpg, png</label>
-
-                                            </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Thumbnail Image:</label>
-                                                <div class="col-sm-10"><input name="thumbnail" accept=".png, .jpg, jpeg." type="file" class="form-control" placeholder="jpeg, jpg, png ..."></div>
-                                            </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Full Image:</label>
-                                                <div class="col-sm-10"><input name="image" accept=".png, .jpg, jpeg." type="file" class="form-control" placeholder="jpeg, jpg, png ..."></div>
-                                            </div>
-                                            <div class="hr-line-dashed"></div>
-
-                                            <div class="form-group">
-                                                <div class="col-sm-4 col-sm-offset-2">
-                                                    <button class="btn btn-primary" type="submit">Save Blog</button>
-                                                </div>
-                                            </div>
-                                      </fieldset>
                                     </form>
                                     </div>
                                 </div>
@@ -301,11 +303,13 @@
 
 @section('custom-script')
     <script>
+
         $(document).ready(function() {
 
             $('.summernote').summernote();
 
         });
+
 
         var edit = function() {
             $('.click2edit').summernote({
@@ -317,4 +321,34 @@
             $('.click2edit').destroy();
         };
     </script>
+
+<script>
+    var Success = `{{\Session::has('success')}}`;
+    var Error = `{{\Session::has('error')}}`;
+
+    if (Success) {
+        setTimeout(function() {
+            toastr.options = {
+                closeButton: true,
+                progressBar: true,
+                showMethod: 'slideDown',
+                timeOut: 7000
+            };
+            toastr.success('Success Message', `{{\Session::get('success')}}`);
+
+        }, 1300);
+    }
+    else if(Error){
+        setTimeout(function() {
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 4000
+                };
+                toastr.error('Failure Message', `{{\Session::get('error')}}`);
+
+            }, 1300);
+    }
+</script>
 @endsection

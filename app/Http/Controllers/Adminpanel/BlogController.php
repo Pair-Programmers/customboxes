@@ -46,21 +46,21 @@ class BlogController extends Controller
             'title' => 'required|string|unique:blogs,title',
         ]);
 
-        $inputs = $request->all();
+        $inputs = $request->input();
         $inputs['slug'] = Str::slug($request->title);
         $inputs['admin_id'] = Auth::guard('admin')->id();
         if ($request->hasFile('thumbnail')) {
             $image = $request->file('thumbnail');
             $name=time().'_'.$image->getClientOriginalName();
             $image->move(public_path().'/storage/images/blogs/thumbnail', $name);
-            $input['thumbnail'] = $name;
+            $inputs['thumbnail'] = $name;
         }
 
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $name=time().'_'.$image->getClientOriginalName();
             $image->move(public_path().'/storage/images/blogs', $name);
-            $input['image'] = $name;
+            $inputs['image'] = $name;
         }
         Blog::create($inputs);
         return redirect()->route('admin.blog.index')->with('success', 'Created Successfuly !');
@@ -86,7 +86,6 @@ class BlogController extends Controller
     public function edit(Blog $blog)
     {
         $blogCategories = BlogCategory::all();
-        $blog = Blog::findOrFail($blog->id);
         return view('adminpanel.pages.blog.edit', compact('blogCategories', 'blog'));
     }
 
@@ -99,7 +98,39 @@ class BlogController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'title' => 'required|string|unique:blogs,title,'.$id,
+        ]);
+
+        $inputs = $request->except(['_token', '_method']);
+        $inputs['slug'] = Str::slug($request->title);
+
+        if ($request->hasFile('thumbnail')) {
+            $image = $request->file('thumbnail');
+            $name=time().'_'.$image->getClientOriginalName();
+            $image->move(public_path().'/storage/images/blogs/thumbnail', $name);
+            $inputs['thumbnail'] = $name;
+        }
+        else{
+            unset($inputs['thumbnail']);
+        }
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $name=time().'_'.$image->getClientOriginalName();
+            $image->move(public_path().'/storage/images/blogs', $name);
+            $inputs['image'] = $name;
+        }
+        else{
+            unset($inputs['image']);
+        }
+        if(Blog::find($id)){
+            Blog::where('id', $id)->update($inputs);
+        }
+        else{
+            return redirect()->back()->with('error', 'Blog not found !');
+        }
+        return redirect()->route('admin.blog.index')->with('success', 'Updated Successfuly !');
     }
 
     /**
@@ -110,6 +141,12 @@ class BlogController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $blog = Blog::findOrFail($id);
+        if ($blog) {
+            $blog->delete();
+            return response()->json(['success' => 'Deleted Successfully !']);
+        }
+
+        return response()->json(['error' => 'Error while deleting !']);
     }
 }

@@ -40,7 +40,7 @@
                 <div class="col-lg-12">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <h5>Basic Data Tables example with responsive plugin</h5>
+                            <h5>All the Public and Private Blogs are listed here</h5>
                             <div class="ibox-tools">
                                 <a class="collapse-link">
                                     <i class="fa fa-chevron-up"></i>
@@ -192,7 +192,7 @@
                     data: {
                         "_token": "{{ csrf_token() }}"
                     },
-                    url: "{{ route('admin.order.destroy', '') }}/" + id,
+                    url: "{{ route('admin.blog.destroy', '') }}/" + id,
                     success: function(response) {
                         console.log(response);
                         if (response.success) {
@@ -211,6 +211,35 @@
 
             });
 
+        }
+    </script>
+    <script>
+        var Success = `{{\Session::has('success')}}`;
+        var Error = `{{\Session::has('error')}}`;
+
+        if (Success) {
+            setTimeout(function() {
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 7000
+                };
+                toastr.success('Success Message', `{{\Session::get('success')}}`);
+
+            }, 1300);
+        }
+        else if(Error){
+            setTimeout(function() {
+                    toastr.options = {
+                        closeButton: true,
+                        progressBar: true,
+                        showMethod: 'slideDown',
+                        timeOut: 4000
+                    };
+                    toastr.error('Failure Message', `{{\Session::get('error')}}`);
+
+                }, 1300);
         }
     </script>
 @endsection
