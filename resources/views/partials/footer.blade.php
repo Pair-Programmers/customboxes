@@ -52,10 +52,7 @@
                                 <!-- <li><a href="wishlist.html">My Wishlish</a></li> -->
                                 <li><a href="#">Term & Conditions</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Track Order</a></li>
-                                <li><a href="shop.html">Shop</a></li>
                                 <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="#">Returns/Exchange</a></li>
                                 <li><a href="#">FAQs</a></li>
                             </ul>
                         </div>

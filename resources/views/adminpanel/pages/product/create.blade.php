@@ -84,7 +84,7 @@
 
                                     <label class="col-sm-2 control-label">Summary</label>
                                     <div class="col-sm-10">
-                                        <input id="" name="summary" type="text"  class="form-control"
+                                        <input id="" name="summary" type="text" class="form-control"
                                             value="{{ old('summary') }}">
                                         @error('summary')
                                             <span class="help-block m-b-none">Name is Required</span>
@@ -122,10 +122,10 @@
                                         <input id="" name="image3" type="file" required class="form-control">
                                     </div>
                                     <div class="col-sm-2">
-                                        <input id="" name="image4" type="file"  class="form-control">
+                                        <input id="" name="image4" type="file" class="form-control">
                                     </div>
                                     <div class="col-sm-2">
-                                        <input id="" name="image5" type="file"  class="form-control">
+                                        <input id="" name="image5" type="file" class="form-control">
                                     </div>
 
                                 </div>
@@ -139,6 +139,22 @@
                                         <textarea id="" name="description" type="text" required class="summernote">
                                                 {{ old('description') }}
                                             </textarea>
+                                    </div>
+                                </div>
+
+                                <div class="hr-line-dashed"></div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Visible</label>
+
+                                    <div class="col-sm-10 @error('is_active') has-error @enderror ">
+                                        <select id="" name="is_active" class="form-control m-b" required>
+                                            <option selected value="1">Public</option>
+                                            <option value="0">Private</option>
+                                        </select>
+                                        @error('is_active')
+                                            <span class="help-block m-b-none">Select Visiblelity</span>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="hr-line-dashed"></div>
@@ -162,8 +178,8 @@
 
                                     <label class="col-sm-2 control-label">Meta Title</label>
                                     <div class="col-sm-10 @error('meta_tag_title') has-error @enderror ">
-                                        <input id="" name="meta_tag_title" type="text" placeholder=""
-                                            class="form-control" value="{{ old('meta_tag_title') }}">
+                                        <input id="" name="meta_tag_title" type="text" placeholder="" class="form-control"
+                                            value="{{ old('meta_tag_title') }}">
                                         @error('meta_tag_title')
                                             <span class="help-block m-b-none">Title is Required</span>
                                         @enderror
