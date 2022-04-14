@@ -32,7 +32,7 @@ class AppServiceProvider extends ServiceProvider
         $industriesHeader=Industry::where('is_industry', true)->get();
         View::share('industriesHeader',$industriesHeader);
 
-        $productsFooter=Product::where('is_active', true)->orderBy('id', 'desc')->get()->take(12);
+        $productsFooter=Product::where('is_active', true)->orderBy('id', 'desc')->get()->take(10);
         View::share('productsFooter',$productsFooter);
 
     }
