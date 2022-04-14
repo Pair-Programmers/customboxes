@@ -326,32 +326,48 @@
                                 <table>
                                     <tbody>
                                         <tr>
-                                            <td class="title width1">Name</td>
+                                            <td class="title width1">Box Style</td>
                                             <td>{{ $product->name }}</td>
                                         </tr>
                                         <tr>
-                                            <td class="title width1">SKU</td>
-                                            <td>{{ $product->name }}</td>
+                                            <td class="title width1">Dimension (L + W + H)</td>
+                                            <td>All Custom Sizes & Shapes</td>
                                         </tr>
                                         <tr>
-                                            <td class="title width1">Models</td>
-                                            <td>FX 829 v1</td>
+                                            <td class="title width1">Quantities</td>
+                                            <td>No Minimum Order Required</td>
                                         </tr>
                                         <tr>
-                                            <td class="title width1">Categories</td>
-                                            <td>Digital Print</td>
+                                            <td class="title width1">Paper Stock</td>
+                                            <td>10pt to 28pt (60lb to 400lb) Eco-Friendly Kraft, E-flute Corrugated, Bux Board, Cardstock</td>
                                         </tr>
                                         <tr>
-                                            <td class="title width1">Size</td>
-                                            <td>60’’ x 40’’</td>
+                                            <td class="title width1">Printing</td>
+                                            <td>No Printing, CMYK, CMYK + 1 PMS color, CMYK + 2 PMS colors</td>
                                         </tr>
                                         <tr>
-                                            <td class="title width1">Brand </td>
-                                            <td>Individual Collections</td>
+                                            <td class="title width1">Finishing </td>
+                                            <td>Gloss Lamination, Matte Lamination, Gloss AQ, Gloss UV, Matte UV, Spot UV, Embossing, Foiling</td>
                                         </tr>
                                         <tr>
-                                            <td class="title width1">Color</td>
-                                            <td>Black, White</td>
+                                            <td class="title width1">Included Options</td>
+                                            <td>Die Cutting, Gluing, Scored, Perforation</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title width1">Additional Options</td>
+                                            <td>Eco-Friendly, Recycled Boxes, Biodegradable</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title width1">Proof</td>
+                                            <td>Flat View, 3D Mock-up, Physical Sampling (On request)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title width1">Turnaround</td>
+                                            <td>Standard 7 - 9 Business Days, RUSH 4 - 6 Business Days</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title width1">Shipping</td>
+                                            <td>FLAT (Free Shipping to USA, UK, Canada)</td>
                                         </tr>
                                     </tbody>
                                 </table>
