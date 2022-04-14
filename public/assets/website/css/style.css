@@ -14770,14 +14770,14 @@ textarea:focus {
           transform: translateY(-50%);
   font-size: 18px;
   font-family: 'simple-line-icons';
-  content: "\e01e";
+  /* content: "\e01e"; */
   z-index: 999;
   color: #000000;
 }
 
 .subscribe-form-2 .subscribe-form-style-2 .mc-form-2 input {
   color: #bbbbbb;
-  padding: 2px 165px 2px 60px;
+  padding: 2px 10px 2px 10px;
   background-color: #ffffff;
   border: none;
   height: 55px;
@@ -14785,13 +14785,13 @@ textarea:focus {
 
 @media only screen and (max-width: 767px) {
   .subscribe-form-2 .subscribe-form-style-2 .mc-form-2 input {
-    padding: 2px 113px 2px 60px;
+    padding: 2px 10px 2px 10px;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .subscribe-form-2 .subscribe-form-style-2 .mc-form-2 input {
-    padding: 2px 135px 2px 60px;
+    padding: 2px 10px 2px 10px;
   }
 }
 
@@ -14831,7 +14831,7 @@ textarea:focus {
   font-family: "Heebo", sans-serif;
   text-transform: uppercase;
   letter-spacing: .75px;
-  padding: 0 30px;
+  padding: 0 10px;
   color: #ffffff;
   background-color: #4dbdaf;
 }
@@ -14845,7 +14845,7 @@ textarea:focus {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .subscribe-form-2 .subscribe-form-style-2 .mc-form-2 .clear-2 input {
-    padding: 0 20px;
+    padding: 0 6px;
   }
 }
 
@@ -14883,7 +14883,7 @@ textarea:focus {
 
 .subscribe-form-2 .subscribe-form-style-2 .mc-form-2 .clear-2.clear-2-green-2 input {
   background-color: #468707;
-  min-height: 56px;
+  min-height: 40px;
 }
 
 .subscribe-form-2 .subscribe-form-style-2 .mc-form-2 .clear-2.clear-2-green-2 input:hover {

@@ -47,6 +47,10 @@ Route::controller(App\Http\Controllers\OrderController::class)->prefix('order')-
     Route::post('/', 'store')->name('store');
 });
 Route::get('/contact-us', [App\Http\Controllers\ContactUsController::class, 'create'])->name('contact-us');
+Route::get('/about-us', [App\Http\Controllers\WebPagesController::class, 'showAboutUsPage'])->name('about-us');
+Route::get('/privacy-policy', [App\Http\Controllers\WebPagesController::class, 'showPrivacyPolicyPage'])->name('privacy-policy');
+Route::get('/term-and-conditions', [App\Http\Controllers\WebPagesController::class, 'showTermAndConditionsPage'])->name('term-conditions');
+Route::get('/faqs', [App\Http\Controllers\WebPagesController::class, 'showFAQSPage'])->name('faqs');
 
 //adminpanel
 Route::get('admin/login', [App\Http\Controllers\Adminpanel\AuthController::class, 'show'])->name('admin.login.show');
