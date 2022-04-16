@@ -109,7 +109,7 @@
                             </div>
                         </div>
                     </div> --}}
-                    <div class="col-lg-7">
+                    <div class="col-lg-10">
                         <div
                             class="main-menu main-menu-white main-menu-padding-1 main-menu-font-size-14 main-menu-lh-5">
                             <nav>
@@ -118,8 +118,8 @@
                                     <li><a href="index.html">Boxes By Industry <i class="icon-arrow-down"></i></a>
                                         <ul class="sub-menu-style">
                                             @foreach ($industriesHeader as $industry)
-                                            <li><a href="{{route('industry.show', $industry)}}">{{$industry->name}}</a></li>
-                                        @endforeach
+                                                <li><a href="{{route('industry.show', $industry)}}">{{$industry->name}}</a></li>
+                                            @endforeach
                                         </ul>
                                     </li>
                                     <li><a href="{{route('industry.custom-printed-boxes.show')}}">Custom Printed Boxes</a></li>
