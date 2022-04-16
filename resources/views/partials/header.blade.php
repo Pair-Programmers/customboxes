@@ -94,7 +94,7 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    {{-- <div class="col-lg-3">
                         <div class="main-categori-wrap main-categori-wrap-modify-2">
                             <a class="categori-show categori-blue" href="#">Boxes By Industry<i
                                     class="icon-arrow-down icon-right"></i></a>
@@ -108,12 +108,20 @@
                                 </nav>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="col-lg-7">
                         <div
                             class="main-menu main-menu-white main-menu-padding-1 main-menu-font-size-14 main-menu-lh-5">
                             <nav>
+
                                 <ul>
+                                    <li><a href="index.html">Boxes By Industry <i class="icon-arrow-down"></i></a>
+                                        <ul class="sub-menu-style">
+                                            @foreach ($industriesHeader as $industry)
+                                            <li><a href="{{route('industry.show', $industry)}}">{{$industry->name}}</a></li>
+                                        @endforeach
+                                        </ul>
+                                    </li>
                                     <li><a href="{{route('industry.custom-printed-boxes.show')}}">Custom Printed Boxes</a></li>
                                     <li><a href="{{route('industry.boxes-styles')}}">Boxes Styles</a></li>
                                     <li><a href="{{route('blog.index')}}">Blogs</a></li>

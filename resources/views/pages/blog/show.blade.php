@@ -43,7 +43,7 @@
                                 <ul>
                                     @foreach ($categories as $category)
                                     <li><a href="{{ route('blog.index', $category) }}">{{ $category->name }}</a></li>
-                                @endforeach
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>

@@ -79,6 +79,15 @@
                                                 </div>
                                             </div>
 
+                                            <div class="form-group @error('summary') has-error @enderror"><label class="col-sm-2 control-label">Summary:</label>
+                                                <div class="col-sm-10"><input id="" value="{{$blog->summary}}" name="summary" required type="text" placeholder="short summary .." class="form-control" >
+                                                    @error('summary')
+                                                        <span class="help-block m-b-none">{{$message}}</span>
+                                                    @enderror
+                                                </div>
+
+                                            </div>
+
                                             <div class="form-group"><label class="col-sm-2 control-label">Description:</label>
                                                 <div class="col-sm-10">
                                                     <textarea id="" name="description" type="text" required class="summernote">
