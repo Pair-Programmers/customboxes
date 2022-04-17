@@ -31,11 +31,11 @@ class ContactUs extends Mailable
     public function build()
     {
         return $this->markdown('emails.contact-us')->with([
-            'name' => $this->contactUsData->name,
-            'email' => $this->contactUsData->email,
-            'phone' => $this->contactUsData->phone,
-            'subject' => $this->contactUsData->subject,
-            'message' => $this->contactUsData->message,
+            'name' => $this->contactUsData['name'],
+            'email' => $this->contactUsData['email'],
+            'phone' => $this->contactUsData['phone'],
+            'subject' => $this->contactUsData['subject'],
+            'message' => $this->contactUsData['message'],
         ]);
     }
 }
