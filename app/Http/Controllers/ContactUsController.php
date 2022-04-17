@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\ContactUs;;
+use App\Mail\ContactUs as MailContactUs;
+use App\Models\ContactUs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -46,7 +47,7 @@ class ContactUsController extends Controller
 
         $inputs = $request->input();
         ContactUs::create($inputs);
-        Mail::to('mianhamza7262@gmail.com')->queue(new ContactUs($inputs));
+        Mail::to('mianhamza7262@gmail.com')->queue(new MailContactUs($inputs));
 
         return redirect()->back()->with(['success'=>"We have Recieved Your Maessage, we'll contact you soon !"]);
 
