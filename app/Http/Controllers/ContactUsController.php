@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ContactUs;
+use App\Mail\ContactUs;;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactUsController extends Controller
 {
@@ -35,7 +36,20 @@ class ContactUsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'name' => 'string|required',
+            'email' => 'email|required',
+            'phone' => 'string|required',
+            'subject' => 'string|required',
+            'message' => 'string|required',
+        ]);
+
+        $inputs = $request->input();
+        ContactUs::create($inputs);
+        Mail::to('mianhamza7262@gmail.com')->queue(new ContactUs($inputs));
+
+        return redirect()->back()->with(['success'=>"We have Recieved Your Maessage, we'll contact you soon !"]);
+
     }
 
     /**
@@ -46,7 +60,7 @@ class ContactUsController extends Controller
      */
     public function show(ContactUs $contactUs)
     {
-        
+
     }
 
     /**

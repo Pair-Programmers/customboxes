@@ -64,10 +64,10 @@
                             <ul>
                                 <li><a href="{{route('contact-us')}}">Contact Us</a></li>
                                 <!-- <li><a href="wishlist.html">My Wishlish</a></li> -->
-                                <li><a href="{{route('contact-us')}}">Term & Conditions</a></li>
-                                <li><a href="{{route('contact-us')}}">Privacy Policy</a></li>
+                                <li><a href="{{route('term-conditions')}}">Term & Conditions</a></li>
+                                <li><a href="{{route('privacy-policy')}}">Privacy Policy</a></li>
                                 <li><a href="{{route('about-us')}}">About Us</a></li>
-                                <li><a href="{{route('contact-us')}}">FAQs</a></li>
+                                <li><a href="{{route('faqs')}}">FAQs</a></li>
                             </ul>
                         </div>
                     </div>

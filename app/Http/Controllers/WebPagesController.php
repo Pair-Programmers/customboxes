@@ -13,17 +13,17 @@ class WebPagesController extends Controller
 
     public function showPrivacyPolicyPage()
     {
-        return view('pages.contact-us');
+        return view('pages.privacy-policy');
     }
 
     public function showTermAndConditionsPage()
     {
-        return view('pages.contact-us');
+        return view('pages.terms-conditions');
     }
 
     public function showFAQSPage()
     {
-        return view('pages.contact-us');
+        return view('pages.faqs');
     }
 
 }

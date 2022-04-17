@@ -24,11 +24,11 @@ class IndustrySeeder extends Seeder
             ['Food & Beverage Boxes',"What entices the food enthusiast to make an instant purchase? It's the packaging, we at CustomBoxes provide the custom food & beverage boxes that can bring the fiesta vibe to your customer's eyes!", true],
             ['Vape Cartridge Boxes', 'Use our FDA Approved Custom Vape Cartridge boxes in order to make sure that your product has a great shelf life. With us, you can customize the packaging of your product and can many customers in a blink of an eye! Contact us!', true],
             ['Jewelry Boxes','---', true],
-            ['Riged Boxes', 'Are you in the business of shipping your products globally and want something unique to make sure your product stays safe during transit? If so, then we at CustomBoxesUs provide the best packaging solution for you "Custom Rigid Boxes." Contact us!', true],
+            ['Rigid Boxes', 'Are you in the business of shipping your products globally and want something unique to make sure your product stays safe during transit? If so, then we at CustomBoxesUs provide the best packaging solution for you "Custom Rigid Boxes." Contact us!', true],
             ['Apparel Boxes','---', true],
             ['Sports Boxes', '---', true],
             ['Custom Printed Boxes', '---', false],
-            ['Boxes Styles', '---', false]
+            ['Boxes Styles', '---', false]//false are not industries.
         ];
         foreach ($industry_names as $key => $value) {
             try {

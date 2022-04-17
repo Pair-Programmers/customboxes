@@ -29,10 +29,16 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
 
-        $industriesHeader=Industry::where('is_industry', true)->get();
-        View::share('industriesHeader',$industriesHeader);
+        try {
+            $industriesHeader=Industry::where('is_industry', true)->get();
+            $productsFooter=Product::where('is_active', true)->orderBy('id', 'desc')->get()->take(10);
+            //code...
+        } catch (\Throwable $th) {
+            $industriesHeader = null;
+            $industriesHeader = null;
+        }
 
-        $productsFooter=Product::where('is_active', true)->orderBy('id', 'desc')->get()->take(10);
+        View::share('industriesHeader',$industriesHeader);
         View::share('productsFooter',$productsFooter);
 
     }
