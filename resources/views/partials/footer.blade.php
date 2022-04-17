@@ -32,15 +32,19 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                     <div class="footer-widget mb-40">
-                        <h3 class="footer-title">Custom Printed Boxes</h3>
-                        <div class="footer-info-list info-list-50-parcent">
+                        {{-- <h3 class="footer-title">Custom Printed Boxes</h3> --}}
+                        <img src="{{asset('assets/website')}}/images/logo/logo.png" style="width: 350px; height: 80px; margin-bottom: 15px;" alt="">
+                        <br>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed possimus, aperiam maxime fugiat exercitationem cum ratione animi in commodi, ad excepturi atque illo sunt quisquam quos! Iure in a provident.</P>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo excepturi repudiandae quia unde voluptas sequi officiis consequatur quis?</p>
+                        {{-- <div class="footer-info-list info-list-50-parcent">
                             <ul>
                                 @foreach($productsFooter as $product)
                                     <li><a href="{{route('product.show', [$product->industry ,$product])}}">{{$product->name}}</a></li>
                                 @endforeach
 
                             </ul>
-                        </div>
+                        </div> --}}
                     </div>
                     <div id="mc_embed_signup" class="subscribe-form-2">
                         <form method="post" action="{{route('news-subsciber.store')}}" id="mc-embedded-subscribe-form" class="validate subscribe-form-style-2" novalidate=""  name="mc-embedded-subscribe-form" >
@@ -62,12 +66,14 @@
                         <h3 class="footer-title">useful links</h3>
                         <div class="footer-info-list">
                             <ul>
+                                <li><a href="{{route('faqs')}}">Information</a></li>
                                 <li><a href="{{route('contact-us')}}">Contact Us</a></li>
-                                <!-- <li><a href="wishlist.html">My Wishlish</a></li> -->
                                 <li><a href="{{route('term-conditions')}}">Term & Conditions</a></li>
                                 <li><a href="{{route('privacy-policy')}}">Privacy Policy</a></li>
                                 <li><a href="{{route('about-us')}}">About Us</a></li>
                                 <li><a href="{{route('faqs')}}">FAQs</a></li>
+                                <li><a href="{{route('faqs')}}">Refund Policy</a></li>
+                                <li><a href="{{route('faqs')}}">Paper Weight Chart</a></li>
                             </ul>
                         </div>
                     </div>
