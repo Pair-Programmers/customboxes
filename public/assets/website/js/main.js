@@ -1052,6 +1052,9 @@
         $('.curr-dropdown-active').slideToggle(900);
     });
     
+
+
+
     
 })(jQuery);
 
