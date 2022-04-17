@@ -46,8 +46,8 @@ class ContactUsController extends Controller
         ]);
 
         $inputs = $request->input();
-        ContactUs::create($inputs);
-        Mail::to('mianhamza7262@gmail.com')->queue(new MailContactUs($inputs));
+        $contactData = ContactUs::create($inputs);
+        Mail::to('mianhamza7262@gmail.com')->queue(new MailContactUs($contactData));
 
         return redirect()->back()->with(['success'=>"We have Recieved Your Maessage, we'll contact you soon !"]);
 
