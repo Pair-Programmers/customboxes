@@ -36,110 +36,112 @@
                 </div>
             </div>
         </div>
-        <div class="header-middle header-middle-padding-2">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-2 col-lg-2">
-                        <div class="logo">
-                            <a href="{{route('welcome')}}"><img src="{{asset('assets/website')}}/images/logo/logo.png" alt="logo"></a>
+        <div id="#fixed-header" class="fixed-header">
+            <div class="header-middle header-middle-padding-2 bg-white">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <a href="{{route('welcome')}}"><img src="{{asset('assets/website')}}/images/logo/logo.png" alt="logo"></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-5">
-                        <div class="categori-search-wrap categori-search-wrap-modify-3">
+                        <div class="col-xl-5 col-lg-5">
+                            <div class="categori-search-wrap categori-search-wrap-modify-3">
 
-                            <div class="search-wrap-3">
-                                <form action="{{route('product.search')}}" method="POST">
-                                    @csrf
-                                    <input name="keyword" value="{{old('keyword')}}" required placeholder="Search Products..." type="text">
-                                    <button type="submit" class="blue"><i class="lnr lnr-magnifier"></i></button>
-                                </form>
+                                <div class="search-wrap-3">
+                                    <form action="{{route('product.search')}}" method="POST">
+                                        @csrf
+                                        <input name="keyword" value="{{old('keyword')}}" required placeholder="Search Products..." type="text">
+                                        <button type="submit" class="blue"><i class="lnr lnr-magnifier"></i></button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3">
-                        <div class="hotline-2-wrap">
-                            <div class="hotline-2-icon">
-                                <a href="tel:9256959888">
-                                <i class="blue icon-call-end"></i>
-                            </a>
-                            </div>
-                            <div class="hotline-2-content">
-                                <a href="tel:9256959888">
-                                <span> Hotline 24/7</span>
-                                <h5>(925) 695 9888</h5>
-                            </a>
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="hotline-2-wrap">
+                                <div class="hotline-2-icon">
+                                    <a href="tel:9256959888">
+                                    <i class="blue icon-call-end"></i>
+                                </a>
+                                </div>
+                                <div class="hotline-2-content">
+                                    <a href="tel:9256959888">
+                                    <span> Hotline 24/7</span>
+                                    <h5>(925) 695 9888</h5>
+                                </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-xl-2 col-lg-2">
-                        <div class="btn-style-1">
-                            <a class="animated btn-1-padding-4  btn-1-font-14" href="{{route('product.index')}}">Custom
-                                Quote</a>
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="btn-style-1">
+                                <a class="animated btn-1-padding-4  btn-1-font-14" href="{{route('product.index')}}">Custom
+                                    Quote</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="header-bottom bg-blue">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-1">
-                        <div
-                            class="main-menu main-menu-white main-menu-padding-1 main-menu-font-size-14 main-menu-lh-5">
-                            <nav>
-                                <ul>
-                                    <li><a href="{{route('welcome')}}">Home</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    {{-- <div class="col-lg-3">
-                        <div class="main-categori-wrap main-categori-wrap-modify-2">
-                            <a class="categori-show categori-blue" href="#">Boxes By Industry<i
-                                    class="icon-arrow-down icon-right"></i></a>
-                            <div class="category-menu-2 category-menu-2-blue categori-hide categori-not-visible-2">
+            <div class="header-bottom bg-blue">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-1">
+                            <div
+                                class="main-menu main-menu-white main-menu-padding-1 main-menu-font-size-14 main-menu-lh-5">
                                 <nav>
                                     <ul>
-                                        @foreach ($industriesHeader as $industry)
-                                            <li><a href="{{route('industry.show', $industry)}}">{{$industry->name}}</a></li>
-                                        @endforeach
+                                        <li><a href="{{route('welcome')}}">Home</a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
-                    </div> --}}
-                    <div class="col-lg-10">
-                        <div
-                            class="main-menu main-menu-white main-menu-padding-1 main-menu-font-size-14 main-menu-lh-5">
-                            <nav>
-
-                                <ul>
-                                    <li><a href="index.html">Boxes By Industry <i class="icon-arrow-down"></i></a>
-                                        <ul class="sub-menu-style">
+                        {{-- <div class="col-lg-3">
+                            <div class="main-categori-wrap main-categori-wrap-modify-2">
+                                <a class="categori-show categori-blue" href="#">Boxes By Industry<i
+                                        class="icon-arrow-down icon-right"></i></a>
+                                <div class="category-menu-2 category-menu-2-blue categori-hide categori-not-visible-2">
+                                    <nav>
+                                        <ul>
                                             @foreach ($industriesHeader as $industry)
                                                 <li><a href="{{route('industry.show', $industry)}}">{{$industry->name}}</a></li>
                                             @endforeach
                                         </ul>
-                                    </li>
-                                    <li><a href="{{route('industry.custom-printed-boxes.show')}}">Custom Printed Boxes</a></li>
-                                    <li><a href="{{route('industry.boxes-styles')}}">Boxes Styles</a></li>
-                                    <li><a href="{{route('blog.index')}}">Blogs</a></li>
-                                    {{-- <li><a href="portfolio.html">Portfolio</a></li> --}}
-                                    <li><a href="{{route('product.rush-order')}}">Rush Order</a></li>
-                                </ul>
-                            </nav>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div> --}}
+                        <div class="col-lg-10">
+                            <div
+                                class="main-menu main-menu-white main-menu-padding-1 main-menu-font-size-14 main-menu-lh-5">
+                                <nav>
+
+                                    <ul>
+                                        <li><a href="index.html">Boxes By Industry <i class="icon-arrow-down"></i></a>
+                                            <ul class="sub-menu-style">
+                                                @foreach ($industriesHeader as $industry)
+                                                    <li><a href="{{route('industry.show', $industry)}}">{{$industry->name}}</a></li>
+                                                @endforeach
+                                            </ul>
+                                        </li>
+                                        <li><a href="{{route('industry.custom-printed-boxes.show')}}">Custom Printed Boxes</a></li>
+                                        <li><a href="{{route('industry.boxes-styles')}}">Boxes Styles</a></li>
+                                        <li><a href="{{route('blog.index')}}">Blogs</a></li>
+                                        {{-- <li><a href="portfolio.html">Portfolio</a></li> --}}
+                                        <li><a href="{{route('product.rush-order')}}">Rush Order</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-1">
-                        <div class="header-action header-action-flex pr-20">
-                            {{-- <div class="same-style-2 same-style-2-white same-style-2-font-dec">
-                                <a href="login-register.html"><i class="icon-user"></i></a>
-                            </div> --}}
-                            {{-- <div class="same-style-2 same-style-2-white same-style-2-font-dec">
-                                <a href="wishlist.html"><i class="icon-heart"></i><span
-                                        class="pro-count red">03</span></a>
-                            </div> --}}
+                        <div class="col-lg-1">
+                            <div class="header-action header-action-flex pr-20">
+                                {{-- <div class="same-style-2 same-style-2-white same-style-2-font-dec">
+                                    <a href="login-register.html"><i class="icon-user"></i></a>
+                                </div> --}}
+                                {{-- <div class="same-style-2 same-style-2-white same-style-2-font-dec">
+                                    <a href="wishlist.html"><i class="icon-heart"></i><span
+                                            class="pro-count red">03</span></a>
+                                </div> --}}
+                            </div>
                         </div>
                     </div>
                 </div>
