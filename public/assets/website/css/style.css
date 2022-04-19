@@ -19416,10 +19416,14 @@ h3.cart-page-title {
 .billing-info-wrap .billing-info input {
   border: 1px solid #e8e8e8;
   height: 35px;
-  background-color: transparent;
+  background-color: #f0f7fc;
   padding: 2px 20px;
   color: #1f2226;
   font-size: 14px;
+  box-shadow: -1px 3px 2px -1px rgba(31,149,235,0.75);
+  -webkit-box-shadow: -1px 3px 2px -1px rgba(31,149,235,0.75);
+  -moz-box-shadow: -1px 3px 2px -1px rgba(31,149,235,0.75);
+
 }
 
 .billing-info-wrap .billing-info input:focus {
