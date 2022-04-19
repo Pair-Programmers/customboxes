@@ -30,7 +30,7 @@ class ContactUs extends Mailable implements ShouldQueue
      */
     public function build()
     {
-        return $this->markdown('emails.contact-us')->with([
+        return $this->markdown('emails.contact-us')->subject($this->contactUsData->subject)->with([
             'name' => $this->contactUsData->name,
             'email' => $this->contactUsData->email,
             'phone' => $this->contactUsData->phone,

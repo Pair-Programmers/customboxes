@@ -63,16 +63,16 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                     <div class="footer-widget ml-70 mb-40">
-                        <h3 class="footer-title">useful links</h3>
+                        <h3 class="footer-title">INFORMATION</h3>
                         <div class="footer-info-list">
                             <ul>
-                                <li><a href="{{route('faqs')}}">Information</a></li>
+                                {{-- <li><a href="{{route('faqs')}}"></a></li> --}}
                                 <li><a href="{{route('contact-us')}}">Contact Us</a></li>
                                 <li><a href="{{route('term-conditions')}}">Term & Conditions</a></li>
                                 <li><a href="{{route('privacy-policy')}}">Privacy Policy</a></li>
                                 <li><a href="{{route('about-us')}}">About Us</a></li>
                                 <li><a href="{{route('faqs')}}">FAQs</a></li>
-                                <li><a href="{{route('faqs')}}">Refund Policy</a></li>
+                                {{-- <li><a href="{{route('faqs')}}">Refund Policy</a></li> --}}
                                 <li><a href="{{route('faqs')}}">Paper Weight Chart</a></li>
                             </ul>
                         </div>
@@ -105,7 +105,7 @@
                                     <a href="mailto:info@customboxesus.com"><i class="icon-envelope-open "></i></a>
                                 </div>
                                 <div class="contact-info-2-content">
-                                    <a href="mailto:info@customboxesus.com"><p>info@customboxesus.com</p></a>
+                                    {{-- <a href="mailto:info@customboxesus.com"><p>info@customboxesus.com</p></a> --}}
                                 </div>
 
                             </div>

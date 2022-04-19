@@ -52,6 +52,9 @@
                             <input name="phone"  type="text" value="{{old('phone')}}" placeholder="Phone">
                         </div>
                         <div class="col-lg-12 col-md-12">
+                            <input name="company" required value="{{old('company')}}" type="text" placeholder="Company">
+                        </div>
+                        <div class="col-lg-12 col-md-12">
                             <input name="subject" required value="{{old('subject')}}" type="text" placeholder="Subject">
                         </div>
                         <div class="col-lg-12 col-md-12">
