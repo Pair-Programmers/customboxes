@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div id="#fixed-header" class="fixed-header">
+        <div id="fixed-header" class="fixed-header">
             <div class="header-middle header-middle-padding-2 bg-white">
                 <div class="container">
                     <div class="row align-items-center">
