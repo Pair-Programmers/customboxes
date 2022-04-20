@@ -1,3 +1,5 @@
+// const { nth } = require("lodash");
+
 (function ($) {
     "use strict";
     
@@ -1057,25 +1059,31 @@
     
         // Get the navbar
         var navbar = document.getElementById("fixed-header");
-        var section1 = document.getElementById("section1");
+        var header1 = document.getElementById("header-area");
         var navbarHeight = document.getElementById("fixed-header").offsetHeight + 'px';
-        console.log(navbarHeight);
-
-        // Get the offset position of the navbar
+        var navbarSpaceElement = document.createElement('div');
+        header1.appendChild(navbarSpaceElement);
         var sticky = navbar.offsetTop;
-
         // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
         function myFunction() {
         if (window.pageYOffset >= sticky) {
             navbar.classList.add("sticky");
-            section1.style.paddingTop = navbarHeight;
+            navbarSpaceElement.style.height = navbarHeight;
         } else {
             navbar.classList.remove("sticky");
-            section1.style.paddingTop = 0;
+            document.getElementById("navbarSpaceElement")
+            navbarSpaceElement.style.height = 0;
 
         }
         }
 
+        // Selectize Js has all options we require .Please Try It
+
+        $(document).ready(function () {
+            $('select').selectize({
+                sortField: 'text'
+            });
+        });
 
 
     

@@ -1758,12 +1758,15 @@ input:focus {
 
 textarea {
   resize: vertical;
-  background: #eceff8;
   border: 2px solid #eceff8;
   padding: 10px;
   width: 100%;
   font-size: 14px;
   color: #737373;
+  background-color: #f0f7fc;
+box-shadow: -1px 3px 2px -1px rgb(31 149 235 / 75%);
+    -webkit-box-shadow: -1px 3px 2px -1px rgb(31 149 235 / 75%);
+    -moz-box-shadow: -1px 3px 2px -1px rgba(31,149,235,0.75);
 }
 
 textarea:focus {
@@ -4293,7 +4296,7 @@ textarea:focus {
   font-size: 13px;
   color: #999;
   border: none;
-  height: 40px;
+  height: 30px;
   padding: 2px 50px 2px 10px;
   background-color: transparent;
 }
@@ -19460,6 +19463,10 @@ h3.cart-page-title {
   padding: 2px 10px;
   background: rgba(0, 0, 0, 0) url("../../assets/images/icon-img/select.png") no-repeat scroll right 18px center;
   cursor: pointer;
+  background-color: #f0f7fc;
+box-shadow: -1px 3px 2px -1px rgb(31 149 235 / 75%);
+    -webkit-box-shadow: -1px 3px 2px -1px rgb(31 149 235 / 75%);
+    -moz-box-shadow: -1px 3px 2px -1px rgba(31,149,235,0.75);
 }
 
 .billing-info-wrap .billing-select select option {
@@ -20369,7 +20376,7 @@ h3.cart-page-title {
 
 .blog-details-top .blog-details-content p {
   margin: 0;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 28px;
 }
 

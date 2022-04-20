@@ -1,6 +1,6 @@
 <header class="header-area">
-    <div class="header-large-device">
-        <div class="header-top header-top-ptb-3 bg-black">
+    <div id="header-area" class="header-large-device">
+        <div id="top-header" class="header-top header-top-ptb-3 bg-black">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-xl-4 col-lg-3">
