@@ -33,10 +33,10 @@
                     <p><strong>Fill below form and get instant response from one of our packaging expert.</strong>
                     </p>
                 </div>
-                <div class="col-lg-12">
-                    <div style="background-color: rgb(175, 174, 174)" class="pl-10 pt-2 pb-1 mb-3">
+                <div class="col-lg-12"  style="padding: 0px 150px 0px 150px">
+                    {{-- <div style="background-color: rgb(175, 174, 174)" class="pl-10 pt-2 pb-1 mb-3"> --}}
                         <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Qoute Now !</strong></h2>
-                    </div>
+                    {{-- </div> --}}
                     <div class="col-lg-12">
                         @if ($errors->any())
                             <div class="alert alert-danger">
@@ -44,6 +44,19 @@
                                     @foreach ($errors->all() as $error)
                                         <li>{{ $error }}</li>
                                     @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        @if (\Session::has('success'))
+                            <div class="alert alert-success">
+                                <ul>
+                                    <li>{!! \Session::get('success') !!}</li>
+                                </ul>
+                            </div>
+                        @elseif(\Session::has('error'))
+                            <div class="alert alert-danger">
+                                <ul>
+                                    <li>{!! \Session::get('error') !!}</li>
                                 </ul>
                             </div>
                         @endif
@@ -68,6 +81,7 @@
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info">
                                             <input type="number" required name="height" placeholder="Height *">
+                                            <input type="hidden"  name="qoute_form" value="Rush Order Form">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
@@ -271,14 +285,14 @@
             </div>
         </div>
     </div>
-    <div class="container pt-15" style="text-align: center;">
+    {{-- <div class="container pt-15" style="text-align: center;">
         <h3>Detail Description</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus qui saepe quo, consequatur pariatur
             iure sit officia delectus dolore, iste magni quod hic distinctio voluptas deleniti odit culpa corrupti.</p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum non officiis quo, maiores quod molestias
         architecto nisi optio eaque eligendi explicabo modi tempora consequatur in, animi debitis ad culpa!
 
-    </div>
+    </div> --}}
 @endsection
 
 @section('custom-script')

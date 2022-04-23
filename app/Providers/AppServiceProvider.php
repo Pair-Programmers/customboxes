@@ -35,7 +35,7 @@ class AppServiceProvider extends ServiceProvider
             //code...
         } catch (\Throwable $th) {
             $industriesHeader = null;
-            $industriesHeader = null;
+            $productsFooter = null;
         }
 
         View::share('industriesHeader',$industriesHeader);

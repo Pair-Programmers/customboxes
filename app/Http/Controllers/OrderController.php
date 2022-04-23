@@ -71,7 +71,7 @@ class OrderController extends Controller
         $order = Order::create($inputs);
         Mail::to($request->customer_email)->queue(new OrderPlaced());
         Mail::to('sales@customboxesus.com')->cc('info@customboxesus.com')->queue(new NewOrder($order));
-        return redirect()->back();
+        return redirect()->back()->with(['success'=>"We Have recieved your Qoutation, we'll contact you soon !"]);
     }
 
     /**

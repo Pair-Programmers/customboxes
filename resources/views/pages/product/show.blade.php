@@ -109,31 +109,47 @@
 
                         <p>{{ $product->summary }}</p>
                         <br>
-                        <div style="background-color: rgb(175, 174, 174)" class="pl-10 pt-2 pb-1 mb-3">
+                        {{-- <div style="background-color: rgb(175, 174, 174)" class="pl-10 pt-2 pb-1 mb-3"> --}}
                             <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Qoute Now !</strong></h2>
-                        </div>
+                        {{-- </div> --}}
                         <br>
                         <div class="row">
                             <div class="col-lg-12">
                                 @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
+                                @if (\Session::has('success'))
+                                    <div class="alert alert-success">
+                                        <ul>
+                                            <li>{!! \Session::get('success') !!}</li>
+                                        </ul>
+                                    </div>
+                                @elseif(\Session::has('error'))
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            <li>{!! \Session::get('error') !!}</li>
+                                        </ul>
+                                    </div>
+                                @endif
+
                         <div class="billing-info-wrap ">
                             <form id="orderForm" action="{{ route('order.store') }}" method="POST"
                                 enctype="multipart/form-data">
                                 {{-- <h3>Qoute Area</h3> --}}
                                 @csrf
-                                <input type="hidden" name="qoute_form" value="Industry Qoute Form">
+                                <input type="hidden" name="product_id" value="{{$product->id}}">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info">
                                             <input type="text" required name="height" placeholder="Height">
+                                            <input type="hidden" name="qoute_form" value="Product Detail Form">
+
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
