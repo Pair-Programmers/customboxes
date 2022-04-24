@@ -679,8 +679,6 @@
         <p>It does not matter what size your product is, as we can make any box to suit your product. We do have our own sizing guides so you can get an idea of what the different boxes will be suitable for and how long the process will take.</p>
         <h3>What if I need a box for CBD products?</h3>
         <p>We can also design custom packaging for CBD products. You may also want to use a different type of packaging if your CBD products are in liquid form or if you want to protect them from light or oxygen exposure. We are also available whatever choice you want, as long as it is according to our pricing list for custom-made boxes.</p>
-        <h3>Meta Description:</h3>
-        {{-- <p>Get your custom boxes with logo from us and attract as many customers you want by having cardboard boxes wholesale for your business! Get free shipping now by getting your quote from us!</p> --}}
     </div>
     <div class="download-app-area pb-70">
         <div class="container">
