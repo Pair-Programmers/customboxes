@@ -591,7 +591,7 @@
             </div>
         </div>
     </div>
-    <div class="container home-content">
+    <div class="container home-content home-content-psize">
         <h2>Why CustomBoxesUs?</h2>
         <p>Digital technology is becoming increasingly prevalent in modern times. Retailers and manufacturers are required to have adequate product packaging. Don't do business anonymously! It is the ideal decision that brands must have in their buckets these days when it comes to packaging, presenting, and transporting retail items in custom boxes with logos.</p>
 
@@ -680,7 +680,7 @@
         <h3>What if I need a box for CBD products?</h3>
         <p>We can also design custom packaging for CBD products. You may also want to use a different type of packaging if your CBD products are in liquid form or if you want to protect them from light or oxygen exposure. We are also available whatever choice you want, as long as it is according to our pricing list for custom-made boxes.</p>
         <h3>Meta Description:</h3>
-        <p>Get your custom boxes with logo from us and attract as many customers you want by having cardboard boxes wholesale for your business! Get free shipping now by getting your quote from us!</p>
+        {{-- <p>Get your custom boxes with logo from us and attract as many customers you want by having cardboard boxes wholesale for your business! Get free shipping now by getting your quote from us!</p> --}}
     </div>
     <div class="download-app-area pb-70">
         <div class="container">
