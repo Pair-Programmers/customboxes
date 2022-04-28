@@ -69,21 +69,23 @@
             </div>
         </div>
         <br>
+        <br>
         <div class="contact-info-wrap-3 pb-85">
             <h3>contact info</h3>
+            <p>Make your dream packaging come true with! Contact us and Get your desired packaging today from us!</p>
             <div class="row">
                 <div class="col-lg-4 col-md-4">
                     <div class="single-contact-info-3 text-center mb-30">
                         <i class="icon-location-pin "></i>
                         <h4>our address</h4>
-                        <p>77 seventh Street, USA. </p>
+                        <p>Willow Pass Rd, Concord, CA 94520, United States. </p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="single-contact-info-3 extra-contact-info text-center mb-30">
                         <ul>
-                            <li><i class="icon-screen-smartphone"></i> <a href="tel:716-298-1822"> 716-298-1822 </a></li>
-                            <li><i class="icon-envelope "></i> <a href="mailto:info@example.com"> info@example.com</a></li>
+                            <li><i class="icon-screen-smartphone"></i> <a href="tel:9256959888"> (925) 695 9888 </a></li>
+                            <li><i class="icon-envelope "></i> <a href="mailto:info@customboxesus.com"> info@customboxesus.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -91,7 +93,7 @@
                     <div class="single-contact-info-3 text-center mb-30">
                         <i class="icon-clock "></i>
                         <h4>openning hour</h4>
-                        <p>Monday - Friday. 9:00am - 5:00pm </p>
+                        <p>24 Hours</p>
                     </div>
                 </div>
             </div>
