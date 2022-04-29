@@ -33,6 +33,19 @@
                                 </ul>
                             </div>
                         @endif
+                        @if (\Session::has('success'))
+                            <div class="alert alert-success">
+                                <ul>
+                                    <li>{!! \Session::get('success') !!}</li>
+                                </ul>
+                            </div>
+                        @elseif(\Session::has('error'))
+                            <div class="alert alert-danger">
+                                <ul>
+                                    <li>{!! \Session::get('error') !!}</li>
+                                </ul>
+                            </div>
+                        @endif
                         <div class="billing-info-wrap ">
                             <form id="orderForm" action="{{ route('order.store') }}" method="POST"
                                 enctype="multipart/form-data">
@@ -266,14 +279,14 @@
             </div>
         </div>
     </div>
-    <div class="container pt-15" style="text-align: center;">
+    {{-- <div class="container pt-15" style="text-align: center;">
         <h3>Detail Description</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus qui saepe quo, consequatur pariatur
             iure sit officia delectus dolore, iste magni quod hic distinctio voluptas deleniti odit culpa corrupti.</p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum non officiis quo, maiores quod molestias
         architecto nisi optio eaque eligendi explicabo modi tempora consequatur in, animi debitis ad culpa!
 
-    </div>
+    </div> --}}
 @endsection
 
 @section('custom-script')

@@ -17294,6 +17294,15 @@ textarea:focus {
   display: flex;
 }
 
+.home-content h2, h3, a{
+    color: #0064e0;
+}
+
+p{
+    font-size: 17px;
+    color: black;
+}
+
 .dec-review-bottom .ratting-form-wrapper .ratting-form .star-box-wrap .single-ratting-star a {
   color: #535353;
 }

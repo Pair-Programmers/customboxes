@@ -33,10 +33,10 @@
                     <p><strong>Fill below form and get instant response from one of our packaging expert.</strong>
                     </p>
                 </div>
-                <div class="col-lg-12">
-                    <div style="background-color: rgb(175, 174, 174)" class="pl-10 pt-2 pb-1 mb-3">
+                <div class="col-lg-12" style="padding: 0px 150px 0px 150px">
+                    {{-- <div style="background-color: rgb(175, 174, 174)" class="pl-10 pt-2 pb-1 mb-3"> --}}
                         <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Qoute Now !</strong></h2>
-                    </div>
+                    {{-- </div> --}}
                     <div class="col-lg-12">
                         @if ($errors->any())
                             <div class="alert alert-danger">
@@ -68,6 +68,7 @@
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info">
                                             <input type="number" required name="height" placeholder="Height *">
+                                            <input type="hidden"  name="qoute_form" value="Custom Qoute Form">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
