@@ -12,17 +12,11 @@
 <div class="breadcrumb-area bg-gray">
     <div class="container">
         <div class="breadcrumb-content text-center">
-            <ul>
-                <li>
-                    <a href="{{route('welcome')}}">Home</a>
-                </li>
-                <li class="active">Contact Us</li>
-            </ul>
+            <h1 style="color: red">Contact Us</h1>
         </div>
     </div>
 </div>
-<br>
-<div class="contact-area pt-115 pb-120">
+<div class="contact-area pt-30 pb-30">
     <div class="container">
 
         <div class="get-in-touch-wrap">

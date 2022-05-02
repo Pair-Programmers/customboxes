@@ -15310,7 +15310,7 @@ textarea:focus {
 }
 
 .footer-widget .footer-info-list ul li a {
-  color: #666666;
+  color: black;
   display: block;
 }
 
@@ -17493,7 +17493,7 @@ p{
 
 /*------ 17. Breadcrumb style  --------*/
 .breadcrumb-area {
-  padding: 45px 0;
+  padding: 30px 0;
 }
 
 .breadcrumb-content ul li {

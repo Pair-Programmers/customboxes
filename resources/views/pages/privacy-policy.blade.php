@@ -12,12 +12,8 @@
         <div class="breadcrumb-area bg-gray">
             <div class="container">
                 <div class="breadcrumb-content text-center">
-                    <ul>
-                        <li>
-                            <a href="{{route('welcome')}}">Home</a>
-                        </li>
-                        <li class="active">Privacy Policy</li>
-                    </ul>
+                    <h1 style="color: red">Privacy Policy</h1>
+                   
                 </div>
             </div>
         </div>

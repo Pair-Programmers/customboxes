@@ -64,11 +64,11 @@
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                     <div class="footer-widget ml-70 mb-40">
                         <h3 class="footer-title">INFORMATION</h3>
-                        <div class="footer-info-list">
+                        <div class="footer-info-list" style="">
                             <ul>
                                 {{-- <li><a href="{{route('faqs')}}"></a></li> --}}
                                 <li><a href="{{route('contact-us')}}">Contact Us</a></li>
-                                {{-- <li><a href="{{route('term-conditions')}}">Term & Conditions</a></li> --}}
+                                <li><a href="{{route('term-conditions')}}">Term & Conditions</a></li>
                                 <li><a href="{{route('privacy-policy')}}">Privacy Policy</a></li>
                                 <li><a href="{{route('about-us')}}">About Us</a></li>
                                 <li><a href="{{route('faqs')}}">FAQs</a></li>

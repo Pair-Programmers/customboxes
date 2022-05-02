@@ -9,10 +9,11 @@
 @endsection
 
 @section('content')
-    <div class="breadcrumb-area bg-gray"
-        style="height:200px; width:100%; background-image:url('{{ asset('assets/website') }}/images/industry/indutry1.jpeg');">
-
-    </div> <br>
+    <div class="text-center"
+        style="height:250px; width:100%; background-image:url('{{ asset('assets/website') }}/images/industry/indutry1.jpeg');">
+        <h2 class="pt-100" >{{$industry->name}}</h2>
+    </div>
+    <br>
 
     <div class="container pt-15" style="text-align: center;">
         {{$industry->summary}}
