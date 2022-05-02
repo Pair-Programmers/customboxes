@@ -9,6 +9,19 @@
 @endsection
 
 @section('content')
+<div class="breadcrumb-area bg-gray">
+    <div class="container">
+        <div class="breadcrumb-content text-center">
+            <ul>
+                <li>
+                    <a href="{{route('welcome')}}">Home</a>
+                </li>
+                <li class="active">Contact Us</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<br>
 <div class="contact-area pt-115 pb-120">
     <div class="container">
 

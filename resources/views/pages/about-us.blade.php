@@ -9,6 +9,18 @@
 @endsection
 
 @section('content')
+    <div class="breadcrumb-area bg-gray">
+        <div class="container">
+            <div class="breadcrumb-content text-center">
+                <ul>
+                    <li>
+                        <a href="{{route('welcome')}}">Home</a>
+                    </li>
+                    <li class="active">About Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="about-us-area pt-120 pb-120">
         <div class="container">
             <div class="row">
@@ -40,9 +52,9 @@
                             affordable than any other packaging company. Our services include shipping, packing, custom
                             boxes, and more. We devote ourselves to delivering reliable services to help you reach your
                             goals in the most cost-efficient way possible.</p>
-                        <div class="signature">
+                        {{-- <div class="signature">
                             <h2>David Moye</h2>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -100,7 +112,7 @@
             </div>
         </div>
     </div>
-    <div class="banner-area pb-85">
+    {{-- <div class="banner-area pb-85">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
@@ -137,8 +149,38 @@
                 </div>
             </div>
         </div>
+    </div> --}}
+    <div class="contact-info-wrap-3 pb-85 container">
+        <h3>contact info</h3>
+        <p>Make your dream packaging come true with! Contact us and Get your desired packaging today from us!</p>
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="single-contact-info-3 text-center mb-30">
+                    <i class="icon-location-pin "></i>
+                    <h4>our address</h4>
+                    <p>Willow Pass Rd, Concord, CA 94520, United States. </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="single-contact-info-3 extra-contact-info text-center mb-30">
+                    <ul>
+                        <li><i class="icon-screen-smartphone"></i> <a href="tel:9256959888"> (925) 695 9888 </a></li>
+                        <li><i class="icon-envelope "></i> <a href="mailto:info@customboxesus.com"> info@customboxesus.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="single-contact-info-3 text-center mb-30">
+                    <i class="icon-clock "></i>
+                    <h4>openning hour</h4>
+                    <p>24 Hours</p>
+                </div>
+            </div>
+        </div>
+        <p>So, stop waiting around and get in touch with us today to get your wholesale packaging with free shipping!</p>
     </div>
-    <div class="team-area pb-90">
+    {{-- team --}}
+    {{-- <div class="team-area pb-90">
         <div class="container">
             <div class="section-title mb-45 text-center">
                 <h2>Team Members</h2>
@@ -234,8 +276,9 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="testimonial-area bg-gray-3 pt-115 pb-115">
+    </div> --}}
+    {{-- testimonial --}}
+    {{-- <div class="testimonial-area bg-gray-3 pt-115 pb-115">
         <div class="container">
             <div class="section-title mb-45 text-center">
                 <h2>Testimonials</h2>
@@ -267,8 +310,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="brand-logo-area pt-120 pb-80">
+    </div> --}}
+    {{-- <div class="brand-logo-area pt-120 pb-80">
         <div class="container">
             <div class="brand-logo-wrap-2">
                 <div class="single-brand-logo-2 mb-30">
@@ -291,7 +334,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection
 
 @section('custom-script')

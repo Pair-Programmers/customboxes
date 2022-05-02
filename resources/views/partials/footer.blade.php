@@ -26,7 +26,7 @@
         </div>
     </div>
 </div> --}}
-<footer class="footer-area pt-20 mt-20" style="background-color: rgb(135, 165, 228)">
+<footer class="footer-area pt-20 mt-20" style="background-color: rgb(193, 199, 212)">
     <div class="footer-top border-bottom-4 pb-55">
         <div class="container">
             <div class="row">
@@ -68,7 +68,7 @@
                             <ul>
                                 {{-- <li><a href="{{route('faqs')}}"></a></li> --}}
                                 <li><a href="{{route('contact-us')}}">Contact Us</a></li>
-                                <li><a href="{{route('term-conditions')}}">Term & Conditions</a></li>
+                                {{-- <li><a href="{{route('term-conditions')}}">Term & Conditions</a></li> --}}
                                 <li><a href="{{route('privacy-policy')}}">Privacy Policy</a></li>
                                 <li><a href="{{route('about-us')}}">About Us</a></li>
                                 <li><a href="{{route('faqs')}}">FAQs</a></li>

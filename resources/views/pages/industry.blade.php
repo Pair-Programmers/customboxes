@@ -10,7 +10,7 @@
 
 @section('content')
     <div class="breadcrumb-area bg-gray"
-        style="height:200px; background-image:url('{{ asset('assets/website') }}/images/industry/Capture.PNG');">
+        style="height:200px; width:100%; background-image:url('{{ asset('assets/website') }}/images/industry/indutry1.jpeg');">
 
     </div> <br>
 
@@ -269,14 +269,14 @@
                             </div>
 
                         </div>
-                        <div class="pro-pagination-style text-center mt-10">
+                        {{-- <div class="pro-pagination-style text-center mt-10">
                             <ul>
                                 <li><a class="prev" href="#"><i class="icon-arrow-left"></i></a></li>
                                 <li><a class="active" href="#">1</a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a class="next" href="#"><i class="icon-arrow-right"></i></a></li>
                             </ul>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
 
