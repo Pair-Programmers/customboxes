@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>{{ env('APP_NAME', 'Admin') }} | Industry</title>
+    <title>Privacy Policy | {{ env('APP_NAME') }} </title>
     <meta name="description" content="this is description">
 @endsection
 
@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="breadcrumb-content text-center">
                     <h1 style="color: red">Privacy Policy</h1>
-                   
+
                 </div>
             </div>
         </div>

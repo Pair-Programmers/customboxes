@@ -1,8 +1,8 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>{{ env('APP_NAME', 'Admin') }} | Product Create</title>
-    <meta name="description" content="this is description">
+    <title>Home | {{ env('APP_NAME') }} </title>
+    <meta name="description" content="Get your custom boxes with logo from us and attract as many customers you want by having cardboard boxes wholesale for your business! Get free shipping now by getting your quote from us!">
 @endsection
 
 @section('custom-css')

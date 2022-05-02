@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>{{ env('APP_NAME', 'Admin') }} | Industry</title>
+    <title>Contact Us | {{ env('APP_NAME') }} </title>
     <meta name="description" content="this is description">
 @endsection
 
