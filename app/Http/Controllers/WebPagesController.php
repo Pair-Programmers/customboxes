@@ -26,4 +26,9 @@ class WebPagesController extends Controller
         return view('pages.faqs');
     }
 
+    public function showPaperWeightPage()
+    {
+        return view('pages.paper-weight');
+    }
+
 }

@@ -66,14 +66,12 @@
                         <h3 class="footer-title">INFORMATION</h3>
                         <div class="footer-info-list" style="">
                             <ul>
-                                {{-- <li><a href="{{route('faqs')}}"></a></li> --}}
                                 <li><a href="{{route('contact-us')}}">Contact Us</a></li>
                                 <li><a href="{{route('term-conditions')}}">Term & Conditions</a></li>
                                 <li><a href="{{route('privacy-policy')}}">Privacy Policy</a></li>
                                 <li><a href="{{route('about-us')}}">About Us</a></li>
                                 <li><a href="{{route('faqs')}}">FAQs</a></li>
-                                {{-- <li><a href="{{route('faqs')}}">Refund Policy</a></li> --}}
-                                <li><a href="{{route('faqs')}}">Paper Weight Chart</a></li>
+                                <li><a href="{{route('paper-weight')}}">Paper Weight Chart</a></li>
                             </ul>
                         </div>
                     </div>

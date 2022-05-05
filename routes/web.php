@@ -52,6 +52,7 @@ Route::get('/about-us', [App\Http\Controllers\WebPagesController::class, 'showAb
 Route::get('/privacy-policy', [App\Http\Controllers\WebPagesController::class, 'showPrivacyPolicyPage'])->name('privacy-policy');
 Route::get('/term-and-conditions', [App\Http\Controllers\WebPagesController::class, 'showTermAndConditionsPage'])->name('term-conditions');
 Route::get('/faqs', [App\Http\Controllers\WebPagesController::class, 'showFAQSPage'])->name('faqs');
+Route::get('/paper-weight-chart', [App\Http\Controllers\WebPagesController::class, 'showPaperWeightPage'])->name('paper-weight');
 
 //adminpanel
 Route::get('admin/login', [App\Http\Controllers\Adminpanel\AuthController::class, 'show'])->name('admin.login.show');

@@ -20,7 +20,7 @@
     <div class="container">
 
         <div class="get-in-touch-wrap">
-            <h3>Get In Touch</h3>
+            <h2 class="text-center" style="color: rgb(26, 76, 226)">Get In Touch</h2>
             <p class="form-messege">
                 @if ($errors->any())
                     <div class="alert alert-danger">
@@ -78,8 +78,8 @@
         <br>
         <br>
         <div class="contact-info-wrap-3 pb-85">
-            <h3>contact info</h3>
-            <p>Make your dream packaging come true with! Contact us and Get your desired packaging today from us!</p>
+            <h2 class="text-center" style="color: rgb(26, 76, 226)">Contact Info</h2>
+            <p class="text-center">Make your dream packaging come true with! Contact us and Get your desired packaging today from us!</p>
             <div class="row">
                 <div class="col-lg-4 col-md-4">
                     <div class="single-contact-info-3 text-center mb-30">

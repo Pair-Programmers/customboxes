@@ -150,7 +150,7 @@
 
                                     </div>
 
-                                    <div class="col-lg-2">
+                                    <div class="col-lg-3">
                                         <div class="billing-info mb-20">
                                             <div class="checkout-account ">
                                                 <input class="checkout-toggle2" value="Gloss Lamination" name="addons[]"
@@ -159,25 +159,25 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2">
+                                    <div class="col-lg-3">
                                         <div class="checkout-account ">
                                             <input class="checkout-toggle2" name="addons[]" type="checkbox">
                                             <span>Matte Lamination</span>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2">
+                                    <div class="col-lg-3">
                                         <div class="checkout-account ">
                                             <input class="checkout-toggle2" name="addons[]" type="checkbox">
                                             <span>Window Patching</span>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2">
+                                    <div class="col-lg-3">
                                         <div class="checkout-account ">
                                             <input class="checkout-toggle2" name="addons[]" type="checkbox">
                                             <span>Embossing</span>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2">
+                                    <div class="col-lg-3">
                                         <div class="billing-info mb-20">
                                             <div class="checkout-account ">
                                                 <input class="checkout-toggle2" name="addons[]" type="checkbox">
@@ -185,26 +185,23 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2">
+                                    <div class="col-lg-3">
                                         <div class="checkout-account ">
                                             <input class="checkout-toggle2" name="addons[]" type="checkbox">
                                             <span>Full UV Coating</span>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2">
+                                    <div class="col-lg-3">
                                         <div class="checkout-account  mb-20">
                                             <input class="checkout-toggle2" name="addons[]" type="checkbox">
                                             <span>Silver Foiling</span>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2">
+                                    <div class="col-lg-3">
                                         <div class="checkout-account  mb-20">
                                             <input class="checkout-toggle2 " name="addons[]" type="checkbox">
                                             <span>Gold Foiling</span>
                                         </div>
-                                    </div>
-
-                                    <div class="col-lg-6 ">
                                     </div>
 
                                     <br>
