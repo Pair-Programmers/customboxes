@@ -149,18 +149,6 @@
                             <td class="text-end">1600 gsm</td>
                         </tr>
 
-
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-sm-6 col-lg-6">
-                <table class="table table-striped table-hover">
-                    <thead>
-                        <tr style="background-color: rgb(255, 81, 81)">
-                            <th colspan="4" class="text-center">PAPER COATED STOCK — GLOSS OR MATTE</th>
-                        </tr>
-                    </thead>
-                    <tbody>
                         <tr>
                             <td>92 pt</td>
                             <td class="text-center">36 oz</td>
@@ -179,20 +167,14 @@
                             <td class="text-center">3.4 mm</td>
                             <td class="text-end">2200 gsm</td>
                         </tr>
-
-
                     </tbody>
                 </table>
             </div>
-        </div>
-
-        <br>
-        <div class="row">
             <div class="col-sm-6 col-lg-6">
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr style="background-color: rgb(255, 81, 81)">
-                            <th colspan="2" class="text-center">PAPER COATED STOCK — GLOSS OR MATTE</th>
+                            <th colspan="2" class="text-center">PAPER UNCOATED STOCK — WOOD FREE (OFFSET)</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -222,6 +204,8 @@
                 </table>
             </div>
         </div>
+
+        
     </div>
 @endsection
 
