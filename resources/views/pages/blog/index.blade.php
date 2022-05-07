@@ -59,7 +59,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="sidebar-wrapper sidebar-wrapper-mrg-left">
-                        <div class="sidebar-widget mb-40">
+                        {{-- <div class="sidebar-widget mb-40">
                             <h4 class="sidebar-widget-title">Search </h4>
                             <div class="sidebar-search">
                                 <form class="sidebar-search-form" action="#">
@@ -69,8 +69,8 @@
                                     </button>
                                 </form>
                             </div>
-                        </div>
-                        <div class="sidebar-widget shop-sidebar-border mb-35 pt-40">
+                        </div> --}}
+                        {{-- <div class="sidebar-widget shop-sidebar-border mb-35 pt-40">
                             <h4 class="sidebar-widget-title">Categories </h4>
                             <div class="shop-catigory">
                                 <ul>
@@ -80,7 +80,7 @@
 
                                 </ul>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="sidebar-widget shop-sidebar-border mb-40 pt-40">
                             <h4 class="sidebar-widget-title">Recent Posts </h4>
                             <div class="recent-post">

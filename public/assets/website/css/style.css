@@ -17298,6 +17298,12 @@ textarea:focus {
     color: #0064e0;
 }
 
+.home-content p{
+    font-size: 20px;
+    font-family: "Jost", sans-serif;
+    line-height: 36px;
+}
+
 p{
     font-size: 17px;
     color: black;

@@ -130,65 +130,65 @@
                     <div class="product-plr-1">
                         <div class="single-product-wrap">
                             <div class="product-img product-img-border-transparent mb-15">
-                                <a href="#">
+                                <a style="pointer-events: none; cursor: default;" href="#">
                                     <img src="{{ asset('assets/website') }}/images/icons/free-shipping-1.png"
                                         alt="free-shipping-1.png">
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
-                                <h5 class="font-width-dec"><a href="#">Free Shipping</a></h5>
+                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;" href="#">Free Shipping</a></h5>
                             </div>
                         </div>
                     </div>
                     <div class="product-plr-1">
                         <div class="single-product-wrap">
                             <div class="product-img product-img-border-transparent mb-15">
-                                <a href="#">
+                                <a style="pointer-events: none; cursor: default;" href="#">
                                     <img src="{{ asset('assets/website') }}/images/icons/free-design-support-2.png"
                                         alt="free-design-support-2.png">
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
-                                <h5 class="font-width-dec"><a href="#">Free Design Support</a></h5>
+                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;" href="#">Free Design Support</a></h5>
                             </div>
                         </div>
                     </div>
                     <div class="product-plr-1">
                         <div class="single-product-wrap">
                             <div class="product-img product-img-border-transparent mb-15">
-                                <a href="#">
+                                <a style="pointer-events: none; cursor: default;" href="#">
                                     <img src="{{ asset('assets/website') }}/images/icons/competitive-pricing-3.png"
                                         alt="competitive-pricing-3.png">
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
-                                <h5 class="font-width-dec"><a href="#">Competitive Pricing</a></h5>
+                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;" href="#">Competitive Pricing</a></h5>
                             </div>
                         </div>
                     </div>
                     <div class="product-plr-1">
                         <div class="single-product-wrap">
                             <div class="product-img product-img-border-transparent mb-15">
-                                <a href="#">
+                                <a style="pointer-events: none; cursor: default;" href="#">
                                     <img src="{{ asset('assets/website') }}/images/icons/high-quality-boxes-4.png"
                                         alt="high-quality-boxes-4.png">
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
-                                <h5 class="font-width-dec"><a href="#">High Quality Boxes</a></h5>
+                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;" href="#">High Quality Boxes</a></h5>
                             </div>
                         </div>
                     </div>
                     <div class="product-plr-1">
                         <div class="single-product-wrap">
                             <div class="product-img product-img-border-transparent mb-15">
-                                <a href="#">
+                                <a style="pointer-events: none; cursor: default;" href="#">
                                     <img src="{{ asset('assets/website') }}/images/icons/Quick-Turn-Arround-time-5.png"
                                         alt="Quick-Turn-Arround-time-5.png">
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
-                                <h5 class="font-width-dec"><a href="#">Quick Turn Arround</a></h5>
+                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;" href="#">Quick Turn Arround</a></h5>
                             </div>
                         </div>
                     </div>
@@ -789,31 +789,31 @@
     </div>
     <br>
     <br>
-    <div class="container home-content home-content-psize" style="background-color: rgb(193, 199, 212)">
+    <div class="container home-content home-content-psize" >
             <h2>FAQ's</h2>
-            <h3>What do we provide?</h3>
+            <h3 style="background-color: rgb(193, 199, 212)">Q: What do we provide?</h3>
             <p>We can print custom packaging for most products in the market. We can even design boxes for toys, books, and
                 other products that need a box to be shipped.</p>
-            <h3>What is the meaning of "custom-made"? </h3>
+            <h3 style="background-color: rgb(193, 199, 212)">Q: What is the meaning of "custom-made"? </h3>
             <p>Custom-made means having your product boxed and printed according to your specific requirements, from design to
                 packing material. There are many companies out there who will say they will customize your product for you but
                 what they actually do is box it without adding any creative input at all. We do not just box your product for
                 you; we put our creativity and expertise into making sure that both the design and the material used are
                 customized to suit the exact needs of your product.</p>
-            <h3>Is my packaging tailor-made with eco-friendly materials?</h3>
+            <h3 style="background-color: rgb(193, 199, 212)">Q: Is my packaging tailor-made with eco-friendly materials?</h3>
             <p>Yes, we are eco-friendly when it comes to providing custom packaging solutions for our customers. We use only the
                 best quality material that is tailor-made from recyclable substances. We are also conscious about the
                 environment when handling your product as we take care not to cause any damage or waste during the packaging
                 process.</p>
-            <h3>What if I do not like my first design?</h3>
+            <h3 style="background-color: rgb(193, 199, 212)">Q: What if I do not like my first design?</h3>
             <p>We make sure that each box is a work of art and that it suits your product's needs. If you feel like your first
                 design is not what you wanted, then you can always ask our designers to make revisions so that you get exactly
                 what you want in terms of both packaging and design.</p>
-            <h3>Does it matter what size my product is?</h3>
+            <h3 style="background-color: rgb(193, 199, 212)">Q: Does it matter what size my product is?</h3>
             <p>It does not matter what size your product is, as we can make any box to suit your product. We do have our own
                 sizing guides so you can get an idea of what the different boxes will be suitable for and how long the process
                 will take.</p>
-            <h3>What if I need a box for CBD products?</h3>
+            <h3 style="background-color: rgb(193, 199, 212)">Q: What if I need a box for CBD products?</h3>
             <p>We can also design custom packaging for CBD products. You may also want to use a different type of packaging if
                 your CBD products are in liquid form or if you want to protect them from light or oxygen exposure. We are also
                 available whatever choice you want, as long as it is according to our pricing list for custom-made boxes.</p>
