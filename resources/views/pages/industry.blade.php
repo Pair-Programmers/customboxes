@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-    <div class="text-center"
+    <div class="text-center bg-img"
         style="height:250px; width:100%; background-image:url('{{ asset('assets/website') }}/images/industry/indutry1.jpeg');">
         <h1 class="pt-100" >{{$industry->name}}</h1>
     </div>
