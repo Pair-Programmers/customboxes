@@ -17061,12 +17061,14 @@ textarea:focus {
 }
 
 .description-wrap p > span {
+    font-size: 18px;
     font-family: "Jost", sans-serif;
+    line-height: 36px;
   }
 
 @media only screen and (max-width: 767px) {
   .dec-review-bottom .description-wrap p {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0 0 18x;
     line-height: 27px;
   }

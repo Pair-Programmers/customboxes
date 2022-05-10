@@ -21,7 +21,7 @@
                                 <h1 class="animated">Denim Mixed <br>Layering Combine <br>collect</h1>
                                 <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p>
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="product-details.html">Explore Now</a>
+                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Explore Now</a>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                                 <h1 class="animated">Denim Mixed <br>Layering Combine <br>collect</h1>
                                 <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p>
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="product-details.html">Explore Now</a>
+                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Explore Now</a>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                                 <h1 class="animated">Denim Mixed <br>Layering Combine <br>collect</h1>
                                 <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p>
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="product-details.html">Explore Now</a>
+                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Explore Now</a>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                                 <h1 class="animated">Denim Mixed <br>Layering Combine <br>collect</h1>
                                 <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p>
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="product-details.html">Explore Now</a>
+                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Explore Now</a>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +89,7 @@
                                 <h1 class="animated">Denim Mixed <br>Layering Combine <br>collect</h1>
                                 <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p>
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="product-details.html">Explore Now</a>
+                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Explore Now</a>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +106,7 @@
                                 <h1 class="animated">Denim Mixed <br>Layering Combine <br>collect</h1>
                                 <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p>
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="product-details.html">Explore Now</a>
+                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Explore Now</a>
                                 </div>
                             </div>
                         </div>
