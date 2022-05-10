@@ -15312,6 +15312,7 @@ textarea:focus {
 .footer-widget .footer-info-list ul li a {
   color: black;
   display: block;
+  size: 15px;
 }
 
 .footer-widget .footer-info-list ul li a:hover {
