@@ -17058,15 +17058,17 @@ textarea:focus {
   font-size: 15px;
   line-height: 30px;
   margin: 0 0 20px;
-  font-family: "Jost", sans-serif;
 }
+
+.description-wrap p > span {
+    font-family: "Jost", sans-serif;
+  }
 
 @media only screen and (max-width: 767px) {
   .dec-review-bottom .description-wrap p {
     font-size: 14px;
     margin: 0 0 18x;
     line-height: 27px;
-    font-family: "Jost", sans-serif;
   }
 }
 
