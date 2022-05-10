@@ -17055,7 +17055,7 @@ textarea:focus {
 }
 
 .dec-review-bottom .description-wrap p {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 30px;
   margin: 0 0 20px;
 }
@@ -17066,7 +17066,7 @@ textarea:focus {
 
 @media only screen and (max-width: 767px) {
   .dec-review-bottom .description-wrap p {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0 0 18x;
     line-height: 27px;
   }
