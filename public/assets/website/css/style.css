@@ -17056,12 +17056,12 @@ textarea:focus {
 
 .dec-review-bottom .description-wrap p {
   font-size: 17px;
-  line-height: 30px;
+  line-height: 36px;
   margin: 0 0 20px;
 }
 
 .description-wrap p > span {
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Jost", sans-serif;
     line-height: 36px;
   }
@@ -17070,7 +17070,7 @@ textarea:focus {
   .dec-review-bottom .description-wrap p {
     font-size: 14px;
     margin: 0 0 18x;
-    line-height: 27px;
+    line-height: 36px;
   }
 }
 
