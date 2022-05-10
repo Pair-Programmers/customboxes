@@ -15303,6 +15303,7 @@ textarea:focus {
 .footer-widget .footer-info-list ul li {
   display: block;
   margin-bottom: 8px;
+  size: 19px;
 }
 
 .footer-widget .footer-info-list ul li:last-child {
@@ -15313,6 +15314,7 @@ textarea:focus {
   color: black;
   display: block;
   size: 19px;
+
 }
 
 .footer-widget .footer-info-list ul li a:hover {
