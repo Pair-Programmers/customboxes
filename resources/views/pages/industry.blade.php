@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>{{ env('APP_NAME', 'Admin') }} | Industry</title>
+    <title>{{$industry->name}} Industry | {{ env('APP_NAME', 'Admin') }}</title>
     <meta name="description" content="this is description">
 @endsection
 
@@ -10,7 +10,7 @@
 
 @section('content')
     <div class="text-center bg-img"
-        style="height:250px; width:100%; background-image:url('{{ asset('assets/website') }}/images/industry/WhatsApp Image 2022-05-07 at 12.43.54 PM.jpeg');">
+        style="height:250px; width:100%; background-image:url('{{ asset('assets/website') }}/images/industry/{{$industry->image}}');">
         <h1 class="pt-100" >{{$industry->name}}</h1>
     </div>
     <br>
