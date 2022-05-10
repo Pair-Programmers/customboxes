@@ -10,7 +10,7 @@
 
 @section('content')
     <div class="breadcrumb-area bg-gray"
-        style="height:200px; background-image:url('{{ asset('assets/website') }}/images/industry/Capture.PNG');">
+        style="height:200px; background-image:url('{{ asset('assets/website') }}/images/industry/boxes-styles.png');">
 
     </div> <br>
 
