@@ -15286,6 +15286,8 @@ textarea:focus {
   letter-spacing: -.25px;
   margin: 0 0 40px;
   text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+    line-height: 36px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
