@@ -67,8 +67,8 @@
                                         <tr>
                                             <th>No.</th>
                                             <th>Name</th>
-                                            <th>Summary</th>
                                             <th>Total Products</th>
+                                            <th>Summary</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -77,8 +77,8 @@
                                             <tr class="gradeX" id="row-{{ $industry->id }}">
                                                 <td>{{ $loop->iteration }}</td>
                                                 <td>{{ $industry->name }}</td>
-                                                <td>{{ $industry->summary }}</td>
                                                 <td>{{ count($industry->products) }}</td>
+                                                <td>{{ $industry->summary }}</td>
 
 
                                                 <td class="text-center">
@@ -97,8 +97,8 @@
                                         <tr>
                                             <th>No.</th>
                                             <th>Name</th>
-                                            <th>Summary</th>
                                             <th>Total Products</th>
+                                            <th>Summary</th>
                                             <th>Action</th>
                                         </tr>
                                     </tfoot>
