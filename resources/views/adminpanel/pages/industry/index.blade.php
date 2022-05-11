@@ -81,13 +81,7 @@
                                                 <td>{{ count($industry->products) }}</td>
                                                 <td>{{ date('d-M-Y', strtotime($industry->created_at)) }}</td>
 
-                                                <td>
-                                                    @if ($blog->is_active)
-                                                        <span class="label label-primary">Active</span>
-                                                    @else
-                                                        <span class="label label-danger">InActive</span>
-                                                    @endif
-                                                </td>
+                                               
                                                 <td class="text-center">
                                                     <div class="btn-group">
                                                         <a href="{{ route('admin.industry.show', $industry) }}"
