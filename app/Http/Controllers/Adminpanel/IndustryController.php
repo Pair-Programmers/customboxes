@@ -15,7 +15,8 @@ class IndustryController extends Controller
      */
     public function index()
     {
-        //
+        $industries = Industry::all();
+        return view('adminpanel.pages.industry.index', compact('industries'));
     }
 
     /**
@@ -58,7 +59,8 @@ class IndustryController extends Controller
      */
     public function edit(Industry $industry)
     {
-        //
+        $industry = Industry::findOrFail($industry->id);
+        return view('adminpanel.pages.industry.edit', compact('industry'));
     }
 
     /**
@@ -70,7 +72,9 @@ class IndustryController extends Controller
      */
     public function update(Request $request, Industry $industry)
     {
-        //
+        $inputs = $request->except(['_token', '_method']);
+        Industry::where('id', $industry->id)->update($inputs);
+        return redirect()->route('admin.industry.index')->with('success', 'Updated Successfuly !');
     }
 
     /**

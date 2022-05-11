@@ -66,6 +66,17 @@ Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function
         Route::get('/', 'index');
     });
 
+    //industry
+    Route::controller(App\Http\Controllers\Adminpanel\IndustryController::class)->prefix('industry')->name('industry.')->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{industry}', 'show')->name('show');
+        Route::get('/{industry}/edit', 'edit')->name('edit');
+        Route::put('/{industry}', 'update')->name('update');
+        Route::delete('/{industry:id}', 'destroy')->name('destroy');
+    });
+
     // Route::resource('products', App\Http\Controllers\Adminpanel\ProductController::class);
     Route::controller(App\Http\Controllers\Adminpanel\ProductController::class)->prefix('products')->name('product.')->group(function () {
         Route::get('/', 'index')->name('index');

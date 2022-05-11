@@ -16,7 +16,7 @@
     <br>
 
     <div class="container pt-15" style="text-align: center;">
-        {{$industry->summary}}
+        {{$industry->summary2}}
     </div>
     <div class="shop-area pt-40 pb-40">
         <div class="container">
@@ -284,13 +284,8 @@
             </div>
         </div>
     </div>
-    <div class="container pt-15" style="text-align: center;">
-        <h3>Detail Description</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus qui saepe quo, consequatur pariatur
-            iure sit officia delectus dolore, iste magni quod hic distinctio voluptas deleniti odit culpa corrupti.</p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum non officiis quo, maiores quod molestias
-        architecto nisi optio eaque eligendi explicabo modi tempora consequatur in, animi debitis ad culpa!
-
+    <div class="container pt-15">
+        {{$industry->description}}
     </div>
 @endsection
 

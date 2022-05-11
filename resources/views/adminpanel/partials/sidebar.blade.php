@@ -34,6 +34,17 @@
                 </a>
 
             </li>
+            <li class="@if (request()->is('admin/industry*'))  {{'active'}} @else {{''}} @endif">
+                <a href="{{ route('admin.industry.index') }}">
+                    <i class=" fa fa-cube"></i>
+                    <span class="nav-label">Industries</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="{{ route('admin.industry.index') }}">List</a></li>
+                </ul>
+            </li>
+
             <li class="@if (request()->is('admin/product*'))  {{'active'}} @else {{''}} @endif">
                 <a href="#">
                     <i class=" fa fa-cube"></i>
