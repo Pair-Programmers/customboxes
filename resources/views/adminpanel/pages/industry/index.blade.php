@@ -79,9 +79,8 @@
                                                 <td>{{ $industry->name }}</td>
                                                 <td>{{ $industry->summary }}</td>
                                                 <td>{{ count($industry->products) }}</td>
-                                                <td>{{ date('d-M-Y', strtotime($industry->created_at)) }}</td>
 
-                                               
+
                                                 <td class="text-center">
                                                     <div class="btn-group">
                                                         <a href="{{ route('admin.industry.show', $industry) }}"
