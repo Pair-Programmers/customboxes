@@ -15,7 +15,7 @@ class IndustryController extends Controller
      */
     public function index()
     {
-        $industries = Industry::where('is_industry', true)->get();
+        $industries = Industry::all();
         return view('adminpanel.pages.industry.index', compact('industries'));
     }
 

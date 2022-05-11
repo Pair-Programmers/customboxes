@@ -86,7 +86,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Short Description</label>
                                     <div class="col-sm-10">
-                                        <textarea id="" name="description" type="text" required class="summernote">
+                                        <textarea id="" name="summary2" type="text" required class="summernote">
                                                     {{ $industry->summary2 }}
                                                 </textarea>
                                     </div>

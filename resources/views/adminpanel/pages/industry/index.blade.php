@@ -83,8 +83,8 @@
 
                                                 <td class="text-center">
                                                     <div class="btn-group">
-                                                        <a href="{{ route('industry.show', $industry) }}"
-                                                            class="btn-white btn btn-xs">View</a>
+                                                        <a target="_blank" href="{{ route('industry.show', $industry) }}"
+                                                            class="btn-white btn btn-xs">View Live</a>
                                                         <a href="{{ route('admin.industry.edit', $industry) }}"
                                                             class="btn-white btn btn-xs">Edit</a>
                                                     </div>
