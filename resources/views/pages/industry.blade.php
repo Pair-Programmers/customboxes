@@ -15,7 +15,7 @@
     </div>
     <br>
 
-    <div class="container pt-15" style="text-align: center;">
+    <div class="container home-content home-content-psize pt-15" style="text-align: center;">
         {!!$industry->summary2!!}
     </div>
     <div class="shop-area pt-40 pb-40">
@@ -284,7 +284,7 @@
             </div>
         </div>
     </div>
-    <div class="container pt-15">
+    <div class=" home-content home-content-psize container pt-15">
         {!!$industry->description!!}
     </div>
 @endsection
