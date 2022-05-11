@@ -16,7 +16,7 @@
     <br>
 
     <div class="container pt-15" style="text-align: center;">
-        {{$industry->summary2}}
+        {!!$industry->summary2!!}
     </div>
     <div class="shop-area pt-40 pb-40">
         <div class="container">
@@ -285,7 +285,7 @@
         </div>
     </div>
     <div class="container pt-15">
-        {{$industry->description}}
+        {!!$industry->description!!}
     </div>
 @endsection
 
