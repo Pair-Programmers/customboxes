@@ -53,28 +53,28 @@
                             </div>
 
                         </div>
-                        <div class="pro-pagination-style text-center mt-10">
+                        {{-- <div class="pro-pagination-style text-center mt-10">
                             <ul>
                                 <li><a class="prev" href="#"><i class="icon-arrow-left"></i></a></li>
                                 <li><a class="active" href="#">1</a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a class="next" href="#"><i class="icon-arrow-right"></i></a></li>
                             </ul>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
-    <div class="container pt-15" style="text-align: center;">
+    {{-- <div class="container pt-15" style="text-align: center;">
         <h3>Detail Description</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus qui saepe quo, consequatur pariatur
             iure sit officia delectus dolore, iste magni quod hic distinctio voluptas deleniti odit culpa corrupti.</p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum non officiis quo, maiores quod molestias
         architecto nisi optio eaque eligendi explicabo modi tempora consequatur in, animi debitis ad culpa!
 
-    </div>
+    </div> --}}
 @endsection
 
 @section('custom-script')
