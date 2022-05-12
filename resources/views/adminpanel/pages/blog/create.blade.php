@@ -60,9 +60,10 @@
                                                 </div>
 
                                             </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Author:</label>
+                                            {{-- <div class="form-group"><label class="col-sm-2 control-label">Author:</label>
                                                 <div class="col-sm-10"><input id="" value="{{old('author_name')}}" name="author_name" placeholder="Hamza Saqib" type="text" class="form-control" ></div>
                                             </div>
+                                            <input type="hidden" name="blog_category_id" value="1">
                                             <div class="form-group"><label class="col-sm-2 control-label">Category:</label>
                                                 <div class="col-sm-10">
                                                     <select class="form-control" value="{{old('blog_category_id')}}" name="blog_category_id" required>
@@ -72,7 +73,7 @@
                                                         @endforeach
                                                     </select>
                                                 </div>
-                                            </div>
+                                            </div> --}}
 
                                             <div class="form-group @error('summary') has-error @enderror"><label class="col-sm-2 control-label">Summary:</label>
                                                 <div class="col-sm-10"><input id="" value="{{old('summary')}}" name="summary" required type="text" placeholder="short summary .." class="form-control" >
@@ -82,7 +83,7 @@
                                                 </div>
 
                                             </div>
-                                            
+
                                             <div class="form-group"><label class="col-sm-2 control-label">Description:</label>
                                                 <div class="col-sm-10">
                                                     <textarea id="" name="description" type="text" required class="summernote">

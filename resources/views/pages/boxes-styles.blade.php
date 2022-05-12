@@ -9,18 +9,16 @@
 @endsection
 
 @section('content')
-    <div class="breadcrumb-area bg-gray"
-        style="height:200px; background-image:url('{{ asset('assets/website') }}/images/industry/boxes-styles.png');">
-
-    </div> <br>
-
-    <div class="container pt-15" style="text-align: center;">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus qui saepe quo, consequatur pariatur
-            iure sit officia delectus dolore, iste magni quod hic distinctio voluptas deleniti odit culpa corrupti.</p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum non officiis quo, maiores quod molestias
-        architecto nisi optio eaque eligendi explicabo modi tempora consequatur in, animi debitis ad culpa!
-
+    <div class="text-center bg-img"
+        style="height:250px; width:100%; background-image:url('{{ asset('assets/website') }}/images/industry/boxes-styles.png');">
+        <h1 class="pt-100">Custom Printed Boxes</h1>
     </div>
+    <br>
+
+    <div class="container home-content home-content-psize pt-15" style="text-align: center;">
+        {!!$industry->summary2!!}
+    </div>
+
     <div class="shop-area pt-40 pb-40">
         <div class="container">
             <div class="row flex-row-reverse">
@@ -47,7 +45,7 @@
                                                 <select name="product_id" required>
                                                     <option selected disabled value="">Products</option>
                                                     @foreach ($products as $product)
-                                                        <option value="{{$product->id}}">{{$product->name}}</option>
+                                                        <option value="{{ $product->id }}">{{ $product->name }}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
@@ -136,7 +134,8 @@
                                         <div class="billing-info mb-20">
                                             <label>Addons </label>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Gloss Lamination" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Gloss Lamination" name="addons[]"
+                                                    type="checkbox">
                                                 <span>Gloss Lamination</span>
                                             </div>
                                             <div class="checkout-account ">
@@ -268,13 +267,8 @@
             </div>
         </div>
     </div>
-    <div class="container pt-15" style="text-align: center;">
-        <h3>Detail Description</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus qui saepe quo, consequatur pariatur
-            iure sit officia delectus dolore, iste magni quod hic distinctio voluptas deleniti odit culpa corrupti.</p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum non officiis quo, maiores quod molestias
-        architecto nisi optio eaque eligendi explicabo modi tempora consequatur in, animi debitis ad culpa!
-
+    <div class=" home-content home-content-psize container pt-15">
+        {!!$industry->description!!}
     </div>
 @endsection
 

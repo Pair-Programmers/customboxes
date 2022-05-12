@@ -61,7 +61,7 @@
                                                 </div>
 
                                             </div>
-                                            <div class="form-group"><label class="col-sm-2 control-label">Author:</label>
+                                            {{-- <div class="form-group"><label class="col-sm-2 control-label">Author:</label>
                                                 <div class="col-sm-10"><input id="" value="{{$blog->author_name}}" name="author_name" placeholder="Hamza Saqib" type="text" class="form-control" ></div>
                                             </div>
                                             <div class="form-group"><label class="col-sm-2 control-label">Category:</label>
@@ -77,7 +77,7 @@
                                                         @endforeach
                                                     </select>
                                                 </div>
-                                            </div>
+                                            </div> --}}
 
                                             <div class="form-group @error('summary') has-error @enderror"><label class="col-sm-2 control-label">Summary:</label>
                                                 <div class="col-sm-10"><input id="" value="{{$blog->summary}}" name="summary" required type="text" placeholder="short summary .." class="form-control" >
@@ -123,7 +123,7 @@
 
                                             <div class="form-group">
                                                 <div class="col-sm-4 col-sm-offset-2">
-                                                    <button class="btn btn-primary" type="submit">Save Blog</button>
+                                                    <button class="btn btn-primary" type="submit">Update Blog</button>
                                                 </div>
                                             </div>
 
@@ -152,7 +152,7 @@
 
                                       <div class="form-group">
                                           <div class="col-sm-4 col-sm-offset-2">
-                                              <button class="btn btn-primary" type="submit">Save Blog</button>
+                                              <button class="btn btn-primary" type="submit">Update Blog</button>
                                           </div>
                                       </div>
 
@@ -176,7 +176,7 @@
 
                                       <div class="form-group">
                                           <div class="col-sm-4 col-sm-offset-2">
-                                              <button class="btn btn-primary" type="submit">Save Blog</button>
+                                              <button class="btn btn-primary" type="submit">Update Blog</button>
                                           </div>
                                       </div>
                                     </form>

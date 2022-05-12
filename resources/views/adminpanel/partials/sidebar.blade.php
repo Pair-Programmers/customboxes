@@ -88,7 +88,7 @@
                 <ul class="nav nav-second-level collapse">
                     <li><a href="{{ route('admin.blog.create') }}">Create</a></li>
                     <li><a href="{{ route('admin.blog.index') }}">List</a></li>
-                    <li><a href="{{ route('admin.blog-category.index') }}">Manage Category</a></li>
+                    {{-- <li><a href="{{ route('admin.blog-category.index') }}">Manage Category</a></li> --}}
                 </ul>
             </li>
 

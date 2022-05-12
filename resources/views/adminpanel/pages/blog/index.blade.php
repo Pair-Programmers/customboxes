@@ -67,8 +67,8 @@
                                         <tr>
                                             <th>No.</th>
                                             <th>Title</th>
-                                            <th>Author</th>
-                                            <th>Category</th>
+                                            {{-- <th>Author</th>
+                                            <th>Category</th> --}}
                                             <th>Created At</th>
                                             <th>Status</th>
                                             <th>Action</th>
@@ -79,8 +79,8 @@
                                             <tr class="gradeX" id="row-{{ $blog->id }}">
                                                 <td>{{ $loop->iteration }}</td>
                                                 <td>{{ $blog->title }}</td>
-                                                <td>{{ $blog->author_name }}</td>
-                                                <td>{{ $blog->category->name }}</td>
+                                                {{-- <td>{{ $blog->author_name }}</td>
+                                                <td>{{ $blog->category->name }}</td> --}}
                                                 <td>{{ date('d-M-Y', strtotime($blog->created_at)) }}</td>
 
                                                 <td>
@@ -108,8 +108,8 @@
                                         <tr>
                                             <th>No.</th>
                                             <th>Title</th>
-                                            <th>Author</th>
-                                            <th>Category</th>
+                                            {{-- <th>Author</th>
+                                            <th>Category</th> --}}
                                             <th>Created At</th>
                                             <th>Status</th>
                                             <th>Action</th>
