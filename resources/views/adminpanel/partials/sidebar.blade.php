@@ -36,7 +36,7 @@
             </li>
             <li class="@if (request()->is('admin/industry*'))  {{'active'}} @else {{''}} @endif">
                 <a href="{{ route('admin.industry.index') }}">
-                    <i class=" fa fa-cube"></i>
+                    <i class=" fa fa-building"></i>
                     <span class="nav-label">Industries</span>
                     <span class="fa arrow"></span>
                 </a>
