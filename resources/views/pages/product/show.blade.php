@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>{{$product->meta_tag_title}} | {{ env('APP_NAME') }}</title>
+    <title>{{$product->meta_tag_title}}</title>
     <meta name="description" content="{{$product->meta_tag_description}}">
     <meta name="robots" content="noindex, nofollow">
     <meta name="keywords" content="{{$product->meta_tag_keywords}}">
