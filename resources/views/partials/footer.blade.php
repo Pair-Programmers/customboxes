@@ -1,4 +1,4 @@
-<footer class="footer-area pt-20 mt-80" style="background-color: rgb(193, 199, 212)">
+<footer class="footer-area pt-20 mt-120" style="background-color: rgb(193, 199, 212)">
     <div class="footer-top border-bottom-4 pb-55">
         <div class="container">
             <div class="row">
