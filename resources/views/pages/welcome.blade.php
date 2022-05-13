@@ -10,7 +10,7 @@
 
 @section('content')
     <div id="section1" class="slider-area">
-        <div class="hero-slider-active-1 nav-style-1 dot-style-2 dot-style-2-position-2 dot-style-2-active-black">
+        <div class="hero-slider-active-1 nav-style-4 dot-style-1 dot-style-1-position-1 dot-style-2-active-black">
             <div class="single-hero-slider single-animation-wrap slider-height-2 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs"
                 style="background-image:url({{ asset('assets/website') }}/images/slider/custom-printed-boxes-1.jpg);">
                 <div class="container">

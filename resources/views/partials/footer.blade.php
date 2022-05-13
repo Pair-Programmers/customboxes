@@ -79,7 +79,7 @@
                                 </div>
                                 <div class="contact-info-2-content">
                                     <a href="mailto:info@customboxesus.com">
-                                        <p>info@customboxesus.com</p>
+                                        <p style="font-size: 19px" >info@customboxesus.com</p>
                                     </a>
                                 </div>
 

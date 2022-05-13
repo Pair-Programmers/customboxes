@@ -112,7 +112,7 @@
                         </div> --}}
                         <div class="col-lg-10">
                             <div
-                                class="main-menu main-menu-white main-menu-padding-1 main-menu-font-size-14 main-menu-lh-5">
+                                class="main-menu main-menu-white main-menu-padding-1 main-menu-font-size-16 main-menu-lh-5">
                                 <nav>
 
                                     <ul>
