@@ -67,18 +67,18 @@
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info">
-                                            <input type="number" required name="height" placeholder="Height *">
+                                            <input type="text" required name="height" placeholder="Height *">
                                             <input type="hidden"  name="qoute_form" value="Custom Qoute Form">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20">
-                                            <input type="number" required name="width" placeholder="Width *">
+                                            <input type="text" required name="width" placeholder="Width *">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20">
-                                            <input type="number" required name="depth" placeholder="Depth *">
+                                            <input type="text" required name="depth" placeholder="Depth *">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
@@ -257,7 +257,7 @@
 
                                 <div class="pro-details-action-wrap">
                                     <div class="pro-details-add-to-cart">
-                                        <button style="background-color: #db1515" class="btn">Get Qoute</button>
+                                        <button style="background-color: #db1515, !important" class="btn">Get Qoute</button>
                                     </div>
                                 </div>
                             </form>
