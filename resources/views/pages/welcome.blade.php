@@ -18,7 +18,7 @@
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
                                 {{-- <h4 class="animated">Lookbook</h4> --}}
-                                <h1 class="animated">THE CUSTOM PRINTED<br>PACKAGING BOXES</h1>
+                                <h1 class="animated">THE <br> CUSTOM PRINTED<br>PACKAGING BOXES</h1>
                                 {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
                                     <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Get A Quote</a>
@@ -86,7 +86,7 @@
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
                                 {{-- <h4 class="animated">Lookbook</h4> --}}
-                                <h1 class="animated">VAPE CARTRIDGE PRINTING <br> PACKAGING BOXES</h1>
+                                <h1 class="animated">VAPE CARTRIDGE<br>PRINTING PACKAGING<br>BOXES</h1>
                                 {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
                                     <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Get A Quote</a>

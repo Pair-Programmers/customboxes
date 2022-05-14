@@ -1,10 +1,10 @@
 @extends('layouts.master')
 
 @section('title-meta')
-<title>{{$industry->meta_tag_title}}</title>
-<meta name="description" content="{{$industry->meta_tag_description}}">
-<meta name="robots" content="noindex, nofollow">
-<meta name="keywords" content="{{$industry->meta_tag_keywords}}">
+    <title>{{ $industry->meta_tag_title }}</title>
+    <meta name="description" content="{{ $industry->meta_tag_description }}">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="keywords" content="{{ $industry->meta_tag_keywords }}">
 @endsection
 
 @section('custom-css')
@@ -12,20 +12,20 @@
 
 @section('content')
     <div class="text-center bg-img"
-        style="height:270px; width:100%; background-image:url('{{ asset('assets/website') }}/images/industry/{{$industry->image}}');">
-        <h1 class="pt-100" >{{$industry->name}}</h1>
+        style="height:270px; width:100%; background-image:url('{{ asset('assets/website') }}/images/industry/{{ $industry->image }}');">
+        <h1 class="pt-100">{{ $industry->name }}</h1>
     </div>
     <br>
 
     <div class="container home-content home-content-psize pt-15" style="text-align: center;">
-        {!!$industry->summary2!!}
+        {!! $industry->summary2 !!}
     </div>
     <div class="shop-area pt-40 pb-40">
         <div class="container">
             <div class="row flex-row-reverse">
                 <div class="col-lg-4">
                     {{-- <div style="background-color: rgb(175, 174, 174)" class="pl-10 pt-2 pb-1 mb-3"> --}}
-                        <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Qoute Now</strong></h2>
+                    <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Qoute Now</strong></h2>
                     {{-- </div> --}}
                     <div class="col-lg-12">
                         @if ($errors->any())
@@ -63,7 +63,7 @@
                                                 <select name="product_id" required>
                                                     <option selected disabled value="">Products</option>
                                                     @foreach ($products as $product)
-                                                        <option value="{{$product->id}}">{{$product->name}}</option>
+                                                        <option value="{{ $product->id }}">{{ $product->name }}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
@@ -153,19 +153,23 @@
                                         <div class="billing-info mb-20">
                                             <label>Addons </label>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Gloss Lamination" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Gloss Lamination" name="addons[]"
+                                                    type="checkbox">
                                                 <span>Gloss Lamination</span>
-                     77                       </div>
+                                            </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Matte Lamination" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Matte Lamination" name="addons[]"
+                                                    type="checkbox">
                                                 <span>Matte Lamination</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Window Patching" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Window Patching" name="addons[]"
+                                                    type="checkbox">
                                                 <span>Window Patching</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Embossing" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Embossing" name="addons[]"
+                                                    type="checkbox">
                                                 <span>Embossing</span>
                                             </div>
                                         </div>
@@ -174,19 +178,23 @@
                                         <div class="billing-info mb-20 mt-25">
                                             {{-- <label> Addons </label> --}}
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Spot UV Coating" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Spot UV Coating" name="addons[]"
+                                                    type="checkbox">
                                                 <span>Spot UV Coating</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Full UV Coating" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Full UV Coating" name="addons[]"
+                                                    type="checkbox">
                                                 <span>Full UV Coating</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Silver Foiling" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Silver Foiling" name="addons[]"
+                                                    type="checkbox">
                                                 <span>Silver Foiling</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Gold Foiling" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" value="Gold Foiling" name="addons[]"
+                                                    type="checkbox">
                                                 <span>Gold Foiling</span>
                                             </div>
                                         </div>
@@ -229,7 +237,8 @@
 
                                 <div class="pro-details-action-wrap">
                                     <div class="pro-details-add-to-cart">
-                                        <button style="background-color: #db1515" type="submit" class="btn">Get Qoute</button>
+                                        <button style="background-color: #db1515" type="submit" class="btn">Get
+                                            Qoute</button>
                                     </div>
                                 </div>
                             </form>
@@ -287,7 +296,7 @@
         </div>
     </div>
     <div class=" home-content home-content-psize container pt-15">
-        {!!$industry->description!!}
+        {!! $industry->description !!}
     </div>
 @endsection
 
