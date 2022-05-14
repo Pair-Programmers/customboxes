@@ -6,7 +6,7 @@
                     <div class="footer-widget mb-40">
                         {{-- <h3 class="footer-title">Custom Printed Boxes</h3> --}}
                         <img src="{{ asset('assets/website') }}/images/logo/logo.png"
-                            style="width: 350px; height: 80px; margin-bottom: 15px;" alt="">
+                            style="width: 270px; height: 60px; margin-bottom: 15px;" alt="">
                         <br>
                         <P style="text-align:justify; font-size: 19px">We at CustomBoxesUs pride ourselves on providing the best custom packaging boxes and services
                             in the industry. There are no other manufacturers that can match our quality products, an

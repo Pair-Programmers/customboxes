@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>Box Style | {{ env('APP_NAME') }} </title>
+    <title>{{$industry->name}} | {{ env('APP_NAME') }} </title>
     <meta name="description" content="this is description">
 @endsection
 
@@ -11,7 +11,7 @@
 @section('content')
     <div class="text-center bg-img"
         style="height:250px; width:100%; background-image:url('{{ asset('assets/website') }}/images/industry/boxes-styles.png');">
-        <h1 class="pt-100">Custom Printed Boxes</h1>
+        <h1 class="pt-100">{{$industry->name}}</h1>
     </div>
     <br>
 
@@ -23,6 +23,7 @@
         <div class="container">
             <div class="row flex-row-reverse">
                 <div class="col-lg-4">
+                    <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Qoute Now</strong></h2>
                     <div class="col-lg-12">
                         @if ($errors->any())
                             <div class="alert alert-danger">
@@ -153,8 +154,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="billing-info mb-20">
-                                            <label> Addons </label>
+                                        <div class="billing-info mb-20 mt-25">
                                             <div class="checkout-account ">
                                                 <input class="checkout-toggle2" name="addons[]" type="checkbox">
                                                 <span>Spot UV Coating</span>

@@ -155,7 +155,7 @@
                                             <div class="checkout-account ">
                                                 <input class="checkout-toggle2" value="Gloss Lamination" name="addons[]" type="checkbox">
                                                 <span>Gloss Lamination</span>
-                                            </div>
+                     77                       </div>
                                             <div class="checkout-account ">
                                                 <input class="checkout-toggle2" value="Matte Lamination" name="addons[]" type="checkbox">
                                                 <span>Matte Lamination</span>
@@ -171,8 +171,8 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="billing-info mb-20">
-                                            <label> Addons </label>
+                                        <div class="billing-info mb-20 mt-25">
+                                            {{-- <label> Addons </label> --}}
                                             <div class="checkout-account ">
                                                 <input class="checkout-toggle2" value="Spot UV Coating" name="addons[]" type="checkbox">
                                                 <span>Spot UV Coating</span>

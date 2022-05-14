@@ -17,11 +17,11 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
-                                <h4 class="animated">Lookbook</h4>
-                                <h1 class="animated">Denim Mixed <br>Layering Combine <br>collect</h1>
-                                <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p>
+                                {{-- <h4 class="animated">Lookbook</h4> --}}
+                                <h1 class="animated">THE CUSTOM PRINTED<br>PACKAGING BOXES</h1>
+                                {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Explore Now</a>
+                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -34,11 +34,11 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
-                                <h4 class="animated">Lookbook</h4>
-                                <h1 class="animated">Denim Mixed <br>Layering Combine <br>collect</h1>
-                                <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p>
+                                {{-- <h4 class="animated">Lookbook</h4> --}}
+                                <h1 class="animated">CUTOM CBD BOXES</h1>
+                                <p class="animated">We Prepare High-Quality Custom Boxes With The Latest Tools And Techniques.</p>
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Explore Now</a>
+                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -51,11 +51,11 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
-                                <h4 class="animated">Lookbook</h4>
-                                <h1 class="animated">Denim Mixed <br>Layering Combine <br>collect</h1>
-                                <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p>
+                                {{-- <h4 class="animated">Lookbook</h4> --}}
+                                <h1 class="animated">COSMETIC <br> PACKAGING BOXES</h1>
+                                {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Explore Now</a>
+                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -68,11 +68,11 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
-                                <h4 class="animated">Lookbook</h4>
-                                <h1 class="animated">Denim Mixed <br>Layering Combine <br>collect</h1>
-                                <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p>
+                                {{-- <h4 class="animated">Lookbook</h4> --}}
+                                <h1 class="animated">MAILER CARDBORD <br> PACKAGING BOXES</h1>
+                                {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Explore Now</a>
+                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -85,11 +85,11 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
-                                <h4 class="animated">Lookbook</h4>
-                                <h1 class="animated">Denim Mixed <br>Layering Combine <br>collect</h1>
-                                <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p>
+                                {{-- <h4 class="animated">Lookbook</h4> --}}
+                                <h1 class="animated">VAPE CARTRIDGE PRINTING <br> PACKAGING BOXES</h1>
+                                {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Explore Now</a>
+                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -102,11 +102,11 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
-                                <h4 class="animated">Lookbook</h4>
-                                <h1 class="animated">Denim Mixed <br>Layering Combine <br>collect</h1>
-                                <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p>
+                                {{-- <h4 class="animated">Lookbook</h4> --}}
+                                <h1 class="animated">LUXURY RIGID BOXES</h1>
+                                <p class="animated">WE CustomBoxesus strive to give you the best packaging solutions.</p>
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Explore Now</a>
+                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
