@@ -11,24 +11,24 @@
 @section('content')
     <div id="section1" class="slider-area">
         <div class="hero-slider-active-1 nav-style-4 dot-style-1 dot-style-1-position-1 dot-style-2-active-black">
-            <div class="single-hero-slider single-animation-wrap slider-height-2 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs"
-                style="background-image:url({{ asset('assets/website') }}/images/slider/custom-printed-boxes-1.jpg);">
+            <div class="single-hero-slider single-animation-wrap slider-height-3 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs"
+                style=" background-image:url({{ asset('assets/website') }}/images/slider/custom-printed-boxes-1.jpg);">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
                                 {{-- <h4 class="animated">Lookbook</h4> --}}
-                                <h1 class="animated">THE <br> CUSTOM PRINTED<br>PACKAGING BOXES</h1>
+                                <h1 class="animated ">THE <br> CUSTOM PRINTED<br>PACKAGING BOXES</h1>
                                 {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Get A Quote</a>
+                                    <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slider single-animation-wrap slider-height-2 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
+            <div class="single-hero-slider single-animation-wrap slider-height-3 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
                 style="background-image:url({{ asset('assets/website') }}/images/slider/custom-cbd-boxes-2.jpg);">
                 <div class="container">
                     <div class="row">
@@ -38,14 +38,14 @@
                                 <h1 class="animated">CUTOM CBD BOXES</h1>
                                 <p class="animated">We Prepare High-Quality Custom Boxes With The Latest Tools And Techniques.</p>
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Get A Quote</a>
+                                    <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slider single-animation-wrap slider-height-2 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
+            <div class="single-hero-slider single-animation-wrap slider-height-3 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
                 style="background-image:url({{ asset('assets/website') }}/images/slider/custom-cosmetics-boxes-3.jpg);">
                 <div class="container">
                     <div class="row">
@@ -55,14 +55,14 @@
                                 <h1 class="animated">COSMETIC <br> PACKAGING BOXES</h1>
                                 {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Get A Quote</a>
+                                    <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slider single-animation-wrap slider-height-2 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
+            <div class="single-hero-slider single-animation-wrap slider-height-3 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
                 style="background-image:url({{ asset('assets/website') }}/images/slider/custom-mailer-boxes-4.jpg);">
                 <div class="container">
                     <div class="row">
@@ -72,14 +72,14 @@
                                 <h1 class="animated">MAILER CARDBORD <br> PACKAGING BOXES</h1>
                                 {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Get A Quote</a>
+                                    <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slider single-animation-wrap slider-height-2 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
+            <div class="single-hero-slider single-animation-wrap slider-height-3 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
                 style="background-image:url({{ asset('assets/website') }}/images/slider/vape-cartridge-packaging-boxes-5.jpg);">
                 <div class="container">
                     <div class="row">
@@ -89,14 +89,14 @@
                                 <h1 class="animated">VAPE CARTRIDGE<br>PRINTING PACKAGING<br>BOXES</h1>
                                 {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Get A Quote</a>
+                                    <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slider single-animation-wrap slider-height-2 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
+            <div class="single-hero-slider single-animation-wrap slider-height-3 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
                 style="background-image:url({{ asset('assets/website') }}/images/slider/rigid-boxes-6.jpg);">
                 <div class="container">
                     <div class="row">
@@ -106,7 +106,7 @@
                                 <h1 class="animated">LUXURY RIGID BOXES</h1>
                                 <p class="animated">WE CustomBoxesus strive to give you the best packaging solutions.</p>
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1" href="{{route('product.index')}}">Get A Quote</a>
+                                    <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>

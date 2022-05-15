@@ -5562,7 +5562,7 @@ textarea:focus {
 }
 
 .slider-height-3 {
-  height: 350px;
+  height: 450px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -7082,7 +7082,7 @@ textarea:focus {
   .hero-slider-content-4 h1 {
     font-size: 50px;
     line-height: 60px;
-    margin: 14px 0 10px;
+    margin: 5px 0 10px;
     color: #ffffff;
   }
 }
@@ -7091,7 +7091,7 @@ textarea:focus {
   .hero-slider-content-4 h1 {
     font-size: 50px;
     line-height: 60px;
-    margin: 14px 0 10px;
+    margin: 5px 0 10px;
     color: #ffffff;
   }
 }
@@ -7100,7 +7100,7 @@ textarea:focus {
   .hero-slider-content-4 h1 {
     font-size: 50px;
     line-height: 60px;
-    margin: 14px 0 10px;
+    margin: 5px 0 10px;
     color: #ffffff;
   }
 }
@@ -7118,7 +7118,7 @@ textarea:focus {
   .hero-slider-content-4 h1 {
     font-size: 25px;
     line-height: 32px;
-    margin: 10px 0 10px;
+    margin: 5px 0 5px;
     color: #ffffff;
   }
 }
