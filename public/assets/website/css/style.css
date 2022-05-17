@@ -19456,9 +19456,9 @@ h3.cart-page-title {
   border: 1px solid #e8e8e8;
   height: 35px;
   background-color: #f0f7fc;
-  padding: 2px 10px;
+  padding: 2px 6px;
   color: #1f2226;
-  font-size: 12px;
+  font-size: 14px;
   box-shadow: -1px 3px 2px -1px rgba(31,149,235,0.75);
   -webkit-box-shadow: -1px 3px 2px -1px rgba(31,149,235,0.75);
   -moz-box-shadow: -1px 3px 2px -1px rgba(31,149,235,0.75);
@@ -19489,9 +19489,9 @@ h3.cart-page-title {
   -moz-appearance: none;
   -webkit-appearance: none;
   color: #333;
-  font-size: 12px;
+  font-size: 14px;
   height: 35px;
-  padding: 2px 10px;
+  padding: 2px 6px;
   background: rgba(0, 0, 0, 0) url("../../assets/images/icon-img/select.png") no-repeat scroll right 18px center;
   cursor: pointer;
   background-color: #f0f7fc;
@@ -19503,17 +19503,17 @@ box-shadow: -1px 3px 2px -1px rgb(31 149 235 / 75%);
 .billing-info-wrap .billing-select select option {
   background: #fff;
   border: 0px solid #626262;
-  padding-left: 10px;
+  padding-left: 5px;
   color: #333;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .billing-info-wrap .checkout-account input {
   border: 1px solid #9fa0a2;
   display: inline-block;
   float: left;
-  height: 10px;
-  width: 10px;
+  height: 14px;
+  width: 14px;
   position: relative;
   top: 6px;
   color: #333;

@@ -224,7 +224,8 @@
 
                                 <div class="pro-details-action-wrap">
                                     <div class="pro-details-add-to-cart">
-                                        <button class="btn">Get Qoute</button>
+                                        <button style="background-color: #db1515" type="submit" class="btn">Get
+                                            Qoute</button>
                                     </div>
                                 </div>
                             </form>
