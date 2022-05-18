@@ -62,13 +62,20 @@ class OrderController extends Controller
         if(Auth::check()){
             $inputs['user_id'] = Auth::id();
         }
-        if ($request->hasFile('box_design_file')) {
-            $path = $request->file('box_design_file')->store('files');
-            $inputs['box_design_file'] = $path;
-        }
+
         $inputs['page_url'] = url()->previous();
         $inputs['addons'] = json_encode($request->addons);
         $order = Order::create($inputs);
+        if ($request->hasFile('box_design_file')) {
+            $file = $request->file('box_design_file');
+            $name = 'product_design_order_'.$order->id.'.'.$file->getClientOriginalExtension();
+            $file->move(public_path().'/storage/files', $name);
+            // $path = $request->file('box_design_file')->storeAs('public/order-design-files',
+            //  'product_design_order_'.$order->id.'.'. $request->file('box_design_file')->guessExtension());
+             $order->box_design_file = $name;
+             $order->save();
+        }
+
         Mail::to($request->customer_email)->queue(new OrderPlaced());
         Mail::to('sales@customboxesus.com')->cc('info@customboxesus.com')->queue(new NewOrder($order));
         return redirect()->back()->with(['success'=>"We Have recieved your Qoutation, we'll contact you soon !"]);

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>BLogs List | {{ env('APP_NAME') }} </title>
+    <title>BLogs | {{ env('APP_NAME') }} </title>
     <meta name="description" content="this is description">
 @endsection
 

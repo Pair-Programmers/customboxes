@@ -80,18 +80,18 @@
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info">
-                                            <input type="text" required name="height" placeholder="Height *">
+                                            <input type="number" required name="height" placeholder="Height *">
                                             <input type="hidden"  name="qoute_form" value="Rush Order Form">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20">
-                                            <input type="text" required name="width" placeholder="Width *">
+                                            <input type="number" required name="width" placeholder="Width *">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20">
-                                            <input type="text" required name="depth" placeholder="Depth *">
+                                            <input type="number" required name="depth" placeholder="Depth *">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">

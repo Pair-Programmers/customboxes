@@ -75,6 +75,7 @@
                                             <th>Phone</th>
                                             <th>Dimesnsions</th>
                                             <th>Status</th>
+                                            <th>Design File</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -103,6 +104,12 @@
                                                         <span class="label label-danger">{{$order->status}}</span>
                                                     @endif
                                                 </td>
+                                                <td>
+                                                    @if ($order->box_design_file)
+                                                        <a download  href="{{asset('storage/files/'.$order->box_design_file)}}">Download File</a></td>
+                                                    @else
+
+                                                    @endif
                                                 <td class="text-center">
                                                     <div class="btn-group">
                                                         <a href="{{ route('admin.order.show', $order) }}"
@@ -129,6 +136,7 @@
                                             <th>Phone</th>
                                             <th>Dimesnsion</th>
                                             <th>Status</th>
+                                            <th>Design File</th>
                                             <th>Action</th>
                                         </tr>
                                     </tfoot>
