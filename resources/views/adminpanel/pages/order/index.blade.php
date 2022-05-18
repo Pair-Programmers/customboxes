@@ -29,9 +29,9 @@
                 </ol>
             </div>
             <div class="col-sm-8">
-                <div class="title-action">
+                {{-- <div class="title-action">
                     <a href="{{ route('admin.product.create') }}" class="btn btn-primary">+ Create New</a>
-                </div>
+                </div> --}}
             </div>
         </div>
 
