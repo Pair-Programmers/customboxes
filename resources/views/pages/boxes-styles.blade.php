@@ -59,7 +59,7 @@
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info">
-                                            <input type="text" value="{{old('height')}}" required name="height" placeholder="Height">
+                                            <input type="number" value="{{old('height')}}" required name="height" placeholder="Height">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
