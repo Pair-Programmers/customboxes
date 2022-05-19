@@ -52,7 +52,7 @@ class OrderController extends Controller
             'addons' => 'nullable',
             'box_design_file' => 'file|nullable',
             'customer_name' => 'string|required',
-            'customer_email' => 'string|required',
+            'customer_email' => 'email|required',
             'customer_phone' => 'string|nullable',
             'customer_note' => 'string|nullable',
             'product_id' => 'required|exists:products,id',
