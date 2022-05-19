@@ -23,7 +23,7 @@
     </div> --}}
     <div class="shop-area pt-40 pb-40">
         <div class="container">
-            <div class="row flex-row-reverse">
+            <div class="row ">
                 <div class="mb-30" style="text-align: center;">
                     <h2 class="mb-10"><strong> Custom Qoute </strong> Possible Now with</h2>
                     <h3 style="color: rgb(25, 25, 233)"><strong>Custom BOXES US</strong></h3>
@@ -33,7 +33,9 @@
                     <p><strong>Fill below form and get instant response from one of our packaging expert.</strong>
                     </p>
                 </div>
-                <div class="col-lg-12" style="padding: 0px 150px 0px 150px">
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-10" >
                     {{-- <div style="background-color: rgb(175, 174, 174)" class="pl-10 pt-2 pb-1 mb-3"> --}}
                         <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Qoute Now !</strong></h2>
                     {{-- </div> --}}

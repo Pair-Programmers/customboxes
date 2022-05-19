@@ -46,25 +46,30 @@
                                                 <select name="product_id" required>
                                                     <option selected disabled value="">Products</option>
                                                     @foreach ($products as $product)
-                                                        <option value="{{ $product->id }}">{{ $product->name }}</option>
+                                                        @if (old('product_id')==$product->id)
+                                                            <option selected value="{{ $product->id }}">{{ $product->name }}</option>
+                                                        @else
+                                                            <option value="{{ $product->id }}">{{ $product->name }}</option>
+                                                        @endif
                                                     @endforeach
+                                                    <option value="4">4</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info">
-                                            <input type="number" required name="height" placeholder="Height">
+                                            <input type="text" value="{{old('height')}}" required name="height" placeholder="Height">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20">
-                                            <input type="number" required name="width" placeholder="Width">
+                                            <input type="number" required value="{{old('width')}}" name="width" placeholder="Width">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20">
-                                            <input type="number" required name="depth" placeholder="Depth">
+                                            <input type="number" required value="{{old('depth')}}" name="depth" placeholder="Depth">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
@@ -72,9 +77,9 @@
                                             <div class="billing-select mb-20">
                                                 <select name="unit" required>
                                                     <option selected disabled value="">Unit</option>
-                                                    <option value="Inches">Inches</option>
-                                                    <option value="MM">MM</option>
-                                                    <option value="CM">CM</option>
+                                                    <option {{(old('unit') == 'Inches') ? 'selected' : ''}} value="Inches">Inches</option>
+                                                    <option {{(old('unit') == 'MM') ? 'selected' : ''}} value="MM">MM</option>
+                                                    <option {{(old('unit') == 'CM') ? 'selected' : ''}} value="CM">CM</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -85,16 +90,16 @@
                                             <div class="billing-select mb-20">
                                                 <select name="material" required>
                                                     <option selected disabled value="">Material</option>
-                                                    <option value="14pt. Cardstock">14pt. Cardstock</option>
-                                                    <option value="16pt. Cardstock">16pt. Cardstock</option>
-                                                    <option value="18pt. Cardstock">18pt. Cardstock</option>
-                                                    <option value="20pt. Cardstock">20pt. Cardstock</option>
-                                                    <option value="22pt. Cardstock">22pt. Cardstock</option>
-                                                    <option value="24pt. Cardstock">24pt. Cardstock</option>
-                                                    <option value="Corrugated Cardboard">Corrugated Cardboard</option>
-                                                    <option value="Brown Kraft CardStock">Brown Kraft CardStock</option>
-                                                    <option value="Recycled Bux Board">Recycled Bux Board</option>
-                                                    <option value="Rigid Material">Rigid Material</option>
+                                                    <option {{(old('material') == '14pt. Cardstock') ? 'selected' : ''}} value="14pt. Cardstock">14pt. Cardstock</option>
+                                                    <option {{(old('material') == '16pt. Cardstock') ? 'selected' : ''}} value="16pt. Cardstock">16pt. Cardstock</option>
+                                                    <option {{(old('material') == '18pt. Cardstock') ? 'selected' : ''}} value="18pt. Cardstock">18pt. Cardstock</option>
+                                                    <option {{(old('material') == '20pt. Cardstock') ? 'selected' : ''}} value="20pt. Cardstock">20pt. Cardstock</option>
+                                                    <option {{(old('material') == '22pt. Cardstock') ? 'selected' : ''}} value="22pt. Cardstock">22pt. Cardstock</option>
+                                                    <option {{(old('material') == '24pt. Cardstock') ? 'selected' : ''}} value="24pt. Cardstock">24pt. Cardstock</option>
+                                                    <option {{(old('material') == 'Corrugated Cardboard') ? 'selected' : ''}} value="Corrugated Cardboard">Corrugated Cardboard</option>
+                                                    <option {{(old('material') == '"Brown Kraft CardStock') ? 'selected' : ''}} value="Brown Kraft CardStock">Brown Kraft CardStock</option>
+                                                    <option {{(old('material') == 'Recycled Bux Board') ? 'selected' : ''}} value="Recycled Bux Board">Recycled Bux Board</option>
+                                                    <option {{(old('material') == 'Rigid Material') ? 'selected' : ''}} value="Rigid Material">Rigid Material</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -105,29 +110,29 @@
                                             <div class="billing-select mb-20">
                                                 <select name="color" required>
                                                     <option selected disabled value="">Color</option>
-                                                    <option value="1 Color">1 Color</option>
-                                                    <option value="2 Color">2 Color</option>
-                                                    <option value="3 Color">3 Color</option>
-                                                    <option value="4 Color">4 Color</option>
-                                                    <option value="4/1 Color">4/1 Color</option>
-                                                    <option value="4/2 Color">4/2 Color</option>
-                                                    <option value="4/3 Color">4/3 Color</option>
-                                                    <option value="4/4 Color">4/4 Color</option>
-                                                    <option value="Pantone (PMS)">Pantone (PMS)</option>
-                                                    <option value="Full Color Printing">Full Color Printing</option>
-                                                    <option value="Both Side Printing">Both Side Printing</option>
+                                                    <option {{(old('color') == '1 Color') ? 'selected' : ''}} value="1 Color">1 Color</option>
+                                                    <option {{(old('color') == '2 Color') ? 'selected' : ''}} value="2 Color">2 Color</option>
+                                                    <option {{(old('color') == '3 Color') ? 'selected' : ''}} value="3 Color">3 Color</option>
+                                                    <option {{(old('color') == '4 Color') ? 'selected' : ''}} value="4 Color">4 Color</option>
+                                                    <option {{(old('color') == '4/1 Color') ? 'selected' : ''}} value="4/1 Color">4/1 Color</option>
+                                                    <option {{(old('color') == '4/2 Color') ? 'selected' : ''}} value="4/2 Color">4/2 Color</option>
+                                                    <option {{(old('color') == '4/3 Color') ? 'selected' : ''}} value="4/3 Color">4/3 Color</option>
+                                                    <option {{(old('color') == '4/4 Color') ? 'selected' : ''}} value="4/4 Color">4/4 Color</option>
+                                                    <option {{(old('color') == 'Pantone (PMS)') ? 'selected' : ''}} value="Pantone (PMS)">Pantone (PMS)</option>
+                                                    <option {{(old('color') == 'Full Color Printing') ? 'selected' : ''}} value="Full Color Printing">Full Color Printing</option>
+                                                    <option {{(old('color') == 'Both Side Printing') ? 'selected' : ''}} value="Both Side Printing">Both Side Printing</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
-                                            <input type="number" name="qty_1" required placeholder="1st Qty">
+                                            <input type="number" value="{{old('qty_1')}}" name="qty_1" required placeholder="1st Qty">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
-                                            <input type="number" name="qty_2" placeholder="2nd Qty">
+                                            <input type="number" value="{{old('qty_2')}}" name="qty_2" placeholder="2nd Qty">
                                         </div>
                                     </div>
 
@@ -178,24 +183,24 @@
 
                                     <div class="col-lg-12 col-md-12">
                                         <div class="billing-info mb-20">
-                                            <input type="file" name="box_design_file">
+                                            <input type="file" value="{{old('box_design_file')}}" name="box_design_file">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12 col-md-12">
                                         <div class="billing-info mb-20">
-                                            <input type="text" name="customer_name" required placeholder="Your Name">
+                                            <input type="text" value="{{old('customer_name')}}" name="customer_name" required placeholder="Your Name">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
-                                            <input type="text" name="customer_email" required placeholder="Email">
+                                            <input type="text" value="{{old('customer_email')}}" name="customer_email" required placeholder="Email">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
-                                            <input type="text" name="customer_phone" placeholder="Phone">
+                                            <input type="text" value="{{old('customer_phone')}}" name="customer_phone" placeholder="Phone">
                                         </div>
                                     </div>
 
@@ -204,7 +209,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="billing-info mb-20">
                                         <textarea name="customer_note" placeholder="Notes about your order, e.g. special notes for delivery. " name="message"
-                                            rows="4"></textarea>
+                                            rows="4">{{old('customer_note')}}</textarea>
 
                                     </div>
                                 </div>
