@@ -1,10 +1,10 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>{{$product->meta_tag_title}}</title>
-    <meta name="description" content="{{$product->meta_tag_description}}">
+    <title>{{ $product->meta_tag_title }}</title>
+    <meta name="description" content="{{ $product->meta_tag_description }}">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="keywords" content="{{$product->meta_tag_keywords}}">
+    <meta name="keywords" content="{{ $product->meta_tag_keywords }}">
 @endsection
 
 @section('custom-css')
@@ -32,7 +32,8 @@
                             <div class="easyzoom-style">
                                 <div class="easyzoom easyzoom--overlay">
                                     <a href="{{ asset('storage') }}/images/products/{{ $product->image1 }}">
-                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}" alt="{{ $product->image1 }}">
+                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
+                                            alt="{{ $product->image1 }}">
                                     </a>
                                 </div>
                                 <a class="easyzoom-pop-up img-popup"
@@ -86,19 +87,24 @@
                         </div>
                         <div class="product-dec-slider-small product-dec-small-style1">
                             <div class="product-dec-small active">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}" alt="{{ $product->image1 }}">
+                                <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
+                                    alt="{{ $product->image1 }}">
                             </div>
                             <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image2 }}" alt="{{ $product->image2 }}">
+                                <img src="{{ asset('storage') }}/images/products/{{ $product->image2 }}"
+                                    alt="{{ $product->image2 }}">
                             </div>
                             <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image3 }}" alt="{{ $product->image3 }}">
+                                <img src="{{ asset('storage') }}/images/products/{{ $product->image3 }}"
+                                    alt="{{ $product->image3 }}">
                             </div>
                             <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image4 }}" alt="{{ $product->image4 }}">
+                                <img src="{{ asset('storage') }}/images/products/{{ $product->image4 }}"
+                                    alt="{{ $product->image4 }}">
                             </div>
                             <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image5 }}" alt="{{ $product->image5 }}">
+                                <img src="{{ asset('storage') }}/images/products/{{ $product->image5 }}"
+                                    alt="{{ $product->image5 }}">
                             </div>
                         </div>
                     </div>
@@ -110,207 +116,254 @@
                         <p>{{ $product->summary }}</p>
                         <br>
                         {{-- <div style="background-color: rgb(175, 174, 174)" class="pl-10 pt-2 pb-1 mb-3"> --}}
-                            <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Qoute Now !</strong></h2>
+                        <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Qoute Now !</strong></h2>
                         {{-- </div> --}}
                         <br>
                         <div class="row">
                             <div class="col-lg-12">
-                                @if ($errors->any())
-                                    <div class="alert alert-danger">
-                                        <ul>
-                                            @foreach ($errors->all() as $error)
-                                                <li>{{ $error }}</li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
-                                @endif
+                                >
                                 @if (\Session::has('success'))
-                                    <div class="alert alert-success">
+                                    <div class="alert " style="background-color: #0c691c;">
                                         <ul>
-                                            <li>{!! \Session::get('success') !!}</li>
+                                            <li style="color: white; font-size: 18px">{!! \Session::get('success') !!}</li>
                                         </ul>
                                     </div>
                                 @elseif(\Session::has('error'))
-                                    <div class="alert alert-danger">
+                                    <div class="alert " style="background-color: #db1515;">
                                         <ul>
-                                            <li>{!! \Session::get('error') !!}</li>
+                                            <li style="color: white">{!! \Session::get('error') !!}</li>
                                         </ul>
                                     </div>
                                 @endif
 
-                        <div class="billing-info-wrap ">
-                            <form id="orderForm" action="{{ route('order.store') }}" method="POST"
-                                enctype="multipart/form-data">
-                                {{-- <h3>Qoute Area</h3> --}}
-                                @csrf
-                                <input type="hidden" name="product_id" value="{{$product->id}}">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-3">
-                                        <div class="billing-info">
-                                            <input type="text" required name="height" placeholder="Height">
-                                            <input type="hidden" name="qoute_form" value="Product Detail Form">
+                                <div class="billing-info-wrap ">
+                                    <form id="orderForm" action="{{ route('order.store') }}" method="POST"
+                                        enctype="multipart/form-data">
+                                        {{-- <h3>Qoute Area</h3> --}}
+                                        @csrf
+                                        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-3">
+                                                <div class="billing-info">
+                                                    <input value="{{ old('height') }}" type="number" required name="height"
+                                                        placeholder="Height">
+                                                    <input type="hidden" name="qoute_form" value="Product Detail Form">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3">
+                                                <div class="billing-info mb-20">
+                                                    <input value="{{ old('width') }}" type="number" required name="width"
+                                                        placeholder="Width">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3">
+                                                <div class="billing-info mb-20">
+                                                    <input value="{{ old('depth') }}" type="number" required name="depth"
+                                                        placeholder="Depth">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3">
+                                                <div class="billing-info mb-20">
+                                                    <div class="billing-select mb-20">
+                                                        <select name="unit" required>
+                                                            <option selected disabled value="">Unit</option>
+                                                            <option {{ old('unit') == 'Inches' ? 'selected' : '' }}
+                                                                value="Inches">Inches</option>
+                                                            <option {{ old('unit') == 'MM' ? 'selected' : '' }}
+                                                                value="MM">MM</option>
+                                                            <option {{ old('unit') == 'CM' ? 'selected' : '' }}
+                                                                value="CM">CM</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="billing-info mb-20">
+                                                    <div class="billing-select mb-20">
+                                                        <select name="material" required>
+                                                            <option selected disabled value="">Material</option>
+                                                            <option
+                                                                {{ old('material') == '14pt. Cardstock' ? 'selected' : '' }}
+                                                                value="14pt. Cardstock">14pt. Cardstock</option>
+                                                            <option
+                                                                {{ old('material') == '16pt. Cardstock' ? 'selected' : '' }}
+                                                                value="16pt. Cardstock">16pt. Cardstock</option>
+                                                            <option
+                                                                {{ old('material') == '18pt. Cardstock' ? 'selected' : '' }}
+                                                                value="18pt. Cardstock">18pt. Cardstock</option>
+                                                            <option
+                                                                {{ old('material') == '20pt. Cardstock' ? 'selected' : '' }}
+                                                                value="20pt. Cardstock">20pt. Cardstock</option>
+                                                            <option
+                                                                {{ old('material') == '22pt. Cardstock' ? 'selected' : '' }}
+                                                                value="22pt. Cardstock">22pt. Cardstock</option>
+                                                            <option
+                                                                {{ old('material') == '24pt. Cardstock' ? 'selected' : '' }}
+                                                                value="24pt. Cardstock">24pt. Cardstock</option>
+                                                            <option
+                                                                {{ old('material') == 'Corrugated Cardboard' ? 'selected' : '' }}
+                                                                value="Corrugated Cardboard">Corrugated Cardboard</option>
+                                                            <option
+                                                                {{ old('material') == '"Brown Kraft CardStock' ? 'selected' : '' }}
+                                                                value="Brown Kraft CardStock">Brown Kraft CardStock</option>
+                                                            <option
+                                                                {{ old('material') == 'Recycled Bux Board' ? 'selected' : '' }}
+                                                                value="Recycled Bux Board">Recycled Bux Board</option>
+                                                            <option
+                                                                {{ old('material') == 'Rigid Material' ? 'selected' : '' }}
+                                                                value="Rigid Material">Rigid Material</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="billing-info mb-20">
+                                                    <div class="billing-select mb-20">
+                                                        <select name="color" required>
+                                                            <option selected disabled value="">Color</option>
+                                                            <option {{ old('color') == '1 Color' ? 'selected' : '' }}
+                                                                value="1 Color">1 Color</option>
+                                                            <option {{ old('color') == '2 Color' ? 'selected' : '' }}
+                                                                value="2 Color">2 Color</option>
+                                                            <option {{ old('color') == '3 Color' ? 'selected' : '' }}
+                                                                value="3 Color">3 Color</option>
+                                                            <option {{ old('color') == '4 Color' ? 'selected' : '' }}
+                                                                value="4 Color">4 Color</option>
+                                                            <option {{ old('color') == '4/1 Color' ? 'selected' : '' }}
+                                                                value="4/1 Color">4/1 Color</option>
+                                                            <option {{ old('color') == '4/2 Color' ? 'selected' : '' }}
+                                                                value="4/2 Color">4/2 Color</option>
+                                                            <option {{ old('color') == '4/3 Color' ? 'selected' : '' }}
+                                                                value="4/3 Color">4/3 Color</option>
+                                                            <option {{ old('color') == '4/4 Color' ? 'selected' : '' }}
+                                                                value="4/4 Color">4/4 Color</option>
+                                                            <option
+                                                                {{ old('color') == 'Pantone (PMS)' ? 'selected' : '' }}
+                                                                value="Pantone (PMS)">Pantone (PMS)</option>
+                                                            <option
+                                                                {{ old('color') == 'Full Color Printing' ? 'selected' : '' }}
+                                                                value="Full Color Printing">Full Color Printing</option>
+                                                            <option
+                                                                {{ old('color') == 'Both Side Printing' ? 'selected' : '' }}
+                                                                value="Both Side Printing">Both Side Printing</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="billing-info mb-20">
+                                                    <input value="{{ old('qty_1') }}" type="number" name="qty_1" required
+                                                        placeholder="1st Qty">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="billing-info mb-20">
+                                                    <input value="{{ old('qty_2') }}" type="number" name="qty_2"
+                                                        placeholder="2nd Qty">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="billing-info mb-20">
+                                                    <label>Addons </label>
+                                                    <div class="checkout-account ">
+                                                        <input class="checkout-toggle2" value="Gloss Lamination"
+                                                            name="addons[]" type="checkbox">
+                                                        <span>Gloss Lamination</span>
+                                                    </div>
+                                                    <div class="checkout-account ">
+                                                        <input class="checkout-toggle2" value="Matte Lamination"
+                                                            name="addons[]" type="checkbox">
+                                                        <span>Matte Lamination</span>
+                                                    </div>
+                                                    <div class="checkout-account ">
+                                                        <input class="checkout-toggle2" value="Window Patching"
+                                                            name="addons[]" type="checkbox">
+                                                        <span>Window Patching</span>
+                                                    </div>
+                                                    <div class="checkout-account ">
+                                                        <input class="checkout-toggle2" value="Embossing" name="addons[]"
+                                                            type="checkbox">
+                                                        <span>Embossing</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="billing-info mb-20">
+                                                    <label> Addons </label>
+                                                    <div class="checkout-account ">
+                                                        <input class="checkout-toggle2" value="Spot UV Coating"
+                                                            name="addons[]" type="checkbox">
+                                                        <span>Spot UV Coating</span>
+                                                    </div>
+                                                    <div class="checkout-account ">
+                                                        <input class="checkout-toggle2" value="Full UV Coating"
+                                                            name="addons[]" type="checkbox">
+                                                        <span>Full UV Coating</span>
+                                                    </div>
+                                                    <div class="checkout-account ">
+                                                        <input class="checkout-toggle2" value="Silver Foiling"
+                                                            name="addons[]" type="checkbox">
+                                                        <span>Silver Foiling</span>
+                                                    </div>
+                                                    <div class="checkout-account ">
+                                                        <input class="checkout-toggle2" value="Gold Foiling" name="addons[]"
+                                                            type="checkbox">
+                                                        <span>Gold Foiling</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="billing-info mb-20">
+                                                    <input value="{{ old('box_design_file') }}" type="file"
+                                                        name="box_design_file">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="billing-info mb-20">
+                                                    <input value="{{ old('customer_name') }}" type="text"
+                                                        name="customer_name" required placeholder="Your Name">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="billing-info mb-20">
+                                                    <input value="{{ old('customer_email') }}" type="text"
+                                                        name="customer_email" required placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="billing-info mb-20">
+                                                    <input value="{{ old('customer_phone') }}" type="text"
+                                                        name="customer_phone" placeholder="Phone">
+                                                </div>
+                                            </div>
+
 
                                         </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-3">
-                                        <div class="billing-info mb-20">
-                                            <input type="text" required name="width" placeholder="Width">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-3">
-                                        <div class="billing-info mb-20">
-                                            <input type="text" required name="depth" placeholder="Depth">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-3">
-                                        <div class="billing-info mb-20">
-                                            <div class="billing-select mb-20">
-                                                <select name="unit" required>
-                                                    <option selected disabled value="">Unit</option>
-                                                    <option value="Inches">Inches</option>
-                                                    <option value="MM">MM</option>
-                                                    <option value="CM">CM</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="billing-info mb-20">
+                                                <textarea name="customer_note" placeholder="Notes about your order, e.g. special notes for delivery. " name="message"
+                                                    rows="4">{{ old('height') }}</textarea>
 
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="billing-info mb-20">
-                                            <div class="billing-select mb-20">
-                                                <select name="material" required>
-                                                    <option selected disabled value="">Material</option>
-                                                    <option value="14pt. Cardstock">14pt. Cardstock</option>
-                                                    <option value="16pt. Cardstock">16pt. Cardstock</option>
-                                                    <option value="18pt. Cardstock">18pt. Cardstock</option>
-                                                    <option value="20pt. Cardstock">20pt. Cardstock</option>
-                                                    <option value="22pt. Cardstock">22pt. Cardstock</option>
-                                                    <option value="24pt. Cardstock">24pt. Cardstock</option>
-                                                    <option value="Corrugated Cardboard">Corrugated Cardboard</option>
-                                                    <option value="Brown Kraft CardStock">Brown Kraft CardStock</option>
-                                                    <option value="Recycled Bux Board">Recycled Bux Board</option>
-                                                    <option value="Rigid Material">Rigid Material</option>
-                                                </select>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="billing-info mb-20">
-                                            <div class="billing-select mb-20">
-                                                <select name="color" required>
-                                                    <option selected disabled value="">Color</option>
-                                                    <option value="1 Color">1 Color</option>
-                                                    <option value="2 Color">2 Color</option>
-                                                    <option value="3 Color">3 Color</option>
-                                                    <option value="4 Color">4 Color</option>
-                                                    <option value="4/1 Color">4/1 Color</option>
-                                                    <option value="4/2 Color">4/2 Color</option>
-                                                    <option value="4/3 Color">4/3 Color</option>
-                                                    <option value="4/4 Color">4/4 Color</option>
-                                                    <option value="Pantone (PMS)">Pantone (PMS)</option>
-                                                    <option value="Full Color Printing">Full Color Printing</option>
-                                                    <option value="Both Side Printing">Both Side Printing</option>
-                                                </select>
+                                        <div class="pro-details-action-wrap">
+                                            <div class="pro-details-add-to-cart">
+                                                <button class="btn" style="background-color: red">Get
+                                                    Qoute</button>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="billing-info mb-20">
-                                            <input type="number" name="qty_1" required placeholder="1st Qty">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="billing-info mb-20">
-                                            <input type="number" name="qty_2" placeholder="2nd Qty">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="billing-info mb-20">
-                                            <label>Addons </label>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Gloss Lamination" name="addons[]" type="checkbox">
-                                                <span>Gloss Lamination</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Matte Lamination" name="addons[]" type="checkbox">
-                                                <span>Matte Lamination</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Window Patching" name="addons[]" type="checkbox">
-                                                <span>Window Patching</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Embossing" name="addons[]" type="checkbox">
-                                                <span>Embossing</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="billing-info mb-20">
-                                            <label> Addons </label>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Spot UV Coating" name="addons[]" type="checkbox">
-                                                <span>Spot UV Coating</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Full UV Coating" name="addons[]" type="checkbox">
-                                                <span>Full UV Coating</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Silver Foiling" name="addons[]" type="checkbox">
-                                                <span>Silver Foiling</span>
-                                            </div>
-                                            <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Gold Foiling" name="addons[]" type="checkbox">
-                                                <span>Gold Foiling</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="billing-info mb-20">
-                                            <input type="file" name="box_design_file">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="billing-info mb-20">
-                                            <input type="text" name="customer_name" required placeholder="Your Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="billing-info mb-20">
-                                            <input type="text" name="customer_email" required placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="billing-info mb-20">
-                                            <input type="text" name="customer_phone" placeholder="Phone">
-                                        </div>
-                                    </div>
-
-
+                                    </form>
                                 </div>
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="billing-info mb-20">
-                                        <textarea name="customer_note" placeholder="Notes about your order, e.g. special notes for delivery. " name="message"
-                                            rows="4"></textarea>
-
-                                    </div>
-                                </div>
-
-                                <div class="pro-details-action-wrap">
-                                    <div class="pro-details-add-to-cart">
-                                        <button class="btn" style="background-color: red">Get Qoute</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
                             </div>
                         </div>
 
@@ -334,7 +387,7 @@
                     <div class="tab-content dec-review-bottom">
                         <div id="des-details1" class="tab-pane active">
                             <div class="description-wrap">
-                                {!!$product->description!!}
+                                {!! $product->description !!}
                             </div>
                         </div>
                         <div id="des-details2" class="tab-pane">
@@ -355,7 +408,8 @@
                                         </tr>
                                         <tr>
                                             <td class="title width1">Paper Stock</td>
-                                            <td>10pt to 28pt (60lb to 400lb) Eco-Friendly Kraft, E-flute Corrugated, Bux Board, Cardstock</td>
+                                            <td>10pt to 28pt (60lb to 400lb) Eco-Friendly Kraft, E-flute Corrugated, Bux
+                                                Board, Cardstock</td>
                                         </tr>
                                         <tr>
                                             <td class="title width1">Printing</td>
@@ -363,7 +417,8 @@
                                         </tr>
                                         <tr>
                                             <td class="title width1">Finishing </td>
-                                            <td>Gloss Lamination, Matte Lamination, Gloss AQ, Gloss UV, Matte UV, Spot UV, Embossing, Foiling</td>
+                                            <td>Gloss Lamination, Matte Lamination, Gloss AQ, Gloss UV, Matte UV, Spot UV,
+                                                Embossing, Foiling</td>
                                         </tr>
                                         <tr>
                                             <td class="title width1">Included Options</td>
@@ -447,8 +502,8 @@
 
                                 <div class="pro-add-to-cart">
                                     <a href="{{ route('product.show', [$industry, $product]) }}">
-                                    <button title="Get Qoute">Get Qoute</button>
-                                </a>
+                                        <button title="Get Qoute">Get Qoute</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

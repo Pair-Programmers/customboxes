@@ -35,9 +35,9 @@
                 </div>
                 <div class="col-lg-1">
                 </div>
-                <div class="col-lg-10"  >
+                <div class="col-lg-10">
                     {{-- <div style="background-color: rgb(175, 174, 174)" class="pl-10 pt-2 pb-1 mb-3"> --}}
-                        <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Qoute Now !</strong></h2>
+                    <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Qoute Now !</strong></h2>
                     {{-- </div> --}}
                     <div class="col-lg-12">
                         @if ($errors->any())
@@ -50,15 +50,15 @@
                             </div>
                         @endif
                         @if (\Session::has('success'))
-                            <div class="alert alert-success">
+                            <div class="alert " style="background-color: #0c691c;">
                                 <ul>
-                                    <li>{!! \Session::get('success') !!}</li>
+                                    <li style="color: white; font-size: 18px">{!! \Session::get('success') !!}</li>
                                 </ul>
                             </div>
                         @elseif(\Session::has('error'))
-                            <div class="alert alert-danger">
+                            <div class="alert " style="background-color: #db1515;">
                                 <ul>
-                                    <li>{!! \Session::get('error') !!}</li>
+                                    <li style="color: white">{!! \Session::get('error') !!}</li>
                                 </ul>
                             </div>
                         @endif
@@ -82,18 +82,21 @@
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info">
-                                            <input type="number" required name="height" placeholder="Height *">
-                                            <input type="hidden"  name="qoute_form" value="Rush Order Form">
+                                            <input value="{{ old('height') }}" type="number" required name="height"
+                                                placeholder="Height *">
+                                            <input type="hidden" name="qoute_form" value="Rush Order Form">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20">
-                                            <input type="number" required name="width" placeholder="Width *">
+                                            <input value="{{ old('width') }}" type="number" required name="width"
+                                                placeholder="Width *">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20">
-                                            <input type="number" required name="depth" placeholder="Depth *">
+                                            <input value="{{ old('depth') }}" type="number" required name="depth"
+                                                placeholder="Depth *">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
@@ -151,12 +154,14 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
-                                            <input type="number" name="qty_1" required placeholder="1st Qty *">
+                                            <input value="{{ old('qty_1') }}" type="number" name="qty_1" required
+                                                placeholder="1st Qty *">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
-                                            <input type="number" name="qty_2" placeholder="2nd Qty (Optional)">
+                                            <input value="{{ old('qty_2') }}" type="number" name="qty_2"
+                                                placeholder="2nd Qty (Optional)">
                                         </div>
                                     </div>
 
@@ -224,38 +229,41 @@
                                     <br>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20 ">
-                                            <input type="text" name="customer_name" required placeholder="Your Name *">
+                                            <input value="{{ old('customer_name') }}" type="text" name="customer_name"
+                                                required placeholder="Your Name *">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20 mt-22">
-                                            <input type="text" name="customer_email" required placeholder="Email *">
+                                            <input value="{{ old('customer_email') }}" type="text" name="customer_email"
+                                                required placeholder="Email *">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
                                         <div class="billing-info mb-20 mt-22">
-                                            <input type="text" name="customer_phone" placeholder="Phone (Optional)">
+                                            <input value="{{ old('customer_phone') }}" type="text" name="customer_phone"
+                                                placeholder="Phone (Optional)">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
-                                            <input type="text" name="company_name" placeholder="Company Name (Optional)">
+                                            <input value="{{ old('company_name') }}" type="text" name="company_name"
+                                                placeholder="Company Name (Optional)">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
-                                            <input type="text" name="company_web_link"
-                                                placeholder="Company Website (Optional)">
+                                            <input value="{{ old('company_web_link') }}" type="text"
+                                                name="company_web_link" placeholder="Company Website (Optional)">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20">
-                                            <input type="file" name="box_design_file">
-                                            <label for="box_design_file">File Size less than 3MB / formats (pdf, jpg, png,
-                                                jpeg)</label>
+                                            <input value="{{ old('customer_name') }}" type="file" name="box_design_file">
+                                            <label for="customer_name">File Formats (.docs, .pdf, .jpg, .png, jpeg)</label>
 
                                         </div>
                                     </div>
@@ -267,14 +275,15 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="billing-info mb-20">
                                         <textarea name="customer_note" placeholder="Notes about your order, e.g. special notes for delivery. " name="message"
-                                            rows="4"></textarea>
+                                            rows="4">{{ old('customer_name') }}</textarea>
 
                                     </div>
                                 </div>
 
                                 <div class="pro-details-action-wrap">
                                     <div class="pro-details-add-to-cart">
-                                        <button class="btn" type="submit" style="background-color: #db1515">Get Qoute</button>
+                                        <button class="btn" type="submit" style="background-color: #db1515">Get
+                                            Qoute</button>
                                     </div>
                                 </div>
                             </form>

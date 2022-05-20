@@ -19443,7 +19443,7 @@ h3.cart-page-title {
 
 .billing-info-wrap .billing-info label {
   font-size: 14px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   display: block;
   margin: 0 0 5px;
 }

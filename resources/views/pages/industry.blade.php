@@ -38,15 +38,15 @@
                             </div>
                         @endif
                         @if (\Session::has('success'))
-                            <div class="alert alert-success">
+                            <div class="alert " style="background-color: #0c691c;">
                                 <ul>
-                                    <li>{!! \Session::get('success') !!}</li>
+                                    <li style="color: white; font-size: 18px">{!! \Session::get('success') !!}</li>
                                 </ul>
                             </div>
                         @elseif(\Session::has('error'))
-                            <div class="alert alert-danger">
+                            <div class="alert " style="background-color: #db1515;">
                                 <ul>
-                                    <li>{!! \Session::get('error') !!}</li>
+                                    <li style="color: white">{!! \Session::get('error') !!}</li>
                                 </ul>
                             </div>
                         @endif
@@ -205,6 +205,8 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="billing-info mb-20">
                                             <input type="file" name="box_design_file">
+                                            <label for="box_design_file">File Formats (.docs, .pdf, .jpg, .png,
+                                                jpeg)</label>
                                         </div>
                                     </div>
 
