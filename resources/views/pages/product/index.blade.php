@@ -310,7 +310,7 @@
 
                                 <div class="pro-details-action-wrap">
                                     <div class="pro-details-add-to-cart">
-                                        <button style="background-color: #db1515, !important" class="btn">Get
+                                        <button class="btn" type="submit" style="background-color: #db1515">Get
                                             Qoute</button>
                                     </div>
                                 </div>
