@@ -25,7 +25,7 @@
             <div class="row flex-row-reverse">
                 <div class="col-lg-4">
                     {{-- <div style="background-color: rgb(175, 174, 174)" class="pl-10 pt-2 pb-1 mb-3"> --}}
-                    <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Qoute Now</strong></h2>
+                    <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Quote Now</strong></h2>
                     {{-- </div> --}}
                     <div class="col-lg-12">
                         @if ($errors->any())

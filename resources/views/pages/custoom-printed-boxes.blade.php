@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row flex-row-reverse">
                 <div class="col-lg-4">
-                    <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Qoute Now</strong></h2>
+                    <h2 style="color: rgb(236, 27, 27)"> <strong> Get Custom Quote Now</strong></h2>
                     <div class="col-lg-12">
                         @if ($errors->any())
                             <div class="alert alert-danger">
