@@ -103,10 +103,13 @@
                                         <div class="billing-info mb-20">
                                             <div class="billing-select mb-20">
                                                 <select name="unit" required>
-                                                    <option selected disabled value="">Unit *</option>
-                                                    <option value="Inches">Inches</option>
-                                                    <option value="MM">MM</option>
-                                                    <option value="CM">CM</option>
+                                                    <option selected disabled value="">Unit</option>
+                                                    <option {{ old('unit') == 'Inches' ? 'selected' : '' }}
+                                                        value="Inches">Inches</option>
+                                                    <option {{ old('unit') == 'MM' ? 'selected' : '' }} value="MM">MM
+                                                    </option>
+                                                    <option {{ old('unit') == 'CM' ? 'selected' : '' }} value="CM">CM
+                                                    </option>
                                                 </select>
                                             </div>
                                         </div>
@@ -117,16 +120,29 @@
                                             <div class="billing-select mb-20">
                                                 <select name="material" required>
                                                     <option selected disabled value="">Material</option>
-                                                    <option value="14pt. Cardstock">14pt. Cardstock</option>
-                                                    <option value="16pt. Cardstock">16pt. Cardstock</option>
-                                                    <option value="18pt. Cardstock">18pt. Cardstock</option>
-                                                    <option value="20pt. Cardstock">20pt. Cardstock</option>
-                                                    <option value="22pt. Cardstock">22pt. Cardstock</option>
-                                                    <option value="24pt. Cardstock">24pt. Cardstock</option>
-                                                    <option value="Corrugated Cardboard">Corrugated Cardboard</option>
-                                                    <option value="Brown Kraft CardStock">Brown Kraft CardStock</option>
-                                                    <option value="Recycled Bux Board">Recycled Bux Board</option>
-                                                    <option value="Rigid Material">Rigid Material</option>
+                                                    <option {{ old('material') == '14pt. Cardstock' ? 'selected' : '' }}
+                                                        value="14pt. Cardstock">14pt. Cardstock</option>
+                                                    <option {{ old('material') == '16pt. Cardstock' ? 'selected' : '' }}
+                                                        value="16pt. Cardstock">16pt. Cardstock</option>
+                                                    <option {{ old('material') == '18pt. Cardstock' ? 'selected' : '' }}
+                                                        value="18pt. Cardstock">18pt. Cardstock</option>
+                                                    <option {{ old('material') == '20pt. Cardstock' ? 'selected' : '' }}
+                                                        value="20pt. Cardstock">20pt. Cardstock</option>
+                                                    <option {{ old('material') == '22pt. Cardstock' ? 'selected' : '' }}
+                                                        value="22pt. Cardstock">22pt. Cardstock</option>
+                                                    <option {{ old('material') == '24pt. Cardstock' ? 'selected' : '' }}
+                                                        value="24pt. Cardstock">24pt. Cardstock</option>
+                                                    <option
+                                                        {{ old('material') == 'Corrugated Cardboard' ? 'selected' : '' }}
+                                                        value="Corrugated Cardboard">Corrugated Cardboard</option>
+                                                    <option
+                                                        {{ old('material') == '"Brown Kraft CardStock' ? 'selected' : '' }}
+                                                        value="Brown Kraft CardStock">Brown Kraft CardStock</option>
+                                                    <option
+                                                        {{ old('material') == 'Recycled Bux Board' ? 'selected' : '' }}
+                                                        value="Recycled Bux Board">Recycled Bux Board</option>
+                                                    <option {{ old('material') == 'Rigid Material' ? 'selected' : '' }}
+                                                        value="Rigid Material">Rigid Material</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -137,17 +153,28 @@
                                             <div class="billing-select mb-20">
                                                 <select name="color" required>
                                                     <option selected disabled value="">Color</option>
-                                                    <option value="1 Color">1 Color</option>
-                                                    <option value="2 Color">2 Color</option>
-                                                    <option value="3 Color">3 Color</option>
-                                                    <option value="4 Color">4 Color</option>
-                                                    <option value="4/1 Color">4/1 Color</option>
-                                                    <option value="4/2 Color">4/2 Color</option>
-                                                    <option value="4/3 Color">4/3 Color</option>
-                                                    <option value="4/4 Color">4/4 Color</option>
-                                                    <option value="Pantone (PMS)">Pantone (PMS)</option>
-                                                    <option value="Full Color Printing">Full Color Printing</option>
-                                                    <option value="Both Side Printing">Both Side Printing</option>
+                                                    <option {{ old('color') == '1 Color' ? 'selected' : '' }}
+                                                        value="1 Color">1 Color</option>
+                                                    <option {{ old('color') == '2 Color' ? 'selected' : '' }}
+                                                        value="2 Color">2 Color</option>
+                                                    <option {{ old('color') == '3 Color' ? 'selected' : '' }}
+                                                        value="3 Color">3 Color</option>
+                                                    <option {{ old('color') == '4 Color' ? 'selected' : '' }}
+                                                        value="4 Color">4 Color</option>
+                                                    <option {{ old('color') == '4/1 Color' ? 'selected' : '' }}
+                                                        value="4/1 Color">4/1 Color</option>
+                                                    <option {{ old('color') == '4/2 Color' ? 'selected' : '' }}
+                                                        value="4/2 Color">4/2 Color</option>
+                                                    <option {{ old('color') == '4/3 Color' ? 'selected' : '' }}
+                                                        value="4/3 Color">4/3 Color</option>
+                                                    <option {{ old('color') == '4/4 Color' ? 'selected' : '' }}
+                                                        value="4/4 Color">4/4 Color</option>
+                                                    <option {{ old('color') == 'Pantone (PMS)' ? 'selected' : '' }}
+                                                        value="Pantone (PMS)">Pantone (PMS)</option>
+                                                    <option {{ old('color') == 'Full Color Printing' ? 'selected' : '' }}
+                                                        value="Full Color Printing">Full Color Printing</option>
+                                                    <option {{ old('color') == 'Both Side Printing' ? 'selected' : '' }}
+                                                        value="Both Side Printing">Both Side Printing</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -173,7 +200,7 @@
                                     <div class="col-lg-3">
                                         <div class="billing-info mb-20">
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Gloss Lamination" name="addons[]"
+                                                <input class="checkout-toggle2" id="Gloss Lamination" value="Gloss Lamination" name="addons[]"
                                                     type="checkbox">
                                                 <span>Gloss Lamination</span>
                                             </div>
@@ -181,51 +208,56 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="checkout-account ">
-                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <input class="checkout-toggle2" id="Matte Lamination" value="Matte Lamination" name="addons[]" type="checkbox">
                                             <span>Matte Lamination</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="checkout-account ">
-                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <input class="checkout-toggle2" id="Window Patching" value="Window Patching" name="addons[]" type="checkbox">
                                             <span>Window Patching</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="checkout-account ">
-                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <input class="checkout-toggle2" id="Embossing" value="Embossing" name="addons[]" type="checkbox">
                                             <span>Embossing</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="billing-info mb-20">
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" id="Spot UV Coating" value="Spot UV Coating" name="addons[]" type="checkbox">
                                                 <span>Spot UV Coating</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="checkout-account ">
-                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <input class="checkout-toggle2" id="Full UV Coating" value="Full UV Coating" name="addons[]" type="checkbox">
                                             <span>Full UV Coating</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="checkout-account  mb-20">
-                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <input class="checkout-toggle2" id="Silver Foiling" value="Silver Foiling" name="addons[]" type="checkbox">
                                             <span>Silver Foiling</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="checkout-account  mb-20">
-                                            <input class="checkout-toggle2 " name="addons[]" type="checkbox">
+                                            <input class="checkout-toggle2" id="Gold Foiling" value="Gold Foiling" name="addons[]" type="checkbox">
                                             <span>Gold Foiling</span>
                                         </div>
                                     </div>
 
 
-
+                                    <script>
+                                        var selectedAddons = @json(old('addons'));
+                                        for (let index = 0; index < selectedAddons.length; index++) {
+                                            document.getElementById(selectedAddons[index]).setAttribute("checked", "true");
+                                        }
+                                    </script>
                                     <br>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20 ">

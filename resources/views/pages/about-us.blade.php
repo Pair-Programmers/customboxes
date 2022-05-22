@@ -55,7 +55,7 @@
             </div>
         </div>
     </div>
-    <div class="service-area pb-120">
+    {{-- <div class="service-area pb-120">
         <div class="container">
             <div class="service-wrap-border service-wrap-padding-3">
                 <div class="row">
@@ -106,7 +106,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     {{-- <div class="banner-area pb-85">
         <div class="container">
             <div class="row">

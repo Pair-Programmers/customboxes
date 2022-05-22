@@ -197,7 +197,7 @@
                                     <div class="col-lg-3">
                                         <div class="billing-info mb-20">
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" value="Gloss Lamination" name="addons[]"
+                                                <input class="checkout-toggle2" id="Gloss Lamination" value="Gloss Lamination" name="addons[]"
                                                     type="checkbox">
                                                 <span>Gloss Lamination</span>
                                             </div>
@@ -205,49 +205,54 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="checkout-account ">
-                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <input class="checkout-toggle2" id="Matte Lamination" value="Matte Lamination" name="addons[]" type="checkbox">
                                             <span>Matte Lamination</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="checkout-account ">
-                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <input class="checkout-toggle2" id="Window Patching" value="Window Patching" name="addons[]" type="checkbox">
                                             <span>Window Patching</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="checkout-account ">
-                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <input class="checkout-toggle2" id="Embossing" value="Embossing" name="addons[]" type="checkbox">
                                             <span>Embossing</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="billing-info mb-20">
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                                <input class="checkout-toggle2" id="Spot UV Coating" value="Spot UV Coating" name="addons[]" type="checkbox">
                                                 <span>Spot UV Coating</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="checkout-account ">
-                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <input class="checkout-toggle2" id="Full UV Coating" value="Full UV Coating" name="addons[]" type="checkbox">
                                             <span>Full UV Coating</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="checkout-account  mb-20">
-                                            <input class="checkout-toggle2" name="addons[]" type="checkbox">
+                                            <input class="checkout-toggle2" id="Silver Foiling" value="Silver Foiling" name="addons[]" type="checkbox">
                                             <span>Silver Foiling</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="checkout-account  mb-20">
-                                            <input class="checkout-toggle2 " name="addons[]" type="checkbox">
+                                            <input class="checkout-toggle2" id="Gold Foiling" value="Gold Foiling" name="addons[]" type="checkbox">
                                             <span>Gold Foiling</span>
                                         </div>
                                     </div>
-
+                                    <script>
+                                        var selectedAddons = @json(old('addons'));
+                                        for (let index = 0; index < selectedAddons.length; index++) {
+                                            document.getElementById(selectedAddons[index]).setAttribute("checked", "true");
+                                        }
+                                    </script>
                                     <br>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-20 ">
