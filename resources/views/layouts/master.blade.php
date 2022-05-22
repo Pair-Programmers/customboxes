@@ -3,6 +3,10 @@
 @include('partials.head')
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQRWPZB" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     @include('partials.header')
 
     @yield('content')
@@ -21,17 +25,20 @@
                     type: $form.attr('method'),
                     url: $form.attr('action'),
                     data: $form.serialize(),
-                    dataType : "json",
+                    dataType: "json",
                     contentType: "application/x-www-form-urlencoded; charset=UTF-8",
                     beforeSend: function() {
-                        $('#news-subscriber-message').html(`<span style="color: green">Processing ..</span>`);
+                        $('#news-subscriber-message').html(
+                            `<span style="color: green">Processing ..</span>`);
                     },
                     success: function(responseData, textStatus, jqXHR) {
-                        if(responseData.error){
-                            $('#news-subscriber-message').html(`<span style="color: red">${responseData.error.email}</span>`);
-                        }
-                        else{
-                            $('#news-subscriber-message').html(`<span style="color: green">${responseData.message}</span>`);
+                        if (responseData.error) {
+                            $('#news-subscriber-message').html(
+                                `<span style="color: red">${responseData.error.email}</span>`
+                                );
+                        } else {
+                            $('#news-subscriber-message').html(
+                                `<span style="color: green">${responseData.message}</span>`);
                         }
                         console.log('ajax done');
                     },
