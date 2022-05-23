@@ -3,7 +3,6 @@
 @section('title-meta')
     <title>{{ $industry->meta_tag_title }}</title>
     <meta name="description" content="{{ $industry->meta_tag_description }}">
-    <meta name="robots" content="noindex, nofollow">
     <meta name="keywords" content="{{ $industry->meta_tag_keywords }}">
 @endsection
 
