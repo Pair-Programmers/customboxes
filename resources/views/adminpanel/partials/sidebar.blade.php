@@ -68,7 +68,7 @@
                 </ul>
             </li>
 
-            <li class="@if (request()->is('admin/user*'))  {{'active'}} @else {{''}} @endif">
+            {{-- <li class="@if (request()->is('admin/user*'))  {{'active'}} @else {{''}} @endif">
                 <a href="#">
                     <i class="fa fa-users"></i>
                     <span class="nav-label">Users</span>
@@ -77,7 +77,7 @@
                 <ul class="nav nav-second-level collapse">
                     <li><a href="{{ route('admin.user.index') }}">List</a></li>
                 </ul>
-            </li>
+            </li> --}}
 
             <li class="@if (request()->is('admin/blog*'))  {{'active'}} @else {{''}} @endif">
                 <a href="#">
