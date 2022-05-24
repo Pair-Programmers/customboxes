@@ -3,12 +3,14 @@
         <ul class="nav metismenu" id="side-menu">
             <li class="nav-header">
                 <div class="dropdown profile-element"> <span>
-                        <img alt="image" class="img-circle" src="{{asset('storage')}}/images/admins/{{Auth::guard('admin')->user()->profile_image}}" style="width: 70px; height: 70px"/>
+                        <img alt="image" class="img-circle"
+                            src="{{ asset('storage') }}/images/admins/{{ Auth::guard('admin')->user()->profile_image }}"
+                            style="width: 70px; height: 70px" />
                     </span>
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear"> <span class="block m-t-xs">
-                                <strong class="font-bold">{{Auth::guard('admin')->user()->name}}</strong>
-                            </span> <span class="text-muted text-xs block">{{Auth::guard('admin')->user()->role}} <b
+                                <strong class="font-bold">{{ Auth::guard('admin')->user()->name }}</strong>
+                            </span> <span class="text-muted text-xs block">{{ Auth::guard('admin')->user()->role }} <b
                                     class="caret"></b></span>
                         </span>
                     </a>
@@ -34,7 +36,7 @@
                 </a>
 
             </li>
-            <li class="@if (request()->is('admin/industry*'))  {{'active'}} @else {{''}} @endif">
+            <li class="@if (request()->is('admin/industry*')) {{ 'active' }} @else {{ '' }} @endif">
                 <a href="{{ route('admin.industry.index') }}">
                     <i class=" fa fa-building"></i>
                     <span class="nav-label">Industries</span>
@@ -45,7 +47,7 @@
                 </ul>
             </li>
 
-            <li class="@if (request()->is('admin/product*'))  {{'active'}} @else {{''}} @endif">
+            <li class="@if (request()->is('admin/product*')) {{ 'active' }} @else {{ '' }} @endif">
                 <a href="#">
                     <i class=" fa fa-cube"></i>
                     <span class="nav-label">Products</span>
@@ -57,7 +59,7 @@
                 </ul>
             </li>
 
-            <li class="@if (request()->is('admin/order*'))  {{'active'}} @else {{''}} @endif">
+            <li class="@if (request()->is('admin/order*')) {{ 'active' }} @else {{ '' }} @endif">
                 <a href="#">
                     <i class="fa fa-bar-chart-o"></i>
                     <span class="nav-label">Orders</span>
@@ -68,7 +70,7 @@
                 </ul>
             </li>
 
-            {{-- <li class="@if (request()->is('admin/user*'))  {{'active'}} @else {{''}} @endif">
+            {{-- <li class="@if (request()->is('admin/user*')) {{ 'active' }} @else {{ '' }} @endif">
                 <a href="#">
                     <i class="fa fa-users"></i>
                     <span class="nav-label">Users</span>
@@ -79,7 +81,7 @@
                 </ul>
             </li> --}}
 
-            <li class="@if (request()->is('admin/blog*'))  {{'active'}} @else {{''}} @endif">
+            <li class="@if (request()->is('admin/blog*')) {{ 'active' }} @else {{ '' }} @endif">
                 <a href="#">
                     <i class="fa fa-file-text"></i>
                     <span class="nav-label">Blogs</span>
@@ -92,7 +94,16 @@
                 </ul>
             </li>
 
-
+            <li class="@if (request()->is('admin/other*')) {{ 'active' }} @else {{ '' }} @endif">
+                <a href="#">
+                    <i class="fa fa-users"></i>
+                    <span class="nav-label">Other</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="{{ route('admin.sitemap.create') }}">Create Sitemape</a></li>
+                </ul>
+            </li>
         </ul>
 
     </div>

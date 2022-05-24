@@ -5,8 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\Sitemap\Contracts\Sitemapable;
+use Spatie\Sitemap\Tags\Url;
 
-class Product extends Model
+class Product extends Model implements Sitemapable
 {
     use HasFactory, SoftDeletes;
 
@@ -46,5 +48,10 @@ class Product extends Model
     public function getRouteKeyName()
     {
         return 'slug';
+    }
+
+    public function toSitemapTag(): Url | string | array
+    {
+        return route('product.show', $this->industry->slug, $this);
     }
 }
