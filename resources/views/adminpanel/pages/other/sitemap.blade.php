@@ -38,10 +38,10 @@
         <div class="wrapper wrapper-content animated fadeInRight">
             <h1>Sitemap</h1>
             <p>
-                <a class="btn btn-success" href="{{route('admin.sitemap.store')}}">Update Sitemap File</a>
+                <a class="btn btn-success" href="{{route('admin.sitemap.store')}}">Create/Update Sitemap File</a>
             </p>
             <p>
-                <a class="btn btn-success" download href="{{asset('storage/sitemaps/sitemap.xml')}}">Download File</a>
+                <a class="btn btn-success" download href="{{asset('sitemap.xml')}}">Download File</a>
             </p>
         </div>
 

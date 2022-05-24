@@ -65,7 +65,7 @@ class SitemapController extends Controller
                     ->setPriority(0.1));
             }
         }
-        $sitemapGenerator->writeToFile($path . 'sitemap.xml');
+        $sitemapGenerator->writeToFile('sitemap.xml');
 
         //return Sitemap::create()->add(Product::all());
         //return Sitemap::create()->add(Industry::all());
