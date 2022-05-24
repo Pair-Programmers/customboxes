@@ -3,7 +3,6 @@
 @section('title-meta')
 <title>{{$blog->meta_tag_title}} | {{ env('APP_NAME') }}</title>
 <meta name="description" content="{{$blog->meta_tag_description}}">
-<meta name="robots" content="noindex, nofollow">
 <meta name="keywords" content="{{$blog->meta_tag_keywords}}">
 @endsection
 
