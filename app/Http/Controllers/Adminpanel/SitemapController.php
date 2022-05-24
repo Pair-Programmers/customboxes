@@ -57,9 +57,10 @@ class SitemapController extends Controller
 
         $sitemapGenerator = SitemapGenerator::create(env('APP_URL'))
         ->getSitemap();
-        foreach (Industry::all() as $key => $industry) {
-            foreach ($industry->products() as $key => $product) {
-                $sitemapGenerator->add(Url::create('/industry'. '/' . $industry->slug . '/' . $product->slug)
+        // return $products = Product::all();
+        foreach (Product::all() as $key => $product) {
+            if ($product->is_active) {
+                $sitemapGenerator->add(Url::create('/industry'. '/' . $product->industry->slug . '/' . $product->slug)
                     ->setLastModificationDate(Carbon::yesterday())
                     ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
                     ->setPriority(0.1));

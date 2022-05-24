@@ -30,7 +30,7 @@ class Industry extends Model implements Sitemapable
 
     public function products()
     {
-        return $this->hasMany(Product::class, 'industry_id', 'id')->where('is_active', true)->get();
+        return $this->hasMany(Product::class, 'industry_id', 'id')->where('is_active', true);
     }
 
     public function products3()
