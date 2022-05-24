@@ -61,7 +61,7 @@ class SitemapController extends Controller
             foreach ($industry->products() as $key => $product) {
                 $sitemapGenerator->add(Url::create('/industry'. '/' . $industry->slug . '/' . $product->slug)
                     ->setLastModificationDate(Carbon::yesterday())
-                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_YEARLY)
+                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
                     ->setPriority(0.1));
             }
         }
