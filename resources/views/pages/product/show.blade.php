@@ -120,7 +120,7 @@
                         <br>
                         <div class="row">
                             <div class="col-lg-12">
-                                >
+                                
                                 @if (\Session::has('success'))
                                     <div class="alert " style="background-color: #0c691c;">
                                         <ul>
