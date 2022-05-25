@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Adminpanel;
 
 use App\Http\Controllers\Controller;
+use App\Models\Blog;
 use App\Models\Industry;
 use App\Models\Product;
 use Carbon\Carbon;
@@ -57,15 +58,23 @@ class SitemapController extends Controller
 
         $sitemapGenerator = SitemapGenerator::create(env('APP_URL'))
         ->getSitemap();
-        // return $products = Product::all();
-        foreach (Product::all() as $key => $product) {
-            if ($product->is_active) {
-                $sitemapGenerator->add(Url::create('/industry'. '/' . $product->industry->slug . '/' . $product->slug)
-                    ->setLastModificationDate(Carbon::yesterday())
-                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
-                    ->setPriority(0.1));
-            }
+
+        $products = Product::where('is_active', true)->get();
+        foreach ($products as $key => $product) {
+            $sitemapGenerator->add(Url::create('/industry'. '/' . $product->industry->slug . '/' . $product->slug)
+                ->setLastModificationDate(Carbon::yesterday())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.1));
         }
+
+        $blogs = Blog::where('is_active', true)->get();
+        foreach ($blogs as $key => $blog) {
+            $sitemapGenerator->add(Url::create('/blog'. '/' . $blog->slug)
+                ->setLastModificationDate(Carbon::yesterday())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.1));
+        }
+        
         $sitemapGenerator->writeToFile('sitemap.xml');
 
         //return Sitemap::create()->add(Product::all());
