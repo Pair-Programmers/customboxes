@@ -17904,7 +17904,7 @@ p{
   cursor: pointer;
   padding: 2px 35px 2px 15px;
   -moz-appearance: none;
-  background: rgba(0, 0, 0, 0) url("../../assets/images/icon-img/select.png") no-repeat scroll right 18px center;
+  background: rgba(0, 0, 0, 0) url("select.png") no-repeat scroll right 18px center;
 }
 
 .shop-sidebar-border {
@@ -19492,7 +19492,7 @@ h3.cart-page-title {
   font-size: 14px;
   height: 35px;
   padding: 2px 6px;
-  background: rgba(0, 0, 0, 0) url("../../assets/images/icon-img/select.png") no-repeat scroll right 18px center;
+  background: rgba(0, 0, 0, 0) url("select.png") no-repeat scroll right 18px center;
   cursor: pointer;
   background-color: #f0f7fc;
 box-shadow: -1px 3px 2px -1px rgb(31 149 235 / 75%);

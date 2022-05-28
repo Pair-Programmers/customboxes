@@ -28,6 +28,8 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="product-details-tab">
                         <div class="pro-dec-big-img-slider">
+
+                            @if (!empty($product->image1))
                             <div class="easyzoom-style">
                                 <div class="easyzoom easyzoom--overlay">
                                     <a href="{{ asset('storage') }}/images/products/{{ $product->image1 }}">
@@ -39,6 +41,9 @@
                                     href="{{ asset('storage') }}/images/products/{{ $product->image1 }}">
                                     <i class="icon-size-fullscreen"></i></a>
                             </div>
+                            @endif
+
+                            @if (!empty($product->image2))
                             <div class="easyzoom-style">
                                 <div class="easyzoom easyzoom--overlay">
                                     <a href="{{ asset('storage') }}/images/products/{{ $product->image2 }}">
@@ -50,6 +55,9 @@
                                     href="{{ asset('storage') }}/images/products/{{ $product->image2 }}">
                                     <i class="icon-size-fullscreen"></i></a>
                             </div>
+                            @endif
+
+                            @if (!empty($product->image3))
                             <div class="easyzoom-style">
                                 <div class="easyzoom easyzoom--overlay">
                                     <a href="{{ asset('storage') }}/images/products/{{ $product->image3 }}">
@@ -61,6 +69,9 @@
                                     href="{{ asset('storage') }}/images/products/{{ $product->image3 }}">
                                     <i class="icon-size-fullscreen"></i></a>
                             </div>
+                            @endif
+
+                            @if (!empty($product->image4))
                             <div class="easyzoom-style">
                                 <div class="easyzoom easyzoom--overlay">
                                     <a href="{{ asset('storage') }}/images/products/{{ $product->image4 }}">
@@ -72,6 +83,9 @@
                                     href="{{ asset('storage') }}/images/products/{{ $product->image4 }}">
                                     <i class="icon-size-fullscreen"></i></a>
                             </div>
+                            @endif
+
+                            @if (!empty($product->image5))
                             <div class="easyzoom-style">
                                 <div class="easyzoom easyzoom--overlay">
                                     <a href="{{ asset('storage') }}/images/products/{{ $product->image5 }}">
@@ -83,28 +97,39 @@
                                     href="{{ asset('storage') }}/images/products/{{ $product->image5 }}">
                                     <i class="icon-size-fullscreen"></i></a>
                             </div>
+                            @endif
                         </div>
                         <div class="product-dec-slider-small product-dec-small-style1">
+                            @if (!empty($product->image1))
                             <div class="product-dec-small active">
                                 <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
                                     alt="{{ $product->image1 }}">
                             </div>
+                            @endif
+                            @if (!empty($product->image2))
                             <div class="product-dec-small">
                                 <img src="{{ asset('storage') }}/images/products/{{ $product->image2 }}"
                                     alt="{{ $product->image2 }}">
                             </div>
+                            @endif
+                            @if (!empty($product->image3))
                             <div class="product-dec-small">
                                 <img src="{{ asset('storage') }}/images/products/{{ $product->image3 }}"
                                     alt="{{ $product->image3 }}">
                             </div>
+                            @endif
+                            @if (!empty($product->image4))
                             <div class="product-dec-small">
                                 <img src="{{ asset('storage') }}/images/products/{{ $product->image4 }}"
                                     alt="{{ $product->image4 }}">
                             </div>
+                            @endif
+                            @if (!empty($product->image5))
                             <div class="product-dec-small">
                                 <img src="{{ asset('storage') }}/images/products/{{ $product->image5 }}"
                                     alt="{{ $product->image5 }}">
                             </div>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -120,7 +145,7 @@
                         <br>
                         <div class="row">
                             <div class="col-lg-12">
-                                
+
                                 @if (\Session::has('success'))
                                     <div class="alert " style="background-color: #0c691c;">
                                         <ul>
@@ -319,9 +344,12 @@
 
                                             <script>
                                                 var selectedAddons = @json(old('addons'));
-                                                for (let index = 0; index < selectedAddons.length; index++) {
+                                                if(selectedAddons){
+                                                    for (let index = 0; index < selectedAddons.length; index++) {
                                                     document.getElementById(selectedAddons[index]).setAttribute("checked", "true");
                                                 }
+                                                }
+
                                             </script>
                                             <div class="col-lg-12 col-md-12">
                                                 <div class="billing-info mb-20">
