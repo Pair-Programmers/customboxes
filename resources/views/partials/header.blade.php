@@ -95,28 +95,14 @@
                                 </nav>
                             </div>
                         </div>
-                        {{-- <div class="col-lg-3">
-                            <div class="main-categori-wrap main-categori-wrap-modify-2">
-                                <a class="categori-show categori-blue" href="#">Boxes By Industry<i
-                                        class="icon-arrow-down icon-right"></i></a>
-                                <div class="category-menu-2 category-menu-2-blue categori-hide categori-not-visible-2">
-                                    <nav>
-                                        <ul>
-                                            @foreach ($industriesHeader as $industry)
-                                                <li><a href="{{route('industry.show', $industry)}}">{{$industry->name}}</a></li>
-                                            @endforeach
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div> --}}
+
                         <div class="col-lg-10">
                             <div
                                 class="main-menu main-menu-white main-menu-padding-1 main-menu-font-size-16 main-menu-lh-5">
                                 <nav>
 
                                     <ul>
-                                        <li><a href="index.html">Boxes By Industry <i class="icon-arrow-down"></i></a>
+                                        <li><a href="{{route('welcome')}}">Boxes By Industry <i class="icon-arrow-down"></i></a>
                                             <ul class="sub-menu-style">
                                                 @foreach ($industriesHeader as $industry)
                                                     <li><a href="{{route('industry.show', $industry)}}">{{$industry->name}}</a></li>
@@ -126,7 +112,6 @@
                                         <li><a href="{{route('industry.custom-printed-boxes.show')}}">Custom Printed Boxes</a></li>
                                         <li><a href="{{route('industry.boxes-styles')}}">Boxes Styles</a></li>
                                         <li><a href="{{route('blog.index')}}">Blogs</a></li>
-                                        {{-- <li><a href="portfolio.html">Portfolio</a></li> --}}
                                         <li><a href="{{route('product.rush-order')}}">Rush Order</a></li>
                                     </ul>
                                 </nav>
@@ -134,13 +119,7 @@
                         </div>
                         <div class="col-lg-1">
                             <div class="header-action header-action-flex pr-20">
-                                {{-- <div class="same-style-2 same-style-2-white same-style-2-font-dec">
-                                    <a href="login-register.html"><i class="icon-user"></i></a>
-                                </div> --}}
-                                {{-- <div class="same-style-2 same-style-2-white same-style-2-font-dec">
-                                    <a href="wishlist.html"><i class="icon-heart"></i><span
-                                            class="pro-count red">03</span></a>
-                                </div> --}}
+
                             </div>
                         </div>
                     </div>
@@ -160,18 +139,7 @@
                 </div>
                 <div class="col-7">
                     <div class="header-action header-action-flex">
-                        {{-- <div class="same-style-2 same-style-2-font-inc">
-                            <a href="login-register.html"><i class="icon-user"></i></a>
-                        </div> --}}
-                        {{-- <div class="same-style-2 same-style-2-font-inc">
-                            <a href="wishlist.html"><i class="icon-heart"></i><span
-                                    class="pro-count red">03</span></a>
-                        </div>
-                        <div class="same-style-2 same-style-2-font-inc header-cart">
-                            <a class="cart-active" href="#">
-                                <i class="icon-basket-loaded"></i><span class="pro-count red">02</span>
-                            </a>
-                        </div> --}}
+
                         <div class="same-style-2 main-menu-icon">
                             <a class="mobile-header-button-active" href="#"><i class="icon-menu"></i> </a>
                         </div>
@@ -213,7 +181,6 @@
                         <li><a href="{{route('industry.custom-printed-boxes.show')}}">Custom Printed Boxes</a></li>
                         <li><a href="{{route('industry.boxes-styles')}}">Boxes Styles</a></li>
                         <li><a href="{{route('blog.index')}}">Blogs</a></li>
-                        {{-- <li><a href="portfolio.html">Portfolio</a></li> --}}
                         <li><a href="{{route('product.rush-order')}}">Rush Order</a></li>
                         <li><a href="{{route('contact-us')}}">Contact Us</a></li>
                     </ul>

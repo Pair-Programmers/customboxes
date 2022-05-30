@@ -9,18 +9,7 @@
 @endsection
 
 @section('content')
-    {{-- <div class="breadcrumb-area bg-gray">
-        <div class="container">
-            <div class="breadcrumb-content text-center">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="active">Blog right sidebar </li>
-                </ul>
-            </div>
-        </div>
-    </div> --}}
+    
     <div class="blog-area pt-120 pb-120">
         <div class="container">
             <div class="row">

@@ -1,8 +1,5 @@
 <?php
 
-use App\Http\Controllers\Adminpanel\OrderController;
-use App\Models\Industry;
-use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -23,29 +20,29 @@ Auth::routes(['verify'=>true]);
 
 Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/industry/{industry}', [App\Http\Controllers\IndustryController::class, 'show'])->name('industry.show');
+
 Route::get('/custom-printed-boxes', [App\Http\Controllers\IndustryController::class, 'showCustomPrintedBoxes'])->name('industry.custom-printed-boxes.show');
 Route::get('/boxes-styles', [App\Http\Controllers\IndustryController::class, 'showBoxesStyles'])->name('industry.boxes-styles');
+Route::get('/rush-order', [App\Http\Controllers\ProductController::class, 'showRushOrderPage'])->name('product.rush-order');
+Route::get('/custom-qoute', [App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
 
 //product
 Route::get('/industry/{industry:slug}/{product:slug}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
 Route::post('/products-results', [App\Http\Controllers\ProductController::class, 'search'])->name('product.search');
-Route::get('/custom-qoute', [App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
-Route::get('/rush-order', [App\Http\Controllers\ProductController::class, 'showRushOrderPage'])->name('product.rush-order');
-
-//order
+Route::get('/industry/{industry}', [App\Http\Controllers\IndustryController::class, 'show'])->name('industry.show');
 
 //newsletter
 Route::post('/news-subscriber/store', [App\Http\Controllers\NewsSubscriberController::class, 'store'])->name('news-subsciber.store');
 
 Route::get('/blogs/{category?}', [App\Http\Controllers\BlogController::class, 'index'])->name('blog.index');
-//Route::get('/blogs-by-category/{blogcategory:slug}', [App\Http\Controllers\BlogController::class, 'indexByIndustry'])->name('blog.index-by-category');
-//Route::get('/blogs/{blogcatgeory}', [App\Http\Controllers\BlogController::class, 'index'])->name('blog.index.by-category');
 Route::get('/blog/{blog}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
 
+//order
 Route::controller(App\Http\Controllers\OrderController::class)->prefix('order')->name('order.')->group(function () {
     Route::post('/', 'store')->name('store');
 });
+
+//other pages
 Route::get('/contact-us', [App\Http\Controllers\ContactUsController::class, 'create'])->name('contact-us');
 Route::post('/contact-us/store', [App\Http\Controllers\ContactUsController::class, 'store'])->name('contact-us.store');
 Route::get('/about-us', [App\Http\Controllers\WebPagesController::class, 'showAboutUsPage'])->name('about-us');
@@ -77,7 +74,7 @@ Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function
         Route::delete('/{industry:id}', 'destroy')->name('destroy');
     });
 
-    // Route::resource('products', App\Http\Controllers\Adminpanel\ProductController::class);
+    // products
     Route::controller(App\Http\Controllers\Adminpanel\ProductController::class)->prefix('products')->name('product.')->group(function () {
         Route::get('/', 'index')->name('index');
         Route::get('/create', 'create')->name('create');
