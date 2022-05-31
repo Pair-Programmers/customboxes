@@ -53,6 +53,7 @@ class ProductController extends Controller
         $product = Product::findOrFail($product->id);
         $relatedProducts = Product::where('industry_id', $product->industry_id)
         ->where('id', '!=', $product->id)
+        ->where('is_active', true)
         ->get()->take(5);
         $industry = Industry::findOrFail($product->industry_id);
         return view('pages.product.show', compact('product', 'relatedProducts', 'industry'));
@@ -95,7 +96,8 @@ class ProductController extends Controller
     public function search(Request $request)
     {
         session()->flashInput($request->input());
-        $products = Product::where('name', 'like', '%'. $request->keyword . '%')->get();
+        $products = Product::where('name', 'like', '%'. $request->keyword . '%')
+        ->where('is_active', true)->get();
         return view('pages.product.search-results', compact('products'));
     }
 

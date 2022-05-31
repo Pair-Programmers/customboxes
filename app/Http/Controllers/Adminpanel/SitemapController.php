@@ -64,7 +64,7 @@ class SitemapController extends Controller
             $sitemapGenerator->add(Url::create('/industry'. '/' . $product->industry->slug . '/' . $product->slug)
                 ->setLastModificationDate(Carbon::yesterday())
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
-                ->setPriority(0.1));
+                ->setPriority(1.0));
         }
 
         $blogs = Blog::where('is_active', true)->get();
@@ -72,9 +72,9 @@ class SitemapController extends Controller
             $sitemapGenerator->add(Url::create('/blog'. '/' . $blog->slug)
                 ->setLastModificationDate(Carbon::yesterday())
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
-                ->setPriority(0.1));
+                ->setPriority(1.0));
         }
-        
+
         $sitemapGenerator->writeToFile('sitemap.xml');
 
         //return Sitemap::create()->add(Product::all());
