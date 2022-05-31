@@ -315,10 +315,10 @@
                                                 </div>
                                                 <div class="product-content-wrap-2 product-content-position text-center">
 
-                                                    {{-- <h3><a href="product-details.html">Basic Joggin Shorts</a></h3> --}}
-
                                                     <div class="pro-add-to-cart">
+                                                        <a href="{{ route('product.show', [$industry, $product]) }}">
                                                         <button title="Get Qoute">Get Qoute</button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
