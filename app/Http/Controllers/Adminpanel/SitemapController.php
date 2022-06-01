@@ -58,7 +58,7 @@ class SitemapController extends Controller
 
         $sitemapGenerator = SitemapGenerator::create(env('APP_URL'))
         ->hasCrawled(function (Url $url) {
-            if ($url->segment(1) === 'storage/images/') {
+            if ($url->segment(1) === 'storage') {
                 return;
             }
 
