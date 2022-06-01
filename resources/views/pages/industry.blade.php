@@ -239,8 +239,10 @@
 
                                     <script>
                                         var selectedAddons = @json(old('addons'));
-                                        for (let index = 0; index < selectedAddons.length; index++) {
-                                            document.getElementById(selectedAddons[index]).setAttribute("checked", "true");
+                                        if (selectedAddons) {
+                                            for (let index = 0; index < selectedAddons.length; index++) {
+                                                document.getElementById(selectedAddons[index]).setAttribute("checked", "true");
+                                            }
                                         }
                                     </script>
 
@@ -317,7 +319,7 @@
 
                                                     <div class="pro-add-to-cart">
                                                         <a href="{{ route('product.show', [$industry, $product]) }}">
-                                                        <button title="Get Qoute">Get Qoute</button>
+                                                            <button title="Get Qoute">Get Qoute</button>
                                                         </a>
                                                     </div>
                                                 </div>

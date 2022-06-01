@@ -10,7 +10,6 @@
 @endsection
 
 @section('content')
-    
     <div class="product-details-area pt-120 pb-115">
         <div class="container">
             <div class="row">
@@ -19,105 +18,105 @@
                         <div class="pro-dec-big-img-slider">
 
                             @if (!empty($product->image1))
-                            <div class="easyzoom-style">
-                                <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{ asset('storage') }}/images/products/{{ $product->image1 }}">
-                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
-                                            alt="{{ $product->image1 }}">
-                                    </a>
+                                <div class="easyzoom-style">
+                                    <div class="easyzoom easyzoom--overlay">
+                                        <a href="{{ asset('storage') }}/images/products/{{ $product->image1 }}">
+                                            <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
+                                                alt="{{ $product->image1 }}">
+                                        </a>
+                                    </div>
+                                    <a class="easyzoom-pop-up img-popup"
+                                        href="{{ asset('storage') }}/images/products/{{ $product->image1 }}">
+                                        <i class="icon-size-fullscreen"></i></a>
                                 </div>
-                                <a class="easyzoom-pop-up img-popup"
-                                    href="{{ asset('storage') }}/images/products/{{ $product->image1 }}">
-                                    <i class="icon-size-fullscreen"></i></a>
-                            </div>
                             @endif
 
                             @if (!empty($product->image2))
-                            <div class="easyzoom-style">
-                                <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{ asset('storage') }}/images/products/{{ $product->image2 }}">
-                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image2 }}"
-                                            alt="{{ $product->image2 }}">
-                                    </a>
+                                <div class="easyzoom-style">
+                                    <div class="easyzoom easyzoom--overlay">
+                                        <a href="{{ asset('storage') }}/images/products/{{ $product->image2 }}">
+                                            <img src="{{ asset('storage') }}/images/products/{{ $product->image2 }}"
+                                                alt="{{ $product->image2 }}">
+                                        </a>
+                                    </div>
+                                    <a class="easyzoom-pop-up img-popup"
+                                        href="{{ asset('storage') }}/images/products/{{ $product->image2 }}">
+                                        <i class="icon-size-fullscreen"></i></a>
                                 </div>
-                                <a class="easyzoom-pop-up img-popup"
-                                    href="{{ asset('storage') }}/images/products/{{ $product->image2 }}">
-                                    <i class="icon-size-fullscreen"></i></a>
-                            </div>
                             @endif
 
                             @if (!empty($product->image3))
-                            <div class="easyzoom-style">
-                                <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{ asset('storage') }}/images/products/{{ $product->image3 }}">
-                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image3 }}"
-                                            alt="{{ $product->image3 }}">
-                                    </a>
+                                <div class="easyzoom-style">
+                                    <div class="easyzoom easyzoom--overlay">
+                                        <a href="{{ asset('storage') }}/images/products/{{ $product->image3 }}">
+                                            <img src="{{ asset('storage') }}/images/products/{{ $product->image3 }}"
+                                                alt="{{ $product->image3 }}">
+                                        </a>
+                                    </div>
+                                    <a class="easyzoom-pop-up img-popup"
+                                        href="{{ asset('storage') }}/images/products/{{ $product->image3 }}">
+                                        <i class="icon-size-fullscreen"></i></a>
                                 </div>
-                                <a class="easyzoom-pop-up img-popup"
-                                    href="{{ asset('storage') }}/images/products/{{ $product->image3 }}">
-                                    <i class="icon-size-fullscreen"></i></a>
-                            </div>
                             @endif
 
                             @if (!empty($product->image4))
-                            <div class="easyzoom-style">
-                                <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{ asset('storage') }}/images/products/{{ $product->image4 }}">
-                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image4 }}"
-                                            alt="{{ $product->image4 }}">
-                                    </a>
+                                <div class="easyzoom-style">
+                                    <div class="easyzoom easyzoom--overlay">
+                                        <a href="{{ asset('storage') }}/images/products/{{ $product->image4 }}">
+                                            <img src="{{ asset('storage') }}/images/products/{{ $product->image4 }}"
+                                                alt="{{ $product->image4 }}">
+                                        </a>
+                                    </div>
+                                    <a class="easyzoom-pop-up img-popup"
+                                        href="{{ asset('storage') }}/images/products/{{ $product->image4 }}">
+                                        <i class="icon-size-fullscreen"></i></a>
                                 </div>
-                                <a class="easyzoom-pop-up img-popup"
-                                    href="{{ asset('storage') }}/images/products/{{ $product->image4 }}">
-                                    <i class="icon-size-fullscreen"></i></a>
-                            </div>
                             @endif
 
                             @if (!empty($product->image5))
-                            <div class="easyzoom-style">
-                                <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{ asset('storage') }}/images/products/{{ $product->image5 }}">
-                                        <img src="{{ asset('storage') }}/images/products/{{ $product->image5 }}"
-                                            alt="{{ $product->image5 }}">
-                                    </a>
+                                <div class="easyzoom-style">
+                                    <div class="easyzoom easyzoom--overlay">
+                                        <a href="{{ asset('storage') }}/images/products/{{ $product->image5 }}">
+                                            <img src="{{ asset('storage') }}/images/products/{{ $product->image5 }}"
+                                                alt="{{ $product->image5 }}">
+                                        </a>
+                                    </div>
+                                    <a class="easyzoom-pop-up img-popup"
+                                        href="{{ asset('storage') }}/images/products/{{ $product->image5 }}">
+                                        <i class="icon-size-fullscreen"></i></a>
                                 </div>
-                                <a class="easyzoom-pop-up img-popup"
-                                    href="{{ asset('storage') }}/images/products/{{ $product->image5 }}">
-                                    <i class="icon-size-fullscreen"></i></a>
-                            </div>
                             @endif
                         </div>
                         <div class="product-dec-slider-small product-dec-small-style1">
                             @if (!empty($product->image1))
-                            <div class="product-dec-small active">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
-                                    alt="{{ $product->image1 }}">
-                            </div>
+                                <div class="product-dec-small active">
+                                    <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
+                                        alt="{{ $product->image1 }}">
+                                </div>
                             @endif
                             @if (!empty($product->image2))
-                            <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image2 }}"
-                                    alt="{{ $product->image2 }}">
-                            </div>
+                                <div class="product-dec-small">
+                                    <img src="{{ asset('storage') }}/images/products/{{ $product->image2 }}"
+                                        alt="{{ $product->image2 }}">
+                                </div>
                             @endif
                             @if (!empty($product->image3))
-                            <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image3 }}"
-                                    alt="{{ $product->image3 }}">
-                            </div>
+                                <div class="product-dec-small">
+                                    <img src="{{ asset('storage') }}/images/products/{{ $product->image3 }}"
+                                        alt="{{ $product->image3 }}">
+                                </div>
                             @endif
                             @if (!empty($product->image4))
-                            <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image4 }}"
-                                    alt="{{ $product->image4 }}">
-                            </div>
+                                <div class="product-dec-small">
+                                    <img src="{{ asset('storage') }}/images/products/{{ $product->image4 }}"
+                                        alt="{{ $product->image4 }}">
+                                </div>
                             @endif
                             @if (!empty($product->image5))
-                            <div class="product-dec-small">
-                                <img src="{{ asset('storage') }}/images/products/{{ $product->image5 }}"
-                                    alt="{{ $product->image5 }}">
-                            </div>
+                                <div class="product-dec-small">
+                                    <img src="{{ asset('storage') }}/images/products/{{ $product->image5 }}"
+                                        alt="{{ $product->image5 }}">
+                                </div>
                             @endif
                         </div>
                     </div>
@@ -158,8 +157,8 @@
                                         <div class="row">
                                             <div class="col-lg-3 col-md-3">
                                                 <div class="billing-info">
-                                                    <input value="{{ old('height') }}" type="number" required name="height"
-                                                        placeholder="Height">
+                                                    <input value="{{ old('height') }}" type="number" required
+                                                        name="height" placeholder="Height">
                                                     <input type="hidden" name="qoute_form" value="Product Detail Form">
 
                                                 </div>
@@ -283,23 +282,23 @@
                                                 <div class="billing-info mb-20">
                                                     <label>Addons </label>
                                                     <div class="checkout-account ">
-                                                        <input class="checkout-toggle2" id="Gloss Lamination" value="Gloss Lamination"
-                                                            name="addons[]" type="checkbox">
+                                                        <input class="checkout-toggle2" id="Gloss Lamination"
+                                                            value="Gloss Lamination" name="addons[]" type="checkbox">
                                                         <span>Gloss Lamination</span>
                                                     </div>
                                                     <div class="checkout-account ">
-                                                        <input class="checkout-toggle2" id="Matte Lamination" value="Matte Lamination"
-                                                            name="addons[]" type="checkbox">
+                                                        <input class="checkout-toggle2" id="Matte Lamination"
+                                                            value="Matte Lamination" name="addons[]" type="checkbox">
                                                         <span>Matte Lamination</span>
                                                     </div>
                                                     <div class="checkout-account ">
-                                                        <input class="checkout-toggle2" id="Window Patching" value="Window Patching"
-                                                            name="addons[]" type="checkbox">
+                                                        <input class="checkout-toggle2" id="Window Patching"
+                                                            value="Window Patching" name="addons[]" type="checkbox">
                                                         <span>Window Patching</span>
                                                     </div>
                                                     <div class="checkout-account ">
-                                                        <input class="checkout-toggle2" id="Embossing" value="Embossing" name="addons[]"
-                                                            type="checkbox">
+                                                        <input class="checkout-toggle2" id="Embossing" value="Embossing"
+                                                            name="addons[]" type="checkbox">
                                                         <span>Embossing</span>
                                                     </div>
                                                 </div>
@@ -308,23 +307,23 @@
                                                 <div class="billing-info mb-20">
                                                     <label> Addons </label>
                                                     <div class="checkout-account ">
-                                                        <input class="checkout-toggle2" id="Spot UV Coating" value="Spot UV Coating"
-                                                            name="addons[]" type="checkbox">
+                                                        <input class="checkout-toggle2" id="Spot UV Coating"
+                                                            value="Spot UV Coating" name="addons[]" type="checkbox">
                                                         <span>Spot UV Coating</span>
                                                     </div>
                                                     <div class="checkout-account ">
-                                                        <input class="checkout-toggle2" id="Full UV Coating" value="Full UV Coating"
-                                                            name="addons[]" type="checkbox">
+                                                        <input class="checkout-toggle2" id="Full UV Coating"
+                                                            value="Full UV Coating" name="addons[]" type="checkbox">
                                                         <span>Full UV Coating</span>
                                                     </div>
                                                     <div class="checkout-account ">
-                                                        <input class="checkout-toggle2" id="Silver Foiling" value="Silver Foiling"
-                                                            name="addons[]" type="checkbox">
+                                                        <input class="checkout-toggle2" id="Silver Foiling"
+                                                            value="Silver Foiling" name="addons[]" type="checkbox">
                                                         <span>Silver Foiling</span>
                                                     </div>
                                                     <div class="checkout-account ">
-                                                        <input class="checkout-toggle2" id="Gold Foiling" value="Gold Foiling" name="addons[]"
-                                                            type="checkbox">
+                                                        <input class="checkout-toggle2" id="Gold Foiling"
+                                                            value="Gold Foiling" name="addons[]" type="checkbox">
                                                         <span>Gold Foiling</span>
                                                     </div>
                                                 </div>
@@ -333,12 +332,11 @@
 
                                             <script>
                                                 var selectedAddons = @json(old('addons'));
-                                                if(selectedAddons){
+                                                if (selectedAddons) {
                                                     for (let index = 0; index < selectedAddons.length; index++) {
-                                                    document.getElementById(selectedAddons[index]).setAttribute("checked", "true");
+                                                        document.getElementById(selectedAddons[index]).setAttribute("checked", "true");
+                                                    }
                                                 }
-                                                }
-
                                             </script>
                                             <div class="col-lg-12 col-md-12">
                                                 <div class="billing-info mb-20">

@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
 @section('title-meta')
-<title>{{ $industry->meta_tag_title }}</title>
-<meta name="description" content="{{ $industry->meta_tag_description }}">
-<meta name="keywords" content="{{ $industry->meta_tag_keywords }}">
+    <title>{{ $industry->meta_tag_title }}</title>
+    <meta name="description" content="{{ $industry->meta_tag_description }}">
+    <meta name="keywords" content="{{ $industry->meta_tag_keywords }}">
 @endsection
 
 @section('custom-css')
@@ -182,23 +182,23 @@
                                         <div class="billing-info mb-20">
                                             <label>Addons </label>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" id="Gloss Lamination" value="Gloss Lamination" name="addons[]"
-                                                    type="checkbox">
+                                                <input class="checkout-toggle2" id="Gloss Lamination"
+                                                    value="Gloss Lamination" name="addons[]" type="checkbox">
                                                 <span>Gloss Lamination</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" id="Matte Lamination" value="Matte Lamination" name="addons[]"
-                                                    type="checkbox">
+                                                <input class="checkout-toggle2" id="Matte Lamination"
+                                                    value="Matte Lamination" name="addons[]" type="checkbox">
                                                 <span>Matte Lamination</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" id="Window Patching" value="Window Patching" name="addons[]"
-                                                    type="checkbox">
+                                                <input class="checkout-toggle2" id="Window Patching" value="Window Patching"
+                                                    name="addons[]" type="checkbox">
                                                 <span>Window Patching</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" id="Embossing" value="Embossing" name="addons[]"
-                                                    type="checkbox">
+                                                <input class="checkout-toggle2" id="Embossing" value="Embossing"
+                                                    name="addons[]" type="checkbox">
                                                 <span>Embossing</span>
                                             </div>
                                         </div>
@@ -207,31 +207,33 @@
                                         <div class="billing-info mb-20 mt-25">
                                             {{-- <label> Addons </label> --}}
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" id="Spot UV Coating" value="Spot UV Coating" name="addons[]"
-                                                    type="checkbox">
+                                                <input class="checkout-toggle2" id="Spot UV Coating" value="Spot UV Coating"
+                                                    name="addons[]" type="checkbox">
                                                 <span>Spot UV Coating</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" id="Full UV Coating" value="Full UV Coating" name="addons[]"
-                                                    type="checkbox">
+                                                <input class="checkout-toggle2" id="Full UV Coating" value="Full UV Coating"
+                                                    name="addons[]" type="checkbox">
                                                 <span>Full UV Coating</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" id="Silver Foiling" value="Silver Foiling" name="addons[]"
-                                                    type="checkbox">
+                                                <input class="checkout-toggle2" id="Silver Foiling" value="Silver Foiling"
+                                                    name="addons[]" type="checkbox">
                                                 <span>Silver Foiling</span>
                                             </div>
                                             <div class="checkout-account ">
-                                                <input class="checkout-toggle2" id="Gold Foiling" value="Gold Foiling" name="addons[]"
-                                                    type="checkbox">
+                                                <input class="checkout-toggle2" id="Gold Foiling" value="Gold Foiling"
+                                                    name="addons[]" type="checkbox">
                                                 <span>Gold Foiling</span>
                                             </div>
                                         </div>
                                     </div>
                                     <script>
                                         var selectedAddons = @json(old('addons'));
-                                        for (let index = 0; index < selectedAddons.length; index++) {
-                                            document.getElementById(selectedAddons[index]).setAttribute("checked", "true");
+                                        if (selectedAddons) {
+                                            for (let index = 0; index < selectedAddons.length; index++) {
+                                                document.getElementById(selectedAddons[index]).setAttribute("checked", "true");
+                                            }
                                         }
                                     </script>
 
