@@ -57,6 +57,13 @@ class SitemapController extends Controller
 
 
         $sitemapGenerator = SitemapGenerator::create(env('APP_URL'))
+        ->hasCrawled(function (Url $url) {
+            if ($url->segment(1) === 'storage/images/') {
+                return;
+            }
+
+            return $url;
+        })
         ->getSitemap();
 
         $products = Product::where('is_active', true)->get();
