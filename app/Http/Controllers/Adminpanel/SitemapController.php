@@ -66,21 +66,21 @@ class SitemapController extends Controller
         })
         ->getSitemap();
 
-        $products = Product::where('is_active', true)->get();
-        foreach ($products as $key => $product) {
-            $sitemapGenerator->add(Url::create('/industry'. '/' . $product->industry->slug . '/' . $product->slug)
-                ->setLastModificationDate(Carbon::yesterday())
-                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
-                ->setPriority(1.0));
-        }
+        // $products = Product::where('is_active', true)->get();
+        // foreach ($products as $key => $product) {
+        //     $sitemapGenerator->add(Url::create('/industry'. '/' . $product->industry->slug . '/' . $product->slug)
+        //         ->setLastModificationDate(Carbon::yesterday())
+        //         ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+        //         ->setPriority(1.0));
+        // }
 
-        $blogs = Blog::where('is_active', true)->get();
-        foreach ($blogs as $key => $blog) {
-            $sitemapGenerator->add(Url::create('/blog'. '/' . $blog->slug)
-                ->setLastModificationDate(Carbon::yesterday())
-                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
-                ->setPriority(1.0));
-        }
+        // $blogs = Blog::where('is_active', true)->get();
+        // foreach ($blogs as $key => $blog) {
+        //     $sitemapGenerator->add(Url::create('/blog'. '/' . $blog->slug)
+        //         ->setLastModificationDate(Carbon::yesterday())
+        //         ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+        //         ->setPriority(1.0));
+        // }
 
         $sitemapGenerator->writeToFile('sitemap.xml');
 
