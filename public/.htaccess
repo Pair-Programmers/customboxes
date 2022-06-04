@@ -15,7 +15,7 @@
     # RewriteRule ^ %1 [L,R=301]
 
     RewriteCond %{HTTP_HOST} !^www\. [NC]
-    RewriteRule ^ https://www.%{HTTP_HOST}/%1 [R=301,L]
+    RewriteRule ^(.*)$ https://www.%{HTTP_HOST} [R=301,L]
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
