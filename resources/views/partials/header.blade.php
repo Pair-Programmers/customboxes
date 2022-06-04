@@ -42,7 +42,7 @@
                     <div class="row align-items-center">
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo">
-                                <a href="{{route('welcome')}}"><img src="{{asset('assets/website')}}/images/logo/logo.png" alt="logo"></a>
+                                <a href="{{route('welcome')}}"><img src="{{asset('assets/website')}}/images/logo/logo.png" alt="customboxesus logo"></a>
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-5">
@@ -133,7 +133,7 @@
                 <div class="col-5">
                     <div class="mobile-logo">
                         <a href="{{route('welcome')}}">
-                            <img style="height: 60px; width: 260px" alt="customboxesus-logo" src="{{asset('assets/website')}}/images/logo/logo.png">
+                            <img style="height: 60px; width: 260px" alt="customboxesus logo" src="{{asset('assets/website')}}/images/logo/logo.png">
                         </a>
                     </div>
                 </div>

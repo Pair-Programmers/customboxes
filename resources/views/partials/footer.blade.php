@@ -103,7 +103,7 @@
             <div class="row flex-row-reverse">
                 <div class="col-lg-6 col-md-6">
                     <div class="payment-img payment-img-right">
-                        <a href="#"><img src="{{ asset('assets/website') }}/images/icon-img/payment.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('assets/website') }}/images/icon-img/payment.png" alt="custom boxes us payment methods"></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
