@@ -81,6 +81,9 @@
                                     <a href="mailto:info@customboxesus.com">
                                         <p style="font-size: 19px" >info@customboxesus.com</p>
                                     </a>
+                                    <a href="mailto:info@customboxesus.com">
+                                        <p style="font-size: 19px" >sales@customboxesus.com</p>
+                                    </a>
                                 </div>
 
                             </div>
