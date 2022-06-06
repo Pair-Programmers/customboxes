@@ -213,7 +213,7 @@
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[0]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/cbd-boxes-banner-1.jpg"
-                                        alt="cbd-boxes-banner-1.jpg"></a>
+                                        alt="CBD Boxes Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
                                 <div class="banner-btn-3">
@@ -284,7 +284,7 @@
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[1]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/cosmetic-packaging-banner-2.jpg"
-                                        alt="cosmetic-packaging-banner-2.jpg"></a>
+                                        alt="Cosmetic Packaging Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
                                 <div class="banner-btn-3">
@@ -355,7 +355,7 @@
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[3]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/food-and-beverage-banner-3.jpg"
-                                        alt="food-and-beverage-banner-3.jpg"></a>
+                                        alt="Food And Beverage Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
                                 <div class="banner-btn-3">
@@ -426,7 +426,7 @@
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[4]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/vape-cartridge-banner-4.jpg"
-                                        alt="vape-cartridge-banner-4.jpg"></a>
+                                        alt="Vape Cartridge Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
                                 <div class="banner-btn-3">
@@ -495,7 +495,7 @@
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[6]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/riged-boxes-banner-5.jpg"
-                                        alt="riged-boxes-banner-5.jpg"></a>
+                                        alt="Riged Boxes Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
 

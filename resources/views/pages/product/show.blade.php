@@ -22,7 +22,7 @@
                                     <div class="easyzoom easyzoom--overlay">
                                         <a href="{{ asset('storage') }}/images/products/{{ $product->image1 }}">
                                             <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
-                                                alt="{{ $product->image1 }}">
+                                                alt="{{ $product->image_alt_1}}">
                                         </a>
                                     </div>
                                     <a class="easyzoom-pop-up img-popup"
@@ -36,7 +36,7 @@
                                     <div class="easyzoom easyzoom--overlay">
                                         <a href="{{ asset('storage') }}/images/products/{{ $product->image2 }}">
                                             <img src="{{ asset('storage') }}/images/products/{{ $product->image2 }}"
-                                                alt="{{ $product->image2 }}">
+                                                alt="{{ $product->image_alt_2 }}">
                                         </a>
                                     </div>
                                     <a class="easyzoom-pop-up img-popup"
@@ -50,7 +50,7 @@
                                     <div class="easyzoom easyzoom--overlay">
                                         <a href="{{ asset('storage') }}/images/products/{{ $product->image3 }}">
                                             <img src="{{ asset('storage') }}/images/products/{{ $product->image3 }}"
-                                                alt="{{ $product->image3 }}">
+                                                alt="{{ $product->image_alt_3 }}">
                                         </a>
                                     </div>
                                     <a class="easyzoom-pop-up img-popup"
@@ -64,7 +64,7 @@
                                     <div class="easyzoom easyzoom--overlay">
                                         <a href="{{ asset('storage') }}/images/products/{{ $product->image4 }}">
                                             <img src="{{ asset('storage') }}/images/products/{{ $product->image4 }}"
-                                                alt="{{ $product->image4 }}">
+                                                alt="{{ $product->image_alt_4 }}">
                                         </a>
                                     </div>
                                     <a class="easyzoom-pop-up img-popup"
@@ -78,7 +78,7 @@
                                     <div class="easyzoom easyzoom--overlay">
                                         <a href="{{ asset('storage') }}/images/products/{{ $product->image5 }}">
                                             <img src="{{ asset('storage') }}/images/products/{{ $product->image5 }}"
-                                                alt="{{ $product->image5 }}">
+                                                alt="{{ $product->image_alt_5 }}">
                                         </a>
                                     </div>
                                     <a class="easyzoom-pop-up img-popup"
@@ -91,31 +91,31 @@
                             @if (!empty($product->image1))
                                 <div class="product-dec-small active">
                                     <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}"
-                                        alt="{{ $product->image1 }}">
+                                        alt="{{ $product->image_alt_1 }}">
                                 </div>
                             @endif
                             @if (!empty($product->image2))
                                 <div class="product-dec-small">
                                     <img src="{{ asset('storage') }}/images/products/{{ $product->image2 }}"
-                                        alt="{{ $product->image2 }}">
+                                        alt="{{ $product->image_alt_2 }}">
                                 </div>
                             @endif
                             @if (!empty($product->image3))
                                 <div class="product-dec-small">
                                     <img src="{{ asset('storage') }}/images/products/{{ $product->image3 }}"
-                                        alt="{{ $product->image3 }}">
+                                        alt="{{ $product->image_alt_3 }}">
                                 </div>
                             @endif
                             @if (!empty($product->image4))
                                 <div class="product-dec-small">
                                     <img src="{{ asset('storage') }}/images/products/{{ $product->image4 }}"
-                                        alt="{{ $product->image4 }}">
+                                        alt="{{ $product->image_alt_4 }}">
                                 </div>
                             @endif
                             @if (!empty($product->image5))
                                 <div class="product-dec-small">
                                     <img src="{{ asset('storage') }}/images/products/{{ $product->image5 }}"
-                                        alt="{{ $product->image5 }}">
+                                        alt="{{ $product->image_alt_5 }}">
                                 </div>
                             @endif
                         </div>
@@ -507,7 +507,7 @@
                         <div class="single-product-wrap">
                             <div class="product-img product-img-zoom mb-15">
                                 <a href="{{ route('product.show', [$industry, $product]) }}">
-                                    <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}" alt="">
+                                    <img src="{{ asset('storage') }}/images/products/{{ $product->image1 }}" alt="{{ $product->image1 }}">
                                 </a>
 
                             </div>

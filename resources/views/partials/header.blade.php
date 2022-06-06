@@ -133,7 +133,7 @@
                 <div class="col-5">
                     <div class="mobile-logo">
                         <a href="{{route('welcome')}}">
-                            <img style="height: 60px; width: 260px" alt="customboxesus logo" src="{{asset('assets/website')}}/images/logo/logo.png">
+                            <img style="height: 60px; width: 260px;" alt="customboxesus logo" src="{{asset('assets/website')}}/images/logo/logo.png">
                         </a>
                     </div>
                 </div>

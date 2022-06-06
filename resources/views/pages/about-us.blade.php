@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-lg-2 col-md-2">
                     <div class="about-us-logo">
-                        <img src="{{ asset('assets/website') }}/images/favicon.png" alt="logo">
+                        <img src="{{ asset('assets/website') }}/images/favicon.png" alt="customboxesus logo">
                     </div>
                 </div>
                 <div class="col-lg-10 col-md-10">
