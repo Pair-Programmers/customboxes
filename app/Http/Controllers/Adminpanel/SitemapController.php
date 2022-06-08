@@ -61,6 +61,9 @@ class SitemapController extends Controller
             if ($url->segment(1) === 'storage') {
                 return;
             }
+            if ($url->segment(1) === '/') {
+                return;
+            }
 
             return $url;
         })
