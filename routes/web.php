@@ -16,10 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Auth::routes(['verify'=>true]);
+// Auth::routes(['verify'=>true]);
 
 Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/custom-printed-boxes', [App\Http\Controllers\IndustryController::class, 'showCustomPrintedBoxes'])->name('industry.custom-printed-boxes.show');
 Route::get('/boxes-styles', [App\Http\Controllers\IndustryController::class, 'showBoxesStyles'])->name('industry.boxes-styles');
