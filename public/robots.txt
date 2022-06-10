@@ -6,4 +6,4 @@ Disallow: /assets/adminpanel/
 Disallow: /assets/website/css/
 Disallow: /assets/website/js/
 Disallow: /admin
-Sitemap: https://customboxesus.com/sitemap.xml
+Sitemap: https://www.customboxesus.com/sitemap.xml

@@ -33,7 +33,7 @@
             <h3>Cookies & Caches:</h3>
             <p>Enable cookies to get the best experience from our website. Cookies are small files of letters and numbers that is on your computer in order to improve your experience of our site. In some cases, we use these cookies to identify you so that when you come back. We can recognize your computer as a returning user. Or so that we can remember your preferences. You should be aware that cookies will be placed on your machine by the website for use for analysis and statistics purposes. Such as how often the server is visited and what pages are used.</p>
             <h3>Sales Tax Policy:</h3>
-            <p>While visiting CustomBoxesUs.com, please be aware that this privacy policy is exclusively for our own company and website. Information flow to third parties that are not inside the group of CustomBoxesUs will act as third party information. And this is totally dependent on the terms and policies between the said third party or parties and our client.</p>
+            <p>While visiting www.customboxesus.com, please be aware that this privacy policy is exclusively for our own company and website. Information flow to third parties that are not inside the group of CustomBoxesUs will act as third party information. And this is totally dependent on the terms and policies between the said third party or parties and our client.</p>
             <p>We respect your privacy!</p>
             <br>
             <br>
