@@ -3,6 +3,8 @@
 @section('title-meta')
     <title>Privacy Policy | {{ env('APP_NAME') }} </title>
     <meta name="description" content="this is description">
+    <link rel="canonical" href="{{route('privacy-policy')}}" />
+
 @endsection
 
 @section('custom-css')

@@ -1,16 +1,17 @@
 @extends('layouts.master')
 
 @section('title-meta')
-<title>{{$blog->meta_tag_title}} | {{ env('APP_NAME') }}</title>
-<meta name="description" content="{{$blog->meta_tag_description}}">
-<meta name="keywords" content="{{$blog->meta_tag_keywords}}">
+    <title>{{$blog->meta_tag_title}} | {{ env('APP_NAME') }}</title>
+    <meta name="description" content="{{$blog->meta_tag_description}}">
+    <meta name="keywords" content="{{$blog->meta_tag_keywords}}">
+    <link rel="canonical" href="{{route('blog.show', $blog)}}" />s
 @endsection
 
 @section('custom-css')
 @endsection
 
 @section('content')
-    
+
     <div class="blog-area pt-120 pb-120">
         <div class="container">
             <div class="row flex-row-reverse">

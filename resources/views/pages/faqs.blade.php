@@ -3,6 +3,8 @@
 @section('title-meta')
     <title>FAQ's | {{ env('APP_NAME') }} </title>
     <meta name="description" content="this is description">
+    <link rel="canonical" href="{{route('faqs')}}" />
+
 @endsection
 
 @section('custom-css')

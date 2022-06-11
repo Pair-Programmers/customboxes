@@ -3,6 +3,7 @@
 @section('title-meta')
     <title>Terms & Conditions | {{ env('APP_NAME') }} </title>
     <meta name="description" content="this is description">
+    <link rel="canonical" href="{{route('term-conditions')}}" />
 @endsection
 
 @section('custom-css')

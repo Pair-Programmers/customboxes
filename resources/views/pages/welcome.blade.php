@@ -3,6 +3,7 @@
 @section('title-meta')
     <title>Custom Printed Packaging Boxes With Logo | {{ env('APP_NAME') }} </title>
     <meta name="description" content="Get your custom Printed Packaging boxes with logo from us and attract as many customers you want by having cardboard boxes wholesale for your business!">
+    <link rel="canonical" href="{{route('welcome')}}" />
 @endsection
 
 @section('custom-css')

@@ -3,13 +3,15 @@
 @section('title-meta')
     <title>BLogs | {{ env('APP_NAME') }} </title>
     <meta name="description" content="this is description">
+    <link rel="canonical" href="{{route('blog.index')}}" />
+
 @endsection
 
 @section('custom-css')
 @endsection
 
 @section('content')
-    
+
     <div class="blog-area pt-120 pb-120">
         <div class="container">
             <div class="row">

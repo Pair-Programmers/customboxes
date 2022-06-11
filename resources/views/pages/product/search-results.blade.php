@@ -3,6 +3,8 @@
 @section('title-meta')
     <title>Boxes List | {{ env('APP_NAME') }} </title>
     <meta name="description" content="this is description">
+    <link rel="canonical" href="{{route('product.search')}}" />
+
 @endsection
 
 @section('custom-css')

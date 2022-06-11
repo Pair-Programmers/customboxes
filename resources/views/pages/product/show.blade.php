@@ -4,6 +4,7 @@
     <title>{{ $product->meta_tag_title }}</title>
     <meta name="description" content="{{ $product->meta_tag_description }}">
     <meta name="keywords" content="{{ $product->meta_tag_keywords }}">
+    <link rel="canonical" href="{{route('product.show', [$industry, $product])}}" />
 @endsection
 
 @section('custom-css')

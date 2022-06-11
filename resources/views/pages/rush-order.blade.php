@@ -3,6 +3,8 @@
 @section('title-meta')
     <title>Rush Order | {{ env('APP_NAME') }} </title>
     <meta name="description" content="this is description">
+    <link rel="canonical" href="{{route('product.rush-order')}}" />
+
 @endsection
 
 @section('custom-css')

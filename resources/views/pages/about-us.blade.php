@@ -3,6 +3,7 @@
 @section('title-meta')
     <title>About Us | {{ env('APP_NAME') }} </title>
     <meta name="description" content="this is description">
+    <link rel="canonical" href="{{route('about-us')}}" />
 @endsection
 
 @section('custom-css')

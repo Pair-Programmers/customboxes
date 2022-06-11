@@ -3,6 +3,8 @@
 @section('title-meta')
     <title>Paper Weight Chart| {{ env('APP_NAME') }} </title>
     <meta name="description" content="this is description">
+    <link rel="canonical" href="{{route('paper-weight')}}" />
+
 @endsection
 
 @section('custom-css')
@@ -205,7 +207,7 @@
             </div>
         </div>
 
-        
+
     </div>
 @endsection
 
