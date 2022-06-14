@@ -3,7 +3,7 @@
 @section('title-meta')
     <title>Custom Printed Packaging Boxes With Logo | {{ env('APP_NAME') }} </title>
     <meta name="description" content="Get your custom Printed Packaging boxes with logo from us and attract as many customers you want by having cardboard boxes wholesale for your business!">
-    <link rel="canonical" href="{{route('welcome')}}" />
+    <link rel="canonical" href="{{env('APP_URL')}}" />
 @endsection
 
 @section('custom-css')
@@ -13,7 +13,7 @@
     <div id="section1" class="slider-area">
         <div class="hero-slider-active-1 nav-style-4 dot-style-1 dot-style-1-position-1 dot-style-2-active-black">
             <div class="single-hero-slider single-animation-wrap slider-height-3 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs"
-                style=" background-image:url({{ asset('assets/website') }}/images/slider/custom-printed-boxes-1.jpg);">
+                style=" background-image:url({{ asset('assets/website') }}/images/slider/custom-printed-boxes-1.webp);">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="single-hero-slider single-animation-wrap slider-height-3 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
-                style="background-image:url({{ asset('assets/website') }}/images/slider/custom-cbd-boxes-2.jpg);">
+                style="background-image:url({{ asset('assets/website') }}/images/slider/custom-cbd-boxes-2.webp);">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="single-hero-slider single-animation-wrap slider-height-3 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
-                style="background-image:url({{ asset('assets/website') }}/images/slider/custom-cosmetics-boxes-3.jpg);">
+                style="background-image:url({{ asset('assets/website') }}/images/slider/custom-cosmetics-boxes-3.webp);">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -98,7 +98,7 @@
                 </div>
             </div>
             <div class="single-hero-slider single-animation-wrap slider-height-3 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
-                style="background-image:url({{ asset('assets/website') }}/images/slider/rigid-boxes-6.jpg);">
+                style="background-image:url({{ asset('assets/website') }}/images/slider/rigid-boxes-6.webp);">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
