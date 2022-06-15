@@ -2,7 +2,7 @@
 
 @section('title-meta')
     <title>Rush Order | {{ env('APP_NAME') }} </title>
-    <meta name="description" content="this is description">
+    <meta name="description" content="Are you looking for a customer service team that is committed to customer satisfaction? Please reach out to us via our rush order form.">
     <link rel="canonical" href="{{route('product.rush-order')}}" />
 
 @endsection

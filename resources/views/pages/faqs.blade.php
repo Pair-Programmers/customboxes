@@ -2,7 +2,7 @@
 
 @section('title-meta')
     <title>FAQ's | {{ env('APP_NAME') }} </title>
-    <meta name="description" content="this is description">
+    <meta name="description" content="Check out the frequently asked questions (FAQ's) about our custom packaging boxes with logos. We have the answers to all your questions about custom packaging.">
     <link rel="canonical" href="{{route('faqs')}}" />
 
 @endsection

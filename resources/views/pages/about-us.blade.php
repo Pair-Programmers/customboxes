@@ -2,7 +2,7 @@
 
 @section('title-meta')
     <title>About Us | {{ env('APP_NAME') }} </title>
-    <meta name="description" content="this is description">
+    <meta name="description" content="We at Custom Boxes US provide the best quality Custom Printed Packaging Boxes at your doorstep at affordable rates. Contact us to get the best price today!">
     <link rel="canonical" href="{{route('about-us')}}" />
 @endsection
 

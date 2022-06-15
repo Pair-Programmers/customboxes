@@ -2,7 +2,7 @@
 
 @section('title-meta')
     <title>Paper Weight Chart| {{ env('APP_NAME') }} </title>
-    <meta name="description" content="this is description">
+    <meta name="description" content="Can you find a paper chart? This paper weight chart will help you find out how many types of paper weight in terms of its size, grammage, or basis weight.">
     <link rel="canonical" href="{{route('paper-weight')}}" />
 
 @endsection
