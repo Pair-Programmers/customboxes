@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="single-hero-slider single-animation-wrap slider-height-3 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
-                style="background-image:url({{ asset('assets/website') }}/images/slider/custom-mailer-boxes-4.jpg);">
+                style="background-image:url({{ asset('assets/website') }}/images/slider/custom-mailer-boxes-4.webp);">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="single-hero-slider single-animation-wrap slider-height-3 custom-d-flex custom-align-item-center bg-img hm2-slider-bg res-white-overly-xs "
-                style="background-image:url({{ asset('assets/website') }}/images/slider/vape-cartridge-packaging-boxes-5.jpg);">
+                style="background-image:url({{ asset('assets/website') }}/images/slider/vape-cartridge-packaging-boxes-5.webp);">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -213,7 +213,7 @@
                         <div class="banner-wrap">
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[0]) }}"><img
-                                        src="{{ asset('assets/website') }}/images/industry/small/cbd-boxes-banner-1.jpg"
+                                        src="{{ asset('assets/website') }}/images/industry/small/cbd-boxes-banner-1.webp"
                                         alt="CBD Boxes Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
@@ -284,7 +284,7 @@
                         <div class="banner-wrap">
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[1]) }}"><img
-                                        src="{{ asset('assets/website') }}/images/industry/small/cosmetic-packaging-banner-2.jpg"
+                                        src="{{ asset('assets/website') }}/images/industry/small/cosmetic-packaging-banner-2.webp"
                                         alt="Cosmetic Packaging Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
@@ -355,7 +355,7 @@
                         <div class="banner-wrap">
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[3]) }}"><img
-                                        src="{{ asset('assets/website') }}/images/industry/small/food-and-beverage-banner-3.jpg"
+                                        src="{{ asset('assets/website') }}/images/industry/small/food-and-beverage-banner-3.webp"
                                         alt="Food And Beverage Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
@@ -426,7 +426,7 @@
                         <div class="banner-wrap">
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[4]) }}"><img
-                                        src="{{ asset('assets/website') }}/images/industry/small/vape-cartridge-banner-4.jpg"
+                                        src="{{ asset('assets/website') }}/images/industry/small/vape-cartridge-banner-4.webp"
                                         alt="Vape Cartridge Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
@@ -495,7 +495,7 @@
                         <div class="banner-wrap">
                             <div class="banner-img banner-img-zoom">
                                 <a href="{{ route('industry.show', $industries[6]) }}"><img
-                                        src="{{ asset('assets/website') }}/images/industry/small/riged-boxes-banner-5.jpg"
+                                        src="{{ asset('assets/website') }}/images/industry/small/riged-boxes-banner-5.webp"
                                         alt="Riged Boxes Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
