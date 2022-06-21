@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+Route::get('/industry/rigid-boxes/custom-sleeve-tray-rigid-boxes', function () {
+    return redirect('/industry/rigid-boxes/custom-tray-and-sleeve-rigid-boxes');
+});
 
 // Auth::routes(['verify'=>true]);
 
@@ -50,6 +52,9 @@ Route::get('/privacy-policy', [App\Http\Controllers\WebPagesController::class, '
 Route::get('/term-and-conditions', [App\Http\Controllers\WebPagesController::class, 'showTermAndConditionsPage'])->name('term-conditions');
 Route::get('/faqs', [App\Http\Controllers\WebPagesController::class, 'showFAQSPage'])->name('faqs');
 Route::get('/paper-weight-chart', [App\Http\Controllers\WebPagesController::class, 'showPaperWeightPage'])->name('paper-weight');
+
+
+
 
 //adminpanel
 Route::get('admin/login', [App\Http\Controllers\Adminpanel\AuthController::class, 'show'])->name('admin.login.show');
