@@ -3,6 +3,7 @@
 <script src="{{ asset('assets/website') }}/js/vendor/jquery-migrate-v3.3.2.min.js"></script>
 <script src="{{ asset('assets/website') }}/js/vendor/popper.min.js"></script>
 <script src="{{ asset('assets/website') }}/js/vendor/bootstrap.min.js"></script>
+<script src="{{ asset('assets/website') }}/js/vendor/vendor.js"></script>
 <script src="{{ asset('assets/website') }}/js/plugins/slick.js"></script>
 <script src="{{ asset('assets/website') }}/js/plugins/jquery.syotimer.min.js"></script>
 <script src="{{ asset('assets/website') }}/js/plugins/jquery.instagramfeed.min.js"></script>
