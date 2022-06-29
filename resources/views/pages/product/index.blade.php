@@ -80,7 +80,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">
-                                        <div class="billing-info">
+                                        <div class="billing-info mb-20">
                                             <input value="{{ old('height') }}" type="number" required name="height"
                                                 placeholder="Height *">
                                             <input type="hidden" name="qoute_form" value="Custom Qoute Form">
