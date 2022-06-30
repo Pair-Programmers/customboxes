@@ -33,7 +33,7 @@ class IndustrySeeder extends Seeder
         foreach ($industry_names as $key => $value) {
             try {
                 Industry::create(['name'=>$value[0], 'slug'=>Str::slug($value[0]),
-                'summary'=>$value[1], 'image'=>Str::slug($value[0]).'.png', 'is_industry'=>$value[2],
+                'summary'=>$value[1], 'image'=>Str::slug($value[0]).'.svg', 'is_industry'=>$value[2],
                 'admin_id'=>1]);
             } catch (\Throwable $th) {
                 //throw $th;
