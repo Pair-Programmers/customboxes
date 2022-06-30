@@ -9,7 +9,7 @@
 <script src="{{ asset('assets/website') }}/js/plugins/jquery.instagramfeed.min.js"></script>
 <script src="{{ asset('assets/website') }}/js/plugins/jquery.nice-select.min.js"></script>
 <script src="{{ asset('assets/website') }}/js/plugins/wow.js"></script>
-<script src="{{ asset('assets/website') }}/js/plugins/jquery-ui-touch-punch.js"></script>
+{{-- <script src="{{ asset('assets/website') }}/js/plugins/jquery-ui-touch-punch.js"></script> --}}
 <script src="{{ asset('assets/website') }}/js/plugins/jquery-ui.js"></script>
 <script src="{{ asset('assets/website') }}/js/plugins/magnific-popup.js"></script>
 <script src="{{ asset('assets/website') }}/js/plugins/sticky-sidebar.js"></script>
