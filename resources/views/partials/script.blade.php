@@ -12,7 +12,7 @@
 <script src="{{ asset('assets/website') }}/js/plugins/jquery-ui-touch-punch.js"></script>
 <script src="{{ asset('assets/website') }}/js/plugins/jquery-ui.js"></script>
 <script src="{{ asset('assets/website') }}/js/plugins/magnific-popup.js"></script>
-<script src="{{ asset('assets/website') }}/js/plugins/sticky-sidebar.js"></script>
+{{-- <script src="{{ asset('assets/website') }}/js/plugins/sticky-sidebar.js"></script> --}}
 <script src="{{ asset('assets/website') }}/js/plugins/easyzoom.js"></script>
 <script src="{{ asset('assets/website') }}/js/plugins/scrollup.js"></script>
 {{-- <script src="{{ asset('assets/website') }}/js/plugins/ajax-mail.js"></script> --}}
@@ -20,7 +20,7 @@
 <script src="{{ asset('assets/website') }}/js/main.js"></script>
 
 <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+<script type="text/javascript" async>
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
