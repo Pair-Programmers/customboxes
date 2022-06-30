@@ -2,9 +2,8 @@
 
 @section('title-meta')
     <title>Custom Printed Packaging Boxes With Logo | {{ env('APP_NAME') }} </title>
-    <meta name="description"
-        content="Get your custom Printed Packaging boxes with logo from us and attract as many customers you want by having cardboard boxes wholesale for your business!">
-    <link rel="canonical" href="{{ env('APP_URL') }}" />
+    <meta name="description" content="Get your custom Printed Packaging boxes with logo from us and attract as many customers you want by having cardboard boxes wholesale for your business!">
+    <link rel="canonical" href="{{env('APP_URL')}}" />
 @endsection
 
 @section('custom-css')
@@ -23,8 +22,7 @@
                                 <h1 class="animated ">THE <br> CUSTOM PRINTED<br>PACKAGING BOXES</h1>
                                 {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1 mt-25" href="{{ route('product.index') }}">Get A
-                                        Quote</a>
+                                    <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -39,11 +37,9 @@
                             <div class="hero-slider-content-4 slider-animated-1">
                                 {{-- <h4 class="animated">Lookbook</h4> --}}
                                 <h1 class="animated">CUSTOM CBD BOXES</h1>
-                                <p class="animated">We Prepare High-Quality Custom Boxes With The Latest Tools And
-                                    Techniques.</p>
+                                <p class="animated">We Prepare High-Quality Custom Boxes With The Latest Tools And Techniques.</p>
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1 mt-25" href="{{ route('product.index') }}">Get A
-                                        Quote</a>
+                                    <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -60,8 +56,7 @@
                                 <h1 class="animated">COSMETIC <br> PACKAGING BOXES</h1>
                                 {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1 mt-25" href="{{ route('product.index') }}">Get A
-                                        Quote</a>
+                                    <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -78,8 +73,7 @@
                                 <h1 class="animated">MAILER CARDBORD <br> PACKAGING BOXES</h1>
                                 {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1 mt-25" href="{{ route('product.index') }}">Get A
-                                        Quote</a>
+                                    <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -96,8 +90,7 @@
                                 <h1 class="animated">VAPE CARTRIDGE<br>PRINTING PACKAGING<br>BOXES</h1>
                                 {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1 mt-25" href="{{ route('product.index') }}">Get A
-                                        Quote</a>
+                                    <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -114,8 +107,7 @@
                                 <h1 class="animated">LUXURY RIGID BOXES</h1>
                                 <p class="animated">WE CustomBoxesus strive to give you the best packaging solutions.</p>
                                 <div class="btn-style-1">
-                                    <a class="animated btn-1-padding-1 mt-25" href="{{ route('product.index') }}">Get A
-                                        Quote</a>
+                                    <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -145,8 +137,7 @@
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
-                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;"
-                                        href="#">Free Shipping</a></h5>
+                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;" href="#">Free Shipping</a></h5>
                             </div>
                         </div>
                     </div>
@@ -159,8 +150,7 @@
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
-                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;"
-                                        href="#">Free Design Support</a></h5>
+                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;" href="#">Free Design Support</a></h5>
                             </div>
                         </div>
                     </div>
@@ -173,8 +163,7 @@
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
-                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;"
-                                        href="#">Competitive Pricing</a></h5>
+                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;" href="#">Competitive Pricing</a></h5>
                             </div>
                         </div>
                     </div>
@@ -187,8 +176,7 @@
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
-                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;"
-                                        href="#">High Quality Boxes</a></h5>
+                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;" href="#">High Quality Boxes</a></h5>
                             </div>
                         </div>
                     </div>
@@ -201,8 +189,7 @@
                                 </a>
                             </div>
                             <div class="product-content-categories-2 product-content-orange text-center">
-                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;"
-                                        href="#">Quick Turn Arround</a></h5>
+                                <h5 class="font-width-dec"><a style="pointer-events: none; cursor: default;" href="#">Quick Turn Arround</a></h5>
                             </div>
                         </div>
                     </div>
@@ -225,9 +212,9 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="banner-wrap">
                             <div class="banner-img banner-img-zoom">
-                                <img
+                                <a href="{{ route('industry.show', $industries[0]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/cbd-boxes-banner-1.webp"
-                                        alt="CBD Boxes Banner">
+                                        alt="CBD Boxes Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
                                 <div class="banner-btn-3">
@@ -295,9 +282,9 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="banner-wrap">
                             <div class="banner-img banner-img-zoom">
-                                <img
+                                <a href="{{ route('industry.show', $industries[1]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/cosmetic-packaging-banner-2.webp"
-                                        alt="Cosmetic Packaging Banner">
+                                        alt="Cosmetic Packaging Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
                                 <div class="banner-btn-3">
@@ -365,9 +352,9 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="banner-wrap">
                             <div class="banner-img banner-img-zoom">
-                                <img
+                                <a href="{{ route('industry.show', $industries[3]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/food-and-beverage-banner-3.webp"
-                                        alt="Food And Beverage Banner">
+                                        alt="Food And Beverage Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
                                 <div class="banner-btn-3">
@@ -435,9 +422,9 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="banner-wrap">
                             <div class="banner-img banner-img-zoom">
-                                <img
+                                <a href="{{ route('industry.show', $industries[4]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/vape-cartridge-banner-4.webp"
-                                        alt="Vape Cartridge Banner">
+                                        alt="Vape Cartridge Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
                                 <div class="banner-btn-3">
@@ -503,9 +490,9 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="banner-wrap">
                             <div class="banner-img banner-img-zoom">
-                                <img
+                                <a href="{{ route('industry.show', $industries[6]) }}"><img
                                         src="{{ asset('assets/website') }}/images/industry/small/riged-boxes-banner-5.webp"
-                                        alt="Riged Boxes Banner">
+                                        alt="Riged Boxes Banner"></a>
                             </div>
                             <div class="banner-content-23 text-center">
 
@@ -611,30 +598,15 @@
     </div> --}}
     <div class="container home-content home-content-psize">
         <h3>Custom Boxes & Packaging Solutions:</h3>
-        <p>When it comes to convenient, personalized shopping experiences that provide endless possibilities, there's no
-            better way than with a custom printed box. <a
-                href="{{ route('industry.custom-printed-boxes.show') }}">Custom printed boxes</a> can fit any product
-            requirement, from make-up gift sets to birthday presents. Choose from our wide selection of designs, or ask one
-            of our expert design teams to help you create a playful gift box or fun-filled birthday package.</p>
-        <p>It is hard to think of something unique for a special gift that customers will keep forever, but colorful and
-            custom-made boxes are perfect. Custom boxes also make a great addition to any promotional program you have or
-            giveaway. Brands are making use of this marketing tool by giving out gifts that are unique by name or design in
-            creative custom printed boxes.</p>
-        <p>At CustomBoxesUs, you can get your packaging in an attractive manner. Our experts know how to design attractive
-            packaging that attracts the attention of customers. We know how to make attractive custom boxes in the best way
-            possible. We have a range of variety while we are designing boxes with different shapes, sizes and features.</p>
+        <p>When it comes to convenient, personalized shopping experiences that provide endless possibilities, there's no better way than with a custom printed box. <a href="{{ route('industry.custom-printed-boxes.show') }}">Custom printed boxes</a> can fit any product requirement, from make-up gift sets to birthday presents. Choose from our wide selection of designs, or ask one of our expert design teams to help you create a playful gift box or fun-filled birthday package.</p>
+        <p>It is hard to think of something unique for a special gift that customers will keep forever, but colorful and custom-made boxes are perfect. Custom boxes also make a great addition to any promotional program you have or giveaway. Brands are making use of this marketing tool by giving out gifts that are unique by name or design in creative custom printed boxes.</p>
+        <p>At CustomBoxesUs, you can get your packaging in an attractive manner. Our experts know how to design attractive packaging that attracts the attention of customers. We know how to make attractive custom boxes in the best way possible. We have a range of variety while we are designing boxes with different shapes, sizes and features.</p>
 
         <h3>Get creative packaging solutions as per your needs:</h3>
-        <p>With us, you will be able to find a wide range of custom printed boxes that are useful in different ways. Our
-            creative packaging makes it possible for you to incorporate your personal touch when shopping for items.</p>
-        <p>Our experts are committed to providing customers with the best quality products and services. We take pride in
-            helping our customers find the best packaging solution to fit their needs.</p>
-        <p>Our goal at CustomBoxesUs is to come up with new and unique ways to present your product so that it makes a
-            statement among the competition. One of our ways of doing this is by designing attractive custom-printed boxes
-            that suit your brand name or logo.</p>
-        <p>When you choose custom printed boxes, you can show off your brand identity to the world. We have a range of
-            interesting gift boxes that are tailor-made just for fun, and they are perfect as favors or giveaways at events.
-        </p>
+        <p>With us, you will be able to find a wide range of custom printed boxes that are useful in different ways. Our creative packaging makes it possible for you to incorporate your personal touch when shopping for items.</p>
+        <p>Our experts are committed to providing customers with the best quality products and services. We take pride in helping our customers find the best packaging solution to fit their needs.</p>
+        <p>Our goal at CustomBoxesUs is to come up with new and unique ways to present your product so that it makes a statement among the competition. One of our ways of doing this is by designing attractive custom-printed boxes that suit your brand name or logo.</p>
+        <p>When you choose custom printed boxes, you can show off your brand identity to the world. We have a range of interesting gift boxes that are tailor-made just for fun, and they are perfect as favors or giveaways at events.</p>
 
         <h3>Our expert staff is ready to help you with all your packaging needs:</h3>
         <p>We know how important it is for your products to arrive at customers' homes in a secure way. That's why we make
@@ -692,8 +664,7 @@
 
         <h3> <a href="{{ route('industry.show', $industries[2]) }}"> Gift boxes:</a></h3>
         <p>Apart from providing packaging for various products, we also offer <a
-                href="{{ route('industry.show', $industries[2]) }}"> custom printed gift boxes </a> to serve as a gift
-            or
+                href="{{ route('industry.show', $industries[2]) }}"> custom printed gift boxes </a> to serve as a gift or
             a giveaway. These boxes make sure that the product stands out in an attractive manner. You can also use them as
             an inexpensive giveaway at events and other promotional activities.</p>
         <p>Boxes are available in various sizes to suit the product's size and shape. We ensure that the box is highly
@@ -733,8 +704,7 @@
         <h3><a href="{{ route('industry.show', $industries[7]) }}">Custom Apparel Boxes:</a></h3>
         <p>These boxes are useful for all kinds of products that need to present themselves in a beautiful manner. We can
             also design custom logo shirts to go with your t-shirts, hoodies, and other garments.</p>
-        <p> <a href="{{ route('industry.show', $industries[7]) }}"> Custom Apparel boxes </a> boxes come in various
-            sizes
+        <p> <a href="{{ route('industry.show', $industries[7]) }}"> Custom Apparel boxes </a> boxes come in various sizes
             and designs, so you can choose the style and size that will fit your needs while protecting your product from
             damage. We have a wide range of apparel boxes available for sale to suit your needs.</p>
         <p>We have boxes for every event, so why wait? Get in touch with us and customize your boxes with us!</p>
@@ -793,40 +763,41 @@
     </div>
     <br>
     <br>
-    <div class="container home-content home-content-psize">
-        <h2>FAQ's</h2>
-        <h3 style="background-color: rgb(193, 199, 212)">Q: What do we provide?</h3>
-        <p>We can print custom packaging for most products in the market. We can even design boxes for toys, books, and
-            other products that need a box to be shipped.</p>
-        <h3 style="background-color: rgb(193, 199, 212)">Q: What is the meaning of "custom-made"? </h3>
-        <p>Custom-made means having your product boxed and printed according to your specific requirements, from design to
-            packing material. There are many companies out there who will say they will customize your product for you but
-            what they actually do is box it without adding any creative input at all. We do not just box your product for
-            you; we put our creativity and expertise into making sure that both the design and the material used are
-            customized to suit the exact needs of your product.</p>
-        <h3 style="background-color: rgb(193, 199, 212)">Q: Is my packaging tailor-made with eco-friendly materials?</h3>
-        <p>Yes, we are eco-friendly when it comes to providing custom packaging solutions for our customers. We use only the
-            best quality material that is tailor-made from recyclable substances. We are also conscious about the
-            environment when handling your product as we take care not to cause any damage or waste during the packaging
-            process.</p>
-        <h3 style="background-color: rgb(193, 199, 212)">Q: What if I do not like my first design?</h3>
-        <p>We make sure that each box is a work of art and that it suits your product's needs. If you feel like your first
-            design is not what you wanted, then you can always ask our designers to make revisions so that you get exactly
-            what you want in terms of both packaging and design.</p>
-        <h3 style="background-color: rgb(193, 199, 212)">Q: Does it matter what size my product is?</h3>
-        <p>It does not matter what size your product is, as we can make any box to suit your product. We do have our own
-            sizing guides so you can get an idea of what the different boxes will be suitable for and how long the process
-            will take.</p>
-        <h3 style="background-color: rgb(193, 199, 212)">Q: What if I need a box for CBD products?</h3>
-        <p>We can also design custom packaging for CBD products. You may also want to use a different type of packaging if
-            your CBD products are in liquid form or if you want to protect them from light or oxygen exposure. We are also
-            available whatever choice you want, as long as it is according to our pricing list for custom-made boxes.</p>
+    <div class="container home-content home-content-psize" >
+            <h2>FAQ's</h2>
+            <h3 style="background-color: rgb(193, 199, 212)">Q: What do we provide?</h3>
+            <p>We can print custom packaging for most products in the market. We can even design boxes for toys, books, and
+                other products that need a box to be shipped.</p>
+            <h3 style="background-color: rgb(193, 199, 212)">Q: What is the meaning of "custom-made"? </h3>
+            <p>Custom-made means having your product boxed and printed according to your specific requirements, from design to
+                packing material. There are many companies out there who will say they will customize your product for you but
+                what they actually do is box it without adding any creative input at all. We do not just box your product for
+                you; we put our creativity and expertise into making sure that both the design and the material used are
+                customized to suit the exact needs of your product.</p>
+            <h3 style="background-color: rgb(193, 199, 212)">Q: Is my packaging tailor-made with eco-friendly materials?</h3>
+            <p>Yes, we are eco-friendly when it comes to providing custom packaging solutions for our customers. We use only the
+                best quality material that is tailor-made from recyclable substances. We are also conscious about the
+                environment when handling your product as we take care not to cause any damage or waste during the packaging
+                process.</p>
+            <h3 style="background-color: rgb(193, 199, 212)">Q: What if I do not like my first design?</h3>
+            <p>We make sure that each box is a work of art and that it suits your product's needs. If you feel like your first
+                design is not what you wanted, then you can always ask our designers to make revisions so that you get exactly
+                what you want in terms of both packaging and design.</p>
+            <h3 style="background-color: rgb(193, 199, 212)">Q: Does it matter what size my product is?</h3>
+            <p>It does not matter what size your product is, as we can make any box to suit your product. We do have our own
+                sizing guides so you can get an idea of what the different boxes will be suitable for and how long the process
+                will take.</p>
+            <h3 style="background-color: rgb(193, 199, 212)">Q: What if I need a box for CBD products?</h3>
+            <p>We can also design custom packaging for CBD products. You may also want to use a different type of packaging if
+                your CBD products are in liquid form or if you want to protect them from light or oxygen exposure. We are also
+                available whatever choice you want, as long as it is according to our pricing list for custom-made boxes.</p>
 
     </div>
     <div class="download-app-area pb-70">
         <div class="container">
             <div class="section-wrap-4">
-                <div class="bg-img" style="background-image:url({{ asset('assets/website') }}/images/app-banner.jpg);">
+                <div class="bg-img"
+                    style="background-image:url({{ asset('assets/website') }}/images/app-banner.jpg);">
                     <div class="download-app-content" style="color: white">
                         <h1 style="color: white">We Believe in <br>Quality packaging</h1>
                         <p style="color: white">Order Now !</p>
