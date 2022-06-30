@@ -12,7 +12,7 @@
 <script src="{{ asset('assets/website') }}/js/plugins/jquery-ui-touch-punch.js"></script>
 <script src="{{ asset('assets/website') }}/js/plugins/jquery-ui.js"></script>
 <script src="{{ asset('assets/website') }}/js/plugins/magnific-popup.js"></script>
-{{-- <script src="{{ asset('assets/website') }}/js/plugins/sticky-sidebar.js"></script> --}}
+<script src="{{ asset('assets/website') }}/js/plugins/sticky-sidebar.js"></script>
 <script src="{{ asset('assets/website') }}/js/plugins/easyzoom.js"></script>
 <script src="{{ asset('assets/website') }}/js/plugins/scrollup.js"></script>
 {{-- <script src="{{ asset('assets/website') }}/js/plugins/ajax-mail.js"></script> --}}
