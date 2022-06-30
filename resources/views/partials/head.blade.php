@@ -16,7 +16,7 @@
     </script> --}}
 
     <!-- Google Tag Manager -->
-    <script>
+    <script defer>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
@@ -39,19 +39,19 @@
 
     <!-- All CSS is here ============================================ -->
 
-    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/signericafat.css">
-    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/cerebrisans.css">
-    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/simple-line-icons.css">
-    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/elegant.css">
-    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/linear-icon.css">
-    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/plugins/nice-select.css">
-    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/plugins/easyzoom.css">
-    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/plugins/slick.css">
-    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/plugins/animate.css">
-    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/plugins/magnific-popup.css">
-    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/plugins/jquery-ui.css">
-    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/signericafat.css" media="screen">
+    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/cerebrisans.css" media="screen">
+    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/simple-line-icons.css" media="screen">
+    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/elegant.css" media="screen">
+    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/linear-icon.css" media="screen">
+    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/plugins/nice-select.css" media="screen">
+    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/plugins/easyzoom.css" media="screen">
+    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/plugins/slick.css" media="screen">
+    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/plugins/animate.css" media="screen">
+    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/plugins/magnific-popup.css" media="screen">
+    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/plugins/jquery-ui.css" media="screen">
+    <link rel="stylesheet" href="{{ asset('assets/website') }}/css/style.css" media="screen">
 
     @yield('custom-css')
 </head>
