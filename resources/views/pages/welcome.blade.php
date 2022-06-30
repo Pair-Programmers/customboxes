@@ -563,7 +563,7 @@
     </div>
 
 
-    <div class="blog-area pb-70">
+    {{-- <div class="blog-area pb-70">
         <div class="container">
             <div class="section-title-btn-wrap mb-25">
                 <div class="section-title-8">
@@ -601,7 +601,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="container home-content home-content-psize">
         <h3>Custom Boxes & Packaging Solutions:</h3>
         <p>When it comes to convenient, personalized shopping experiences that provide endless possibilities, there's no better way than with a custom printed box. <a href="{{ route('industry.custom-printed-boxes.show') }}">Custom printed boxes</a> can fit any product requirement, from make-up gift sets to birthday presents. Choose from our wide selection of designs, or ask one of our expert design teams to help you create a playful gift box or fun-filled birthday package.</p>
@@ -619,27 +619,6 @@
             sure that all the packaging materials we use are carefully selected and meet security standards set by the most
             reputable firms worldwide. We will ensure that your products arrive at the customer's home safely. But we will
             also make sure that all shipping materials are completely safe for transit.</p>
-
-        {{-- <p>It is hard to think of something unique for a special gift that customers will keep forever, but colorful and
-            custom-made boxes are perfect. Custom boxes also make a great addition to any promotional program you have or
-            giveaway. Brands are making use of this marketing tool by giving out gifts that are unique by name or design in
-            creative custom printed boxes.</p>
-        <p>At CustomBoxesUs, you can get your packaging in an attractive manner. Our experts know how to design attractive
-            packaging that attracts the attention of customers. We know how to make attractive custom boxes in the best way
-            possible. We have a range of variety while we are designing boxes with different shapes, sizes and features.</p>
-
-        <h3>Get creative packaging solutions as per your needs:</h3>
-        <p>With us, you will be able to find a wide range of custom printed boxes that are useful in different ways. Our
-            creative packaging makes it possible for you to incorporate your personal touch when shopping for items.</p>
-        <p>Our experts are committed to providing customers with the best quality products and services. We take pride in
-            helping our customers find the best packaging solution to fit their needs.</p>
-        <p>Our goal at CustomBoxesUs is to come up with new and unique ways to present your product so that it makes a
-            statement among the competition. One of our ways of doing this is by designing attractive custom-printed boxes
-            that suit your brand name or logo.</p>
-        <p>When you choose custom printed boxes, you can show off your brand identity to the world. We have a range of
-            interesting gift boxes that are tailor-made just for fun, and they are perfect as favors or giveaways at events.
-        </p> --}}
-
 
 
         <h3>Here's a glimpse of what we deal in:</h3>
