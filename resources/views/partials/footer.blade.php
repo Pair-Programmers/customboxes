@@ -73,7 +73,6 @@
                                 </div>
                             </div>
                             <div class="single-contact-info-2">
-
                                 <div class="contact-info-2-icon">
                                     <a href="mailto:info@customboxesus.com"><i class="icon-envelope-open "></i></a>
                                 </div>
@@ -81,11 +80,17 @@
                                     <a href="mailto:info@customboxesus.com">
                                         <p style="font-size: 19px" >info@customboxesus.com</p>
                                     </a>
-                                    <a href="mailto:info@customboxesus.com">
+                                </div>
+                            </div>
+                            <div class="single-contact-info-2">
+                                <div class="contact-info-2-icon">
+                                    <a href="mailto:sales@customboxesus.com"><i class="icon-envelope-open "></i></a>
+                                </div>
+                                <div class="contact-info-2-content">
+                                    <a href="mailto:sales@customboxesus.com">
                                         <p style="font-size: 19px" >sales@customboxesus.com</p>
                                     </a>
                                 </div>
-
                             </div>
                         </div>
                         <div class="social-style-1 social-style-1-font-inc social-style-1-mrg-2">
