@@ -1,9 +1,2 @@
 User-agent: *
-Disallow: /assets/website/mail-php/
-Disallow: /assets/website/scss/
-Disallow: /assets/website/fonts/
-Disallow: /assets/adminpanel/
-Disallow: /assets/website/css/
-Disallow: /assets/website/js/
-Disallow: /admin
 Sitemap: https://www.customboxesus.com/sitemap.xml
