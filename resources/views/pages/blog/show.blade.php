@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>{{$blog->meta_tag_title}} | {{ env('APP_NAME') }}</title>
+    <title>{{$blog->meta_tag_title}} | {{ config('app.name') }}</title>
     <meta name="description" content="{{$blog->meta_tag_description}}">
     <meta name="keywords" content="{{$blog->meta_tag_keywords}}">
     <link rel="canonical" href="{{route('blog.show', $blog)}}" />s

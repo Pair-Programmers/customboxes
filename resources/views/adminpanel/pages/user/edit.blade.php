@@ -1,7 +1,7 @@
 @extends('adminpanel.layouts.master')
 
 @section('title-meta')
-    <title>{{ env('APP_NAME', 'Admin') }} | User Edit</title>
+    <title>{{ config('app.name') }} | User Edit</title>
 
     <meta name="description" content="this is description">
 @endsection

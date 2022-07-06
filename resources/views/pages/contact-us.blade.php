@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>Contact Us | {{ env('APP_NAME') }} </title>
+    <title>Contact Us | {{ config('app.name') }} </title>
     <meta name="description" content="Need assistance with your custom packaging boxes? Custom Boxes US is here to help. Contact us via Call at (925) 695 9888 or email us at info@customboxesus.com">
     <link rel="canonical" href="{{route('contact-us')}}" />
 

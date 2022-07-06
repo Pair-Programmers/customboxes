@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>Terms & Conditions | {{ env('APP_NAME') }} </title>
+    <title>Terms & Conditions | {{ config('app.name') }} </title>
     <meta name="description" content="As a member of our site, you are required to read our terms and conditions, agree with, and accept all of the terms and conditions contained therein.">
     <link rel="canonical" href="{{route('term-conditions')}}" />
 @endsection

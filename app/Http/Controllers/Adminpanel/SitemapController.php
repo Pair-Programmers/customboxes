@@ -46,22 +46,22 @@ class SitemapController extends Controller
         $path = 'storage/sitemaps/';
         //$industrySitemap = Sitemap::create()->add(Industry::all());
 
-        // SitemapGenerator::create(env('APP_URL'))
+        // SitemapGenerator::create(config('app.url'))
         // ->writeToFile(public_path($path . 'sitemap.xml'));
 
-        // SitemapGenerator::create(env('APP_URL'))
+        // SitemapGenerator::create(config('app.url'))
         // ->configureCrawler(function (Crawler $crawler) {
         //     $crawler->setMaximumDepth(6);
         // })
         // ->writeToFile($path . 'sitemapUsingCrawler.xml');
 
 
-        $sitemapGenerator = SitemapGenerator::create(env('APP_URL'))
+        $sitemapGenerator = SitemapGenerator::create(config('app.url'))
         ->hasCrawled(function (Url $url) {
             if ($url->segment(1) === 'storage') {
                 return;
             }
-            
+
 
             return $url;
         })

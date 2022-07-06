@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>Custom Printed Packaging Boxes With Logo | {{ env('APP_NAME') }} </title>
+    <title>Custom Printed Packaging Boxes With Logo | {{ config('app.name') }} </title>
     <meta name="description" content="Get your custom Printed Packaging boxes with logo from us and attract as many customers you want by having cardboard boxes wholesale for your business!">
-    <link rel="canonical" href="{{env('APP_URL')}}" />
+    <link rel="canonical" href="{{ config('app.url')}}" />
 @endsection
 
 @section('custom-css')

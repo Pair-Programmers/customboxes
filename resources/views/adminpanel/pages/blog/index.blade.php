@@ -1,7 +1,7 @@
 @extends('adminpanel.layouts.master')
 
 @section('title-meta')
-    <title>{{ env('APP_NAME', 'Admin') }} | Dashboard</title>
+    <title>{{ config('app.name') }} | Dashboard</title>
 
     <meta name="description" content="this is description">
 @endsection

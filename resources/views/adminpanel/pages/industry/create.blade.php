@@ -1,7 +1,7 @@
 @extends('adminpanel.layouts.master')
 
 @section('title-meta')
-    <title>{{ env('APP_NAME', 'Admin') }} | Product Create</title>
+    <title>{{ config('app.name') }} | Product Create</title>
 
     <meta name="description" content="this is description">
 @endsection
@@ -82,7 +82,7 @@
                                                 </div>
 
                                             </div>
-                                            
+
                                             <div class="form-group"><label class="col-sm-2 control-label">Description:</label>
                                                 <div class="col-sm-10">
                                                     <textarea id="" name="description" type="text" required class="summernote">

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>Boxes List | {{ env('APP_NAME') }} </title>
+    <title>Boxes List | {{ config('app.name') }} </title>
     <meta name="description" content="this is description">
     <link rel="canonical" href="{{route('product.search')}}" />
 

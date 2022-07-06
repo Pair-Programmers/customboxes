@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>BLogs | {{ env('APP_NAME') }} </title>
+    <title>BLogs | {{ config('app.name') }} </title>
     <meta name="description" content="There is something uniquely artistic about the designs printed on printing and packaging boxes. We will give you the latest trends updates in this blog.">
     <link rel="canonical" href="{{route('blog.index')}}" />
 

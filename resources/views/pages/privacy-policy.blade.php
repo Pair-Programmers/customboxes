@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>Privacy Policy | {{ env('APP_NAME') }} </title>
+    <title>Privacy Policy | {{ config('app.name') }} </title>
     <meta name="description" content="During your visit to our websites, this policy describes how we collect and use your personal information in accordance with the General Data Protection Regulation (GDPR).">
     <link rel="canonical" href="{{route('privacy-policy')}}" />
 

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>Custom Qoute | {{ env('APP_NAME') }} </title>
+    <title>Custom Qoute | {{ config('app.name') }} </title>
     <meta name="description" content="Get a Quote. Price quotes can save you time. Complete the form to receive a custom quote based on your specific custom packaging boxes.">
     <link rel="canonical" href="{{route('product.index')}}" />
 
