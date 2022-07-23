@@ -37,7 +37,7 @@
     </script> --}}
 
     <!-- Google Tag Manager -->
-    <script defer>
+    <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
@@ -54,6 +54,6 @@
         })(window, document, 'script', 'dataLayer', 'GTM-TQRWPZB');
     </script>
     <!-- End Google Tag Manager -->
-    
+
     @yield('custom-css')
 </head>
