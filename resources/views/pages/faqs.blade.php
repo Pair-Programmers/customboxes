@@ -14,7 +14,7 @@
         <div class="breadcrumb-area bg-gray">
             <div class="container">
                 <div class="breadcrumb-content text-center">
-                    <h1 style="color: red">FAQ's</h1>
+                    <h1 style="color: red">Frequently Asked Questions</h1>
 
                 </div>
             </div>
