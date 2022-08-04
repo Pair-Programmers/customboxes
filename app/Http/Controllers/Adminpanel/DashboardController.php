@@ -8,7 +8,6 @@ use App\Models\Order;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\File;
 
 class DashboardController extends Controller
 {
@@ -19,29 +18,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $files = File::files(public_path().'/storage/images/products');
-
-        $filesNeeded = 0;
-        foreach (Product::all() as $key => $product) {
-            if(isset($product->image1)){
-                $filesNeeded++;
-            }
-            if(isset($product->image2)){
-                $filesNeeded++;
-            }
-            if(isset($product->image3)){
-                $filesNeeded++;
-            }
-            if(isset($product->image4)){
-                $filesNeeded++;
-            }
-            if(isset($product->image5)){
-                $filesNeeded++;
-            }
-        }
-
-        $totalUsers = count($files);//User::count('id');
-        $totalProducts = $filesNeeded;//Product::count('id');
+        $totalUsers = User::count('id');
+        $totalProducts = Product::count('id');
         $totalOdrers = Order::count('id');
         $totalBlogs = Blog::count('id');
         return view('adminpanel.pages.dashboard', compact('totalUsers', 'totalProducts', 'totalOdrers',
