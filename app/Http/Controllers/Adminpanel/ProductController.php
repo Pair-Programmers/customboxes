@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Industry;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
 class ProductController extends Controller
@@ -153,6 +154,8 @@ class ProductController extends Controller
             $name = $image->getClientOriginalName();
             $image->move(public_path().'/storage/images/products', $name);
             $input['image1'] = $name;
+
+            File::delete(public_path().'/storage/images/products', $product->image1);
         }
         else{
             unset($input['image1']);
@@ -163,6 +166,8 @@ class ProductController extends Controller
             $name = $image->getClientOriginalName();
             $image->move(public_path().'/storage/images/products', $name);
             $input['image2'] = $name;
+
+            File::delete(public_path().'/storage/images/products', $product->image2);
         }
         else{
             unset($input['image2']);
@@ -173,6 +178,8 @@ class ProductController extends Controller
             $name = $image->getClientOriginalName();
             $image->move(public_path().'/storage/images/products', $name);
             $input['image3'] = $name;
+
+            File::delete(public_path().'/storage/images/products', $product->image3);
         }
         else{
             unset($input['image3']);
@@ -183,6 +190,8 @@ class ProductController extends Controller
             $name = $image->getClientOriginalName();
             $image->move(public_path().'/storage/images/products', $name);
             $input['image4'] = $name;
+
+            File::delete(public_path().'/storage/images/products', $product->image4);
         }
         else{
             unset($input['image4']);
@@ -193,6 +202,8 @@ class ProductController extends Controller
             $name = $image->getClientOriginalName();
             $image->move(public_path().'/storage/images/products', $name);
             $input['image5'] = $name;
+
+            File::delete(public_path().'/storage/images/products', $product->image5);
         }
         else{
             unset($input['image5']);
