@@ -10,7 +10,6 @@
         </iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
     @include('partials.header')
 
     @yield('content')
@@ -39,7 +38,7 @@
                         if (responseData.error) {
                             $('#news-subscriber-message').html(
                                 `<span style="color: red">${responseData.error.email}</span>`
-                                );
+                            );
                         } else {
                             $('#news-subscriber-message').html(
                                 `<span style="color: green">${responseData.message}</span>`);
@@ -55,6 +54,11 @@
             });
         });
     </script>
+    {{-- whatsapp button --}}
+    <a href="https://api.whatsapp.com/send?phone=19256959888&text=Hi,%20I%20am%20interested%20in%20your%20services."
+        class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
 </body>
 
 </html>
