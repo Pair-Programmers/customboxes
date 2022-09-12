@@ -55,7 +55,7 @@
         });
     </script>
     {{-- whatsapp button --}}
-    <a href="https://api.whatsapp.com/send?phone=19256959888&text=Hi,%20I%20am%20interested%20in%20your%20services."
+    <a href="https://api.whatsapp.com/send?phone=19256959888&text=Hi,%20I%20am%20looking%20for%20customize%20boxes."
         class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a>

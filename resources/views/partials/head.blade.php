@@ -63,8 +63,8 @@
             position: fixed;
             width: 60px;
             height: 60px;
-            bottom: 90px;
-            right: 25px;
+            bottom: 20px;
+            right: 90px;
             background-color: #25d366;
             color: #FFF;
             border-radius: 50px;
