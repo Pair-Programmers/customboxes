@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/website') }}/images/favicon.png">
 
     <!-- All CSS is here ============================================ -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" preload> -->
     <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/signericafat.css" media="screen">
     <link rel="stylesheet" href="{{ asset('assets/website') }}/css/vendor/cerebrisans.css" media="screen">
@@ -27,6 +27,7 @@
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://kit.fontawesome.com/763be145fb.js" crossorigin="anonymous"></script>
     {{-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-R750JWN117"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -74,8 +75,6 @@
             z-index: 100;
         }
 
-        .my-float {
-            margin-top: 16px;
-        }
+        
     </style>
 </head>
