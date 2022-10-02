@@ -3510,12 +3510,12 @@ textarea:focus {
 }
 
 .main-menu.main-menu-padding-1 > nav > ul > li {
-  padding-right: 46px;
+  padding-right: 40px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-menu.main-menu-padding-1 > nav > ul > li {
-    padding-right: 40px;
+    padding-right: 35px;
   }
 }
 

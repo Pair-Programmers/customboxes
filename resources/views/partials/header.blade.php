@@ -110,6 +110,8 @@
                                             </ul>
                                         </li>
                                         <li><a href="{{route('industry.custom-printed-boxes.show')}}">Custom Printed Boxes</a></li>
+                                        <li><a href="{{route('industry.bags')}}">Bags</a></li>
+                                        <li><a href="{{route('industry.marketing-materials')}}">Marketing Materials</a></li>
                                         <li><a href="{{route('industry.boxes-styles')}}">Boxes Styles</a></li>
                                         <li><a href="{{route('blog.index')}}">Blogs</a></li>
                                         <li><a href="{{route('product.rush-order')}}">Rush Order</a></li>
@@ -180,6 +182,8 @@
 
                         <li><a href="{{route('industry.custom-printed-boxes.show')}}">Custom Printed Boxes</a></li>
                         <li><a href="{{route('industry.boxes-styles')}}">Boxes Styles</a></li>
+                        <li><a href="{{route('industry.bags')}}">Bags</a></li>
+                        <li><a href="{{route('industry.marketing-materials')}}">Marketing Materials</a></li>
                         <li><a href="{{route('blog.index')}}">Blogs</a></li>
                         <li><a href="{{route('product.rush-order')}}">Rush Order</a></li>
                         <li><a href="{{route('contact-us')}}">Contact Us</a></li>

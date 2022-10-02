@@ -66,6 +66,19 @@ class IndustryController extends Controller
         return view('pages.boxes-styles', compact('industry', 'products'));
     }
 
+    public function showBagsPage()
+    {
+        $industry = Industry::findOrFail(12);
+        $products = Product::where('industry_id', $industry->id)->where('is_active', true)->get();
+        return view('pages.boxes-styles', compact('industry', 'products'));
+    }
+
+    public function showMarketingMaterialsPage()
+    {
+        $industry = Industry::findOrFail(13);
+        $products = Product::where('industry_id', $industry->id)->where('is_active', true)->get();
+        return view('pages.boxes-styles', compact('industry', 'products'));
+    }
 
 
     /**

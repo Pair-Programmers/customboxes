@@ -25,6 +25,8 @@ Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name(
 
 Route::get('/custom-printed-boxes', [App\Http\Controllers\IndustryController::class, 'showCustomPrintedBoxes'])->name('industry.custom-printed-boxes.show');
 Route::get('/boxes-styles', [App\Http\Controllers\IndustryController::class, 'showBoxesStyles'])->name('industry.boxes-styles');
+Route::get('/bags', [App\Http\Controllers\IndustryController::class, 'showBagsPage'])->name('industry.bags');
+Route::get('/marketing-materials', [App\Http\Controllers\IndustryController::class, 'showMarketingMaterialsPage'])->name('industry.marketing-materials');
 Route::get('/rush-order', [App\Http\Controllers\ProductController::class, 'showRushOrderPage'])->name('product.rush-order');
 Route::get('/custom-qoute', [App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
 
