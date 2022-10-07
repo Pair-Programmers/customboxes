@@ -76,7 +76,7 @@ class BlogController extends Controller
      */
     public function show(Blog $blog)
     {
-        return route('blog.show', $blog);
+        return  redirect()->route('blog.show', $blog);
     }
 
     /**
