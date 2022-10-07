@@ -76,7 +76,14 @@ class BlogController extends Controller
      */
     public function show($id)
     {
-        //
+        $blog = Blog::find($id);
+        if($blog->is_active){
+            $recentBlogs = Blog::where('is_active', true)->orderBy('id', 'desc')->get()->take(3);
+            $categories = BlogCategory::all();
+            return view('pages.blog.show', compact('blog', 'categories', 'recentBlogs'));
+        } else {
+            abort(404);
+        }
     }
 
     /**
