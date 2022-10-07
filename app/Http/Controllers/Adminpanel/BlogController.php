@@ -74,9 +74,8 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Blog $blog)
     {
-        $blog = Blog::find($id);
         if($blog->is_active){
             $recentBlogs = Blog::where('is_active', true)->orderBy('id', 'desc')->get()->take(3);
             $categories = BlogCategory::all();
