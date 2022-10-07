@@ -4,7 +4,7 @@
     <title>{{$blog->meta_tag_title}} | {{ config('app.name') }}</title>
     <meta name="description" content="{{$blog->meta_tag_description}}">
     <meta name="keywords" content="{{$blog->meta_tag_keywords}}">
-    <link rel="canonical" href="{{route('blog.show', $blog)}}" />s
+    <link rel="canonical" href="{{route('blog.show', $blog)}}" />
 @endsection
 
 @section('custom-css')
@@ -86,13 +86,11 @@
                             <div class="blog-details-content">
                                 <div class="blog-meta-2">
                                     <ul>
-                                        <li>Category : {{ $blog->category->name }}</li>
-                                        <li>{{ $blog->author_name }}</li>
                                         <li>{{ $blog->created_at }}</li>
                                     </ul>
                                 </div>
                                 <h1>{{ $blog->title }}</h1>
-                                {{ $blog->description }}
+                                {!! $blog->description !!}
                             </div>
                         </div>
                         <!-- <d iv class="dec-img-wrapper">
