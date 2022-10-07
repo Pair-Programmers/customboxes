@@ -28,7 +28,7 @@
                                     <div class="blog-content">
                                         <div class="blog-meta">
                                             <ul>
-                                                <li><a href="#">{{ $blog->category->name }} </a></li>
+                                                {{-- <li><a href="#">{{ $blog->category->name }} </a></li> --}}
                                                 <li>{{ date('d-M-Y', strtotime($blog->created_at)) }}</li>
                                             </ul>
                                         </div>
