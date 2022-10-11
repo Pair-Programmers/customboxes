@@ -161,6 +161,7 @@
             </div>
             <div class="mobile-search mobile-header-padding-border-1">
                 <form class="search-form" action="{{route('product.search')}}" method="POST">
+                    @csrf
                     <input name="keyword" type="text" placeholder="Search Products..." value="{{old('keyword')}}">
                     <button type="submit" class="button-search"><i class="icon-magnifier"></i></button>
                 </form>
