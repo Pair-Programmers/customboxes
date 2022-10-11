@@ -23,7 +23,7 @@ class BlogController extends Controller
         })
         ->paginate(5);
         $categories = BlogCategory::all();
-        $recentBlogs = Blog::orderBy('id', 'desc')->get()->take(3);
+        $recentBlogs = Blog::where('is_active', true)->orderBy('id', 'desc')->get()->take(3);
         return view('pages.blog.index', compact('blogs', 'categories', 'recentBlogs'));
     }
 
