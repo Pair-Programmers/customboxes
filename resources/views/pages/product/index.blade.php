@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>Custom Qoute | {{ config('app.name') }} </title>
+    <title>Custom Quite | {{ config('app.name') }} </title>
     <meta name="description" content="Get a Quote. Price quotes can save you time. Complete the form to receive a custom quote based on your specific custom packaging boxes.">
     <link rel="canonical" href="{{route('product.index')}}" />
 
@@ -27,7 +27,7 @@
         <div class="container">
             <div class="row ">
                 <div class="mb-30" style="text-align: center;">
-                    <h2 class="mb-10"><strong> Custom Qoute </strong> Possible Now with</h2>
+                    <h2 class="mb-10"><strong> Custom Quote </strong> Possible Now with</h2>
                     <h3 style="color: rgb(25, 25, 233)"><strong>Custom BOXES US</strong></h3>
                     <p>We truly understand that everything is not standard so our expedite plan of <strong>4</strong> to
                         <strong>6</strong> business days is the solution to your expedite requirements.
@@ -83,7 +83,7 @@
                                         <div class="billing-info mb-20">
                                             <input value="{{ old('height') }}" type="number" required name="height"
                                                 placeholder="Height *">
-                                            <input type="hidden" name="qoute_form" value="Custom Qoute Form">
+                                            <input type="hidden" name="qoute_form" value="Custom Quote Form">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-3">

@@ -15,7 +15,60 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/industry/rigid-boxes/custom-sleeve-tray-rigid-boxes', function () {
-    return redirect('/industry/rigid-boxes/custom-tray-and-sleeve-rigid-boxes');
+    return redirect('/industry/rigid-boxes/custom-tray-and-sleeve-rigid-boxes', 301);
+});
+
+Route::get('https://www.customboxesus.com/product/hair-extension-boxes/', function () {
+    return redirect('https://www.customboxesus.com/industry/cosmetics-boxes/hair-extension-packaging-boxes', 301);
+});
+
+Route::get('https://www.customboxesus.com/product/shirt-boxes/', function () {
+    return redirect('https://www.customboxesus.com/industry/apparel-boxes/custom-shirt-packaging-boxes', 301);
+});
+Route::get('https://www.customboxesus.com/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4', function () {
+    return redirect('/', 301);
+});
+Route::get('https://www.customboxesus.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0', function () {
+    return redirect('/', 301);
+});
+Route::get('https://www.customboxesus.com/product/pie-boxes/', function () {
+    return redirect('https://www.customboxesus.com/industry/food-beverage-boxes/custom-pie-packaging-boxes', 301);
+});
+Route::get('https://www.customboxesus.com/product/cosmetic-boxes/', function () {
+    return redirect('https://www.customboxesus.com/industry/cosmetics-boxes', 301);
+});
+Route::get('https://www.customboxesus.com/product/wine-bottle-boxes/', function () {
+    return redirect('https://www.customboxesus.com/industry/food-beverage-boxes/custom-wine-packaging-boxes', 301);
+});
+Route::get('https://www.customboxesus.com/product/tea-boxes/', function () {
+    return redirect('https://www.customboxesus.com/industry/food-beverage-boxes/custom-printed-tea-packaging-boxes', 301);
+});
+Route::get('https://www.customboxesus.com/product/playing-card-boxes/', function () {
+    return redirect('https://www.customboxesus.com/industry/sports-boxes/custom-printed-playing-card-packaging-boxes', 301);
+});
+Route::get('https://www.customboxesus.com/product/snack-boxes/feed/', function () {
+    return redirect('https://www.customboxesus.com/industry/food-beverage-boxes/custom-snack-packaging-boxes', 301);
+});
+Route::get('https://www.customboxesus.com/product/lipstick-box/', function () {
+    return redirect('https://www.customboxesus.com/industry/cosmetics-boxes/custom-lipstick-packaging-boxes', 301);
+});
+Route::get('https://www.customboxesus.com/product/muffin-boxes-wholesale/', function () {
+    return redirect('https://www.customboxesus.com/industry/food-beverage-boxes/custom-muffin-packaging-boxes', 301);
+});
+Route::get('https://www.customboxesus.com/comments/feed/', function () {
+    return redirect('/', 301);
+});
+Route::get('https://www.customboxesus.com/all-boxes/', function () {
+    return redirect('/', 301);
+});
+Route::get('https://www.customboxesus.com/product/custom-apparel-boxes/', function () {
+    return redirect('https://www.customboxesus.com/industry/apparel-boxes', 301);
+});
+Route::get('https://www.customboxesus.com/product/custom-soap-boxes/', function () {
+    return redirect('https://www.customboxesus.com/industry/custom-printed-boxes/custom-printed-soap-boxes', 301);
+});
+Route::get('https://www.customboxesus.com/product/pastry-boxes/', function () {
+    return redirect('https://www.customboxesus.com/industry/food-beverage-boxes/custom-pastry-packaging-boxes', 301);
 });
 
 // Auth::routes(['verify'=>true]);

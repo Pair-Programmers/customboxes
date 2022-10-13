@@ -32,7 +32,7 @@
                                                 <li>{{ date('d-M-Y', strtotime($blog->created_at)) }}</li>
                                             </ul>
                                         </div>
-                                        <h1><a href="{{ route('blog.show', $blog) }}">{{ $blog->summary }}</a></h1>
+                                        <h1 ><a style="color: #2154c4" href="{{ route('blog.show', $blog) }}">{{ $blog->title }}</a></h1>
                                     </div>
                                 </div>
                             </div>
