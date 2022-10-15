@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Industry;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 class IndustryController extends Controller
 {
@@ -61,23 +62,26 @@ class IndustryController extends Controller
 
     public function showBoxesStyles()
     {
+        $currentRouteName = Route::currentRouteName();
         $industry = Industry::findOrFail(11);
         $products = Product::where('industry_id', $industry->id)->where('is_active', true)->get();
-        return view('pages.boxes-styles', compact('industry', 'products'));
+        return view('pages.boxes-styles', compact('industry', 'products', 'currentRouteName'));
     }
 
     public function showBagsPage()
     {
+        $currentRouteName = Route::currentRouteName();
         $industry = Industry::findOrFail(12);
         $products = Product::where('industry_id', $industry->id)->where('is_active', true)->get();
-        return view('pages.boxes-styles', compact('industry', 'products'));
+        return view('pages.boxes-styles', compact('industry', 'products', 'currentRouteName'));
     }
 
     public function showMarketingMaterialsPage()
     {
+        $currentRouteName = Route::currentRouteName();
         $industry = Industry::findOrFail(13);
         $products = Product::where('industry_id', $industry->id)->where('is_active', true)->get();
-        return view('pages.boxes-styles', compact('industry', 'products'));
+        return view('pages.boxes-styles', compact('industry', 'products', 'currentRouteName'));
     }
 
 

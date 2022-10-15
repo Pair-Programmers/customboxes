@@ -33,6 +33,7 @@
                                             </ul>
                                         </div>
                                         <h1 ><a style="color: #2154c4" href="{{ route('blog.show', $blog) }}">{{ $blog->title }}</a></h1>
+                                        <p>{{ $blog->summary }}</p>
                                     </div>
                                 </div>
                             </div>
