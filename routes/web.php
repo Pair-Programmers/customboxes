@@ -81,7 +81,7 @@ Route::get('/boxes-styles', [App\Http\Controllers\IndustryController::class, 'sh
 Route::get('/bags', [App\Http\Controllers\IndustryController::class, 'showBagsPage'])->name('industry.bags');
 Route::get('/marketing-materials', [App\Http\Controllers\IndustryController::class, 'showMarketingMaterialsPage'])->name('industry.marketing-materials');
 Route::get('/rush-order', [App\Http\Controllers\ProductController::class, 'showRushOrderPage'])->name('product.rush-order');
-Route::get('/custom-qoute', [App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
+Route::get('/custom-quote', [App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
 
 //product
 Route::get('/industry/{industry:slug}/{product:slug}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
