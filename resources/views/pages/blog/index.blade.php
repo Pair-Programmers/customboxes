@@ -51,6 +51,17 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="sidebar-wrapper sidebar-wrapper-mrg-left">
+                        <h4 class="sidebar-widget-title">Follow Us on</h4>
+                            <div class="recent-post">
+                                <div class="social-style-1 social-style-1-font-inc ">
+                                    <a href="https://twitter.com/customboxesus1" target="_blank"><i
+                                            class="icon-social-twitter"></i></a>
+                                    <a href="https://www.facebook.com/customboxesus1/" target="_blank"><i
+                                            class="icon-social-facebook"></i></a>
+                                    <a href="https://www.instagram.com/customboxesus/" target="_blank"><i
+                                            class="icon-social-instagram"></i></a>
+                                </div>
+                            </div>
                         {{-- <div class="sidebar-widget mb-40">
                             <h4 class="sidebar-widget-title">Search </h4>
                             <div class="sidebar-search">
