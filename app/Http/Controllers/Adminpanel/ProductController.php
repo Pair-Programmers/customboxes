@@ -59,35 +59,35 @@ class ProductController extends Controller
 
         if ($request->hasFile('image1')) {
             $image = $request->file('image1');
-            $name = $image->getClientOriginalName();
+            $name = str_replace(' ', '-', $image->getClientOriginalName());
             $image->move(public_path().'/storage/images/products', $name);
             $input['image1'] = $name;
         }
 
         if ($request->hasFile('image2')) {
             $image = $request->file('image2');
-            $name = $image->getClientOriginalName();
+            $name = str_replace(' ', '-', $image->getClientOriginalName());
             $image->move(public_path().'/storage/images/products', $name);
             $input['image2'] = $name;
         }
 
         if ($request->hasFile('image3')) {
             $image = $request->file('image3');
-            $name = $image->getClientOriginalName();
+            $name = str_replace(' ', '-', $image->getClientOriginalName());
             $image->move(public_path().'/storage/images/products', $name);
             $input['image3'] = $name;
         }
 
         if ($request->hasFile('image4')) {
             $image = $request->file('image4');
-            $name = $image->getClientOriginalName();
+            $name = str_replace(' ', '-', $image->getClientOriginalName());
             $image->move(public_path().'/storage/images/products', $name);
             $input['image4'] = $name;
         }
 
         if ($request->hasFile('image5')) {
             $image = $request->file('image5');
-            $name = $image->getClientOriginalName();
+            $name = str_replace(' ', '-', $image->getClientOriginalName());
             $image->move(public_path().'/storage/images/products', $name);
             $input['image5'] = $name;
         }
@@ -151,7 +151,7 @@ class ProductController extends Controller
 
         if ($request->hasFile('image1')) {
             $image = $request->file('image1');
-            $name = $image->getClientOriginalName();
+            $name = str_replace(' ', '-', $image->getClientOriginalName());
             $image->move(public_path().'/storage/images/products', $name);
             $input['image1'] = $name;
 
@@ -163,7 +163,7 @@ class ProductController extends Controller
 
         if ($request->hasFile('image2')) {
             $image = $request->file('image2');
-            $name = $image->getClientOriginalName();
+            $name = str_replace(' ', '-', $image->getClientOriginalName());
             $image->move(public_path().'/storage/images/products', $name);
             $input['image2'] = $name;
 
@@ -175,7 +175,7 @@ class ProductController extends Controller
 
         if ($request->hasFile('image3')) {
             $image = $request->file('image3');
-            $name = $image->getClientOriginalName();
+            $name = str_replace(' ', '-', $image->getClientOriginalName());
             $image->move(public_path().'/storage/images/products', $name);
             $input['image3'] = $name;
 
@@ -187,7 +187,7 @@ class ProductController extends Controller
 
         if ($request->hasFile('image4')) {
             $image = $request->file('image4');
-            $name = $image->getClientOriginalName();
+            $name = str_replace(' ', '-', $image->getClientOriginalName());
             $image->move(public_path().'/storage/images/products', $name);
             $input['image4'] = $name;
 
@@ -199,7 +199,7 @@ class ProductController extends Controller
 
         if ($request->hasFile('image5')) {
             $image = $request->file('image5');
-            $name = $image->getClientOriginalName();
+            $name = str_replace(' ', '-', $image->getClientOriginalName());
             $image->move(public_path().'/storage/images/products', $name);
             $input['image5'] = $name;
 
