@@ -45,7 +45,7 @@
                                 <a href="{{route('welcome')}}"><img src="{{asset('assets/website')}}/images/logo/logo.png" alt="customboxesus logo"></a>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-lg-5">
+                        <div class="col-xl-3 col-lg-3">
                             <div class="categori-search-wrap categori-search-wrap-modify-3">
 
                                 <div class="search-wrap-3">
@@ -57,6 +57,13 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="btn-style-1">
+                                <a class="animated btn-1-padding-4  btn-1-font-14" href="{{route('product.rush-order')}}">Rush Order</a>
+                            </div>
+                        </div>
+
                         <div class="col-xl-3 col-lg-3">
                             <div class="hotline-2-wrap">
                                 <div class="hotline-2-icon">
@@ -113,8 +120,8 @@
                                         <li><a href="{{route('industry.bags')}}">Bags</a></li>
                                         <li><a href="{{route('industry.marketing-materials')}}">Marketing Materials</a></li>
                                         <li><a href="{{route('industry.boxes-styles')}}">Boxes Styles</a></li>
+                                        <li><a href="{{route('industry.inserts')}}">Inserts</a></li>
                                         <li><a href="{{route('blog.index')}}">Blogs</a></li>
-                                        <li><a href="{{route('product.rush-order')}}">Rush Order</a></li>
                                     </ul>
                                 </nav>
                             </div>

@@ -84,6 +84,14 @@ class IndustryController extends Controller
         return view('pages.boxes-styles', compact('industry', 'products', 'currentRouteName'));
     }
 
+    public function showInsertsPage()
+    {
+        $currentRouteName = Route::currentRouteName();
+        $industry = Industry::findOrFail(14);
+        $products = Product::where('industry_id', $industry->id)->where('is_active', true)->get();
+        return view('pages.boxes-styles', compact('industry', 'products', 'currentRouteName'));
+    }
+
 
     /**
      * Show the form for editing the specified resource.
