@@ -58,11 +58,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-2 col-lg-2">
-                            <div class="btn-style-1">
-                                <a class="animated btn-1-padding-4  btn-1-font-14" href="{{route('product.rush-order')}}">Rush Order</a>
-                            </div>
-                        </div>
+
 
                         <div class="col-xl-3 col-lg-3">
                             <div class="hotline-2-wrap">
@@ -79,7 +75,11 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="btn-style-1">
+                                <a class="animated btn-1-padding-4  btn-1-font-14" href="{{route('product.rush-order')}}">Rush Order</a>
+                            </div>
+                        </div>
                         <div class="col-xl-2 col-lg-2">
                             <div class="btn-style-1">
                                 <a class="animated btn-1-padding-4  btn-1-font-14" href="{{route('product.index')}}">Custom
