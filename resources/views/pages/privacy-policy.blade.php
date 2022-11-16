@@ -3,6 +3,14 @@
 @section('title-meta')
     <title>Privacy Policy | {{ config('app.name') }} </title>
     <meta name="description" content="During your visit to our websites, this policy describes how we collect and use your personal information in accordance with the General Data Protection Regulation (GDPR).">
+
+    {{-- open graph tags --}}
+    <meta property="og:title" content="Privacy Policy | {{ config('app.name') }}" />
+    <meta property="og:type" content="website" />
+    {{-- <meta property="og:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}" /> --}}
+    <meta property="og:url" content="{{route('privacy-policy')}}" />
+    <meta property="og:description" content="During your visit to our websites, this policy describes how we collect and use your personal information in accordance with the General Data Protection Regulation (GDPR)." />
+
     <link rel="canonical" href="{{route('privacy-policy')}}" />
 
 @endsection

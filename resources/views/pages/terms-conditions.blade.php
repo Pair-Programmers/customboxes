@@ -3,6 +3,14 @@
 @section('title-meta')
     <title>Terms & Conditions | {{ config('app.name') }} </title>
     <meta name="description" content="As a member of our site, you are required to read our terms and conditions, agree with, and accept all of the terms and conditions contained therein.">
+
+    {{-- open graph tags --}}
+    <meta property="og:title" content="Terms & Conditions | {{ config('app.name') }}" />
+    <meta property="og:type" content="website" />
+    {{-- <meta property="og:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}" /> --}}
+    <meta property="og:url" content="{{route('term-conditions')}}" />
+    <meta property="og:description" content="As a member of our site, you are required to read our terms and conditions, agree with, and accept all of the terms and conditions contained therein." />
+
     <link rel="canonical" href="{{route('term-conditions')}}" />
 @endsection
 

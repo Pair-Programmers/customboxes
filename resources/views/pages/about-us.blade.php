@@ -3,6 +3,14 @@
 @section('title-meta')
     <title>About Us | {{ config('app.name') }} </title>
     <meta name="description" content="We at Custom Boxes US provide the best quality Custom Printed Packaging Boxes at your doorstep at affordable rates. Contact us to get the best price today!">
+
+    {{-- open graph tags --}}
+    <meta property="og:title" content="About Us | {{ config('app.name') }}" />
+    <meta property="og:type" content="website" />
+    {{-- <meta property="og:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}" /> --}}
+    <meta property="og:url" content="{{route('about-us')}}" />
+    <meta property="og:description" content="We at Custom Boxes US provide the best quality Custom Printed Packaging Boxes at your doorstep at affordable rates. Contact us to get the best price today!" />
+
     <link rel="canonical" href="{{route('about-us')}}" />
 @endsection
 

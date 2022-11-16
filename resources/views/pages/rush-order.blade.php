@@ -3,6 +3,14 @@
 @section('title-meta')
     <title>Rush Order | {{ config('app.name') }} </title>
     <meta name="description" content="Are you looking for a customer service team that is committed to customer satisfaction? Please reach out to us via our rush order form.">
+
+    {{-- open graph tags --}}
+    <meta property="og:title" content="Rush Order | {{ config('app.name') }}" />
+    <meta property="og:type" content="website" />
+    {{-- <meta property="og:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}" /> --}}
+    <meta property="og:url" content="{{route('product.rush-order')}}" />
+    <meta property="og:description" content="Are you looking for a customer service team that is committed to customer satisfaction? Please reach out to us via our rush order form." />
+
     <link rel="canonical" href="{{route('product.rush-order')}}" />
 
 @endsection

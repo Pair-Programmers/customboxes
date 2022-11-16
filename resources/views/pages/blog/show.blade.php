@@ -4,6 +4,14 @@
     <title>{{$blog->meta_tag_title}} | {{ config('app.name') }}</title>
     <meta name="description" content="{{$blog->meta_tag_description}}">
     <meta name="keywords" content="{{$blog->meta_tag_keywords}}">
+
+    {{-- open graph tags --}}
+    <meta property="og:title" content="{{ $blog->meta_tag_title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}" />
+    <meta property="og:url" content="{{route('blog.show', $blog)}}" />
+    <meta property="og:description" content="{{ $blog->meta_tag_description }}" />
+
     <link rel="canonical" href="{{route('blog.show', $blog)}}" />
 @endsection
 

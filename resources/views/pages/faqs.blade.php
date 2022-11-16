@@ -3,6 +3,14 @@
 @section('title-meta')
     <title> Frequently Asked Questions | {{ config('app.name') }} </title>
     <meta name="description" content="Check out the frequently asked questions (FAQ's) about our custom packaging boxes with logos. We have the answers to all your questions about custom packaging.">
+
+    {{-- open graph tags --}}
+    <meta property="og:title" content="Frequently Asked Questions | {{ config('app.name') }}" />
+    <meta property="og:type" content="website" />
+    {{-- <meta property="og:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}" /> --}}
+    <meta property="og:url" content="{{route('faqs')}}" />
+    <meta property="og:description" content="Check out the frequently asked questions (FAQ's) about our custom packaging boxes with logos. We have the answers to all your questions about custom packaging." />
+
     <link rel="canonical" href="{{route('faqs')}}" />
 
 @endsection

@@ -3,6 +3,14 @@
 @section('title-meta')
     <title>Paper Weight Chart| {{ config('app.name') }} </title>
     <meta name="description" content="Can you find a paper chart? This paper weight chart will help you find out how many types of paper weight in terms of its size, grammage, or basis weight.">
+
+    {{-- open graph tags --}}
+    <meta property="og:title" content="Paper Weight Chart| {{ config('app.name') }} " />
+    <meta property="og:type" content="website" />
+    {{-- <meta property="og:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}" /> --}}
+    <meta property="og:url" content="{{route('paper-weight')}}" />
+    <meta property="og:description" content="Can you find a paper chart? This paper weight chart will help you find out how many types of paper weight in terms of its size, grammage, or basis weight." />
+
     <link rel="canonical" href="{{route('paper-weight')}}" />
 
 @endsection

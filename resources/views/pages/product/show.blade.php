@@ -4,6 +4,14 @@
     <title>{{ $product->meta_tag_title }}</title>
     <meta name="description" content="{{ $product->meta_tag_description }}">
     <meta name="keywords" content="{{ $product->meta_tag_keywords }}">
+
+    {{-- open graph tags --}}
+    <meta property="og:title" content="{{ $product->meta_tag_title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="{{ asset('storage') }}/images/products/{{ $product->image1 }}" />
+    <meta property="og:url" content="{{route('product.show', [$industry, $product])}}" />
+    <meta property="og:description" content="{{ $product->meta_tag_description }}" />
+    
     <link rel="canonical" href="{{route('product.show', [$industry, $product])}}" />
 @endsection
 
