@@ -3,6 +3,14 @@
 @section('title-meta')
     <title>Blogs | {{ config('app.name') }} </title>
     <meta name="description" content="There is something uniquely artistic about the designs printed on printing and packaging boxes. We will give you the latest trends updates in this blog.">
+
+    {{-- open graph tags --}}
+    <meta property="og:title" content="Blogs | {{ config('app.name') }} " />
+    <meta property="og:type" content="website" />
+    {{-- <meta property="og:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}" /> --}}
+    <meta property="og:url" content="{{route('blog.index')}}" />
+    <meta property="og:description" content="There is something uniquely artistic about the designs printed on printing and packaging boxes. We will give you the latest trends updates in this blog." />
+
     <link rel="canonical" href="{{route('blog.index')}}" />
 
 @endsection

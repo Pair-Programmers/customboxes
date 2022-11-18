@@ -2,7 +2,15 @@
 
 @section('title-meta')
     <title>Boxes List | {{ config('app.name') }} </title>
-    <meta name="description" content="this is description">
+    <meta name="description" content="The list of customboxes that you searched">
+
+    {{-- open graph tags --}}
+    <meta property="og:title" content="Boxes List | {{ config('app.name') }}" />
+    <meta property="og:type" content="website" />
+    {{-- <meta property="og:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}" /> --}}
+    <meta property="og:url" content="{{route('product.search')}}" />
+    <meta property="og:description" content="The list of customboxes that you searched" />
+
     <link rel="canonical" href="{{route('product.search')}}" />
 
 @endsection

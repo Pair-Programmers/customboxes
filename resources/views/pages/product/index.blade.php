@@ -1,8 +1,16 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>Custom Quite | {{ config('app.name') }} </title>
+    <title>Custom Quote | {{ config('app.name') }} </title>
     <meta name="description" content="Get a Quote. Price quotes can save you time. Complete the form to receive a custom quote based on your specific custom packaging boxes.">
+
+    {{-- open graph tags --}}
+    <meta property="og:title" content="Custom Quote | {{ config('app.name') }}" />
+    <meta property="og:type" content="website" />
+    {{-- <meta property="og:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}" /> --}}
+    <meta property="og:url" content="{{route('product.index')}}" />
+    <meta property="og:description" content="Get a Quote. Price quotes can save you time. Complete the form to receive a custom quote based on your specific custom packaging boxes." />
+
     <link rel="canonical" href="{{route('product.index')}}" />
 
 @endsection
