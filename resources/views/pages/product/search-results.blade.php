@@ -11,6 +11,12 @@
     <meta property="og:url" content="{{route('product.search')}}" />
     <meta property="og:description" content="The list of customboxes that you searched" />
 
+    {{-- twiiter card --}}
+    <meta name="twitter:title" content="Boxes List | {{ config('app.name') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    {{-- <meta name="twitter:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}"> --}}
+    <meta name="twitter:description" content="The list of customboxes that you searched">
+
     <link rel="canonical" href="{{route('product.search')}}" />
 
 @endsection

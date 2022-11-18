@@ -11,6 +11,12 @@
     <meta property="og:url" content="{{route('blog.index')}}" />
     <meta property="og:description" content="There is something uniquely artistic about the designs printed on printing and packaging boxes. We will give you the latest trends updates in this blog." />
 
+    {{-- twiiter card --}}
+    <meta name="twitter:title" content="Blogs | {{ config('app.name') }} ">
+    <meta name="twitter:card" content="summary_large_image">
+    {{-- <meta name="twitter:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}"> --}}
+    <meta name="twitter:description" content="There is something uniquely artistic about the designs printed on printing and packaging boxes. We will give you the latest trends updates in this blog.">
+
     <link rel="canonical" href="{{route('blog.index')}}" />
 
 @endsection

@@ -11,6 +11,12 @@
     <meta property="og:url" content="{{route('term-conditions')}}" />
     <meta property="og:description" content="As a member of our site, you are required to read our terms and conditions, agree with, and accept all of the terms and conditions contained therein." />
 
+    {{-- twiiter card --}}
+    <meta name="twitter:title" content="Terms & Conditions | {{ config('app.name') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    {{-- <meta name="twitter:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}"> --}}
+    <meta name="twitter:description" content="As a member of our site, you are required to read our terms and conditions, agree with, and accept all of the terms and conditions contained therein.">
+
     <link rel="canonical" href="{{route('term-conditions')}}" />
 @endsection
 

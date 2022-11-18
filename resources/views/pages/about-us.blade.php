@@ -11,6 +11,12 @@
     <meta property="og:url" content="{{route('about-us')}}" />
     <meta property="og:description" content="We at Custom Boxes US provide the best quality Custom Printed Packaging Boxes at your doorstep at affordable rates. Contact us to get the best price today!" />
 
+    {{-- twiiter card --}}
+    <meta name="twitter:title" content="About Us | {{ config('app.name') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    {{-- <meta name="twitter:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}"> --}}
+    <meta name="twitter:description" content="We at Custom Boxes US provide the best quality Custom Printed Packaging Boxes at your doorstep at affordable rates. Contact us to get the best price today!">
+
     <link rel="canonical" href="{{route('about-us')}}" />
 @endsection
 

@@ -11,6 +11,12 @@
     <meta property="og:url" content="{{route('privacy-policy')}}" />
     <meta property="og:description" content="During your visit to our websites, this policy describes how we collect and use your personal information in accordance with the General Data Protection Regulation (GDPR)." />
 
+    {{-- twiiter card --}}
+    <meta name="twitter:title" content="Privacy Policy | {{ config('app.name') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    {{-- <meta name="twitter:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}"> --}}
+    <meta name="twitter:description" content="During your visit to our websites, this policy describes how we collect and use your personal information in accordance with the General Data Protection Regulation (GDPR).">
+
     <link rel="canonical" href="{{route('privacy-policy')}}" />
 
 @endsection

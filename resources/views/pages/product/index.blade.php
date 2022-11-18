@@ -11,6 +11,12 @@
     <meta property="og:url" content="{{route('product.index')}}" />
     <meta property="og:description" content="Get a Quote. Price quotes can save you time. Complete the form to receive a custom quote based on your specific custom packaging boxes." />
 
+    {{-- twiiter card --}}
+    <meta name="twitter:title" content="Custom Quote | {{ config('app.name') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    {{-- <meta name="twitter:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}"> --}}
+    <meta name="twitter:description" content="Get a Quote. Price quotes can save you time. Complete the form to receive a custom quote based on your specific custom packaging boxes.">
+
     <link rel="canonical" href="{{route('product.index')}}" />
 
 @endsection

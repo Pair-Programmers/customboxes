@@ -11,6 +11,12 @@
     <meta property="og:url" content="{{route('faqs')}}" />
     <meta property="og:description" content="Check out the frequently asked questions (FAQ's) about our custom packaging boxes with logos. We have the answers to all your questions about custom packaging." />
 
+    {{-- twiiter card --}}
+    <meta name="twitter:title" content="Frequently Asked Questions | {{ config('app.name') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    {{-- <meta name="twitter:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}"> --}}
+    <meta name="twitter:description" content="Check out the frequently asked questions (FAQ's) about our custom packaging boxes with logos. We have the answers to all your questions about custom packaging.">
+
     <link rel="canonical" href="{{route('faqs')}}" />
 
 @endsection

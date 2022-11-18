@@ -11,6 +11,12 @@
     <meta property="og:url" content="{{route('contact-us')}}" />
     <meta property="og:description" content="Need assistance with your custom packaging boxes? Custom Boxes US is here to help. Contact us via Call at (925) 695 9888 or email us at info@customboxesus.com" />
 
+    {{-- twiiter card --}}
+    <meta name="twitter:title" content="Contact Us | {{ config('app.name') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    {{-- <meta name="twitter:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}"> --}}
+    <meta name="twitter:description" content="Need assistance with your custom packaging boxes? Custom Boxes US is here to help. Contact us via Call at (925) 695 9888 or email us at info@customboxesus.com">
+
     <link rel="canonical" href="{{route('contact-us')}}" />
 
 @endsection

@@ -11,6 +11,12 @@
     <meta property="og:url" content="{{route('product.rush-order')}}" />
     <meta property="og:description" content="Are you looking for a customer service team that is committed to customer satisfaction? Please reach out to us via our rush order form." />
 
+    {{-- twiiter card --}}
+    <meta name="twitter:title" content="Rush Order | {{ config('app.name') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    {{-- <meta name="twitter:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}"> --}}
+    <meta name="twitter:description" content="Are you looking for a customer service team that is committed to customer satisfaction? Please reach out to us via our rush order form.">
+
     <link rel="canonical" href="{{route('product.rush-order')}}" />
 
 @endsection

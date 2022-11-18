@@ -12,6 +12,12 @@
     <meta property="og:url" content="{{route($currentRouteName)}}" />
     <meta property="og:description" content="{{ $industry->meta_tag_description }}" />
 
+    {{-- twiiter card --}}
+    <meta name="twitter:title" content="{{ $industry->meta_tag_title }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ asset('assets/website') }}/images/industry/boxes-styles.png">
+    <meta name="twitter:description" content="{{ $industry->meta_tag_description }}">
+
     <link rel="canonical" href="{{route($currentRouteName)}}" />
 
 @endsection

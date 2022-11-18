@@ -12,6 +12,12 @@
     <meta property="og:url" content="{{route('blog.show', $blog)}}" />
     <meta property="og:description" content="{{ $blog->meta_tag_description }}" />
 
+    {{-- twiiter card --}}
+    <meta name="twitter:title" content="{{ $blog->meta_tag_title }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}">
+    <meta name="twitter:description" content="{{ $blog->meta_tag_description }}">
+
     <link rel="canonical" href="{{route('blog.show', $blog)}}" />
 @endsection
 

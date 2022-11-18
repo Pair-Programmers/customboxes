@@ -12,6 +12,12 @@
     <meta property="og:url" content="{{route('industry.custom-printed-boxes.show')}}" />
     <meta property="og:description" content="{{ $industry->meta_tag_description }}" />
 
+    {{-- twiiter card --}}
+    <meta name="twitter:title" content="{{ $industry->meta_tag_title }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ asset('assets/website') }}/images/industry/custom-printed-boxes.png">
+    <meta name="twitter:description" content="{{ $industry->meta_tag_description }}">
+
     <link rel="canonical" href="{{route('industry.custom-printed-boxes.show')}}" />
 @endsection
 

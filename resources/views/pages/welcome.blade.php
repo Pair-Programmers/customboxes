@@ -11,6 +11,12 @@
     <meta property="og:url" content="{{ config('app.url')}}" />
     <meta property="og:description" content="Get your custom Printed Packaging boxes with logo from us and attract as many customers you want by having cardboard boxes wholesale for your business!" />
 
+    {{-- twiiter card --}}
+    <meta name="twitter:title" content="Custom Printed Packaging Boxes With Logo | {{ config('app.name') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    {{-- <meta name="twitter:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}"> --}}
+    <meta name="twitter:description" content="Get your custom Printed Packaging boxes with logo from us and attract as many customers you want by having cardboard boxes wholesale for your business!">
+
     <link rel="canonical" href="{{ config('app.url')}}" />
 @endsection
 

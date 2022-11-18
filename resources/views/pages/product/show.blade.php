@@ -11,7 +11,13 @@
     <meta property="og:image" content="{{ asset('storage') }}/images/products/{{ $product->image1 }}" />
     <meta property="og:url" content="{{route('product.show', [$industry, $product])}}" />
     <meta property="og:description" content="{{ $product->meta_tag_description }}" />
-    
+
+    {{-- twiiter card --}}
+    <meta name="twitter:title" content="{{ $product->meta_tag_title }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ asset('storage') }}/images/products/{{ $product->image1 }}">
+    <meta name="twitter:description" content="{{ $product->meta_tag_description }}">
+
     <link rel="canonical" href="{{route('product.show', [$industry, $product])}}" />
 @endsection
 
