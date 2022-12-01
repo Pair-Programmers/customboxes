@@ -160,7 +160,7 @@
             </div>
         </div>
     </div> --}}
-    <div class="contact-info-wrap-3 pb-85 container">
+    {{-- <div class="contact-info-wrap-3 pb-85 container">
         <h3>contact info</h3>
         <p>Make your dream packaging come true with! Contact us and Get your desired packaging today from us!</p>
         <div class="row">
@@ -188,7 +188,7 @@
             </div>
         </div>
         <p>So, stop waiting around and get in touch with us today to get your wholesale packaging with free shipping!</p>
-    </div>
+    </div> --}}
     {{-- team --}}
     {{-- <div class="team-area pb-90">
         <div class="container">
