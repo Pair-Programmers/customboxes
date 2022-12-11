@@ -6259,7 +6259,7 @@ textarea:focus {
           animation-name: fadeInUp;
 }
 
-.single-animation-wrap.slick-active .slider-animated-1 h1 {
+.single-animation-wrap.slick-active .slider-animated-1 h2 {
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
   -webkit-animation-name: fadeInUp;
@@ -7065,7 +7065,7 @@ textarea:focus {
   color: #ffffff;
 }
 
-.hero-slider-content-4 h1 {
+.hero-slider-content-4 h2 {
   font-size: 60px;
   line-height: 72px;
   letter-spacing: -.25px;
@@ -7075,7 +7075,7 @@ textarea:focus {
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
-  .hero-slider-content-4 h1 {
+  .hero-slider-content-4 h2 {
     font-size: 50px;
     line-height: 60px;
     margin: 5px 0 10px;
@@ -7084,7 +7084,7 @@ textarea:focus {
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
-  .hero-slider-content-4 h1 {
+  .hero-slider-content-4 h2 {
     font-size: 50px;
     line-height: 60px;
     margin: 5px 0 10px;
@@ -7093,7 +7093,7 @@ textarea:focus {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .hero-slider-content-4 h1 {
+  .hero-slider-content-4 h2 {
     font-size: 50px;
     line-height: 60px;
     margin: 5px 0 10px;
@@ -7102,7 +7102,7 @@ textarea:focus {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .hero-slider-content-4 h1 {
+  .hero-slider-content-4 h2 {
     font-size: 40px;
     line-height: 50px;
     margin: 14px 0 10px;
@@ -7111,7 +7111,7 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 767px) {
-  .hero-slider-content-4 h1 {
+  .hero-slider-content-4 h2 {
     font-size: 25px;
     line-height: 32px;
     margin: 5px 0 5px;

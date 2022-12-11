@@ -19,7 +19,7 @@
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
                                 {{-- <h4 class="animated">Lookbook</h4> --}}
-                                <h1 class="animated ">THE <br> CUSTOM PRINTED<br>PACKAGING BOXES</h1>
+                                <h2 class="animated ">THE <br> CUSTOM PRINTED<br>PACKAGING BOXES</h2>
                                 {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
                                     <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
@@ -36,7 +36,7 @@
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
                                 {{-- <h4 class="animated">Lookbook</h4> --}}
-                                <h1 class="animated">CUSTOM CBD BOXES</h1>
+                                <h2 class="animated">CUSTOM CBD BOXES</h2>
                                 <p class="animated">We Prepare High-Quality Custom Boxes With The Latest Tools And Techniques.</p>
                                 <div class="btn-style-1">
                                     <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
@@ -53,7 +53,7 @@
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
                                 {{-- <h4 class="animated">Lookbook</h4> --}}
-                                <h1 class="animated">COSMETIC <br> PACKAGING BOXES</h1>
+                                <h2 class="animated">COSMETIC <br> PACKAGING BOXES</h2>
                                 {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
                                     <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
@@ -70,7 +70,7 @@
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
                                 {{-- <h4 class="animated">Lookbook</h4> --}}
-                                <h1 class="animated">MAILER CARDBORD <br> PACKAGING BOXES</h1>
+                                <h2 class="animated">MAILER CARDBORD <br> PACKAGING BOXES</h2>
                                 {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
                                     <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
@@ -87,7 +87,7 @@
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
                                 {{-- <h4 class="animated">Lookbook</h4> --}}
-                                <h1 class="animated">VAPE CARTRIDGE<br>PRINTING PACKAGING<br>BOXES</h1>
+                                <h2 class="animated">VAPE CARTRIDGE<br>PRINTING PACKAGING<br>BOXES</h2>
                                 {{-- <p class="animated">We love seeing how our Raifa wearers like to wear their Norda</p> --}}
                                 <div class="btn-style-1">
                                     <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
@@ -104,7 +104,7 @@
                         <div class="col-12">
                             <div class="hero-slider-content-4 slider-animated-1">
                                 {{-- <h4 class="animated">Lookbook</h4> --}}
-                                <h1 class="animated">LUXURY RIGID BOXES</h1>
+                                <h2 class="animated">LUXURY RIGID BOXES</h2>
                                 <p class="animated">WE CustomBoxesus strive to give you the best packaging solutions.</p>
                                 <div class="btn-style-1">
                                     <a class="animated btn-1-padding-1 mt-25" href="{{route('product.index')}}">Get A Quote</a>
@@ -442,7 +442,6 @@
                             </div>
 
                             <div class="tab-content jump ">
-
                                 <div class="row">
                                     @foreach ($industries[4]->products3 as $product)
                                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
