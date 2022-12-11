@@ -14,7 +14,7 @@
 @section('content')
     <div class="text-center bg-img"
         style="height:270px; width:100%; background-image:url('{{ asset('assets/website') }}/images/industry/{{ $industry->image }}');">
-        <h1 class="pt-100">{{ $industry->name }}</h1>
+        <h2 style="font-size:35px" class="pt-100">{{ $industry->name }}</h2>
     </div>
     <br>
 
