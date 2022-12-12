@@ -1,21 +1,21 @@
 @extends('layouts.master')
 
 @section('title-meta')
-    <title>Custom Printed Packaging Boxes With Logo | {{ config('app.name') }} </title>
-    <meta name="description" content="Get your custom Printed Packaging boxes with logo from us and attract as many customers you want by having cardboard boxes wholesale for your business!">
+    <title>Custom Boxes - High Quality & Unique Custom Packaging Solutions| {{ config('app.name') }} </title>
+    <meta name="description" content="Get Custom Boxes in your desired size and design. We provide durable and unique custom packaging solutions to set your product apart from the competition.">
 
     {{-- open graph tags --}}
     <meta property="og:title" content="Custom Printed Packaging Boxes With Logo | {{ config('app.name') }}" />
     <meta property="og:type" content="website" />
     {{-- <meta property="og:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}" /> --}}
     <meta property="og:url" content="{{ config('app.url')}}" />
-    <meta property="og:description" content="Get your custom Printed Packaging boxes with logo from us and attract as many customers you want by having cardboard boxes wholesale for your business!" />
+    <meta property="og:description" content="Get Custom Boxes in your desired size and design. We provide durable and unique custom packaging solutions to set your product apart from the competition." />
 
     {{-- twiiter card --}}
     <meta name="twitter:title" content="Custom Printed Packaging Boxes With Logo | {{ config('app.name') }}">
     <meta name="twitter:card" content="summary_large_image">
     {{-- <meta name="twitter:image" content="{{ asset('storage') }}/images/blogs/{{ $blog->image }}"> --}}
-    <meta name="twitter:description" content="Get your custom Printed Packaging boxes with logo from us and attract as many customers you want by having cardboard boxes wholesale for your business!">
+    <meta name="twitter:description" content="Get Custom Boxes in your desired size and design. We provide durable and unique custom packaging solutions to set your product apart from the competition.">
 
     <link rel="canonical" href="{{ config('app.url')}}" />
 @endsection
@@ -210,10 +210,18 @@
                 </div>
             </div>
 
-            <div class="ml-50 mr-50" style="align-content: center">
-                <p>Customboxesus provides your custom packaging boxes with a logo, the way you desire. We believe in quality
-                    and deliver what we promise to our customers. Feel free to contact us any time of the day and get your
-                    work done within the minimum time frame. Contact us!</p>
+            <div class="ml-10 mr-10" style="text-align: center;">
+                <h1>Custom Boxes – Unique Packaging Solutions for Your Product</h1>
+                <p>CustomBoxesUS is the one-stop shop for all types of packaging
+                    boxes. Whether you are looking for a packaging solution for your product or
+                    need custom boxes for a special occasion, we have you covered. With our
+                    boxes, you can get the exact size and design required to fit your product. We
+                    offer high-quality, durable packaging solutions, so your products stand out.
+                    Our boxes are available in various shapes and sizes to accommodate any
+                    product. We also offer customization options such as printing, embossing,
+                    and foil stamping to make your packaging unique and eye-catching. So, if
+                    you are looking for custom-printed boxes online, look no further than
+                    CustomBoxesUS.</p>
             </div>
         </div>
     </div>
@@ -610,7 +618,7 @@
         </div>
     </div> --}}
     <div class="container home-content home-content-psize">
-        <h3>Custom Boxes & Packaging Solutions:</h3>
+        <h2>Customized Packaging Solutions to Make Your Product Stand Out</h2>
         <p>When it comes to convenient, personalized shopping experiences that provide endless possibilities, there's no better way than with a custom printed box. <a href="{{ route('industry.custom-printed-boxes.show') }}">Custom printed boxes</a> can fit any product requirement, from make-up gift sets to birthday presents. Choose from our wide selection of designs, or ask one of our expert design teams to help you create a playful gift box or fun-filled birthday package.</p>
         <p>It is hard to think of something unique for a special gift that customers will keep forever, but colorful and custom-made boxes are perfect. Custom boxes also make a great addition to any promotional program you have or giveaway. Brands are making use of this marketing tool by giving out gifts that are unique by name or design in creative custom printed boxes.</p>
         <p>At CustomBoxesUs, you can get your packaging in an attractive manner. Our experts know how to design attractive packaging that attracts the attention of customers. We know how to make attractive custom boxes in the best way possible. We have a range of variety while we are designing boxes with different shapes, sizes and features.</p>
@@ -812,7 +820,7 @@
                 <div class="bg-img"
                     style="background-image:url({{ asset('assets/website') }}/images/app-banner.jpg);">
                     <div class="download-app-content" style="color: white">
-                        <h1 style="color: white">We Believe in <br>Quality packaging</h1>
+                        <h2 style="color: white">We Believe in <br>Quality packaging</h2>
                         <p style="color: white">Order Now !</p>
                         {{-- <div class="app-img">
                             <a href="#"><img src="{{ asset('assets/website') }}/images/icon-img/app-1.png" alt=""></a>
