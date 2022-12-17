@@ -46,7 +46,7 @@
                                                 <li>{{ date('d-M-Y', strtotime($blog->created_at)) }}</li>
                                             </ul>
                                         </div>
-                                        <h1 ><a style="color: #2154c4" href="{{ route('blog.show', $blog) }}">{{ $blog->title }}</a></h1>
+                                        <h3 ><a style="color: #2154c4" href="{{ route('blog.show', $blog) }}">{{ $blog->title }}</a></h3>
                                         <p>{{ $blog->summary }}</p>
                                     </div>
                                 </div>
