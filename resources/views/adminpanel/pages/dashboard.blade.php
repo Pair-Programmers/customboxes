@@ -648,18 +648,22 @@
     <script>
         $(document).ready(function() {
 
-            $('.summernote').summernote();
+            $('.summernote').summernote({
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'underline', 'clear']],
+                    ['fontsize', ['fontsize']],
+                    ['fontname', ['fontname']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['table', ['table']],
+                    ['insert', ['link', 'picture', 'video']],
+                    ['view', ['fullscreen', 'codeview', 'help']],
+                ],
+            });
 
         });
 
-        var edit = function() {
-            $('.click2edit').summernote({
-                focus: true
-            });
-        };
-        var save = function() {
-            var aHTML = $('.click2edit').code(); //save HTML If you need(aHTML: array).
-            $('.click2edit').destroy();
-        };
+
     </script>
 @endsection
