@@ -654,6 +654,7 @@
                     ['font', ['bold', 'underline', 'clear']],
                     ['fontsize', ['fontsize']],
                     ['fontname', ['fontname']],
+                    ['height', ['height']],
                     ['color', ['color']],
                     ['para', ['ul', 'ol', 'paragraph']],
                     ['table', ['table']],
