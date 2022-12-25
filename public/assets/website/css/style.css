@@ -17063,6 +17063,12 @@ textarea:focus {
   margin: 0 0 20px;
 }
 
+.description-wrap ul {
+    list-style: disc;
+    list-style-position: inside;
+    padding-left: 15px;
+}
+
 .description-wrap p > span {
     font-size: 20px;
     font-family: "Jost", sans-serif;
