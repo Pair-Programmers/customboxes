@@ -8,5 +8,6 @@
     RewriteRule ^ https://www.%1%{REQUEST_URI} [R=301,L,NE]
 
     # move to public folder
-    RewriteRule ^(.*)$ public/$1 [L]
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ /public/$1 [L,QSA]
 </IfModule>
