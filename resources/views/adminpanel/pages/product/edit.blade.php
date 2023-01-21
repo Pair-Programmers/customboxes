@@ -105,8 +105,9 @@
                                                 @if ($industry->id == $product->industry_id)
                                                     <option selected value="{{ $industry->id }}">{{ $industry->name }}
                                                     </option>
-                                                @endif
+                                                @else
                                                 <option value="{{ $industry->id }}">{{ $industry->name }} </option>
+                                                @endif
                                             @endforeach
 
                                         </select>
