@@ -2,8 +2,16 @@
     RewriteEngine On
     # move to public folder
     # RewriteRule ^(.*)$ public/$1 [L]
+    # RewriteCond %{REQUEST_URI} !^/public/
+    # RewriteRule ^(.*)$ /public/$1 [L,QSA]
+
+    RewriteCond %{HTTP_HOST} ^(www.)?example.com$
     RewriteCond %{REQUEST_URI} !^/public/
-    RewriteRule ^(.*)$ /public/$1 [L,QSA]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /public/$1
+    RewriteCond %{HTTP_HOST} ^(www.)?customboxesus.com$
+    RewriteRule ^(/)?$ public/index.php [L]
 
     # add www with http -> https
     RewriteCond %{HTTP_HOST} !^www\. [NC,OR]
