@@ -11,7 +11,7 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ /public/$1
     RewriteCond %{HTTP_HOST} ^(www.)?customboxesus.com$
-    RewriteRule ^(/)?$ public/index.php [L]
+    RewriteRule ^(/)?$ public/ [L]
 
     # add www with http -> https
     RewriteCond %{HTTP_HOST} !^www\. [NC,OR]
