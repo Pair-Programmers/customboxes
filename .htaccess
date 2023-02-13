@@ -2,9 +2,8 @@
     RewriteEngine On
     # move to public folder
     # RewriteRule ^(.*)$ public/$1 [L]
-    # RewriteCond %{REQUEST_URI} !^/public/
-    # RewriteRule ^(.*)$ /public/$1 [L,QSA]
-    RewriteRule ^(.*)$ public/$1 [L]
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ /public/$1 [L,QSA]
 
     # add www with http -> https
     RewriteCond %{HTTP_HOST} !^www\. [NC,OR]
