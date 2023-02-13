@@ -4,8 +4,7 @@
     # RewriteRule ^(.*)$ public/$1 [L]
     # RewriteCond %{REQUEST_URI} !^/public/
     # RewriteRule ^(.*)$ /public/$1 [L,QSA]
-    RewriteRule ^$ public/index.php [L]
-RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+    RewriteRule ^$ public [L]
 
     # add www with http -> https
     RewriteCond %{HTTP_HOST} !^www\. [NC,OR]
