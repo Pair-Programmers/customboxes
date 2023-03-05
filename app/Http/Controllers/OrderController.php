@@ -69,7 +69,7 @@ class OrderController extends Controller
         if ($request->hasFile('box_design_file')) {
             $file = $request->file('box_design_file');
             $name = 'product_design_order_'.$order->id.'.'.$file->getClientOriginalExtension();
-            $file->move(asset().'/storage/files', $name);
+            $file->move(public_path().'/storage/files', $name);
             // $path = $request->file('box_design_file')->storeAs('public/order-design-files',
             //  'product_design_order_'.$order->id.'.'. $request->file('box_design_file')->guessExtension());
              $order->box_design_file = $name;
