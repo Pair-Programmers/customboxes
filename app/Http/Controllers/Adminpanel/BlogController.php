@@ -54,14 +54,14 @@ class BlogController extends Controller
         if ($request->hasFile('thumbnail')) {
             $image = $request->file('thumbnail');
             $name = str_replace(' ', '-', $image->getClientOriginalName());
-            $image->move(public_path().'/storage/images/blogs/thumbnail', $name);
+            $image->move('/home/custlrsl/public_html'.'/storage/images/blogs/thumbnail', $name);
             $inputs['thumbnail'] = $name;
         }
 
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $name = str_replace(' ', '-', $image->getClientOriginalName());
-            $image->move(public_path().'/storage/images/blogs', $name);
+            $image->move('/home/custlrsl/public_html'.'/storage/images/blogs', $name);
             $inputs['image'] = $name;
         }
         Blog::create($inputs);
@@ -110,7 +110,7 @@ class BlogController extends Controller
         if ($request->hasFile('thumbnail')) {
             $image = $request->file('thumbnail');
             $name = str_replace(' ', '-', $image->getClientOriginalName());
-            $image->move(public_path().'/storage/images/blogs/thumbnail', $name);
+            $image->move('/home/custlrsl/public_html'.'/storage/images/blogs/thumbnail', $name);
             $inputs['thumbnail'] = $name;
         }
         else{
@@ -120,7 +120,7 @@ class BlogController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $name = str_replace(' ', '-', $image->getClientOriginalName());
-            $image->move(public_path().'/storage/images/blogs', $name);
+            $image->move('/home/custlrsl/public_html'.'/storage/images/blogs', $name);
             $inputs['image'] = $name;
         }
         else{

@@ -60,35 +60,35 @@ class ProductController extends Controller
         if ($request->hasFile('image1')) {
             $image = $request->file('image1');
             $name = str_replace(' ', '-', $image->getClientOriginalName());
-            $image->move(public_path().'/storage/images/products', $name);
+            $image->move('/home/custlrsl/public_html'.'/storage/images/products', $name);
             $input['image1'] = $name;
         }
 
         if ($request->hasFile('image2')) {
             $image = $request->file('image2');
             $name = str_replace(' ', '-', $image->getClientOriginalName());
-            $image->move(public_path().'/storage/images/products', $name);
+            $image->move('/home/custlrsl/public_html'.'/storage/images/products', $name);
             $input['image2'] = $name;
         }
 
         if ($request->hasFile('image3')) {
             $image = $request->file('image3');
             $name = str_replace(' ', '-', $image->getClientOriginalName());
-            $image->move(public_path().'/storage/images/products', $name);
+            $image->move('/home/custlrsl/public_html'.'/storage/images/products', $name);
             $input['image3'] = $name;
         }
 
         if ($request->hasFile('image4')) {
             $image = $request->file('image4');
             $name = str_replace(' ', '-', $image->getClientOriginalName());
-            $image->move(public_path().'/storage/images/products', $name);
+            $image->move('/home/custlrsl/public_html'.'/storage/images/products', $name);
             $input['image4'] = $name;
         }
 
         if ($request->hasFile('image5')) {
             $image = $request->file('image5');
             $name = str_replace(' ', '-', $image->getClientOriginalName());
-            $image->move(public_path().'/storage/images/products', $name);
+            $image->move('/home/custlrsl/public_html'.'/storage/images/products', $name);
             $input['image5'] = $name;
         }
 
@@ -152,10 +152,10 @@ class ProductController extends Controller
         if ($request->hasFile('image1')) {
             $image = $request->file('image1');
             $name = str_replace(' ', '-', $image->getClientOriginalName());
-            $image->move(public_path().'/storage/images/products', $name);
+            $image->move('/home/custlrsl/public_html'.'/storage/images/products', $name);
             $input['image1'] = $name;
 
-            File::delete(public_path().'/storage/images/products', $product->image1);
+            File::delete('/home/custlrsl/public_html'.'/storage/images/products', $product->image1);
         }
         else{
             unset($input['image1']);
@@ -164,10 +164,10 @@ class ProductController extends Controller
         if ($request->hasFile('image2')) {
             $image = $request->file('image2');
             $name = str_replace(' ', '-', $image->getClientOriginalName());
-            $image->move(public_path().'/storage/images/products', $name);
+            $image->move('/home/custlrsl/public_html'.'/storage/images/products', $name);
             $input['image2'] = $name;
 
-            File::delete(public_path().'/storage/images/products', $product->image2);
+            File::delete('/home/custlrsl/public_html'.'/storage/images/products', $product->image2);
         }
         else{
             unset($input['image2']);
@@ -176,10 +176,10 @@ class ProductController extends Controller
         if ($request->hasFile('image3')) {
             $image = $request->file('image3');
             $name = str_replace(' ', '-', $image->getClientOriginalName());
-            $image->move(public_path().'/storage/images/products', $name);
+            $image->move('/home/custlrsl/public_html'.'/storage/images/products', $name);
             $input['image3'] = $name;
 
-            File::delete(public_path().'/storage/images/products', $product->image3);
+            File::delete('/home/custlrsl/public_html'.'/storage/images/products', $product->image3);
         }
         else{
             unset($input['image3']);
@@ -188,10 +188,10 @@ class ProductController extends Controller
         if ($request->hasFile('image4')) {
             $image = $request->file('image4');
             $name = str_replace(' ', '-', $image->getClientOriginalName());
-            $image->move(public_path().'/storage/images/products', $name);
+            $image->move('/home/custlrsl/public_html'.'/storage/images/products', $name);
             $input['image4'] = $name;
 
-            File::delete(public_path().'/storage/images/products', $product->image4);
+            File::delete('/home/custlrsl/public_html'.'/storage/images/products', $product->image4);
         }
         else{
             unset($input['image4']);
@@ -200,10 +200,10 @@ class ProductController extends Controller
         if ($request->hasFile('image5')) {
             $image = $request->file('image5');
             $name = str_replace(' ', '-', $image->getClientOriginalName());
-            $image->move(public_path().'/storage/images/products', $name);
+            $image->move('/home/custlrsl/public_html'.'/storage/images/products', $name);
             $input['image5'] = $name;
 
-            File::delete(public_path().'/storage/images/products', $product->image5);
+            File::delete('/home/custlrsl/public_html'.'/storage/images/products', $product->image5);
         }
         else{
             unset($input['image5']);
