@@ -70,7 +70,57 @@ Route::get('/product/custom-soap-boxes/', function () {
 Route::get('/product/pastry-boxes/', function () {
     return redirect('/industry/food-beverage-boxes/custom-pastry-packaging-boxes', 301);
 });
-
+Route::get('/feed', function () {
+    return redirect('/', 301);
+});
+Route::get('/meet-custom-boxes-us', function () {
+    return redirect('/', 301);
+});
+Route::get('/product/custom-food-boxes', function () {
+    return redirect('/industry/food-beverage-boxes', 301);
+});
+Route::get('/product/tuck-boxes', function () {
+    return redirect('/industry/boxes-styles/tuck-top-auto-bottom-box', 301);
+});
+Route::get('/product/unique-favor-boxes', function () {
+    return redirect('/industry/gift-festivities-boxes/custom-favor-packaging-boxes', 301);
+});
+Route::get('/product/best-noodle-boxes', function () {
+    return redirect('/industry/food-beverage-boxes/custom-noodle-packaging-boxes', 301);
+});
+Route::get('/product/perfume-boxes-wholesale/', function () {
+    return redirect('/industry/cosmetics-boxes/custom-perfume-packaging-boxes', 301);
+});
+Route::get('/product/candle-boxes/', function () {
+    return redirect('/industry/custom-printed-boxes/custom-printed-candle-packaging-boxes', 301);
+});
+Route::get('/product/proudct/', function () {
+    return redirect('/', 301);
+});
+Route::get('/product/flap-boxes/', function () {
+    return redirect('/industry/rigid-boxes/magnetic-closure-rigid-boxes', 301);
+});
+Route::get('/product/product/cosmetic-display-boxes/', function () {
+    return redirect('/industry/cosmetics-boxes/cosmetic-display-packaging-box', 301);
+});
+Route::get('/product/foundation-boxes/', function () {
+    return redirect('/industry/cosmetics-boxes/custom-foundation-packaging-boxes', 301);
+});
+Route::get('/product/pizza-boxes/', function () {
+    return redirect('/industry/food-beverage-boxes/custom-pizza-packaging-boxes', 301);
+});
+Route::get('/product/bottle-boxes/', function () {
+    return redirect('/industry/food-beverage-boxes/bottle-boxes-with-inserts-and-dividers', 301);
+});
+Route::get('/product/lip-gloss-boxes/', function () {
+    return redirect('/industry/cosmetics-boxes/custom-lip-gloss-packaging-boxes', 301);
+});
+Route::get('/public/product/snack-boxes/feed', function () {
+    return redirect('/industry/food-beverage-boxes/custom-snack-packaging-boxes', 301);
+});
+Route::get('/product/soap-boxes/', function () {
+    return redirect('/industry/custom-printed-boxes/custom-printed-soap-boxes', 301);
+});
 // Auth::routes(['verify'=>true]);
 
 Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
@@ -201,5 +251,3 @@ Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function
         Route::delete('/{blogCategory:id}', 'destroy')->name('destroy');
     });
 });
-
-
