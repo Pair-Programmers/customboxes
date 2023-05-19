@@ -21,7 +21,7 @@ class BlogController extends Controller
             $query->where('blog_category_id', $category->id);
             // dd($category);
         })
-        ->paginate(5);
+        ->paginate(20);
         $categories = BlogCategory::all();
         $recentBlogs = Blog::where('is_active', true)->orderBy('id', 'desc')->get()->take(3);
         return view('pages.blog.index', compact('blogs', 'categories', 'recentBlogs'));
@@ -30,7 +30,7 @@ class BlogController extends Controller
     // public function indexByCategory(BlogCategory $category)
     // {
     //     $blogs = Blog::orderBy('id', 'desc')->where('blog_category_id', $category->id)
-    //     ->paginate(5);
+    //     ->paginate(20);
     //     $categories = BlogCategory::all();
     //     return view('pages.blog.index', compact('blogs'));
     // }
