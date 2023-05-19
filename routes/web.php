@@ -121,6 +121,51 @@ Route::get('/public/product/snack-boxes/feed', function () {
 Route::get('/product/soap-boxes/', function () {
     return redirect('/industry/custom-printed-boxes/custom-printed-soap-boxes', 301);
 });
+
+Route::get('/product/wine-bottle-boxes/', function () {
+    return redirect('/industry/food-beverage-boxes/custom-wine-packaging-boxes', 301);
+});
+Route::get('/product/snack-boxes', function () {
+    return redirect('/industry/food-beverage-boxes/custom-snack-packaging-boxes', 301);
+});
+Route::get('/product/popcorn-boxes-wholesale', function () {
+    return redirect('/industry/food-beverage-boxes/custom-popcorn-packaging-boxes', 301);
+});
+Route::get('/public/contact-us', function () {
+    return redirect('/contact-us', 301);
+});
+Route::get('/blog/how-are-custom-cosmetic-boxes-help-boost-your-sales', function () {
+    return redirect('/blog/how-custom-cosmetic-boxes-can-help-boost-your-sales', 301);
+});
+
+Route::get('/public/about-us', function () {
+    return redirect('/about-us', 301);
+});
+Route::get('/public/industry/food-beverage-boxes/custom-macaron-packaging-boxes', function () {
+    return redirect('/industry/food-beverage-boxes/custom-macaron-packaging-boxes', 301);
+});
+Route::get('/public/marketing-materials', function () {
+    return redirect('/marketing-materials', 301);
+});
+Route::get('/public', function () {
+    return redirect('/', 301);
+});
+Route::get('/public/industry/food-beverage-boxes/bottle-boxes-with-inserts-and-divider', function () {
+    return redirect('/industry/food-beverage-boxes/bottle-boxes-with-inserts-and-dividers', 301);
+});
+
+Route::get('/industry/boxes-styles/regular-six-corner-with-lid', function () {
+    return redirect('/industry/boxes-styles/regular-six-corner-box-with-lid', 301);
+});
+Route::get('/industry/boxes-styles/tuck-top-auto-bottom', function () {
+    return redirect('/industry/boxes-styles/tuck-top-auto-bottom-box', 301);
+});
+Route::get('/product/cube-bboxes/', function () {
+    return redirect('/industry/food-beverage-boxes/custom-muffin-packaging-boxes', 301);
+});
+Route::get('/product/bux-board-boxes/', function () {
+    return redirect('/industry/custom-printed-boxes/custom-cardboard-boxes', 301);
+});
 // Auth::routes(['verify'=>true]);
 
 Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
