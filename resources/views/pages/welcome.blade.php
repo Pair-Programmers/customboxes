@@ -3,6 +3,7 @@
 @section('title-meta')
     <title>Custom Boxes - High Quality & Unique Custom Packaging Solutions| {{ config('app.name') }} </title>
     <meta name="description" content="Get Custom Boxes in your desired size and design. We provide durable and unique custom packaging solutions to set your product apart from the competition.">
+    <meta name="keywords" content="Custom Boxes, Custom Packaging Solutions, Custom Boxes US, Custom Printed Packaging Boxes with Logo, Custom Boxes Wholesale, Custom Printed Boxes, Custom Boxes US">
 
     {{-- open graph tags --}}
     <meta property="og:title" content="Custom Printed Packaging Boxes With Logo | {{ config('app.name') }}" />
