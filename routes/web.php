@@ -95,7 +95,7 @@ Route::get('/product/candle-boxes/', function () {
     return redirect('/industry/custom-printed-boxes/custom-printed-candle-packaging-boxes', 301);
 });
 Route::get('/proudct', function () {
-    return redirzct('/', 301);
+    return redirect('/', 301);
 });
 Route::get('/product/flap-boxes/', function () {
     return redirect('/industry/rigid-boxes/magnetic-closure-rigid-boxes', 301);
