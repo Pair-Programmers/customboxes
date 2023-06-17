@@ -94,13 +94,13 @@ Route::get('/product/perfume-boxes-wholesale/', function () {
 Route::get('/product/candle-boxes/', function () {
     return redirect('/industry/custom-printed-boxes/custom-printed-candle-packaging-boxes', 301);
 });
-Route::get('/product/proudct/', function () {
+Route::get('/proudct', function () {
     return redirect('/', 301);
 });
 Route::get('/product/flap-boxes/', function () {
     return redirect('/industry/rigid-boxes/magnetic-closure-rigid-boxes', 301);
 });
-Route::get('/product/product/cosmetic-display-boxes/', function () {
+Route::get('/product/cosmetic-display-boxes/', function () {
     return redirect('/industry/cosmetics-boxes/cosmetic-display-packaging-box', 301);
 });
 Route::get('/product/foundation-boxes/', function () {
@@ -150,7 +150,7 @@ Route::get('/public/marketing-materials', function () {
 Route::get('/public', function () {
     return redirect('/', 301);
 });
-Route::get('/public/industry/food-beverage-boxes/bottle-boxes-with-inserts-and-divider', function () {
+Route::get('/public/industry/food-beverage-boxes/bottle-boxes-with-inserts-and-dividers', function () {
     return redirect('/industry/food-beverage-boxes/bottle-boxes-with-inserts-and-dividers', 301);
 });
 
