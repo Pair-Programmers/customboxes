@@ -83,7 +83,15 @@
                         <div class="col-lg-12 col-md-12">
                             <textarea name="message" required placeholder="Your Message">{{old('message')}}</textarea>
                         </div>
-                        <div class="col-lg-12 col-md-12">
+                        @if (config('services.recaptcha.key'))
+                            <div class="g-recaptcha col-lg-" data-sitekey="{{ config('services.recaptcha.key') }}"></div>
+                        @endif
+                        <div id="invalidfeedback8" class="text-danger">
+                            @error('g-recaptcha-response')
+                            {{ $message }}
+                            @enderror
+                        </div>
+                        <div class="col-lg-12 col-md-12 mt-10">
                             <button class="submit" type="submit">Send Message</button>
                         </div>
                     </div>

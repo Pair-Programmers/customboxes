@@ -43,6 +43,7 @@ class ContactUsController extends Controller
             'phone' => 'string|required',
             'subject' => 'string|required',
             'message' => 'string|required',
+            'g-recaptcha-response' => 'required|recaptcha',
         ]);
 
         $inputs = $request->input();

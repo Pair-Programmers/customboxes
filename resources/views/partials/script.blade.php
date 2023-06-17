@@ -19,6 +19,9 @@
 <!-- Main JS -->
 <script src="{{ asset('assets/website') }}/js/main.js"></script>
 
+{{-- recaptcha v3--}}
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript" async>
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

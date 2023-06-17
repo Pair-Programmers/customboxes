@@ -7,6 +7,7 @@ use App\Models\Product;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Validator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -40,6 +41,7 @@ class AppServiceProvider extends ServiceProvider
 
         View::share('industriesHeader',$industriesHeader);
         View::share('productsFooter',$productsFooter);
+        Validator::extend('recaptcha', 'App\Validators\\ReCaptcha@validate');
 
     }
 }
