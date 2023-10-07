@@ -213,7 +213,7 @@
 
             <div class="ml-10 mr-10" style="text-align: center;">
                 <h1>Custom Boxes – Unique Packaging Solutions for Your Product</h1>
-                <p>CustomBoxesUS is the one-stop shop for all types of packaging
+                <p>Custom Boxes US is the one-stop shop for all types of packaging
                     boxes. Whether you are looking for a packaging solution for your product or
                     need custom boxes for a special occasion, we have you covered. With our
                     boxes, you can get the exact size and design required to fit your product. We
@@ -222,7 +222,7 @@
                     product. We also offer customization options such as printing, embossing,
                     and foil stamping to make your packaging unique and eye-catching. So, if
                     you are looking for custom-printed boxes online, look no further than
-                    CustomBoxesUS.</p>
+                    Custom Boxes US.</p>
             </div>
         </div>
     </div>
@@ -622,12 +622,12 @@
         <h2>Customized Packaging Solutions to Make Your Product Stand Out</h2>
         <p>When it comes to convenient, personalized shopping experiences that provide endless possibilities, there's no better way than with a custom printed box. <a href="{{ route('industry.custom-printed-boxes.show') }}">Custom printed boxes</a> can fit any product requirement, from make-up gift sets to birthday presents. Choose from our wide selection of designs, or ask one of our expert design teams to help you create a playful gift box or fun-filled birthday package.</p>
         <p>It is hard to think of something unique for a special gift that customers will keep forever, but colorful and custom-made boxes are perfect. Custom boxes also make a great addition to any promotional program you have or giveaway. Brands are making use of this marketing tool by giving out gifts that are unique by name or design in creative custom printed boxes.</p>
-        <p>At CustomBoxesUs, you can get your packaging in an attractive manner. Our experts know how to design attractive packaging that attracts the attention of customers. We know how to make attractive custom boxes in the best way possible. We have a range of variety while we are designing boxes with different shapes, sizes and features.</p>
+        <p>At Custom Boxes US, you can get your packaging in an attractive manner. Our experts know how to design attractive packaging that attracts the attention of customers. We know how to make attractive custom boxes in the best way possible. We have a range of variety while we are designing boxes with different shapes, sizes and features.</p>
 
         <h3>Get creative packaging solutions as per your needs:</h3>
         <p>With us, you will be able to find a wide range of custom printed boxes that are useful in different ways. Our creative packaging makes it possible for you to incorporate your personal touch when shopping for items.</p>
         <p>Our experts are committed to providing customers with the best quality products and services. We take pride in helping our customers find the best packaging solution to fit their needs.</p>
-        <p>Our goal at CustomBoxesUs is to come up with new and unique ways to present your product so that it makes a statement among the competition. One of our ways of doing this is by designing attractive custom-printed boxes that suit your brand name or logo.</p>
+        <p>Our goal at Custom Boxes US is to come up with new and unique ways to present your product so that it makes a statement among the competition. One of our ways of doing this is by designing attractive custom-printed boxes that suit your brand name or logo.</p>
         <p>When you choose custom printed boxes, you can show off your brand identity to the world. We have a range of interesting gift boxes that are tailor-made just for fun, and they are perfect as favors or giveaways at events.</p>
 
         <h3>Our expert staff is ready to help you with all your packaging needs:</h3>
@@ -741,7 +741,7 @@
             combination and finishing options of their choice to attract the attention of the buyers. Plus, it's affordable
             in nature, and people can take advantage of the wholesale shopping option.</p>
 
-        <h2>Why CustomBoxesUs?</h2>
+        <h2>Why Custom Boxes US?</h2>
         <p>Digital technology is becoming increasingly prevalent in modern times. Retailers and manufacturers are required
             to have adequate product packaging. Don't do business anonymously! It is the ideal decision that brands must
             have in their buckets these days when it comes to packaging, presenting, and transporting retail items in custom

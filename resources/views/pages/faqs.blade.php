@@ -55,7 +55,7 @@
                                     <h2>Q-6: How Long Does It Take To Ship An Order?</h2>
                                     <p>The time it takes for delivery depends on the complexity of your order, the availability of materials, and your current workload. Standard deliveries take between 7-10 business days. If you have customized your order, it takes 9-11 business days. You can contact us if you need faster delivery to discuss options. Our goal is to meet the deadline. Express delivery is also available. During delivery, our shipping rates will differ from the actual rates applied by carriers based on the volume and weight of your order. In these instances, we will contact you for additional details before shipping.</p>
                                     <h2>Q-8: Is There A Minimum Order Quantity?</h2>
-                                    <p>We do not have a minimum order quantity policy for our custom printed packaging boxes. Our wholesale prices allow you to purchase any quantity of custom boxes at CustomBoxesUs.</p>
+                                    <p>We do not have a minimum order quantity policy for our custom printed packaging boxes. Our wholesale prices allow you to purchase any quantity of custom boxes at Custom Boxes US.</p>
                                     <h2>Q-10: What Is The Payment Procedure?</h2>
                                     <p>You can make a payment online using a credit/debit card or via PayPal.</p>
                                 </div>
@@ -69,9 +69,9 @@
 
                                 <div class="blog-details-content">
                                     <h2>Q-1: Why Should I Choose Customboxesus For Custom-Printed Cardboard Boxes?</h2>
-                                    <p>CustomBoxesUs is a packaging mainstay because we’re cost-effective, strong, stylish, and reusable. We use digital printing to produce all of our packaging. We offer unlimited customization options. Moreover, since there is no minimum order requirement, small businesses won't have to worry about going over budget when ordering large quantities of packaging. We make our boxes to protect your products during storage and shipping. There are so many ways to customize your box that you can create an attractive piece of art. Call @ (925) 695 9888 to order today!</p>
+                                    <p>Custom Boxes US is a packaging mainstay because we’re cost-effective, strong, stylish, and reusable. We use digital printing to produce all of our packaging. We offer unlimited customization options. Moreover, since there is no minimum order requirement, small businesses won't have to worry about going over budget when ordering large quantities of packaging. We make our boxes to protect your products during storage and shipping. There are so many ways to customize your box that you can create an attractive piece of art. Call @ (925) 695 9888 to order today!</p>
                                     <h2>Q-3: Can You Provide Me With A Free Quote Before I Confirm My Order?</h2>
-                                    <p>Yes. CustomBoxesUs offers free quotations on custom orders round the clock through its support panel. Our team is open to customer negotiations, ideation, and branding plan development.</p>
+                                    <p>Yes. Custom Boxes US offers free quotations on custom orders round the clock through its support panel. Our team is open to customer negotiations, ideation, and branding plan development.</p>
                                     <h2>Q-5: Is It Possible To Design My Own Box And Artwork?</h2>
                                     <p>Sure. Our company can print and manufacture all types of custom boxes. We build everything according to your needs.</p>
                                     <h2>Q-7: Is Your Packaging Eco-Friendly?</h2>

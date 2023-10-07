@@ -44,15 +44,15 @@
                         <h3>Custome Boxes Us</h3>
                         <p>When it comes to purchasing packaging supplies, we all face the same problem, i.e., a wide range
                             of options and a tightly limited budget. Looking for a reliable supplier who can offer custom
-                            products at the best prices can prove tricky, which is where CustomBoxesUs comes into play! With
+                            products at the best prices can prove tricky, which is where Custom Boxes US comes into play! With
                             excellent services, custom options, and competitive rates. And we strive to make your life as
                             stress-free as possible. We love helping small business start their operations. Our packaging
                             products are affordable and reliable, but they’re not the only things that set us apart from
                             others. We have a spectacular team of customer experience professionals who will support your
                             every need. For a hassle-free shipping experience with gorgeous packaging for your products,
-                            turn to CustomBoxesUs!</p>
+                            turn to Custom Boxes US!</p>
 
-                        <h3>Why should CustomBoxesUs be your first choice?</h3>
+                        <h3>Why should Custom Boxes US be your first choice?</h3>
                         <p>We are reliable and trustworthy when it comes to your online orders. We offer competitive rates,
                             which makes us the best choice for small businesses. You can rely on us because we will give you
                             a stress-free experience. You can get the most out of our services. And you won't get stuck

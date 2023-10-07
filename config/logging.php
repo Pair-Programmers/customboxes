@@ -70,7 +70,7 @@ return [
         'slack' => [
             'driver' => 'slack',
             'url' => env('LOG_SLACK_WEBHOOK_URL'),
-            'username' => 'CustomBoxesUs Production Server',
+            'username' => 'Custom Boxes US Production Server',
             'emoji' => ':robot_face:',
             'level' => env('LOG_LEVEL', 'critical'),
         ],

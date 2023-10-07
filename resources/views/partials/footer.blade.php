@@ -8,7 +8,7 @@
                         <img src="{{ asset('assets/website') }}/images/logo/logo.png"
                             style="width: 270px; height: 60px; margin-bottom: 15px;" alt="customboxesus logo">
                         <br>
-                        <P style="text-align:justify; font-size: 19px">We at CustomBoxesUs pride ourselves on providing the best custom packaging boxes and services
+                        <P style="text-align:justify; font-size: 19px">We at Custom Boxes US pride ourselves on providing the best custom packaging boxes and services
                             in the industry. There are no other manufacturers that can match our quality products, an
                             extensive selection of sizes, and personal attention to detail. We work hard to provide you
                             with a high-quality product at a great price! If you're looking for a reliable company that
@@ -116,7 +116,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="copyright copyright-center">
-                        <p style="color: black;  ">Copyright © CustomBoxesUs</p>
+                        <p style="color: black;  ">Copyright © Custom Boxes US</p>
                     </div>
                 </div>
             </div>
