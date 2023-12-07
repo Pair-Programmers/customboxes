@@ -181,7 +181,7 @@ Route::get('/custom-quote', [App\Http\Controllers\ProductController::class, 'ind
 
 //product
 Route::get('/industry/{industry:slug}/{product:slug}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
-Route::post('/products-results', [App\Http\Controllers\ProductController::class, 'search'])->name('product.search');
+Route::any('/products-results', [App\Http\Controllers\ProductController::class, 'search'])->name('product.search');
 Route::get('/industry/{industry}', [App\Http\Controllers\IndustryController::class, 'show'])->name('industry.show');
 
 //newsletter
